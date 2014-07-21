@@ -1,0 +1,1234 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F01D49C17A105570005B654 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F01D49B17A105570005B654 /* ImageIO.framework */; };
+		2F01D49E17A105690005B654 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F01D49D17A105690005B654 /* MapKit.framework */; };
+		2F03846E16DC83C200227501 /* FLSignedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F03846D16DC83C200227501 /* FLSignedViewController.xib */; };
+		2F05E8BF17A8BC2700378108 /* heartsound2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2F05E8BE17A8BC2700378108 /* heartsound2.wav */; };
+		2F0805C717B0C06500C60A65 /* greencell2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F0805C617B0C06500C60A65 /* greencell2.png */; };
+		2F0805CC17B0CB0D00C60A65 /* cellblue.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F0805CB17B0CB0D00C60A65 /* cellblue.png */; };
+		2F0A760017E9DBB700458427 /* lovelogicon29.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F0A75FF17E9DBB700458427 /* lovelogicon29.png */; };
+		2F0A760217E9DC0700458427 /* lovelogicon58.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F0A760117E9DC0700458427 /* lovelogicon58.png */; };
+		2F0AB633178D5F130077C818 /* MyChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0AB632178D5F130077C818 /* MyChatCell.m */; };
+		2F0AB63B178E44760077C818 /* mychatcell.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F0AB63A178E44760077C818 /* mychatcell.png */; };
+		2F0AB640178E461B0077C818 /* YourChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F0AB63F178E461B0077C818 /* YourChatCell.xib */; };
+		2F0AB642178E46D50077C818 /* yourchatcell.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F0AB641178E46D50077C818 /* yourchatcell.png */; };
+		2F0AB646178E4F9F0077C818 /* MyChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F0AB645178E4F9F0077C818 /* MyChatCell.xib */; };
+		2F0AD81E179D1D4800180F6F /* FLPhototitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0AD81C179D1D4800180F6F /* FLPhototitleViewController.m */; };
+		2F0AD81F179D1D4800180F6F /* FLPhototitleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F0AD81D179D1D4800180F6F /* FLPhototitleViewController.xib */; };
+		2F0FE20A17B3729900BFF113 /* toppageline.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F0FE20917B3729900BFF113 /* toppageline.png */; };
+		2F116F84176346D400BE34B7 /* whitecell5.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F116F83176346D400BE34B7 /* whitecell5.png */; };
+		2F116F8617634A6A00BE34B7 /* whitecell6.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F116F8517634A6900BE34B7 /* whitecell6.png */; };
+		2F18D5E917C4F23E0061DB9A /* wellcomeviewcontroller3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F18D5E817C4F23E0061DB9A /* wellcomeviewcontroller3.png */; };
+		2F18D5EB17C4F5DF0061DB9A /* enterviewcontroller1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F18D5EA17C4F5DF0061DB9A /* enterviewcontroller1.png */; };
+		2F18D5EF17C5BAD40061DB9A /* lovernameviewcontroller.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F18D5EE17C5BAD40061DB9A /* lovernameviewcontroller.png */; };
+		2F18D5F117C5BB3F0061DB9A /* lovenumberviewcontroller.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F18D5F017C5BB3E0061DB9A /* lovenumberviewcontroller.png */; };
+		2F222D10178E6EB400E982F0 /* pinkheartbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F222D0F178E6EB400E982F0 /* pinkheartbutton.png */; };
+		2F222D13178FAEB000E982F0 /* YourChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F222D12178FAEB000E982F0 /* YourChatCell.m */; };
+		2F2B828C16B01C390095FDA3 /* FLInvitedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F2B828A16B01C390095FDA3 /* FLInvitedViewController.m */; };
+		2F2B828D16B01C390095FDA3 /* FLInvitedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F2B828B16B01C390095FDA3 /* FLInvitedViewController.xib */; };
+		2F2F987D1726241A001AC4C4 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F2F987C17262419001AC4C4 /* MessageUI.framework */; };
+		2F3D1579170405B20098E799 /* FLChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F3D1577170405B20098E799 /* FLChatViewController.m */; };
+		2F3D157A170405B20098E799 /* FLChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3D1578170405B20098E799 /* FLChatViewController.xib */; };
+		2F3F573416AAA22700E1D011 /* FLLovernameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F3F573216AAA22600E1D011 /* FLLovernameViewController.m */; };
+		2F3F573516AAA22700E1D011 /* FLLovernameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3F573316AAA22700E1D011 /* FLLovernameViewController.xib */; };
+		2F3F573B16AAA9BD00E1D011 /* LoverNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F3F573916AAA9BD00E1D011 /* LoverNumberViewController.m */; };
+		2F3F573C16AAA9BD00E1D011 /* LoverNumberViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3F573A16AAA9BD00E1D011 /* LoverNumberViewController.xib */; };
+		2F3F574616ACBF4E00E1D011 /* FLWarningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F3F574416ACBF4D00E1D011 /* FLWarningViewController.m */; };
+		2F3F574D16ACCB1600E1D011 /* FLWaitingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F3F574B16ACCB1500E1D011 /* FLWaitingViewController.m */; };
+		2F3F574E16ACCB1600E1D011 /* FLWaitingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3F574C16ACCB1600E1D011 /* FLWaitingViewController.xib */; };
+		2F43266D171B97A30079111E /* chattabicon7.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F43266C171B97A10079111E /* chattabicon7.png */; };
+		2F43268F171CE08A0079111E /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F43268D171CE0870079111E /* WebViewController.m */; };
+		2F432690171CE08A0079111E /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F43268E171CE0880079111E /* WebViewController.xib */; };
+		2F45411C16B128D1006EA2EB /* FLInvitedRegiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F45411A16B128D1006EA2EB /* FLInvitedRegiViewController.m */; };
+		2F45411D16B128D1006EA2EB /* FLInvitedRegiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F45411B16B128D1006EA2EB /* FLInvitedRegiViewController.xib */; };
+		2F5451CD171E731A008D49A5 /* lovelogicon57.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F5451CC171E731A008D49A5 /* lovelogicon57.png */; };
+		2F5E7E9C17B8D4A2008127E6 /* heartbuttongray.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F5E7E9B17B8D4A2008127E6 /* heartbuttongray.png */; };
+		2F5E7EA017B8DCCB008127E6 /* heartsimages0.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F5E7E9F17B8DCCA008127E6 /* heartsimages0.png */; };
+		2F5E7EA217B8E37C008127E6 /* heartsimages1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F5E7EA117B8E37B008127E6 /* heartsimages1.png */; };
+		2F5E7EA617B8E39F008127E6 /* heartsimages3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F5E7EA517B8E39C008127E6 /* heartsimages3.png */; };
+		2F5E7EA817B8E3A6008127E6 /* heartsimages4.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F5E7EA717B8E3A5008127E6 /* heartsimages4.png */; };
+		2F5E7EAA17B8E3B5008127E6 /* heartsimages5.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F5E7EA917B8E3B4008127E6 /* heartsimages5.png */; };
+		2F6114931794E26500CA0C0A /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F6114921794E26500CA0C0A /* PhotoCell.xib */; };
+		2F6114961794E29300CA0C0A /* PhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F6114951794E29300CA0C0A /* PhotoCell.m */; };
+		2F628A1F17D0847300CA50B0 /* yourprofile.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F628A1E17D0847300CA50B0 /* yourprofile.png */; };
+		2F628A2117D0847F00CA50B0 /* purplebutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F628A2017D0847F00CA50B0 /* purplebutton.png */; };
+		2F628A2317D0849000CA50B0 /* topview2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F628A2217D0849000CA50B0 /* topview2.png */; };
+		2F628A2517D0849C00CA50B0 /* camerabutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F628A2417D0849C00CA50B0 /* camerabutton.png */; };
+		2F656E4317967F7400D88FF2 /* FLPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F656E4117967F7400D88FF2 /* FLPhotoViewController.m */; };
+		2F656E4417967F7400D88FF2 /* FLPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F656E4217967F7400D88FF2 /* FLPhotoViewController.xib */; };
+		2F87747C17167B26007EF993 /* FLWellcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F87747B17167B26007EF993 /* FLWellcomeViewController.xib */; };
+		2F877494171690FD007EF993 /* FLWarningViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F877493171690FD007EF993 /* FLWarningViewController.xib */; };
+		2F8C383D16A560AD007638BF /* FLSignedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8C383B16A560AC007638BF /* FLSignedViewController.m */; };
+		2F9008CF1759EF7A00767564 /* FLFromchatPlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9008CD1759EF7A00767564 /* FLFromchatPlanViewController.m */; };
+		2F9008D01759EF7A00767564 /* FLFromchatPlanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F9008CE1759EF7A00767564 /* FLFromchatPlanViewController.xib */; };
+		2F939F7D16A66F4600F53257 /* FLLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F939F7B16A66F4500F53257 /* FLLoginViewController.m */; };
+		2F939F7E16A66F4600F53257 /* FLLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F939F7C16A66F4500F53257 /* FLLoginViewController.xib */; };
+		2F9CCD5E17C9D03A00ED16BF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9CCD5D17C9D03A00ED16BF /* Default-568h@2x.png */; };
+		2F9CCD6017C9D04700ED16BF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9CCD5F17C9D04700ED16BF /* Default-568h@2x.png */; };
+		2F9F137B16DDFC7E0024A696 /* FLResignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9F137916DDFC7B0024A696 /* FLResignViewController.m */; };
+		2F9F137C16DDFC7E0024A696 /* FLResignViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F9F137A16DDFC7C0024A696 /* FLResignViewController.xib */; };
+		2F9FF93216CC9364002825C1 /* FLAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9FF93016CC9364002825C1 /* FLAccountViewController.m */; };
+		2F9FF93316CC9364002825C1 /* FLAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F9FF93116CC9364002825C1 /* FLAccountViewController.xib */; };
+		2F9FF93916CCC87E002825C1 /* FLEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9FF93716CCC87E002825C1 /* FLEditViewController.m */; };
+		2F9FF93A16CCC87E002825C1 /* FLEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F9FF93816CCC87E002825C1 /* FLEditViewController.xib */; };
+		2FA418FA166EE46E002E93E2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA418F9166EE46E002E93E2 /* UIKit.framework */; };
+		2FA418FC166EE46E002E93E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA418FB166EE46E002E93E2 /* Foundation.framework */; };
+		2FA418FE166EE46E002E93E2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA418FD166EE46E002E93E2 /* CoreGraphics.framework */; };
+		2FA41906166EE46E002E93E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA41905166EE46E002E93E2 /* main.m */; };
+		2FA4190A166EE46E002E93E2 /* FLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA41909166EE46E002E93E2 /* FLAppDelegate.m */; };
+		2FA4190C166EE46E002E93E2 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FA4190B166EE46E002E93E2 /* Default.png */; };
+		2FAB57C217D492F500CBC86A /* top3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FAB57C117D492F400CBC86A /* top3.png */; };
+		2FAE090B179E55BD00C4DC72 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FAE090A179E55BD00C4DC72 /* libz.dylib */; };
+		2FAE090D179E55CD00C4DC72 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FAE090C179E55CD00C4DC72 /* SystemConfiguration.framework */; };
+		2FAE090F179E55E300C4DC72 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FAE090E179E55E300C4DC72 /* MobileCoreServices.framework */; };
+		2FAE0911179E55F000C4DC72 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FAE0910179E55F000C4DC72 /* CFNetwork.framework */; };
+		2FC1FA8716AECD3D00D406B0 /* FLWellcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC1FA8516AECD3D00D406B0 /* FLWellcomeViewController.m */; };
+		2FC1FAA816AFC7E000D406B0 /* FLLoverConfirmedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC1FAA616AFC7E000D406B0 /* FLLoverConfirmedViewController.m */; };
+		2FC1FAA916AFC7E000D406B0 /* FLLoverConfirmedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FC1FAA716AFC7E000D406B0 /* FLLoverConfirmedViewController.xib */; };
+		2FC1FAAF16AFC9E400D406B0 /* FLLoverRegistredViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC1FAAD16AFC9E400D406B0 /* FLLoverRegistredViewController.m */; };
+		2FC1FAB016AFC9E400D406B0 /* FLLoverRegistredViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FC1FAAE16AFC9E400D406B0 /* FLLoverRegistredViewController.xib */; };
+		2FC92DFA17040E7100BF0544 /* FLChatlogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC92DF817040E7100BF0544 /* FLChatlogViewController.m */; };
+		2FC92DFB17040E7100BF0544 /* FLChatlogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FC92DF917040E7100BF0544 /* FLChatlogViewController.xib */; };
+		2FC92DFF17042DEE00BF0544 /* FLPartnerAcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC92DFD17042DED00BF0544 /* FLPartnerAcViewController.m */; };
+		2FC92E0017042DEE00BF0544 /* FLPartnerAcViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FC92DFE17042DED00BF0544 /* FLPartnerAcViewController.xib */; };
+		2FC92E0417045A3D00BF0544 /* FLLoverinfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC92E0217045A3C00BF0544 /* FLLoverinfoViewController.m */; };
+		2FC92E0517045A3D00BF0544 /* FLLoverinfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FC92E0317045A3C00BF0544 /* FLLoverinfoViewController.xib */; };
+		2FCB84D617E6E13E0076A906 /* confirmviewcontroller.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FCB84D517E6E13E0076A906 /* confirmviewcontroller.png */; };
+		2FCB84D817E6E1510076A906 /* accountphotoframe.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FCB84D717E6E1510076A906 /* accountphotoframe.png */; };
+		2FCB84DA17E6E1970076A906 /* writeicon3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FCB84D917E6E1970076A906 /* writeicon3.png */; };
+		2FCB84DC17E6E1AA0076A906 /* resignviewcontroller.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FCB84DB17E6E1AA0076A906 /* resignviewcontroller.png */; };
+		2FD2593617ABE06E00CDE37A /* loginviewcontroller2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FD2593517ABE06E00CDE37A /* loginviewcontroller2.png */; };
+		2FD2593817ABE26000CDE37A /* pinkbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FD2593717ABE26000CDE37A /* pinkbackground.png */; };
+		2FD7F30617C1E2BF009A1291 /* 0heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FD7F30517C1E2BF009A1291 /* 0heart.png */; };
+		2FD7F30817C1E3EC009A1291 /* 1heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FD7F30717C1E3EC009A1291 /* 1heart.png */; };
+		2FD7F30A17C1E3FE009A1291 /* 2hearts.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FD7F30917C1E3FE009A1291 /* 2hearts.png */; };
+		2FD7F30C17C1E40F009A1291 /* 3hearts.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FD7F30B17C1E40E009A1291 /* 3hearts.png */; };
+		2FD7F31417C1FF24009A1291 /* plantab2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FD7F31317C1FF24009A1291 /* plantab2.png */; };
+		2FD89F3317C2080F00E599C8 /* phototab1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FD89F3217C2080F00E599C8 /* phototab1.png */; };
+		2FD89F3517C2090D00E599C8 /* plantab2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FD89F3417C2090D00E599C8 /* plantab2.png */; };
+		2FD89F3917C20A7C00E599C8 /* plantab0.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FD89F3817C20A7C00E599C8 /* plantab0.png */; };
+		2FD89F3B17C20B1400E599C8 /* plantab6.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FD89F3A17C20B1400E599C8 /* plantab6.png */; };
+		2FD89F3D17C20B6B00E599C8 /* plantab7.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FD89F3C17C20B6B00E599C8 /* plantab7.png */; };
+		2FD89F3F17C20BBE00E599C8 /* plantab8.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FD89F3E17C20BBE00E599C8 /* plantab8.png */; };
+		2FD89F4117C20C1C00E599C8 /* cardtab1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FD89F4017C20C1C00E599C8 /* cardtab1.png */; };
+		2FD89F4317C20CA300E599C8 /* cardtab2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FD89F4217C20CA200E599C8 /* cardtab2.png */; };
+		2FD89F4717C20EFE00E599C8 /* chattab2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FD89F4617C20EFE00E599C8 /* chattab2.png */; };
+		2FD89F4917C20F6400E599C8 /* cardtab1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FD89F4817C20F6400E599C8 /* cardtab1.png */; };
+		2FD89F4B17C20FE600E599C8 /* box1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FD89F4A17C20FE600E599C8 /* box1.png */; };
+		2FD89F4D17C2104900E599C8 /* box2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FD89F4C17C2104900E599C8 /* box2.png */; };
+		2FD89F4F17C2108B00E599C8 /* box3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FD89F4E17C2108B00E599C8 /* box3.png */; };
+		2FD89F5117C3215100E599C8 /* cardstyle1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FD89F5017C3215000E599C8 /* cardstyle1.png */; };
+		2FD89F5317C3215C00E599C8 /* cardstyle2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FD89F5217C3215C00E599C8 /* cardstyle2.png */; };
+		2FD89F5517C3216400E599C8 /* cardstyle3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FD89F5417C3216400E599C8 /* cardstyle3.png */; };
+		2FDA06FE17C5BE0000BCC269 /* lovenumberviewcontroller1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FDA06FD17C5BE0000BCC269 /* lovenumberviewcontroller1.png */; };
+		2FDA070017C5BE3C00BCC269 /* lovenumber.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FDA06FF17C5BE3C00BCC269 /* lovenumber.png */; };
+		2FDA070217C5BFE800BCC269 /* warningviewcontroller.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FDA070117C5BFE800BCC269 /* warningviewcontroller.png */; };
+		2FDA070417C5C1D900BCC269 /* waitingviewcontroller3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FDA070317C5C1D900BCC269 /* waitingviewcontroller3.png */; };
+		2FDA070617C5C1EA00BCC269 /* waitingviewcontroller1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FDA070517C5C1EA00BCC269 /* waitingviewcontroller1.png */; };
+		2FDA070817C5C21700BCC269 /* waitingviewcontroller2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FDA070717C5C21700BCC269 /* waitingviewcontroller2.png */; };
+		2FDA070A17C5C27100BCC269 /* waitingviewcontroller.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FDA070917C5C27100BCC269 /* waitingviewcontroller.png */; };
+		2FDA070E17C5C67C00BCC269 /* signedviewcontroller.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FDA070D17C5C67C00BCC269 /* signedviewcontroller.png */; };
+		2FDA071017C5C7E700BCC269 /* invitedviewcontroller.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FDA070F17C5C7E600BCC269 /* invitedviewcontroller.png */; };
+		2FDA071217C5C87500BCC269 /* invitedregiviewcontroller.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FDA071117C5C87500BCC269 /* invitedregiviewcontroller.png */; };
+		2FDA071417C5C95C00BCC269 /* loverconfirmedviewcontroller.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FDA071317C5C95C00BCC269 /* loverconfirmedviewcontroller.png */; };
+		2FDA071617C5C9E500BCC269 /* loverregisterdviewcontroller.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FDA071517C5C9E500BCC269 /* loverregisterdviewcontroller.png */; };
+		2FDA071817C5CAD500BCC269 /* loverregisterdviewcontroller1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FDA071717C5CAD400BCC269 /* loverregisterdviewcontroller1.png */; };
+		2FDA071A17C5D23E00BCC269 /* loginviewcontroller3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FDA071917C5D23E00BCC269 /* loginviewcontroller3.png */; };
+		2FDFBF9E17C7564400F6F952 /* lovelogicon114white-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FDFBF9D17C7564400F6F952 /* lovelogicon114white-1.png */; };
+		2FE423AC17A8D2DA00B6BB98 /* heartsound2.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2FE423AB17A8D2DA00B6BB98 /* heartsound2.caf */; };
+		2FE4BF7F17D5CB9200547A1B /* loginviewcontroller2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FE4BF7E17D5CB9200547A1B /* loginviewcontroller2.png */; };
+		2FEAC3121754831B0003B509 /* FLPlantableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FEAC3101754831B0003B509 /* FLPlantableViewController.m */; };
+		2FEAC3131754831B0003B509 /* FLPlantableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FEAC3111754831B0003B509 /* FLPlantableViewController.xib */; };
+		2FEAC31C175496010003B509 /* FLPlanmakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FEAC31A175496010003B509 /* FLPlanmakeViewController.m */; };
+		2FEAC31D175496010003B509 /* FLPlanmakeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FEAC31B175496010003B509 /* FLPlanmakeViewController.xib */; };
+		2FEAC32117549C860003B509 /* FLAddurlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FEAC31F17549C850003B509 /* FLAddurlViewController.m */; };
+		2FEAC32217549C860003B509 /* FLAddurlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FEAC32017549C850003B509 /* FLAddurlViewController.xib */; };
+		2FEAC32617549D290003B509 /* FLAddtodoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FEAC32417549D290003B509 /* FLAddtodoViewController.m */; };
+		2FEAC32717549D290003B509 /* FLAddtodoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FEAC32517549D290003B509 /* FLAddtodoViewController.xib */; };
+		2FEAC32B17549DFA0003B509 /* FLPlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FEAC32917549DF90003B509 /* FLPlanViewController.m */; };
+		2FEAC32C17549DFA0003B509 /* FLPlanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FEAC32A17549DFA0003B509 /* FLPlanViewController.xib */; };
+		2FEFC9BC17CE37A2008B8F51 /* FLDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FEFC9BA17CE37A2008B8F51 /* FLDateViewController.m */; };
+		2FEFC9BD17CE37A2008B8F51 /* FLDateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FEFC9BB17CE37A2008B8F51 /* FLDateViewController.xib */; };
+		2FF14ED0178FEFD80082B21F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FF14ECF178FEFD80082B21F /* AudioToolbox.framework */; };
+		2FF14F4A17EC3BEC00248615 /* lovelogicon120.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FF14F4917EC3BEC00248615 /* lovelogicon120.png */; };
+		2FF14F4C17EC3BFD00248615 /* lovelogicon80.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FF14F4B17EC3BFD00248615 /* lovelogicon80.png */; };
+		2FF363D016E5927A00E1CC14 /* FLEnterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF363CE16E5927A00E1CC14 /* FLEnterViewController.m */; };
+		2FF363D116E5927A00E1CC14 /* FLEnterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FF363CF16E5927A00E1CC14 /* FLEnterViewController.xib */; };
+		2FF363D516E5A33300E1CC14 /* FLConfirmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF363D316E5A33300E1CC14 /* FLConfirmViewController.m */; };
+		2FF363D616E5A33300E1CC14 /* FLConfirmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FF363D416E5A33300E1CC14 /* FLConfirmViewController.xib */; };
+		2FF63E2D1796991300360004 /* FLTopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FF63E2C1796991300360004 /* FLTopViewController.xib */; };
+		2FF6A0E51708220100F36907 /* backgroundview.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FF6A0E41708220100F36907 /* backgroundview.png */; };
+		2FF6A0ED17082B7B00F36907 /* FLCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF6A0EB17082B7B00F36907 /* FLCardViewController.m */; };
+		2FF6A0EE17082B7B00F36907 /* FLCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FF6A0EC17082B7B00F36907 /* FLCardViewController.xib */; };
+		2FF6A0F117082D2500F36907 /* CardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF6A0F017082D2500F36907 /* CardCell.m */; };
+		2FF6A0F317082D4100F36907 /* CardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FF6A0F217082D4100F36907 /* CardCell.xib */; };
+		2FF6A0FD17087FE700F36907 /* FLCardTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF6A0FB17087FE600F36907 /* FLCardTextViewController.m */; };
+		2FF6A0FE17087FE700F36907 /* FLCardTextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FF6A0FC17087FE600F36907 /* FLCardTextViewController.xib */; };
+		2FF6A1091709553C00F36907 /* FLCardSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF6A1071709553A00F36907 /* FLCardSelectViewController.m */; };
+		2FF6A10A1709553C00F36907 /* FLCardSelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FF6A1081709553B00F36907 /* FLCardSelectViewController.xib */; };
+		2FF6A10E17095A9A00F36907 /* FLSelectedCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF6A10C17095A9800F36907 /* FLSelectedCardViewController.m */; };
+		2FF6A10F17095A9A00F36907 /* FLSelectedCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FF6A10D17095A9900F36907 /* FLSelectedCardViewController.xib */; };
+		2FF6A11317095C8F00F36907 /* FLCardTitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF6A11117095C8D00F36907 /* FLCardTitleViewController.m */; };
+		2FF6A11417095C8F00F36907 /* FLCardTitleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FF6A11217095C8E00F36907 /* FLCardTitleViewController.xib */; };
+		2FF9002D1755C53D00AE082C /* FLOldplansViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9002B1755C53C00AE082C /* FLOldplansViewController.m */; };
+		2FF9002E1755C53D00AE082C /* FLOldplansViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FF9002C1755C53D00AE082C /* FLOldplansViewController.xib */; };
+		312BF80B1AA24579A4EA35EA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 210784A1068743D3956FFD74 /* libPods.a */; };
+		9773183F197B55D800FC2D77 /* FLTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9773183E197B55D800FC2D77 /* FLTopViewController.m */; };
+		9773184B197CB2C200FC2D77 /* greenbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 9773184A197CB2C200FC2D77 /* greenbutton.png */; };
+		9773185D197CB31500FC2D77 /* myprofile.png in Resources */ = {isa = PBXBuildFile; fileRef = 9773185C197CB31500FC2D77 /* myprofile.png */; };
+		97731863197CB32E00FC2D77 /* heartbuttonpink.png in Resources */ = {isa = PBXBuildFile; fileRef = 97731862197CB32E00FC2D77 /* heartbuttonpink.png */; };
+		97731870197CB37300FC2D77 /* loginviewcontroller1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9773186F197CB37300FC2D77 /* loginviewcontroller1.png */; };
+		9773187E197CB3B300FC2D77 /* heartbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 9773187D197CB3B300FC2D77 /* heartbutton.png */; };
+		9773188C197CB3ED00FC2D77 /* invitedregiviewcontroller.png in Resources */ = {isa = PBXBuildFile; fileRef = 9773188B197CB3ED00FC2D77 /* invitedregiviewcontroller.png */; };
+		97731894197CB41000FC2D77 /* heartsimages2.png in Resources */ = {isa = PBXBuildFile; fileRef = 97731893197CB41000FC2D77 /* heartsimages2.png */; };
+		97731898197CB42600FC2D77 /* LOVEDRILL-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 97731897197CB42600FC2D77 /* LOVEDRILL-Info.plist */; };
+		9773189B197CB4A700FC2D77 /* lovenumberviewcontroller.png in Resources */ = {isa = PBXBuildFile; fileRef = 9773189A197CB4A700FC2D77 /* lovenumberviewcontroller.png */; };
+		977A83B8196FE196002DAA20 /* accountphoto.png in Resources */ = {isa = PBXBuildFile; fileRef = 977A83B7196FE196002DAA20 /* accountphoto.png */; };
+		977A83BA196FE21B002DAA20 /* penwhite.png in Resources */ = {isa = PBXBuildFile; fileRef = 977A83B9196FE21B002DAA20 /* penwhite.png */; };
+		977A83BC196FE231002DAA20 /* cellframe.png in Resources */ = {isa = PBXBuildFile; fileRef = 977A83BB196FE231002DAA20 /* cellframe.png */; };
+		977A83C2196FE43B002DAA20 /* FLPlan.m in Sources */ = {isa = PBXBuildFile; fileRef = 977A83C1196FE43B002DAA20 /* FLPlan.m */; };
+		977A83C5196FE7D5002DAA20 /* FLPlanDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 977A83C4196FE7D5002DAA20 /* FLPlanDataManager.m */; };
+		978C9033197765DA00EF6B4F /* FLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 978C9032197765DA00EF6B4F /* FLConnection.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		210784A1068743D3956FFD74 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F01D49B17A105570005B654 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		2F01D49D17A105690005B654 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		2F03846D16DC83C200227501 /* FLSignedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLSignedViewController.xib; sourceTree = "<group>"; };
+		2F05E8BE17A8BC2700378108 /* heartsound2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = heartsound2.wav; path = ../Resorces/heartsound2.wav; sourceTree = "<group>"; };
+		2F0805C617B0C06500C60A65 /* greencell2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = greencell2.png; path = ../Resorces/greencell2.png; sourceTree = "<group>"; };
+		2F0805CB17B0CB0D00C60A65 /* cellblue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cellblue.png; path = ../Resorces/cellblue.png; sourceTree = "<group>"; };
+		2F0A75FF17E9DBB700458427 /* lovelogicon29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lovelogicon29.png; path = ../Resorces/lovelogicon29.png; sourceTree = "<group>"; };
+		2F0A760117E9DC0700458427 /* lovelogicon58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lovelogicon58.png; path = ../Resorces/lovelogicon58.png; sourceTree = "<group>"; };
+		2F0AB631178D5F130077C818 /* MyChatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyChatCell.h; sourceTree = "<group>"; };
+		2F0AB632178D5F130077C818 /* MyChatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyChatCell.m; sourceTree = "<group>"; };
+		2F0AB63A178E44760077C818 /* mychatcell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mychatcell.png; path = ../Resorces/mychatcell.png; sourceTree = "<group>"; };
+		2F0AB63F178E461B0077C818 /* YourChatCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YourChatCell.xib; sourceTree = "<group>"; };
+		2F0AB641178E46D50077C818 /* yourchatcell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = yourchatcell.png; path = ../Resorces/yourchatcell.png; sourceTree = "<group>"; };
+		2F0AB645178E4F9F0077C818 /* MyChatCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyChatCell.xib; sourceTree = "<group>"; };
+		2F0AD81B179D1D4800180F6F /* FLPhototitleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLPhototitleViewController.h; sourceTree = "<group>"; };
+		2F0AD81C179D1D4800180F6F /* FLPhototitleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLPhototitleViewController.m; sourceTree = "<group>"; };
+		2F0AD81D179D1D4800180F6F /* FLPhototitleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLPhototitleViewController.xib; sourceTree = "<group>"; };
+		2F0FE20917B3729900BFF113 /* toppageline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = toppageline.png; path = ../Resorces/toppageline.png; sourceTree = "<group>"; };
+		2F116F83176346D400BE34B7 /* whitecell5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = whitecell5.png; path = ../Resorces/whitecell5.png; sourceTree = "<group>"; };
+		2F116F8517634A6900BE34B7 /* whitecell6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = whitecell6.png; path = ../Resorces/whitecell6.png; sourceTree = "<group>"; };
+		2F18D5E817C4F23E0061DB9A /* wellcomeviewcontroller3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wellcomeviewcontroller3.png; path = ../Resorces/wellcomeviewcontroller3.png; sourceTree = "<group>"; };
+		2F18D5EA17C4F5DF0061DB9A /* enterviewcontroller1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = enterviewcontroller1.png; path = ../Resorces/enterviewcontroller1.png; sourceTree = "<group>"; };
+		2F18D5EE17C5BAD40061DB9A /* lovernameviewcontroller.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lovernameviewcontroller.png; path = ../Resorces/lovernameviewcontroller.png; sourceTree = "<group>"; };
+		2F18D5F017C5BB3E0061DB9A /* lovenumberviewcontroller.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lovenumberviewcontroller.png; path = ../Resorces/lovenumberviewcontroller.png; sourceTree = "<group>"; };
+		2F222D0F178E6EB400E982F0 /* pinkheartbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pinkheartbutton.png; path = ../Resorces/pinkheartbutton.png; sourceTree = "<group>"; };
+		2F222D11178FAEB000E982F0 /* YourChatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YourChatCell.h; sourceTree = "<group>"; };
+		2F222D12178FAEB000E982F0 /* YourChatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YourChatCell.m; sourceTree = "<group>"; };
+		2F2B828916B01C390095FDA3 /* FLInvitedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLInvitedViewController.h; sourceTree = "<group>"; };
+		2F2B828A16B01C390095FDA3 /* FLInvitedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLInvitedViewController.m; sourceTree = "<group>"; };
+		2F2B828B16B01C390095FDA3 /* FLInvitedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLInvitedViewController.xib; sourceTree = "<group>"; };
+		2F2F987C17262419001AC4C4 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		2F3D1576170405B20098E799 /* FLChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLChatViewController.h; sourceTree = "<group>"; };
+		2F3D1577170405B20098E799 /* FLChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLChatViewController.m; sourceTree = "<group>"; };
+		2F3D1578170405B20098E799 /* FLChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLChatViewController.xib; sourceTree = "<group>"; };
+		2F3F573116AAA22600E1D011 /* FLLovernameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLLovernameViewController.h; sourceTree = "<group>"; };
+		2F3F573216AAA22600E1D011 /* FLLovernameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLLovernameViewController.m; sourceTree = "<group>"; };
+		2F3F573316AAA22700E1D011 /* FLLovernameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLLovernameViewController.xib; sourceTree = "<group>"; };
+		2F3F573816AAA9BC00E1D011 /* LoverNumberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoverNumberViewController.h; sourceTree = "<group>"; };
+		2F3F573916AAA9BD00E1D011 /* LoverNumberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoverNumberViewController.m; sourceTree = "<group>"; };
+		2F3F573A16AAA9BD00E1D011 /* LoverNumberViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoverNumberViewController.xib; sourceTree = "<group>"; };
+		2F3F574316ACBF4C00E1D011 /* FLWarningViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLWarningViewController.h; sourceTree = "<group>"; };
+		2F3F574416ACBF4D00E1D011 /* FLWarningViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLWarningViewController.m; sourceTree = "<group>"; };
+		2F3F574A16ACCB1500E1D011 /* FLWaitingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLWaitingViewController.h; sourceTree = "<group>"; };
+		2F3F574B16ACCB1500E1D011 /* FLWaitingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLWaitingViewController.m; sourceTree = "<group>"; };
+		2F3F574C16ACCB1600E1D011 /* FLWaitingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLWaitingViewController.xib; sourceTree = "<group>"; };
+		2F43266C171B97A10079111E /* chattabicon7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chattabicon7.png; path = ../Resorces/chattabicon7.png; sourceTree = "<group>"; };
+		2F43268C171CE0850079111E /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		2F43268D171CE0870079111E /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		2F43268E171CE0880079111E /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
+		2F45411916B128D1006EA2EB /* FLInvitedRegiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLInvitedRegiViewController.h; sourceTree = "<group>"; };
+		2F45411A16B128D1006EA2EB /* FLInvitedRegiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLInvitedRegiViewController.m; sourceTree = "<group>"; };
+		2F45411B16B128D1006EA2EB /* FLInvitedRegiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLInvitedRegiViewController.xib; sourceTree = "<group>"; };
+		2F5451CC171E731A008D49A5 /* lovelogicon57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lovelogicon57.png; path = ../Resorces/lovelogicon57.png; sourceTree = "<group>"; };
+		2F5E7E9B17B8D4A2008127E6 /* heartbuttongray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = heartbuttongray.png; path = ../Resorces/heartbuttongray.png; sourceTree = "<group>"; };
+		2F5E7E9F17B8DCCA008127E6 /* heartsimages0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = heartsimages0.png; path = ../Resorces/heartsimages0.png; sourceTree = "<group>"; };
+		2F5E7EA117B8E37B008127E6 /* heartsimages1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = heartsimages1.png; path = ../Resorces/heartsimages1.png; sourceTree = "<group>"; };
+		2F5E7EA517B8E39C008127E6 /* heartsimages3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = heartsimages3.png; path = ../Resorces/heartsimages3.png; sourceTree = "<group>"; };
+		2F5E7EA717B8E3A5008127E6 /* heartsimages4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = heartsimages4.png; path = ../Resorces/heartsimages4.png; sourceTree = "<group>"; };
+		2F5E7EA917B8E3B4008127E6 /* heartsimages5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = heartsimages5.png; path = ../Resorces/heartsimages5.png; sourceTree = "<group>"; };
+		2F6114921794E26500CA0C0A /* PhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoCell.xib; sourceTree = "<group>"; };
+		2F6114941794E29300CA0C0A /* PhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCell.h; sourceTree = "<group>"; };
+		2F6114951794E29300CA0C0A /* PhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCell.m; sourceTree = "<group>"; };
+		2F628A1E17D0847300CA50B0 /* yourprofile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = yourprofile.png; path = ../Resorces/yourprofile.png; sourceTree = "<group>"; };
+		2F628A2017D0847F00CA50B0 /* purplebutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = purplebutton.png; path = ../Resorces/purplebutton.png; sourceTree = "<group>"; };
+		2F628A2217D0849000CA50B0 /* topview2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = topview2.png; path = ../Resorces/topview2.png; sourceTree = "<group>"; };
+		2F628A2417D0849C00CA50B0 /* camerabutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = camerabutton.png; path = ../Resorces/camerabutton.png; sourceTree = "<group>"; };
+		2F656E4017967F7400D88FF2 /* FLPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLPhotoViewController.h; sourceTree = "<group>"; };
+		2F656E4117967F7400D88FF2 /* FLPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLPhotoViewController.m; sourceTree = "<group>"; };
+		2F656E4217967F7400D88FF2 /* FLPhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLPhotoViewController.xib; sourceTree = "<group>"; };
+		2F87747B17167B26007EF993 /* FLWellcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLWellcomeViewController.xib; sourceTree = "<group>"; };
+		2F877493171690FD007EF993 /* FLWarningViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLWarningViewController.xib; sourceTree = "<group>"; };
+		2F879C5C173FDFE40013C900 /* LOVEDRILL-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "LOVEDRILL-Info.plist"; sourceTree = "<group>"; };
+		2F8C383A16A560AB007638BF /* FLSignedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLSignedViewController.h; sourceTree = "<group>"; };
+		2F8C383B16A560AC007638BF /* FLSignedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLSignedViewController.m; sourceTree = "<group>"; };
+		2F9008CC1759EF7A00767564 /* FLFromchatPlanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLFromchatPlanViewController.h; sourceTree = "<group>"; };
+		2F9008CD1759EF7A00767564 /* FLFromchatPlanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLFromchatPlanViewController.m; sourceTree = "<group>"; };
+		2F9008CE1759EF7A00767564 /* FLFromchatPlanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLFromchatPlanViewController.xib; sourceTree = "<group>"; };
+		2F939F7A16A66F4400F53257 /* FLLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLLoginViewController.h; sourceTree = "<group>"; };
+		2F939F7B16A66F4500F53257 /* FLLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLLoginViewController.m; sourceTree = "<group>"; };
+		2F939F7C16A66F4500F53257 /* FLLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLLoginViewController.xib; sourceTree = "<group>"; };
+		2F9CCD5D17C9D03A00ED16BF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Resorces/Default-568h@2x.png"; sourceTree = "<group>"; };
+		2F9CCD5F17C9D04700ED16BF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Resorces/Default-568h@2x.png"; sourceTree = "<group>"; };
+		2F9F137816DDFC7B0024A696 /* FLResignViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLResignViewController.h; sourceTree = "<group>"; };
+		2F9F137916DDFC7B0024A696 /* FLResignViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLResignViewController.m; sourceTree = "<group>"; };
+		2F9F137A16DDFC7C0024A696 /* FLResignViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLResignViewController.xib; sourceTree = "<group>"; };
+		2F9FF92F16CC9363002825C1 /* FLAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAccountViewController.h; sourceTree = "<group>"; };
+		2F9FF93016CC9364002825C1 /* FLAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAccountViewController.m; sourceTree = "<group>"; };
+		2F9FF93116CC9364002825C1 /* FLAccountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLAccountViewController.xib; sourceTree = "<group>"; };
+		2F9FF93616CCC87E002825C1 /* FLEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLEditViewController.h; sourceTree = "<group>"; };
+		2F9FF93716CCC87E002825C1 /* FLEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLEditViewController.m; sourceTree = "<group>"; };
+		2F9FF93816CCC87E002825C1 /* FLEditViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLEditViewController.xib; sourceTree = "<group>"; };
+		2FA418F5166EE46E002E93E2 /* LOVE LOG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LOVE LOG.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FA418F9166EE46E002E93E2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2FA418FB166EE46E002E93E2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2FA418FD166EE46E002E93E2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2FA41903166EE46E002E93E2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2FA41905166EE46E002E93E2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2FA41907166EE46E002E93E2 /* LOVEDRILL-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LOVEDRILL-Prefix.pch"; sourceTree = "<group>"; };
+		2FA41908166EE46E002E93E2 /* FLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLAppDelegate.h; sourceTree = "<group>"; };
+		2FA41909166EE46E002E93E2 /* FLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLAppDelegate.m; sourceTree = "<group>"; };
+		2FA4190B166EE46E002E93E2 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Resorces/Default.png; sourceTree = "<group>"; };
+		2FAB57C117D492F400CBC86A /* top3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = top3.png; path = ../Resorces/top3.png; sourceTree = "<group>"; };
+		2FAE090A179E55BD00C4DC72 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		2FAE090C179E55CD00C4DC72 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		2FAE090E179E55E300C4DC72 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		2FAE0910179E55F000C4DC72 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		2FC1FA8416AECD3D00D406B0 /* FLWellcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLWellcomeViewController.h; sourceTree = "<group>"; };
+		2FC1FA8516AECD3D00D406B0 /* FLWellcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLWellcomeViewController.m; sourceTree = "<group>"; };
+		2FC1FAA516AFC7E000D406B0 /* FLLoverConfirmedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLLoverConfirmedViewController.h; sourceTree = "<group>"; };
+		2FC1FAA616AFC7E000D406B0 /* FLLoverConfirmedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLLoverConfirmedViewController.m; sourceTree = "<group>"; };
+		2FC1FAA716AFC7E000D406B0 /* FLLoverConfirmedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLLoverConfirmedViewController.xib; sourceTree = "<group>"; };
+		2FC1FAAC16AFC9E400D406B0 /* FLLoverRegistredViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLLoverRegistredViewController.h; sourceTree = "<group>"; };
+		2FC1FAAD16AFC9E400D406B0 /* FLLoverRegistredViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLLoverRegistredViewController.m; sourceTree = "<group>"; };
+		2FC1FAAE16AFC9E400D406B0 /* FLLoverRegistredViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLLoverRegistredViewController.xib; sourceTree = "<group>"; };
+		2FC92DF717040E7100BF0544 /* FLChatlogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLChatlogViewController.h; sourceTree = "<group>"; };
+		2FC92DF817040E7100BF0544 /* FLChatlogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLChatlogViewController.m; sourceTree = "<group>"; };
+		2FC92DF917040E7100BF0544 /* FLChatlogViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLChatlogViewController.xib; sourceTree = "<group>"; };
+		2FC92DFC17042DED00BF0544 /* FLPartnerAcViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLPartnerAcViewController.h; sourceTree = "<group>"; };
+		2FC92DFD17042DED00BF0544 /* FLPartnerAcViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLPartnerAcViewController.m; sourceTree = "<group>"; };
+		2FC92DFE17042DED00BF0544 /* FLPartnerAcViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLPartnerAcViewController.xib; sourceTree = "<group>"; };
+		2FC92E0117045A3C00BF0544 /* FLLoverinfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLLoverinfoViewController.h; sourceTree = "<group>"; };
+		2FC92E0217045A3C00BF0544 /* FLLoverinfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLLoverinfoViewController.m; sourceTree = "<group>"; };
+		2FC92E0317045A3C00BF0544 /* FLLoverinfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLLoverinfoViewController.xib; sourceTree = "<group>"; };
+		2FCB84D517E6E13E0076A906 /* confirmviewcontroller.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = confirmviewcontroller.png; path = ../Resorces/confirmviewcontroller.png; sourceTree = "<group>"; };
+		2FCB84D717E6E1510076A906 /* accountphotoframe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = accountphotoframe.png; path = ../Resorces/accountphotoframe.png; sourceTree = "<group>"; };
+		2FCB84D917E6E1970076A906 /* writeicon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = writeicon3.png; path = ../Resorces/writeicon3.png; sourceTree = "<group>"; };
+		2FCB84DB17E6E1AA0076A906 /* resignviewcontroller.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = resignviewcontroller.png; path = ../Resorces/resignviewcontroller.png; sourceTree = "<group>"; };
+		2FD2593517ABE06E00CDE37A /* loginviewcontroller2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = loginviewcontroller2.png; path = ../Resorces/loginviewcontroller2.png; sourceTree = "<group>"; };
+		2FD2593717ABE26000CDE37A /* pinkbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pinkbackground.png; path = ../Resorces/pinkbackground.png; sourceTree = "<group>"; };
+		2FD7F30517C1E2BF009A1291 /* 0heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 0heart.png; path = ../Resorces/0heart.png; sourceTree = "<group>"; };
+		2FD7F30717C1E3EC009A1291 /* 1heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1heart.png; path = ../Resorces/1heart.png; sourceTree = "<group>"; };
+		2FD7F30917C1E3FE009A1291 /* 2hearts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2hearts.png; path = ../Resorces/2hearts.png; sourceTree = "<group>"; };
+		2FD7F30B17C1E40E009A1291 /* 3hearts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 3hearts.png; path = ../Resorces/3hearts.png; sourceTree = "<group>"; };
+		2FD7F31317C1FF24009A1291 /* plantab2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = plantab2.png; path = ../Resorces/plantab2.png; sourceTree = "<group>"; };
+		2FD89F3217C2080F00E599C8 /* phototab1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = phototab1.png; path = ../Resorces/phototab1.png; sourceTree = "<group>"; };
+		2FD89F3417C2090D00E599C8 /* plantab2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = plantab2.png; path = ../Resorces/plantab2.png; sourceTree = "<group>"; };
+		2FD89F3817C20A7C00E599C8 /* plantab0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = plantab0.png; path = ../Resorces/plantab0.png; sourceTree = "<group>"; };
+		2FD89F3A17C20B1400E599C8 /* plantab6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = plantab6.png; path = ../Resorces/plantab6.png; sourceTree = "<group>"; };
+		2FD89F3C17C20B6B00E599C8 /* plantab7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = plantab7.png; path = /Users/netnorimingconception/Desktop/LOVELOG2.2/LOVELOG/Resorces/plantab7.png; sourceTree = "<absolute>"; };
+		2FD89F3E17C20BBE00E599C8 /* plantab8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = plantab8.png; path = ../Resorces/plantab8.png; sourceTree = "<group>"; };
+		2FD89F4017C20C1C00E599C8 /* cardtab1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cardtab1.png; path = ../Resorces/cardtab1.png; sourceTree = "<group>"; };
+		2FD89F4217C20CA200E599C8 /* cardtab2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cardtab2.png; path = ../Resorces/cardtab2.png; sourceTree = "<group>"; };
+		2FD89F4617C20EFE00E599C8 /* chattab2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chattab2.png; path = ../Resorces/chattab2.png; sourceTree = "<group>"; };
+		2FD89F4817C20F6400E599C8 /* cardtab1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cardtab1.png; path = ../Resorces/cardtab1.png; sourceTree = "<group>"; };
+		2FD89F4A17C20FE600E599C8 /* box1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = box1.png; path = ../Resorces/box1.png; sourceTree = "<group>"; };
+		2FD89F4C17C2104900E599C8 /* box2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = box2.png; path = ../Resorces/box2.png; sourceTree = "<group>"; };
+		2FD89F4E17C2108B00E599C8 /* box3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = box3.png; path = ../Resorces/box3.png; sourceTree = "<group>"; };
+		2FD89F5017C3215000E599C8 /* cardstyle1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cardstyle1.png; path = ../Resorces/cardstyle1.png; sourceTree = "<group>"; };
+		2FD89F5217C3215C00E599C8 /* cardstyle2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cardstyle2.png; path = ../Resorces/cardstyle2.png; sourceTree = "<group>"; };
+		2FD89F5417C3216400E599C8 /* cardstyle3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cardstyle3.png; path = ../Resorces/cardstyle3.png; sourceTree = "<group>"; };
+		2FDA06FD17C5BE0000BCC269 /* lovenumberviewcontroller1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lovenumberviewcontroller1.png; path = ../Resorces/lovenumberviewcontroller1.png; sourceTree = "<group>"; };
+		2FDA06FF17C5BE3C00BCC269 /* lovenumber.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lovenumber.png; path = ../Resorces/lovenumber.png; sourceTree = "<group>"; };
+		2FDA070117C5BFE800BCC269 /* warningviewcontroller.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = warningviewcontroller.png; path = ../Resorces/warningviewcontroller.png; sourceTree = "<group>"; };
+		2FDA070317C5C1D900BCC269 /* waitingviewcontroller3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = waitingviewcontroller3.png; path = ../Resorces/waitingviewcontroller3.png; sourceTree = "<group>"; };
+		2FDA070517C5C1EA00BCC269 /* waitingviewcontroller1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = waitingviewcontroller1.png; path = ../Resorces/waitingviewcontroller1.png; sourceTree = "<group>"; };
+		2FDA070717C5C21700BCC269 /* waitingviewcontroller2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = waitingviewcontroller2.png; path = ../Resorces/waitingviewcontroller2.png; sourceTree = "<group>"; };
+		2FDA070917C5C27100BCC269 /* waitingviewcontroller.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = waitingviewcontroller.png; path = ../Resorces/waitingviewcontroller.png; sourceTree = "<group>"; };
+		2FDA070D17C5C67C00BCC269 /* signedviewcontroller.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = signedviewcontroller.png; path = ../Resorces/signedviewcontroller.png; sourceTree = "<group>"; };
+		2FDA070F17C5C7E600BCC269 /* invitedviewcontroller.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = invitedviewcontroller.png; path = ../Resorces/invitedviewcontroller.png; sourceTree = "<group>"; };
+		2FDA071117C5C87500BCC269 /* invitedregiviewcontroller.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = invitedregiviewcontroller.png; path = ../Resorces/invitedregiviewcontroller.png; sourceTree = "<group>"; };
+		2FDA071317C5C95C00BCC269 /* loverconfirmedviewcontroller.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = loverconfirmedviewcontroller.png; path = ../Resorces/loverconfirmedviewcontroller.png; sourceTree = "<group>"; };
+		2FDA071517C5C9E500BCC269 /* loverregisterdviewcontroller.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = loverregisterdviewcontroller.png; path = ../Resorces/loverregisterdviewcontroller.png; sourceTree = "<group>"; };
+		2FDA071717C5CAD400BCC269 /* loverregisterdviewcontroller1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = loverregisterdviewcontroller1.png; path = ../Resorces/loverregisterdviewcontroller1.png; sourceTree = "<group>"; };
+		2FDA071917C5D23E00BCC269 /* loginviewcontroller3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = loginviewcontroller3.png; path = ../Resorces/loginviewcontroller3.png; sourceTree = "<group>"; };
+		2FDFBF9D17C7564400F6F952 /* lovelogicon114white-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lovelogicon114white-1.png"; path = "../Resorces/lovelogicon114white-1.png"; sourceTree = "<group>"; };
+		2FE423AB17A8D2DA00B6BB98 /* heartsound2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = heartsound2.caf; path = ../Resorces/heartsound2.caf; sourceTree = "<group>"; };
+		2FE4BF7E17D5CB9200547A1B /* loginviewcontroller2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = loginviewcontroller2.png; path = ../Resorces/loginviewcontroller2.png; sourceTree = "<group>"; };
+		2FEAC30F1754831B0003B509 /* FLPlantableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLPlantableViewController.h; sourceTree = "<group>"; };
+		2FEAC3101754831B0003B509 /* FLPlantableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLPlantableViewController.m; sourceTree = "<group>"; };
+		2FEAC3111754831B0003B509 /* FLPlantableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLPlantableViewController.xib; sourceTree = "<group>"; };
+		2FEAC319175496010003B509 /* FLPlanmakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLPlanmakeViewController.h; sourceTree = "<group>"; };
+		2FEAC31A175496010003B509 /* FLPlanmakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLPlanmakeViewController.m; sourceTree = "<group>"; };
+		2FEAC31B175496010003B509 /* FLPlanmakeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLPlanmakeViewController.xib; sourceTree = "<group>"; };
+		2FEAC31E17549C850003B509 /* FLAddurlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAddurlViewController.h; sourceTree = "<group>"; };
+		2FEAC31F17549C850003B509 /* FLAddurlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAddurlViewController.m; sourceTree = "<group>"; };
+		2FEAC32017549C850003B509 /* FLAddurlViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLAddurlViewController.xib; sourceTree = "<group>"; };
+		2FEAC32317549D290003B509 /* FLAddtodoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAddtodoViewController.h; sourceTree = "<group>"; };
+		2FEAC32417549D290003B509 /* FLAddtodoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAddtodoViewController.m; sourceTree = "<group>"; };
+		2FEAC32517549D290003B509 /* FLAddtodoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLAddtodoViewController.xib; sourceTree = "<group>"; };
+		2FEAC32817549DF90003B509 /* FLPlanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLPlanViewController.h; sourceTree = "<group>"; };
+		2FEAC32917549DF90003B509 /* FLPlanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLPlanViewController.m; sourceTree = "<group>"; };
+		2FEAC32A17549DFA0003B509 /* FLPlanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLPlanViewController.xib; sourceTree = "<group>"; };
+		2FEFC9B917CE37A2008B8F51 /* FLDateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLDateViewController.h; sourceTree = "<group>"; };
+		2FEFC9BA17CE37A2008B8F51 /* FLDateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLDateViewController.m; sourceTree = "<group>"; };
+		2FEFC9BB17CE37A2008B8F51 /* FLDateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLDateViewController.xib; sourceTree = "<group>"; };
+		2FF14ECF178FEFD80082B21F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		2FF14F4917EC3BEC00248615 /* lovelogicon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lovelogicon120.png; path = ../Resorces/lovelogicon120.png; sourceTree = "<group>"; };
+		2FF14F4B17EC3BFD00248615 /* lovelogicon80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lovelogicon80.png; path = ../Resorces/lovelogicon80.png; sourceTree = "<group>"; };
+		2FF363CD16E5927A00E1CC14 /* FLEnterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLEnterViewController.h; sourceTree = "<group>"; };
+		2FF363CE16E5927A00E1CC14 /* FLEnterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLEnterViewController.m; sourceTree = "<group>"; };
+		2FF363CF16E5927A00E1CC14 /* FLEnterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLEnterViewController.xib; sourceTree = "<group>"; };
+		2FF363D216E5A33300E1CC14 /* FLConfirmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLConfirmViewController.h; sourceTree = "<group>"; };
+		2FF363D316E5A33300E1CC14 /* FLConfirmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLConfirmViewController.m; sourceTree = "<group>"; };
+		2FF363D416E5A33300E1CC14 /* FLConfirmViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLConfirmViewController.xib; sourceTree = "<group>"; };
+		2FF63E2C1796991300360004 /* FLTopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLTopViewController.xib; sourceTree = "<group>"; };
+		2FF6A0E41708220100F36907 /* backgroundview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backgroundview.png; path = ../Resorces/backgroundview.png; sourceTree = "<group>"; };
+		2FF6A0EA17082B7B00F36907 /* FLCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLCardViewController.h; sourceTree = "<group>"; };
+		2FF6A0EB17082B7B00F36907 /* FLCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLCardViewController.m; sourceTree = "<group>"; };
+		2FF6A0EC17082B7B00F36907 /* FLCardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLCardViewController.xib; sourceTree = "<group>"; };
+		2FF6A0EF17082D2500F36907 /* CardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardCell.h; path = ../Resorces/CardCell.h; sourceTree = "<group>"; };
+		2FF6A0F017082D2500F36907 /* CardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardCell.m; path = ../Resorces/CardCell.m; sourceTree = "<group>"; };
+		2FF6A0F217082D4100F36907 /* CardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CardCell.xib; path = ../Resorces/CardCell.xib; sourceTree = "<group>"; };
+		2FF6A0FA17087FE500F36907 /* FLCardTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLCardTextViewController.h; sourceTree = "<group>"; };
+		2FF6A0FB17087FE600F36907 /* FLCardTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLCardTextViewController.m; sourceTree = "<group>"; };
+		2FF6A0FC17087FE600F36907 /* FLCardTextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLCardTextViewController.xib; sourceTree = "<group>"; };
+		2FF6A1061709553A00F36907 /* FLCardSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLCardSelectViewController.h; sourceTree = "<group>"; };
+		2FF6A1071709553A00F36907 /* FLCardSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLCardSelectViewController.m; sourceTree = "<group>"; };
+		2FF6A1081709553B00F36907 /* FLCardSelectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLCardSelectViewController.xib; sourceTree = "<group>"; };
+		2FF6A10B17095A9700F36907 /* FLSelectedCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLSelectedCardViewController.h; sourceTree = "<group>"; };
+		2FF6A10C17095A9800F36907 /* FLSelectedCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLSelectedCardViewController.m; sourceTree = "<group>"; };
+		2FF6A10D17095A9900F36907 /* FLSelectedCardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLSelectedCardViewController.xib; sourceTree = "<group>"; };
+		2FF6A11017095C8C00F36907 /* FLCardTitleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLCardTitleViewController.h; sourceTree = "<group>"; };
+		2FF6A11117095C8D00F36907 /* FLCardTitleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLCardTitleViewController.m; sourceTree = "<group>"; };
+		2FF6A11217095C8E00F36907 /* FLCardTitleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLCardTitleViewController.xib; sourceTree = "<group>"; };
+		2FF9002A1755C53C00AE082C /* FLOldplansViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLOldplansViewController.h; sourceTree = "<group>"; };
+		2FF9002B1755C53C00AE082C /* FLOldplansViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLOldplansViewController.m; sourceTree = "<group>"; };
+		2FF9002C1755C53D00AE082C /* FLOldplansViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLOldplansViewController.xib; sourceTree = "<group>"; };
+		95D196115A0F44CD8F7BCFCE /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		9773183D197B55D400FC2D77 /* FLTopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLTopViewController.h; sourceTree = "<group>"; };
+		9773183E197B55D800FC2D77 /* FLTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTopViewController.m; sourceTree = "<group>"; };
+		9773184A197CB2C200FC2D77 /* greenbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = greenbutton.png; path = ../Resorces/greenbutton.png; sourceTree = "<group>"; };
+		9773185C197CB31500FC2D77 /* myprofile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = myprofile.png; path = ../Resorces/myprofile.png; sourceTree = "<group>"; };
+		97731862197CB32E00FC2D77 /* heartbuttonpink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = heartbuttonpink.png; path = ../Resorces/heartbuttonpink.png; sourceTree = "<group>"; };
+		9773186F197CB37300FC2D77 /* loginviewcontroller1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = loginviewcontroller1.png; path = ../Resorces/loginviewcontroller1.png; sourceTree = "<group>"; };
+		9773187D197CB3B300FC2D77 /* heartbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = heartbutton.png; path = ../Resorces/heartbutton.png; sourceTree = "<group>"; };
+		9773188B197CB3ED00FC2D77 /* invitedregiviewcontroller.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = invitedregiviewcontroller.png; path = ../Resorces/invitedregiviewcontroller.png; sourceTree = "<group>"; };
+		97731893197CB41000FC2D77 /* heartsimages2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = heartsimages2.png; path = ../Resorces/heartsimages2.png; sourceTree = "<group>"; };
+		97731897197CB42600FC2D77 /* LOVEDRILL-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "LOVEDRILL-Info.plist"; sourceTree = "<group>"; };
+		97731899197CB42C00FC2D77 /* LOVEDRILL-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LOVEDRILL-Prefix.pch"; sourceTree = "<group>"; };
+		9773189A197CB4A700FC2D77 /* lovenumberviewcontroller.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lovenumberviewcontroller.png; path = ../Resorces/lovenumberviewcontroller.png; sourceTree = "<group>"; };
+		977A83B7196FE196002DAA20 /* accountphoto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = accountphoto.png; path = ../Resorces/accountphoto.png; sourceTree = "<group>"; };
+		977A83B9196FE21B002DAA20 /* penwhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = penwhite.png; path = ../Resorces/penwhite.png; sourceTree = "<group>"; };
+		977A83BB196FE231002DAA20 /* cellframe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cellframe.png; path = ../Resorces/cellframe.png; sourceTree = "<group>"; };
+		977A83C0196FE43B002DAA20 /* FLPlan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLPlan.h; sourceTree = "<group>"; };
+		977A83C1196FE43B002DAA20 /* FLPlan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLPlan.m; sourceTree = "<group>"; };
+		977A83C3196FE7D5002DAA20 /* FLPlanDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLPlanDataManager.h; sourceTree = "<group>"; };
+		977A83C4196FE7D5002DAA20 /* FLPlanDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLPlanDataManager.m; sourceTree = "<group>"; };
+		978C9031197765DA00EF6B4F /* FLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLConnection.h; sourceTree = "<group>"; };
+		978C9032197765DA00EF6B4F /* FLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLConnection.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2FA418F2166EE46E002E93E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F01D49E17A105690005B654 /* MapKit.framework in Frameworks */,
+				2F01D49C17A105570005B654 /* ImageIO.framework in Frameworks */,
+				2FAE0911179E55F000C4DC72 /* CFNetwork.framework in Frameworks */,
+				2FAE090F179E55E300C4DC72 /* MobileCoreServices.framework in Frameworks */,
+				2FAE090D179E55CD00C4DC72 /* SystemConfiguration.framework in Frameworks */,
+				2FAE090B179E55BD00C4DC72 /* libz.dylib in Frameworks */,
+				2FF14ED0178FEFD80082B21F /* AudioToolbox.framework in Frameworks */,
+				2F2F987D1726241A001AC4C4 /* MessageUI.framework in Frameworks */,
+				2FA418FA166EE46E002E93E2 /* UIKit.framework in Frameworks */,
+				2FA418FC166EE46E002E93E2 /* Foundation.framework in Frameworks */,
+				2FA418FE166EE46E002E93E2 /* CoreGraphics.framework in Frameworks */,
+				312BF80B1AA24579A4EA35EA /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2FA418EA166EE46E002E93E2 = {
+			isa = PBXGroup;
+			children = (
+				2FA418FF166EE46E002E93E2 /* FLLovelog */,
+				2FA418F8166EE46E002E93E2 /* Frameworks */,
+				2FA418F6166EE46E002E93E2 /* Products */,
+				95D196115A0F44CD8F7BCFCE /* Pods.xcconfig */,
+				2FAE090A179E55BD00C4DC72 /* libz.dylib */,
+			);
+			sourceTree = "<group>";
+		};
+		2FA418F6166EE46E002E93E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2FA418F5166EE46E002E93E2 /* LOVE LOG.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2FA418F8166EE46E002E93E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2FF14ECF178FEFD80082B21F /* AudioToolbox.framework */,
+				2F01D49D17A105690005B654 /* MapKit.framework */,
+				2F01D49B17A105570005B654 /* ImageIO.framework */,
+				2FAE0910179E55F000C4DC72 /* CFNetwork.framework */,
+				2FAE090E179E55E300C4DC72 /* MobileCoreServices.framework */,
+				2FAE090C179E55CD00C4DC72 /* SystemConfiguration.framework */,
+				2F2F987C17262419001AC4C4 /* MessageUI.framework */,
+				2FA418F9166EE46E002E93E2 /* UIKit.framework */,
+				2FA418FB166EE46E002E93E2 /* Foundation.framework */,
+				2FA418FD166EE46E002E93E2 /* CoreGraphics.framework */,
+				210784A1068743D3956FFD74 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2FA418FF166EE46E002E93E2 /* FLLovelog */ = {
+			isa = PBXGroup;
+			children = (
+				978C903419776B0600EF6B4F /* APIs */,
+				978C902F197682BD00EF6B4F /* AccountCreating */,
+				978C90301976B0AA00EF6B4F /* Product */,
+				2FA41900166EE46E002E93E2 /* Supporting Files */,
+			);
+			name = FLLovelog;
+			path = FLLoveLog;
+			sourceTree = "<group>";
+		};
+		2FA41900166EE46E002E93E2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				977A83C619741548002DAA20 /* images */,
+				2F879C5C173FDFE40013C900 /* LOVEDRILL-Info.plist */,
+				97731897197CB42600FC2D77 /* LOVEDRILL-Info.plist */,
+				2FA41902166EE46E002E93E2 /* InfoPlist.strings */,
+				2FA41907166EE46E002E93E2 /* LOVEDRILL-Prefix.pch */,
+				97731899197CB42C00FC2D77 /* LOVEDRILL-Prefix.pch */,
+				2F9CCD5D17C9D03A00ED16BF /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		977A83C619741548002DAA20 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				2F9CCD5F17C9D04700ED16BF /* Default-568h@2x.png */,
+				2F0A75FF17E9DBB700458427 /* lovelogicon29.png */,
+				2F0A760117E9DC0700458427 /* lovelogicon58.png */,
+				9773189A197CB4A700FC2D77 /* lovenumberviewcontroller.png */,
+				2FDFBF9D17C7564400F6F952 /* lovelogicon114white-1.png */,
+				2FDA06FD17C5BE0000BCC269 /* lovenumberviewcontroller1.png */,
+				2FF6A0E41708220100F36907 /* backgroundview.png */,
+				2FDA06FF17C5BE3C00BCC269 /* lovenumber.png */,
+				2FDA071117C5C87500BCC269 /* invitedregiviewcontroller.png */,
+				2FDA071717C5CAD400BCC269 /* loverregisterdviewcontroller1.png */,
+				2FD89F4C17C2104900E599C8 /* box2.png */,
+				977A83B7196FE196002DAA20 /* accountphoto.png */,
+				2F18D5EE17C5BAD40061DB9A /* lovernameviewcontroller.png */,
+				2FD89F3C17C20B6B00E599C8 /* plantab7.png */,
+				2F18D5EA17C4F5DF0061DB9A /* enterviewcontroller1.png */,
+				2FDA070117C5BFE800BCC269 /* warningviewcontroller.png */,
+				2F18D5F017C5BB3E0061DB9A /* lovenumberviewcontroller.png */,
+				9773184A197CB2C200FC2D77 /* greenbutton.png */,
+				2FD2593717ABE26000CDE37A /* pinkbackground.png */,
+				977A83BB196FE231002DAA20 /* cellframe.png */,
+				2FCB84D517E6E13E0076A906 /* confirmviewcontroller.png */,
+				2FCB84D717E6E1510076A906 /* accountphotoframe.png */,
+				2F18D5E817C4F23E0061DB9A /* wellcomeviewcontroller3.png */,
+				2FD89F3417C2090D00E599C8 /* plantab2.png */,
+				2FD89F3217C2080F00E599C8 /* phototab1.png */,
+				2FDA071317C5C95C00BCC269 /* loverconfirmedviewcontroller.png */,
+				2FDA071517C5C9E500BCC269 /* loverregisterdviewcontroller.png */,
+				2FD89F4E17C2108B00E599C8 /* box3.png */,
+				2FD89F3A17C20B1400E599C8 /* plantab6.png */,
+				2FD89F4217C20CA200E599C8 /* cardtab2.png */,
+				2FD89F4817C20F6400E599C8 /* cardtab1.png */,
+				2FD89F4A17C20FE600E599C8 /* box1.png */,
+				2FCB84D917E6E1970076A906 /* writeicon3.png */,
+				2FD7F31317C1FF24009A1291 /* plantab2.png */,
+				2F0805C617B0C06500C60A65 /* greencell2.png */,
+				2FD89F4017C20C1C00E599C8 /* cardtab1.png */,
+				9773185C197CB31500FC2D77 /* myprofile.png */,
+				2FD89F4617C20EFE00E599C8 /* chattab2.png */,
+				977A83B9196FE21B002DAA20 /* penwhite.png */,
+				2FD89F3E17C20BBE00E599C8 /* plantab8.png */,
+				97731862197CB32E00FC2D77 /* heartbuttonpink.png */,
+				2F0805CB17B0CB0D00C60A65 /* cellblue.png */,
+				2F0FE20917B3729900BFF113 /* toppageline.png */,
+				2FE423AB17A8D2DA00B6BB98 /* heartsound2.caf */,
+				2FD89F3817C20A7C00E599C8 /* plantab0.png */,
+				2F116F83176346D400BE34B7 /* whitecell5.png */,
+				2F5E7E9B17B8D4A2008127E6 /* heartbuttongray.png */,
+				2F5E7E9F17B8DCCA008127E6 /* heartsimages0.png */,
+				2F628A1E17D0847300CA50B0 /* yourprofile.png */,
+				2F628A2017D0847F00CA50B0 /* purplebutton.png */,
+				2FE4BF7E17D5CB9200547A1B /* loginviewcontroller2.png */,
+				9773186F197CB37300FC2D77 /* loginviewcontroller1.png */,
+				2F116F8517634A6900BE34B7 /* whitecell6.png */,
+				2FDA070D17C5C67C00BCC269 /* signedviewcontroller.png */,
+				2FDA071917C5D23E00BCC269 /* loginviewcontroller3.png */,
+				2FF14F4B17EC3BFD00248615 /* lovelogicon80.png */,
+				2F43266C171B97A10079111E /* chattabicon7.png */,
+				2FD89F5017C3215000E599C8 /* cardstyle1.png */,
+				2FF14F4917EC3BEC00248615 /* lovelogicon120.png */,
+				2FD89F5217C3215C00E599C8 /* cardstyle2.png */,
+				2FD89F5417C3216400E599C8 /* cardstyle3.png */,
+				2FD7F30717C1E3EC009A1291 /* 1heart.png */,
+				2FD7F30B17C1E40E009A1291 /* 3hearts.png */,
+				2F0AB641178E46D50077C818 /* yourchatcell.png */,
+				2FD7F30517C1E2BF009A1291 /* 0heart.png */,
+				2FAB57C117D492F400CBC86A /* top3.png */,
+				2FD7F30917C1E3FE009A1291 /* 2hearts.png */,
+				2FDA070717C5C21700BCC269 /* waitingviewcontroller2.png */,
+				2F0AB63A178E44760077C818 /* mychatcell.png */,
+				2FDA070317C5C1D900BCC269 /* waitingviewcontroller3.png */,
+				2FDA070917C5C27100BCC269 /* waitingviewcontroller.png */,
+				9773187D197CB3B300FC2D77 /* heartbutton.png */,
+				2FDA070517C5C1EA00BCC269 /* waitingviewcontroller1.png */,
+				2FD2593517ABE06E00CDE37A /* loginviewcontroller2.png */,
+				2F5E7EA117B8E37B008127E6 /* heartsimages1.png */,
+				2F5E7EA917B8E3B4008127E6 /* heartsimages5.png */,
+				2FCB84DB17E6E1AA0076A906 /* resignviewcontroller.png */,
+				2F628A2217D0849000CA50B0 /* topview2.png */,
+				2F628A2417D0849C00CA50B0 /* camerabutton.png */,
+				2F5E7EA517B8E39C008127E6 /* heartsimages3.png */,
+				2FDA070F17C5C7E600BCC269 /* invitedviewcontroller.png */,
+				9773188B197CB3ED00FC2D77 /* invitedregiviewcontroller.png */,
+				2F05E8BE17A8BC2700378108 /* heartsound2.wav */,
+				2F5E7EA717B8E3A5008127E6 /* heartsimages4.png */,
+				97731893197CB41000FC2D77 /* heartsimages2.png */,
+				2F222D0F178E6EB400E982F0 /* pinkheartbutton.png */,
+				2F5451CC171E731A008D49A5 /* lovelogicon57.png */,
+				2FA4190B166EE46E002E93E2 /* Default.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		978C902F197682BD00EF6B4F /* AccountCreating */ = {
+			isa = PBXGroup;
+			children = (
+				2FA41905166EE46E002E93E2 /* main.m */,
+				2FA41908166EE46E002E93E2 /* FLAppDelegate.h */,
+				2FA41909166EE46E002E93E2 /* FLAppDelegate.m */,
+				2FF363CD16E5927A00E1CC14 /* FLEnterViewController.h */,
+				2FF363CE16E5927A00E1CC14 /* FLEnterViewController.m */,
+				2FF363CF16E5927A00E1CC14 /* FLEnterViewController.xib */,
+				2FC1FA8416AECD3D00D406B0 /* FLWellcomeViewController.h */,
+				2FC1FA8516AECD3D00D406B0 /* FLWellcomeViewController.m */,
+				2F87747B17167B26007EF993 /* FLWellcomeViewController.xib */,
+				2F939F7A16A66F4400F53257 /* FLLoginViewController.h */,
+				2F939F7B16A66F4500F53257 /* FLLoginViewController.m */,
+				2F939F7C16A66F4500F53257 /* FLLoginViewController.xib */,
+				2FF363D216E5A33300E1CC14 /* FLConfirmViewController.h */,
+				2FF363D316E5A33300E1CC14 /* FLConfirmViewController.m */,
+				2FF363D416E5A33300E1CC14 /* FLConfirmViewController.xib */,
+				2F2B828916B01C390095FDA3 /* FLInvitedViewController.h */,
+				2F2B828A16B01C390095FDA3 /* FLInvitedViewController.m */,
+				2F2B828B16B01C390095FDA3 /* FLInvitedViewController.xib */,
+				2F45411916B128D1006EA2EB /* FLInvitedRegiViewController.h */,
+				2F45411A16B128D1006EA2EB /* FLInvitedRegiViewController.m */,
+				2F45411B16B128D1006EA2EB /* FLInvitedRegiViewController.xib */,
+				2FC1FAA516AFC7E000D406B0 /* FLLoverConfirmedViewController.h */,
+				2FC1FAA616AFC7E000D406B0 /* FLLoverConfirmedViewController.m */,
+				2FC1FAA716AFC7E000D406B0 /* FLLoverConfirmedViewController.xib */,
+				2FC1FAAC16AFC9E400D406B0 /* FLLoverRegistredViewController.h */,
+				2FC1FAAD16AFC9E400D406B0 /* FLLoverRegistredViewController.m */,
+				2FC1FAAE16AFC9E400D406B0 /* FLLoverRegistredViewController.xib */,
+				2F3F573116AAA22600E1D011 /* FLLovernameViewController.h */,
+				2F3F573216AAA22600E1D011 /* FLLovernameViewController.m */,
+				2F3F573316AAA22700E1D011 /* FLLovernameViewController.xib */,
+				2F3F573816AAA9BC00E1D011 /* LoverNumberViewController.h */,
+				2F3F573916AAA9BD00E1D011 /* LoverNumberViewController.m */,
+				2F3F573A16AAA9BD00E1D011 /* LoverNumberViewController.xib */,
+				2F3F574316ACBF4C00E1D011 /* FLWarningViewController.h */,
+				2F3F574416ACBF4D00E1D011 /* FLWarningViewController.m */,
+				2F877493171690FD007EF993 /* FLWarningViewController.xib */,
+				2F3F574A16ACCB1500E1D011 /* FLWaitingViewController.h */,
+				2F3F574B16ACCB1500E1D011 /* FLWaitingViewController.m */,
+				2F3F574C16ACCB1600E1D011 /* FLWaitingViewController.xib */,
+				2F8C383A16A560AB007638BF /* FLSignedViewController.h */,
+				2F03846D16DC83C200227501 /* FLSignedViewController.xib */,
+				2F8C383B16A560AC007638BF /* FLSignedViewController.m */,
+			);
+			name = AccountCreating;
+			sourceTree = "<group>";
+		};
+		978C90301976B0AA00EF6B4F /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				9773183D197B55D400FC2D77 /* FLTopViewController.h */,
+				9773183E197B55D800FC2D77 /* FLTopViewController.m */,
+				2FF63E2C1796991300360004 /* FLTopViewController.xib */,
+				2F9F137816DDFC7B0024A696 /* FLResignViewController.h */,
+				2F9F137916DDFC7B0024A696 /* FLResignViewController.m */,
+				2F9F137A16DDFC7C0024A696 /* FLResignViewController.xib */,
+				2F9FF92F16CC9363002825C1 /* FLAccountViewController.h */,
+				2F9FF93016CC9364002825C1 /* FLAccountViewController.m */,
+				2F9FF93116CC9364002825C1 /* FLAccountViewController.xib */,
+				2F9FF93616CCC87E002825C1 /* FLEditViewController.h */,
+				2F9FF93716CCC87E002825C1 /* FLEditViewController.m */,
+				2F9FF93816CCC87E002825C1 /* FLEditViewController.xib */,
+				2FC92DFC17042DED00BF0544 /* FLPartnerAcViewController.h */,
+				2FC92DFD17042DED00BF0544 /* FLPartnerAcViewController.m */,
+				2FC92DFE17042DED00BF0544 /* FLPartnerAcViewController.xib */,
+				2FC92E0117045A3C00BF0544 /* FLLoverinfoViewController.h */,
+				2FC92E0217045A3C00BF0544 /* FLLoverinfoViewController.m */,
+				2FC92E0317045A3C00BF0544 /* FLLoverinfoViewController.xib */,
+				2F43268C171CE0850079111E /* WebViewController.h */,
+				2F43268D171CE0870079111E /* WebViewController.m */,
+				2F43268E171CE0880079111E /* WebViewController.xib */,
+				2F656E4117967F7400D88FF2 /* FLPhotoViewController.m */,
+				2F656E4017967F7400D88FF2 /* FLPhotoViewController.h */,
+				2F656E4217967F7400D88FF2 /* FLPhotoViewController.xib */,
+				2F0AD81B179D1D4800180F6F /* FLPhototitleViewController.h */,
+				2F0AD81C179D1D4800180F6F /* FLPhototitleViewController.m */,
+				2F0AD81D179D1D4800180F6F /* FLPhototitleViewController.xib */,
+				2F6114921794E26500CA0C0A /* PhotoCell.xib */,
+				2F6114941794E29300CA0C0A /* PhotoCell.h */,
+				2F6114951794E29300CA0C0A /* PhotoCell.m */,
+				2FF6A1061709553A00F36907 /* FLCardSelectViewController.h */,
+				2FF6A1071709553A00F36907 /* FLCardSelectViewController.m */,
+				2FF6A1081709553B00F36907 /* FLCardSelectViewController.xib */,
+				2FF6A0EA17082B7B00F36907 /* FLCardViewController.h */,
+				2FF6A0EB17082B7B00F36907 /* FLCardViewController.m */,
+				2FF6A0EC17082B7B00F36907 /* FLCardViewController.xib */,
+				2FF6A0EF17082D2500F36907 /* CardCell.h */,
+				2FF6A0F017082D2500F36907 /* CardCell.m */,
+				2FF6A0F217082D4100F36907 /* CardCell.xib */,
+				2FF6A0FA17087FE500F36907 /* FLCardTextViewController.h */,
+				2FF6A0FB17087FE600F36907 /* FLCardTextViewController.m */,
+				2FF6A0FC17087FE600F36907 /* FLCardTextViewController.xib */,
+				2FF6A11017095C8C00F36907 /* FLCardTitleViewController.h */,
+				2FF6A11117095C8D00F36907 /* FLCardTitleViewController.m */,
+				2FF6A11217095C8E00F36907 /* FLCardTitleViewController.xib */,
+				2FF6A10B17095A9700F36907 /* FLSelectedCardViewController.h */,
+				2FF6A10C17095A9800F36907 /* FLSelectedCardViewController.m */,
+				2FF6A10D17095A9900F36907 /* FLSelectedCardViewController.xib */,
+				2F3D1576170405B20098E799 /* FLChatViewController.h */,
+				2F3D1577170405B20098E799 /* FLChatViewController.m */,
+				2F0AB631178D5F130077C818 /* MyChatCell.h */,
+				2F0AB632178D5F130077C818 /* MyChatCell.m */,
+				2F0AB645178E4F9F0077C818 /* MyChatCell.xib */,
+				2F222D11178FAEB000E982F0 /* YourChatCell.h */,
+				2F222D12178FAEB000E982F0 /* YourChatCell.m */,
+				2F0AB63F178E461B0077C818 /* YourChatCell.xib */,
+				2F3D1578170405B20098E799 /* FLChatViewController.xib */,
+				2FC92DF717040E7100BF0544 /* FLChatlogViewController.h */,
+				2FC92DF817040E7100BF0544 /* FLChatlogViewController.m */,
+				2FC92DF917040E7100BF0544 /* FLChatlogViewController.xib */,
+				2FEAC30F1754831B0003B509 /* FLPlantableViewController.h */,
+				2FEAC3101754831B0003B509 /* FLPlantableViewController.m */,
+				2FEAC3111754831B0003B509 /* FLPlantableViewController.xib */,
+				2FF9002A1755C53C00AE082C /* FLOldplansViewController.h */,
+				2FF9002B1755C53C00AE082C /* FLOldplansViewController.m */,
+				2FF9002C1755C53D00AE082C /* FLOldplansViewController.xib */,
+				2FEAC319175496010003B509 /* FLPlanmakeViewController.h */,
+				2FEAC31A175496010003B509 /* FLPlanmakeViewController.m */,
+				2FEAC31B175496010003B509 /* FLPlanmakeViewController.xib */,
+				2FEFC9B917CE37A2008B8F51 /* FLDateViewController.h */,
+				2FEFC9BA17CE37A2008B8F51 /* FLDateViewController.m */,
+				2FEFC9BB17CE37A2008B8F51 /* FLDateViewController.xib */,
+				2FEAC31E17549C850003B509 /* FLAddurlViewController.h */,
+				2FEAC31F17549C850003B509 /* FLAddurlViewController.m */,
+				2FEAC32017549C850003B509 /* FLAddurlViewController.xib */,
+				2FEAC32317549D290003B509 /* FLAddtodoViewController.h */,
+				2FEAC32417549D290003B509 /* FLAddtodoViewController.m */,
+				2FEAC32517549D290003B509 /* FLAddtodoViewController.xib */,
+				2FEAC32817549DF90003B509 /* FLPlanViewController.h */,
+				2FEAC32917549DF90003B509 /* FLPlanViewController.m */,
+				2FEAC32A17549DFA0003B509 /* FLPlanViewController.xib */,
+				2F9008CC1759EF7A00767564 /* FLFromchatPlanViewController.h */,
+				2F9008CD1759EF7A00767564 /* FLFromchatPlanViewController.m */,
+				2F9008CE1759EF7A00767564 /* FLFromchatPlanViewController.xib */,
+				977A83C0196FE43B002DAA20 /* FLPlan.h */,
+				977A83C1196FE43B002DAA20 /* FLPlan.m */,
+				977A83C3196FE7D5002DAA20 /* FLPlanDataManager.h */,
+				977A83C4196FE7D5002DAA20 /* FLPlanDataManager.m */,
+			);
+			name = Product;
+			sourceTree = "<group>";
+		};
+		978C903419776B0600EF6B4F /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				978C9031197765DA00EF6B4F /* FLConnection.h */,
+				978C9032197765DA00EF6B4F /* FLConnection.m */,
+			);
+			name = APIs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2FA418F4166EE46E002E93E2 /* LOVE LOG */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FA41919166EE46E002E93E2 /* Build configuration list for PBXNativeTarget "LOVE LOG" */;
+			buildPhases = (
+				C44E2B3E680F49D28B594E8C /* Check Pods Manifest.lock */,
+				2FA418F1166EE46E002E93E2 /* Sources */,
+				2FA418F2166EE46E002E93E2 /* Frameworks */,
+				2FA418F3166EE46E002E93E2 /* Resources */,
+				7CEE7C95BCAB491E939BB985 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LOVE LOG";
+			productName = sendMsg7;
+			productReference = 2FA418F5166EE46E002E93E2 /* LOVE LOG.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2FA418EC166EE46E002E93E2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SM;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = norimingconception.net;
+				TargetAttributes = {
+					2FA418F4166EE46E002E93E2 = {
+						DevelopmentTeam = HUJYNX2AJQ;
+					};
+				};
+			};
+			buildConfigurationList = 2FA418EF166EE46E002E93E2 /* Build configuration list for PBXProject "LOVE LOG" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2FA418EA166EE46E002E93E2;
+			productRefGroup = 2FA418F6166EE46E002E93E2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2FA418F4166EE46E002E93E2 /* LOVE LOG */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2FA418F3166EE46E002E93E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FA4190C166EE46E002E93E2 /* Default.png in Resources */,
+				2F939F7E16A66F4600F53257 /* FLLoginViewController.xib in Resources */,
+				2F3F573516AAA22700E1D011 /* FLLovernameViewController.xib in Resources */,
+				2F3F573C16AAA9BD00E1D011 /* LoverNumberViewController.xib in Resources */,
+				2F3F574E16ACCB1600E1D011 /* FLWaitingViewController.xib in Resources */,
+				2FC1FAA916AFC7E000D406B0 /* FLLoverConfirmedViewController.xib in Resources */,
+				2FC1FAB016AFC9E400D406B0 /* FLLoverRegistredViewController.xib in Resources */,
+				2F2B828D16B01C390095FDA3 /* FLInvitedViewController.xib in Resources */,
+				2F45411D16B128D1006EA2EB /* FLInvitedRegiViewController.xib in Resources */,
+				2F9FF93316CC9364002825C1 /* FLAccountViewController.xib in Resources */,
+				2F9FF93A16CCC87E002825C1 /* FLEditViewController.xib in Resources */,
+				2F03846E16DC83C200227501 /* FLSignedViewController.xib in Resources */,
+				2F9F137C16DDFC7E0024A696 /* FLResignViewController.xib in Resources */,
+				2FF363D116E5927A00E1CC14 /* FLEnterViewController.xib in Resources */,
+				2FF363D616E5A33300E1CC14 /* FLConfirmViewController.xib in Resources */,
+				2F3D157A170405B20098E799 /* FLChatViewController.xib in Resources */,
+				2FC92DFB17040E7100BF0544 /* FLChatlogViewController.xib in Resources */,
+				2FC92E0017042DEE00BF0544 /* FLPartnerAcViewController.xib in Resources */,
+				2FC92E0517045A3D00BF0544 /* FLLoverinfoViewController.xib in Resources */,
+				2FF6A0E51708220100F36907 /* backgroundview.png in Resources */,
+				2FF6A0EE17082B7B00F36907 /* FLCardViewController.xib in Resources */,
+				2FF6A0F317082D4100F36907 /* CardCell.xib in Resources */,
+				2FF6A0FE17087FE700F36907 /* FLCardTextViewController.xib in Resources */,
+				2FF6A10A1709553C00F36907 /* FLCardSelectViewController.xib in Resources */,
+				97731898197CB42600FC2D77 /* LOVEDRILL-Info.plist in Resources */,
+				2FF6A10F17095A9A00F36907 /* FLSelectedCardViewController.xib in Resources */,
+				2FF6A11417095C8F00F36907 /* FLCardTitleViewController.xib in Resources */,
+				2F87747C17167B26007EF993 /* FLWellcomeViewController.xib in Resources */,
+				2F877494171690FD007EF993 /* FLWarningViewController.xib in Resources */,
+				2F43266D171B97A30079111E /* chattabicon7.png in Resources */,
+				2F432690171CE08A0079111E /* WebViewController.xib in Resources */,
+				2F0A760217E9DC0700458427 /* lovelogicon58.png in Resources */,
+				2F5451CD171E731A008D49A5 /* lovelogicon57.png in Resources */,
+				2FEAC3131754831B0003B509 /* FLPlantableViewController.xib in Resources */,
+				2FEAC31D175496010003B509 /* FLPlanmakeViewController.xib in Resources */,
+				2FEAC32217549C860003B509 /* FLAddurlViewController.xib in Resources */,
+				2FEAC32717549D290003B509 /* FLAddtodoViewController.xib in Resources */,
+				2FEAC32C17549DFA0003B509 /* FLPlanViewController.xib in Resources */,
+				2FF9002E1755C53D00AE082C /* FLOldplansViewController.xib in Resources */,
+				2F9008D01759EF7A00767564 /* FLFromchatPlanViewController.xib in Resources */,
+				2F116F84176346D400BE34B7 /* whitecell5.png in Resources */,
+				2F116F8617634A6A00BE34B7 /* whitecell6.png in Resources */,
+				2F0AB63B178E44760077C818 /* mychatcell.png in Resources */,
+				2F0AB640178E461B0077C818 /* YourChatCell.xib in Resources */,
+				2F0AB642178E46D50077C818 /* yourchatcell.png in Resources */,
+				2F0AB646178E4F9F0077C818 /* MyChatCell.xib in Resources */,
+				2F222D10178E6EB400E982F0 /* pinkheartbutton.png in Resources */,
+				2F6114931794E26500CA0C0A /* PhotoCell.xib in Resources */,
+				2F656E4417967F7400D88FF2 /* FLPhotoViewController.xib in Resources */,
+				2FF63E2D1796991300360004 /* FLTopViewController.xib in Resources */,
+				2F0AD81F179D1D4800180F6F /* FLPhototitleViewController.xib in Resources */,
+				9773185D197CB31500FC2D77 /* myprofile.png in Resources */,
+				2F05E8BF17A8BC2700378108 /* heartsound2.wav in Resources */,
+				2FE423AC17A8D2DA00B6BB98 /* heartsound2.caf in Resources */,
+				2FD2593617ABE06E00CDE37A /* loginviewcontroller2.png in Resources */,
+				2FD2593817ABE26000CDE37A /* pinkbackground.png in Resources */,
+				2F0805C717B0C06500C60A65 /* greencell2.png in Resources */,
+				2F0A760017E9DBB700458427 /* lovelogicon29.png in Resources */,
+				2F0805CC17B0CB0D00C60A65 /* cellblue.png in Resources */,
+				2F0FE20A17B3729900BFF113 /* toppageline.png in Resources */,
+				2F5E7E9C17B8D4A2008127E6 /* heartbuttongray.png in Resources */,
+				2F5E7EA017B8DCCB008127E6 /* heartsimages0.png in Resources */,
+				2F5E7EA217B8E37C008127E6 /* heartsimages1.png in Resources */,
+				2F5E7EA617B8E39F008127E6 /* heartsimages3.png in Resources */,
+				2F5E7EA817B8E3A6008127E6 /* heartsimages4.png in Resources */,
+				2F5E7EAA17B8E3B5008127E6 /* heartsimages5.png in Resources */,
+				2FD7F30617C1E2BF009A1291 /* 0heart.png in Resources */,
+				2FD7F30817C1E3EC009A1291 /* 1heart.png in Resources */,
+				2FD7F30A17C1E3FE009A1291 /* 2hearts.png in Resources */,
+				2FD7F30C17C1E40F009A1291 /* 3hearts.png in Resources */,
+				2FD7F31417C1FF24009A1291 /* plantab2.png in Resources */,
+				2FF14F4A17EC3BEC00248615 /* lovelogicon120.png in Resources */,
+				2FD89F3317C2080F00E599C8 /* phototab1.png in Resources */,
+				2FD89F3517C2090D00E599C8 /* plantab2.png in Resources */,
+				2FD89F3917C20A7C00E599C8 /* plantab0.png in Resources */,
+				2FD89F3B17C20B1400E599C8 /* plantab6.png in Resources */,
+				2FD89F3D17C20B6B00E599C8 /* plantab7.png in Resources */,
+				2FD89F3F17C20BBE00E599C8 /* plantab8.png in Resources */,
+				2FD89F4117C20C1C00E599C8 /* cardtab1.png in Resources */,
+				2FD89F4317C20CA300E599C8 /* cardtab2.png in Resources */,
+				2FD89F4717C20EFE00E599C8 /* chattab2.png in Resources */,
+				2FD89F4917C20F6400E599C8 /* cardtab1.png in Resources */,
+				97731863197CB32E00FC2D77 /* heartbuttonpink.png in Resources */,
+				2FD89F4B17C20FE600E599C8 /* box1.png in Resources */,
+				2FD89F4D17C2104900E599C8 /* box2.png in Resources */,
+				2FD89F4F17C2108B00E599C8 /* box3.png in Resources */,
+				2FD89F5117C3215100E599C8 /* cardstyle1.png in Resources */,
+				9773187E197CB3B300FC2D77 /* heartbutton.png in Resources */,
+				2FD89F5317C3215C00E599C8 /* cardstyle2.png in Resources */,
+				2FD89F5517C3216400E599C8 /* cardstyle3.png in Resources */,
+				2F18D5E917C4F23E0061DB9A /* wellcomeviewcontroller3.png in Resources */,
+				2F18D5EB17C4F5DF0061DB9A /* enterviewcontroller1.png in Resources */,
+				977A83B8196FE196002DAA20 /* accountphoto.png in Resources */,
+				2F18D5EF17C5BAD40061DB9A /* lovernameviewcontroller.png in Resources */,
+				2FF14F4C17EC3BFD00248615 /* lovelogicon80.png in Resources */,
+				2F18D5F117C5BB3F0061DB9A /* lovenumberviewcontroller.png in Resources */,
+				9773184B197CB2C200FC2D77 /* greenbutton.png in Resources */,
+				2FDA06FE17C5BE0000BCC269 /* lovenumberviewcontroller1.png in Resources */,
+				2FDA070017C5BE3C00BCC269 /* lovenumber.png in Resources */,
+				2FDA070217C5BFE800BCC269 /* warningviewcontroller.png in Resources */,
+				2FDA070417C5C1D900BCC269 /* waitingviewcontroller3.png in Resources */,
+				97731870197CB37300FC2D77 /* loginviewcontroller1.png in Resources */,
+				2FDA070617C5C1EA00BCC269 /* waitingviewcontroller1.png in Resources */,
+				2FDA070817C5C21700BCC269 /* waitingviewcontroller2.png in Resources */,
+				2FDA070A17C5C27100BCC269 /* waitingviewcontroller.png in Resources */,
+				97731894197CB41000FC2D77 /* heartsimages2.png in Resources */,
+				2FDA070E17C5C67C00BCC269 /* signedviewcontroller.png in Resources */,
+				2FDA071017C5C7E700BCC269 /* invitedviewcontroller.png in Resources */,
+				2FDA071217C5C87500BCC269 /* invitedregiviewcontroller.png in Resources */,
+				9773188C197CB3ED00FC2D77 /* invitedregiviewcontroller.png in Resources */,
+				2FDA071417C5C95C00BCC269 /* loverconfirmedviewcontroller.png in Resources */,
+				2FDA071617C5C9E500BCC269 /* loverregisterdviewcontroller.png in Resources */,
+				2FDA071817C5CAD500BCC269 /* loverregisterdviewcontroller1.png in Resources */,
+				2FDA071A17C5D23E00BCC269 /* loginviewcontroller3.png in Resources */,
+				2FDFBF9E17C7564400F6F952 /* lovelogicon114white-1.png in Resources */,
+				2F9CCD5E17C9D03A00ED16BF /* Default-568h@2x.png in Resources */,
+				2F9CCD6017C9D04700ED16BF /* Default-568h@2x.png in Resources */,
+				2FEFC9BD17CE37A2008B8F51 /* FLDateViewController.xib in Resources */,
+				2F628A1F17D0847300CA50B0 /* yourprofile.png in Resources */,
+				977A83BA196FE21B002DAA20 /* penwhite.png in Resources */,
+				2F628A2117D0847F00CA50B0 /* purplebutton.png in Resources */,
+				2F628A2317D0849000CA50B0 /* topview2.png in Resources */,
+				2F628A2517D0849C00CA50B0 /* camerabutton.png in Resources */,
+				2FAB57C217D492F500CBC86A /* top3.png in Resources */,
+				2FE4BF7F17D5CB9200547A1B /* loginviewcontroller2.png in Resources */,
+				977A83BC196FE231002DAA20 /* cellframe.png in Resources */,
+				2FCB84D617E6E13E0076A906 /* confirmviewcontroller.png in Resources */,
+				2FCB84D817E6E1510076A906 /* accountphotoframe.png in Resources */,
+				2FCB84DA17E6E1970076A906 /* writeicon3.png in Resources */,
+				2FCB84DC17E6E1AA0076A906 /* resignviewcontroller.png in Resources */,
+				9773189B197CB4A700FC2D77 /* lovenumberviewcontroller.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7CEE7C95BCAB491E939BB985 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+		C44E2B3E680F49D28B594E8C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2FA418F1166EE46E002E93E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FA41906166EE46E002E93E2 /* main.m in Sources */,
+				2FA4190A166EE46E002E93E2 /* FLAppDelegate.m in Sources */,
+				2F8C383D16A560AD007638BF /* FLSignedViewController.m in Sources */,
+				2F939F7D16A66F4600F53257 /* FLLoginViewController.m in Sources */,
+				2F3F573416AAA22700E1D011 /* FLLovernameViewController.m in Sources */,
+				2F3F573B16AAA9BD00E1D011 /* LoverNumberViewController.m in Sources */,
+				2F3F574616ACBF4E00E1D011 /* FLWarningViewController.m in Sources */,
+				2F3F574D16ACCB1600E1D011 /* FLWaitingViewController.m in Sources */,
+				2FC1FA8716AECD3D00D406B0 /* FLWellcomeViewController.m in Sources */,
+				2FC1FAA816AFC7E000D406B0 /* FLLoverConfirmedViewController.m in Sources */,
+				2FC1FAAF16AFC9E400D406B0 /* FLLoverRegistredViewController.m in Sources */,
+				2F2B828C16B01C390095FDA3 /* FLInvitedViewController.m in Sources */,
+				2F45411C16B128D1006EA2EB /* FLInvitedRegiViewController.m in Sources */,
+				2F9FF93216CC9364002825C1 /* FLAccountViewController.m in Sources */,
+				2F9FF93916CCC87E002825C1 /* FLEditViewController.m in Sources */,
+				2F9F137B16DDFC7E0024A696 /* FLResignViewController.m in Sources */,
+				977A83C5196FE7D5002DAA20 /* FLPlanDataManager.m in Sources */,
+				2FF363D016E5927A00E1CC14 /* FLEnterViewController.m in Sources */,
+				2FF363D516E5A33300E1CC14 /* FLConfirmViewController.m in Sources */,
+				2F3D1579170405B20098E799 /* FLChatViewController.m in Sources */,
+				2FC92DFA17040E7100BF0544 /* FLChatlogViewController.m in Sources */,
+				2FC92DFF17042DEE00BF0544 /* FLPartnerAcViewController.m in Sources */,
+				2FC92E0417045A3D00BF0544 /* FLLoverinfoViewController.m in Sources */,
+				2FF6A0ED17082B7B00F36907 /* FLCardViewController.m in Sources */,
+				2FF6A0F117082D2500F36907 /* CardCell.m in Sources */,
+				2FF6A0FD17087FE700F36907 /* FLCardTextViewController.m in Sources */,
+				2FF6A1091709553C00F36907 /* FLCardSelectViewController.m in Sources */,
+				2FF6A10E17095A9A00F36907 /* FLSelectedCardViewController.m in Sources */,
+				2FF6A11317095C8F00F36907 /* FLCardTitleViewController.m in Sources */,
+				2F43268F171CE08A0079111E /* WebViewController.m in Sources */,
+				2FEAC3121754831B0003B509 /* FLPlantableViewController.m in Sources */,
+				2FEAC31C175496010003B509 /* FLPlanmakeViewController.m in Sources */,
+				2FEAC32117549C860003B509 /* FLAddurlViewController.m in Sources */,
+				2FEAC32617549D290003B509 /* FLAddtodoViewController.m in Sources */,
+				2FEAC32B17549DFA0003B509 /* FLPlanViewController.m in Sources */,
+				978C9033197765DA00EF6B4F /* FLConnection.m in Sources */,
+				2FF9002D1755C53D00AE082C /* FLOldplansViewController.m in Sources */,
+				2F9008CF1759EF7A00767564 /* FLFromchatPlanViewController.m in Sources */,
+				2F0AB633178D5F130077C818 /* MyChatCell.m in Sources */,
+				977A83C2196FE43B002DAA20 /* FLPlan.m in Sources */,
+				9773183F197B55D800FC2D77 /* FLTopViewController.m in Sources */,
+				2F222D13178FAEB000E982F0 /* YourChatCell.m in Sources */,
+				2F6114961794E29300CA0C0A /* PhotoCell.m in Sources */,
+				2F656E4317967F7400D88FF2 /* FLPhotoViewController.m in Sources */,
+				2F0AD81E179D1D4800180F6F /* FLPhototitleViewController.m in Sources */,
+				2FEFC9BC17CE37A2008B8F51 /* FLDateViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2FA41902166EE46E002E93E2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FA41903166EE46E002E93E2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2F53241316F04573008DEAED /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Norimi Kawajiri (HUJYNX2AJQ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Norimi Kawajiri (HUJYNX2AJQ)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "D819EE01-4DCF-4F9C-A7FB-BBDC29F30C7E";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D819EE01-4DCF-4F9C-A7FB-BBDC29F30C7E";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Distribution;
+		};
+		2F53241416F04573008DEAED /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95D196115A0F44CD8F7BCFCE /* Pods.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FLLoveLog/LOVEDRILL-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/FLLoveLog/LOVEDRILL-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "LOVE LOG";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "ACB08C5B-9534-47EE-85FB-336874AA829F";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Distribution;
+		};
+		2FA41917166EE46E002E93E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Norimi Kawajiri (CVZHYYY5EC)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Norimi Kawajiri (CVZHYYY5EC)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PROVISIONING_PROFILE = "DCADBF97-0CAD-46E8-AB62-2D1D58372DB5";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "DCADBF97-0CAD-46E8-AB62-2D1D58372DB5";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		2FA41918166EE46E002E93E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Norimi Kawajiri (HUJYNX2AJQ)";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Distribution: Norimi Kawajiri (HUJYNX2AJQ)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "D819EE01-4DCF-4F9C-A7FB-BBDC29F30C7E";
+				"PROVISIONING_PROFILE[sdk=*]" = "D819EE01-4DCF-4F9C-A7FB-BBDC29F30C7E";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Release;
+		};
+		2FA4191A166EE46E002E93E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95D196115A0F44CD8F7BCFCE /* Pods.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer: Norimi Kawajiri (CVZHYYY5EC)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FLLoveLog/LOVEDRILL-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/FLLoveLog/LOVEDRILL-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "LOVE LOG";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=*]" = "66477587-A5D7-4875-B71B-2D37E44625B3";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2FA4191B166EE46E002E93E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95D196115A0F44CD8F7BCFCE /* Pods.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FLLoveLog/LOVEDRILL-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/FLLoveLog/LOVEDRILL-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "LOVE LOG";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2FA418EF166EE46E002E93E2 /* Build configuration list for PBXProject "LOVE LOG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FA41917166EE46E002E93E2 /* Debug */,
+				2FA41918166EE46E002E93E2 /* Release */,
+				2F53241316F04573008DEAED /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FA41919166EE46E002E93E2 /* Build configuration list for PBXNativeTarget "LOVE LOG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FA4191A166EE46E002E93E2 /* Debug */,
+				2FA4191B166EE46E002E93E2 /* Release */,
+				2F53241416F04573008DEAED /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2FA418EC166EE46E002E93E2 /* Project object */;
+}

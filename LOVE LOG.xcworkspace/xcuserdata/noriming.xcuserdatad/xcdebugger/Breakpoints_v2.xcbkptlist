@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "sendMsg7/PlanmakeViewController.m"
+            timestampString = "399390936.632544"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "@synthesize planTable, titleField, dateField, URLArray, todoArray, passedURL, budgetField, categoryField,category,endButton,userTextField,tmpDateString,doneButton,categoryArray,dateString;"
+            landmarkType = "19">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "sendMsg7/ChatViewController.m"
+            timestampString = "399526091.53696"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "@synthesize chatTable, loggedName, loggedMessage, nowTagStr, contentsArray, logDate, planid, heart, myIndi, pIndi, tmpcontentsArray, photoFile, loveInd, loveInd2, loveInd3, loveInd4, loveInd5, mysum, psum, userid,myphotosum,pphotosum,chatid,receivedData,chatLabel,notice,myphotoName,pphotoName,myIndivalue,pIndivalue,loveIndicator,postCount, inName, inMessage, inDate, inPlanid, inHeartindi, inMyindicator, inPindicator,inUserid, inChatid, inPhoto, inMyphotosum,inPphotosum,soundID;"
+            landmarkType = "19">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "sendMsg7/EditPlanViewController.m"
+            timestampString = "401340685.344746"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "@implementation EditPlanViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
