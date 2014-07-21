@@ -134,6 +134,14 @@ qualifiedName:(NSString*)qName
         _nameField.text = [_nameField.text stringByAppendingFormat:@"%@", loverName];
         _numberField.text = [_numberField.text
                                  stringByAppendingFormat:@"%@",loverNumber];
+        
+        NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
+        [defaults removeObjectForKey:@"lover_name"];
+        [defaults setObject:loverName forKey:@"lover_name"];
+        [defaults removeObjectForKey:@"lover_number"];
+        [defaults setObject:loverNumber forKey:@"lover_number"];
+        
+        
         FLWaitingViewController * WVC = [[FLWaitingViewController alloc]init];
         WVC.lovername = loverName;
         WVC.lovercode = loverNumber;

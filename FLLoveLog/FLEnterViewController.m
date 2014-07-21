@@ -10,6 +10,7 @@
 #import "FLConfirmViewController.h"
 #import "FLConnection.h"
 #import "WBErrorNoticeView.h"
+#import "FLWarningViewController.h"
 
 @interface FLEnterViewController ()
 @property(strong, nonatomic)NSMutableData * receivedData;
@@ -32,6 +33,19 @@ FLConfirmViewController * CVC;
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        //FLLoverWarningViewControllerで取得するlovernameとlovernumberが
+        //すでにある場合、warningviewcontrollerへ移動する
+        NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
+        NSString * loverName = [defaults objectForKey:@"lover_name"];
+        NSString * loverNumber = [defaults objectForKey:@"lover_number"];
+        
+        if(loverName && loverNumber){
+            FLWarningViewController * FLWVC = [[FLWarningViewController alloc]init];
+            FLWVC.loverName = loverName;
+            FLWVC.loverNumber = loverNumber;
+            [self.navigationController pushViewController:FLWVC animated:YES];
+        }
+        
     }
     return self;
 }
