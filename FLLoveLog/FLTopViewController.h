@@ -7,9 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "WBErrorNoticeView.h"
-#import <SDWebImage/UIImageView+WebCache.h>
-#import "UIImageView+WebCache.h"
+
 
 @interface FLTopViewController : UIViewController<NSXMLParserDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>{
    
@@ -18,7 +16,6 @@
     __weak IBOutlet UIImageView *topImage;
     __weak IBOutlet UIImageView *yourImage;
     __weak IBOutlet UIImageView *myImage;
-    WBErrorNoticeView * notice;
     NSMutableData * receivedData;
     __weak IBOutlet UIButton *toPlan;
     

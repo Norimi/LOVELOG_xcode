@@ -52,7 +52,7 @@ FLLoginViewController * LVC;
 - (IBAction)dismissSCVC:(id)sender {
     
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
-    FLLoginViewController * LVC = [[FLLoginViewController alloc]initWithNibName:@"LoginViewController" bundle:nil];
+    FLLoginViewController * LVC = [[FLLoginViewController alloc]initWithNibName:@"FLLoginViewController" bundle:nil];
     [self presentViewController:LVC animated:true completion:nil];
     
 }

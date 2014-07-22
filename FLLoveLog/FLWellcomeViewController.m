@@ -87,7 +87,7 @@ FLLoginViewController * LVC;
 - (IBAction)toLogin:(id)sender {
     
     
-    FLLoginViewController * LVC = [[FLLoginViewController alloc]initWithNibName:@"LoginViewController" bundle:nil];
+    FLLoginViewController * LVC = [[FLLoginViewController alloc]initWithNibName:@"FLLoginViewController" bundle:nil];
     [[self navigationController]pushViewController:LVC animated:YES];
     
     

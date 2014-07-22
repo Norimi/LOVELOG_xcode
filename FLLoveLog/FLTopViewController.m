@@ -15,12 +15,15 @@
 #import "FLChatlogViewController.h"
 #import "FLConnection.h"
 #import "WBErrorNoticeView.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+#import "UIImageView+WebCache.h"
 
 @interface FLTopViewController ()
+@property WBErrorNoticeView * notice;
 @end
 
 @implementation FLTopViewController
-@synthesize youraccountButton, myaccountButton, topImage, myImage, yourImage, receivedData, fileString, titleString, userphotoString, partnerphotoString, filenamedict, planLabel, mychatLabel, yourchatLabel,toPhoto,toChatview,toPlan;
+@synthesize youraccountButton, myaccountButton, topImage, myImage, yourImage, receivedData, fileString, titleString, userphotoString, partnerphotoString, filenamedict, planLabel, mychatLabel, yourchatLabel,toPhoto,toChatview,toPlan,notice;
 
 
 FLAccountViewController * AVC;
