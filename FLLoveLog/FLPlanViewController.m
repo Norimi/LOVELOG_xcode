@@ -14,6 +14,12 @@
 #import "WebViewController.h"
 #import "FLConnection.h"
 
+
+typedef NS_ENUM(NSInteger, FLEditingStyle) {
+    FLEditingStyleNone = 0,
+    FLEditingStyleYes
+};
+
 @interface FLPlanViewController ()
 @property(strong, nonatomic)NSMutableArray * planurlArray;
 @property(strong, nonatomic)NSMutableArray * plantodoArray;
@@ -24,11 +30,16 @@
 
 @implementation FLPlanViewController
 
+
 static const int CELL_NUMBER_FOR_FIRST_PART = 2;
 static const int CELL_NUMBER_FOR_SECOND_PART = 2;
 static const int FONT_SIZE_FOR_TITLE = 14;
 static const int FONT_SIZE_FOR_SUBTITLE = 10;
+
+
+
 @synthesize planTable, planurlArray, plantodoArray, categoryString, titleString, dateString, budgetString,scrollView, EDIT, plantoSend,url;
+
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -249,7 +260,7 @@ numberOfRowsInSection:(NSInteger)section{
     NSMutableData * body = [NSMutableData data];
     
     //FLConnectionに渡す値の条件分岐
-    if(appDelegate.EDIT == YES){
+    if(appDelegate.EDIT == FLEditingStyleYes){
         
         url = [NSString stringWithFormat:@"http://norimingconception.net/lovelog/planviewcontrolleredit.php"];
         FLAppDelegate * appDelegate;
