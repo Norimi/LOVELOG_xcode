@@ -43,7 +43,6 @@
 		2F3F574616ACBF4E00E1D011 /* FLWarningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F3F574416ACBF4D00E1D011 /* FLWarningViewController.m */; };
 		2F3F574D16ACCB1600E1D011 /* FLWaitingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F3F574B16ACCB1500E1D011 /* FLWaitingViewController.m */; };
 		2F3F574E16ACCB1600E1D011 /* FLWaitingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3F574C16ACCB1600E1D011 /* FLWaitingViewController.xib */; };
-		2F43266D171B97A30079111E /* chattabicon7.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F43266C171B97A10079111E /* chattabicon7.png */; };
 		2F43268F171CE08A0079111E /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F43268D171CE0870079111E /* WebViewController.m */; };
 		2F432690171CE08A0079111E /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F43268E171CE0880079111E /* WebViewController.xib */; };
 		2F45411C16B128D1006EA2EB /* FLInvitedRegiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F45411A16B128D1006EA2EB /* FLInvitedRegiViewController.m */; };
@@ -119,7 +118,6 @@
 		2FD89F3F17C20BBE00E599C8 /* plantab8.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FD89F3E17C20BBE00E599C8 /* plantab8.png */; };
 		2FD89F4117C20C1C00E599C8 /* cardtab1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FD89F4017C20C1C00E599C8 /* cardtab1.png */; };
 		2FD89F4317C20CA300E599C8 /* cardtab2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FD89F4217C20CA200E599C8 /* cardtab2.png */; };
-		2FD89F4717C20EFE00E599C8 /* chattab2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FD89F4617C20EFE00E599C8 /* chattab2.png */; };
 		2FD89F4917C20F6400E599C8 /* cardtab1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FD89F4817C20F6400E599C8 /* cardtab1.png */; };
 		2FD89F4B17C20FE600E599C8 /* box1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FD89F4A17C20FE600E599C8 /* box1.png */; };
 		2FD89F4D17C2104900E599C8 /* box2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FD89F4C17C2104900E599C8 /* box2.png */; };
@@ -180,6 +178,9 @@
 		2FF9002D1755C53D00AE082C /* FLOldplansViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9002B1755C53C00AE082C /* FLOldplansViewController.m */; };
 		2FF9002E1755C53D00AE082C /* FLOldplansViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FF9002C1755C53D00AE082C /* FLOldplansViewController.xib */; };
 		312BF80B1AA24579A4EA35EA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 210784A1068743D3956FFD74 /* libPods.a */; };
+		976FEBAB197E1201006C0936 /* phototab2.png in Resources */ = {isa = PBXBuildFile; fileRef = 976FEBAA197E1201006C0936 /* phototab2.png */; };
+		976FEBAD197E12A7006C0936 /* chattab2.png in Resources */ = {isa = PBXBuildFile; fileRef = 976FEBAC197E12A7006C0936 /* chattab2.png */; };
+		976FEBAF197E13AC006C0936 /* chattab1.png in Resources */ = {isa = PBXBuildFile; fileRef = 976FEBAE197E13AC006C0936 /* chattab1.png */; };
 		9773183F197B55D800FC2D77 /* FLTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9773183E197B55D800FC2D77 /* FLTopViewController.m */; };
 		9773184B197CB2C200FC2D77 /* greenbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 9773184A197CB2C200FC2D77 /* greenbutton.png */; };
 		9773185D197CB31500FC2D77 /* myprofile.png in Resources */ = {isa = PBXBuildFile; fileRef = 9773185C197CB31500FC2D77 /* myprofile.png */; };
@@ -245,7 +246,6 @@
 		2F3F574A16ACCB1500E1D011 /* FLWaitingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLWaitingViewController.h; sourceTree = "<group>"; };
 		2F3F574B16ACCB1500E1D011 /* FLWaitingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLWaitingViewController.m; sourceTree = "<group>"; };
 		2F3F574C16ACCB1600E1D011 /* FLWaitingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLWaitingViewController.xib; sourceTree = "<group>"; };
-		2F43266C171B97A10079111E /* chattabicon7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chattabicon7.png; path = ../Resorces/chattabicon7.png; sourceTree = "<group>"; };
 		2F43268C171CE0850079111E /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		2F43268D171CE0870079111E /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		2F43268E171CE0880079111E /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
@@ -342,7 +342,6 @@
 		2FD89F3E17C20BBE00E599C8 /* plantab8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = plantab8.png; path = ../Resorces/plantab8.png; sourceTree = "<group>"; };
 		2FD89F4017C20C1C00E599C8 /* cardtab1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cardtab1.png; path = ../Resorces/cardtab1.png; sourceTree = "<group>"; };
 		2FD89F4217C20CA200E599C8 /* cardtab2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cardtab2.png; path = ../Resorces/cardtab2.png; sourceTree = "<group>"; };
-		2FD89F4617C20EFE00E599C8 /* chattab2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chattab2.png; path = ../Resorces/chattab2.png; sourceTree = "<group>"; };
 		2FD89F4817C20F6400E599C8 /* cardtab1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cardtab1.png; path = ../Resorces/cardtab1.png; sourceTree = "<group>"; };
 		2FD89F4A17C20FE600E599C8 /* box1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = box1.png; path = ../Resorces/box1.png; sourceTree = "<group>"; };
 		2FD89F4C17C2104900E599C8 /* box2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = box2.png; path = ../Resorces/box2.png; sourceTree = "<group>"; };
@@ -418,6 +417,9 @@
 		2FF9002B1755C53C00AE082C /* FLOldplansViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLOldplansViewController.m; sourceTree = "<group>"; };
 		2FF9002C1755C53D00AE082C /* FLOldplansViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLOldplansViewController.xib; sourceTree = "<group>"; };
 		95D196115A0F44CD8F7BCFCE /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		976FEBAA197E1201006C0936 /* phototab2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = phototab2.png; sourceTree = "<group>"; };
+		976FEBAC197E12A7006C0936 /* chattab2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chattab2.png; sourceTree = "<group>"; };
+		976FEBAE197E13AC006C0936 /* chattab1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chattab1.png; sourceTree = "<group>"; };
 		9773183D197B55D400FC2D77 /* FLTopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLTopViewController.h; sourceTree = "<group>"; };
 		9773183E197B55D800FC2D77 /* FLTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTopViewController.m; sourceTree = "<group>"; };
 		9773184A197CB2C200FC2D77 /* greenbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = greenbutton.png; path = ../Resorces/greenbutton.png; sourceTree = "<group>"; };
@@ -530,6 +532,7 @@
 		977A83C619741548002DAA20 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				976FEBAA197E1201006C0936 /* phototab2.png */,
 				2F9CCD5F17C9D04700ED16BF /* Default-568h@2x.png */,
 				2F0A75FF17E9DBB700458427 /* lovelogicon29.png */,
 				2F0A760117E9DC0700458427 /* lovelogicon58.png */,
@@ -545,6 +548,7 @@
 				2F18D5EE17C5BAD40061DB9A /* lovernameviewcontroller.png */,
 				2FD89F3C17C20B6B00E599C8 /* plantab7.png */,
 				2F18D5EA17C4F5DF0061DB9A /* enterviewcontroller1.png */,
+				976FEBAE197E13AC006C0936 /* chattab1.png */,
 				2FDA070117C5BFE800BCC269 /* warningviewcontroller.png */,
 				2F18D5F017C5BB3E0061DB9A /* lovenumberviewcontroller.png */,
 				9773184A197CB2C200FC2D77 /* greenbutton.png */,
@@ -567,7 +571,7 @@
 				2F0805C617B0C06500C60A65 /* greencell2.png */,
 				2FD89F4017C20C1C00E599C8 /* cardtab1.png */,
 				9773185C197CB31500FC2D77 /* myprofile.png */,
-				2FD89F4617C20EFE00E599C8 /* chattab2.png */,
+				976FEBAC197E12A7006C0936 /* chattab2.png */,
 				977A83B9196FE21B002DAA20 /* penwhite.png */,
 				2FD89F3E17C20BBE00E599C8 /* plantab8.png */,
 				97731862197CB32E00FC2D77 /* heartbuttonpink.png */,
@@ -586,7 +590,6 @@
 				2FDA070D17C5C67C00BCC269 /* signedviewcontroller.png */,
 				2FDA071917C5D23E00BCC269 /* loginviewcontroller3.png */,
 				2FF14F4B17EC3BFD00248615 /* lovelogicon80.png */,
-				2F43266C171B97A10079111E /* chattabicon7.png */,
 				2FD89F5017C3215000E599C8 /* cardstyle1.png */,
 				2FF14F4917EC3BEC00248615 /* lovelogicon120.png */,
 				2FD89F5217C3215C00E599C8 /* cardstyle2.png */,
@@ -837,6 +840,7 @@
 				2FA4190C166EE46E002E93E2 /* Default.png in Resources */,
 				2F939F7E16A66F4600F53257 /* FLLoginViewController.xib in Resources */,
 				2F3F573516AAA22700E1D011 /* FLLovernameViewController.xib in Resources */,
+				976FEBAF197E13AC006C0936 /* chattab1.png in Resources */,
 				2F3F573C16AAA9BD00E1D011 /* LoverNumberViewController.xib in Resources */,
 				2F3F574E16ACCB1600E1D011 /* FLWaitingViewController.xib in Resources */,
 				2FC1FAA916AFC7E000D406B0 /* FLLoverConfirmedViewController.xib in Resources */,
@@ -853,6 +857,8 @@
 				2FC92DFB17040E7100BF0544 /* FLChatlogViewController.xib in Resources */,
 				2FC92E0017042DEE00BF0544 /* FLPartnerAcViewController.xib in Resources */,
 				2FC92E0517045A3D00BF0544 /* FLLoverinfoViewController.xib in Resources */,
+				976FEBAD197E12A7006C0936 /* chattab2.png in Resources */,
+				976FEBAB197E1201006C0936 /* phototab2.png in Resources */,
 				2FF6A0E51708220100F36907 /* backgroundview.png in Resources */,
 				2FF6A0EE17082B7B00F36907 /* FLCardViewController.xib in Resources */,
 				2FF6A0F317082D4100F36907 /* CardCell.xib in Resources */,
@@ -863,7 +869,6 @@
 				2FF6A11417095C8F00F36907 /* FLCardTitleViewController.xib in Resources */,
 				2F87747C17167B26007EF993 /* FLWellcomeViewController.xib in Resources */,
 				2F877494171690FD007EF993 /* FLWarningViewController.xib in Resources */,
-				2F43266D171B97A30079111E /* chattabicon7.png in Resources */,
 				2F432690171CE08A0079111E /* WebViewController.xib in Resources */,
 				2F0A760217E9DC0700458427 /* lovelogicon58.png in Resources */,
 				2F5451CD171E731A008D49A5 /* lovelogicon57.png in Resources */,
@@ -914,7 +919,6 @@
 				2FD89F3F17C20BBE00E599C8 /* plantab8.png in Resources */,
 				2FD89F4117C20C1C00E599C8 /* cardtab1.png in Resources */,
 				2FD89F4317C20CA300E599C8 /* cardtab2.png in Resources */,
-				2FD89F4717C20EFE00E599C8 /* chattab2.png in Resources */,
 				2FD89F4917C20F6400E599C8 /* cardtab1.png in Resources */,
 				97731863197CB32E00FC2D77 /* heartbuttonpink.png in Resources */,
 				2FD89F4B17C20FE600E599C8 /* box1.png in Resources */,
