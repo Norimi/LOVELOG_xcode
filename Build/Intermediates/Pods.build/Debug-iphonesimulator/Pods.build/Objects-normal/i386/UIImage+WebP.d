@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/netnorimingconception/Desktop/LOVELOG2.2/LOVELOG/Pods/SDWebImage/SDWebImage/UIImage+WebP.m
+  /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/SDWebImage/SDWebImage/UIImage+WebP.m

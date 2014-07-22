@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "WBErrorNoticeView.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "UIImageView+WebCache.h"
 
@@ -15,9 +14,6 @@
 
 @interface FLAccountViewController : UIViewController<NSXMLParserDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 {
-    
-    
-    WBErrorNoticeView* notice;
     
     __weak IBOutlet UIButton *addPhoto;
     __weak IBOutlet UIImageView *myImage;

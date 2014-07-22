@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/netnorimingconception/Desktop/LOVELOG2.2/LOVELOG/FLLoveLog/FLSelectedCardViewController.m \
-  /Users/netnorimingconception/Desktop/LOVELOG2.2/LOVELOG/FLLoveLog/FLSelectedCardViewController.h
+  /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/FLSelectedCardViewController.m \
+  /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/FLSelectedCardViewController.h

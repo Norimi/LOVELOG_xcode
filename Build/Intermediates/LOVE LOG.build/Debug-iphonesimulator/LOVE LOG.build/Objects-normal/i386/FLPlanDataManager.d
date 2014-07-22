@@ -1,4 +1,4 @@
 dependencies: \
-  /Users/netnorimingconception/Desktop/LOVELOG2.2/LOVELOG/FLLoveLog/FLPlanDataManager.m \
-  /Users/netnorimingconception/Desktop/LOVELOG2.2/LOVELOG/FLLoveLog/FLPlanDataManager.h \
-  /Users/netnorimingconception/Desktop/LOVELOG2.2/LOVELOG/FLLoveLog/FLPlan.h
+  /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/FLPlanDataManager.m \
+  /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/FLPlanDataManager.h \
+  /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/FLPlan.h

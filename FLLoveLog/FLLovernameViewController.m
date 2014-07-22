@@ -79,6 +79,7 @@ LoverNumberViewController * LNVC;
             notice = [WBErrorNoticeView errorNoticeInView:self.view title:@"接続エラー" message:@"エラーが検出されました。"];
             [notice show];
             
+            [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
             
         }
         

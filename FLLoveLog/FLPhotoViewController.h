@@ -11,7 +11,6 @@
 #import "PhotoCell.h"
 #import "WBErrorNoticeView.h"
 #import <SDWebImage/UIImageView+WebCache.h>
-#import "UIImageView+WebCache.h"
 #import <EGORefreshTableHeaderView.h>
 
 

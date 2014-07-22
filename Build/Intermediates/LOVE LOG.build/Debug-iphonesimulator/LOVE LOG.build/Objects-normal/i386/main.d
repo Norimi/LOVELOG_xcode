@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/netnorimingconception/Desktop/LOVELOG2.2/LOVELOG/FLLoveLog/main.m \
-  /Users/netnorimingconception/Desktop/LOVELOG2.2/LOVELOG/FLLoveLog/FLAppDelegate.h
+  /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/main.m \
+  /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/FLAppDelegate.h

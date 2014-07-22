@@ -114,9 +114,6 @@ FLAccountViewController * AVC;
                 
                 
             }
-
-
-            
             
         }else{
             //通信失敗

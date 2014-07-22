@@ -24,10 +24,11 @@
 @property(strong, nonatomic)NSString * userName;
 @property(strong, nonatomic)NSString * mName;
 @property(strong, nonatomic)NSString * mEmail;
+@property   WBErrorNoticeView* notice;
 @end
 
 @implementation FLAccountViewController
-@synthesize mynameLabel, mName, mEmail, myImage, indiLabel,addPhoto,  nowTagStr, partnerName, userName, logOut, resign,toEdit;
+@synthesize mynameLabel, mName, mEmail, myImage, indiLabel,addPhoto,  nowTagStr, partnerName, userName, logOut, resign,toEdit,notice;
 
 
 FLEditViewController * EVC;
@@ -111,7 +112,7 @@ FLPartnerAcViewController * PVC;
 
 
 - (IBAction)reSign:(id)sender {
-    //セッション情報を空にする。USERDefaultを空にする。
+    //セッション情報を空にする。UserDefaultを空にする。
     //サーバー上のすべての情報を消去する。
     RVC = [[FLResignViewController alloc]init];
     [[self navigationController]pushViewController:RVC
@@ -195,9 +196,11 @@ didFinishPickingMediaWithInfo:(NSDictionary*)editingInfo{
     NSString * idtoPost = [NSString stringWithFormat:@"%d", idnumber];
     UIImage * img = resizedImage;
     NSData * imageData = UIImageJPEGRepresentation(img, 90);
+    
     AFHTTPClient * client = [AFHTTPClient clientWithBaseURL:[NSURL URLWithString:@"http://norimingconception.net"]];
     NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:ext, @"extension", idtoPost, @"userid",nil];
     
+    //パスの指定
     NSMutableURLRequest * request = [client multipartFormRequestWithMethod:@"POST" path:@"/lovelog/labaccount.php" parameters:params constructingBodyWithBlock: ^(id <AFMultipartFormData>formData) {
         [formData appendPartWithFileData: imageData name:@"upfile" fileName:@"title" mimeType:@"image/jpeg"];
    }];

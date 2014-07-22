@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/netnorimingconception/Desktop/LOVELOG2.2/LOVELOG/FLLoveLog/FLDateViewController.m \
-  /Users/netnorimingconception/Desktop/LOVELOG2.2/LOVELOG/FLLoveLog/FLDateViewController.h \
-  /Users/netnorimingconception/Desktop/LOVELOG2.2/LOVELOG/FLLoveLog/FLPlanmakeViewController.h \
-  /Users/netnorimingconception/Desktop/LOVELOG2.2/LOVELOG/FLLoveLog/FLAppDelegate.h
+  /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/FLDateViewController.m \
+  /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/FLDateViewController.h \
+  /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/FLPlanmakeViewController.h \
+  /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/FLAppDelegate.h

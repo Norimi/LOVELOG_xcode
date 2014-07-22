@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/netnorimingconception/Desktop/LOVELOG2.2/LOVELOG/FLLoveLog/FLConnection.m \
-  /Users/netnorimingconception/Desktop/LOVELOG2.2/LOVELOG/FLLoveLog/FLConnection.h
+  /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/FLConnection.m \
+  /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/FLConnection.h
