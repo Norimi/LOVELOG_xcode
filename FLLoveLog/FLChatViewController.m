@@ -95,12 +95,12 @@
     [chatTable registerNib:[UINib nibWithNibName:@"YourChatCell"bundle:nil]forCellReuseIdentifier:@"YourChatCell"];
     [self setNavigationComponents];
     
-//    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0f){
-//        
-//        self.edgesForExtendedLayout = UIRectEdgeNone;
-//        
-//    }
-//    
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0f){
+        
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+        
+    }
+    
     
     NSBundle * mainBundle = [NSBundle mainBundle];
     NSURL * URL;
