@@ -209,6 +209,12 @@ qualifiedName:(NSString*)qName
             
             
         }
+        
+    }else{
+        notice = [WBErrorNoticeView errorNoticeInView:self.view title:@"送信できません。" message:@"すべての欄を埋めてください。"];
+        [notice show];
+        [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+
     }
 }
 

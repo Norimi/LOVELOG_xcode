@@ -64,8 +64,8 @@ FLAccountViewController * AVC;
 
 -(void)viewWillAppear:(BOOL)animated{
     
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
 }
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -76,7 +76,6 @@ FLAccountViewController * AVC;
         self.edgesForExtendedLayout = UIRectEdgeNone;
     }
     _passwordField.secureTextEntry = YES;
-    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
     
 }
 

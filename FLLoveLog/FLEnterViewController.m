@@ -90,11 +90,12 @@ FLConfirmViewController * CVC;
             //失敗時
             notice = [WBErrorNoticeView errorNoticeInView:self.view title:@"接続エラー" message:@"ネットワーク接続を確認してください。"];
             [notice show];
+            [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
             
         }
         
     }
-     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+    
 }
 
 
@@ -195,7 +196,7 @@ foundCharacters:(NSString *)string{
 
 -(void)parserDidEndDocument:(NSXMLParser*)parser
 {
-    
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
     
     if(errorMessage.length > 0){
         
@@ -203,9 +204,11 @@ foundCharacters:(NSString *)string{
         NSString *body = @"すでに登録済みのemailアドレスです。";
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil message:body delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alertView show];
-        [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+       
         
     } else {
+        
+        
         
         CVC = [[FLConfirmViewController alloc]
                initWithNibName:@"FLConfirmViewController"

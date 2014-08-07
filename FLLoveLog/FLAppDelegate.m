@@ -53,12 +53,9 @@ FLPlantableViewController* PVC;
     
     
   //push通知
-    [[UIApplication sharedApplication]registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge|UIRemoteNotificationTypeSound|UIRemoteNotificationTypeAlert)];
-    
-    
-    NSLog(@"push");
-    
-    
+//    [[UIApplication sharedApplication]registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge|UIRemoteNotificationTypeSound|UIRemoteNotificationTypeAlert)];
+//   
+//    
     
     UIImageView * view = [[UIImageView alloc]
                           initWithFrame:CGRectMake(0,0,320,48)];
@@ -67,13 +64,6 @@ FLPlantableViewController* PVC;
     int idnumber = [defaults integerForKey:@"mid"];
     loggedIn = [defaults boolForKey :@"logged_in"];
     
-    
-    
-
-    
-    
-    
-
     
     if(idnumber > 0)
     {
@@ -128,7 +118,7 @@ FLPlantableViewController* PVC;
         [self.window makeKeyAndVisible];
         return YES;
         
-        }  else{
+        }else{
         
             
             
@@ -160,19 +150,19 @@ FLPlantableViewController* PVC;
     
 }
 
-
--(void)application:(UIApplication*)ap didRegisterForRemoteNotificationWithDeviceToken:(NSData*)devToken{
-    
-    
-    NSString * deviceToken = [[[[devToken description] stringByReplacingOccurrencesOfString:@"<"withString:@""]
-                               stringByReplacingOccurrencesOfString:@">" withString:@""]
-                              stringByReplacingOccurrencesOfString: @" " withString: @""];
-    NSLog(@"deviceToken: %@", deviceToken);
-    
-  
-    
-    
-}
+//
+//-(void)application:(UIApplication*)ap didRegisterForRemoteNotificationWithDeviceToken:(NSData*)devToken{
+//    
+//    
+//    NSString * deviceToken = [[[[devToken description] stringByReplacingOccurrencesOfString:@"<"withString:@""]
+//                               stringByReplacingOccurrencesOfString:@">" withString:@""]
+//                              stringByReplacingOccurrencesOfString: @" " withString: @""];
+//    NSLog(@"deviceToken: %@", deviceToken);
+//    
+//  
+//    
+//    
+//}
 
 
 -(void)application:(UIApplication *)application didReceiveLocalNotification:(NSDictionary*)userInfo{

@@ -1713,7 +1713,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciescd933fb12593b941^2ee540b12593b941^---0#1#1#--18"Check dependencies36"AAB24B19-7185-4238-A3A2-8564B4B5FA0E-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies45622a563e93b941^f87071563e93b941^---0#1#1#--18"Check dependencies36"FA41EFDD-16CF-481B-AFBC-94005DBC461C-
 
 CCompileC /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Objects-normal/i386/AFHTTPClient.o /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/AFNetworking/AFNetworking/AFHTTPClient.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s429063662.402971

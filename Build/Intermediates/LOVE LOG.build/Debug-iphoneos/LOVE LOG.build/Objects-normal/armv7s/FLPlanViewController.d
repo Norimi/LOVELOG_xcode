@@ -16,4 +16,5 @@ dependencies: \
   /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/SDWebImage/SDWebImageDownloader.h \
   /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/SDWebImage/SDImageCache.h \
   /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/EGOTableViewPullRefresh/EGORefreshTableHeaderView.h \
-  /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/FLConnection.h
+  /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/FLConnection.h \
+  /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/FLPlanmakeViewController.h

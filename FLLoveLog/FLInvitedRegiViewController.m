@@ -57,7 +57,7 @@ FLLoverConfirmedViewController * LCVC;
 - (IBAction)toConfirm:(id)sender {
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
     
-    if([_emailField.text length]>0 & [_passwordField.text length]>0 & [_nameField.text length]>0){
+    if([_emailField.text length]>0 & [_passwordField.text length]>0){
         
         [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
         //invite側と同じにしても良いかも。名前のみ多いしくみ。

@@ -86,16 +86,27 @@ FLLoverinfoViewController * LIVC;
 - (IBAction)sendEmail:(id)sender {
     
     
-    
-    MFMailComposeViewController * mc = [[MFMailComposeViewController alloc]init];
-    mc.mailComposeDelegate = self;
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSString * partnermail = [NSString stringWithFormat:@"%@", [defaults objectForKey:@"partneremail"]];
-    [mc  setToRecipients:[NSArray arrayWithObjects:partnermail,nil]];
-    [self presentViewController:mc animated:YES completion:NULL];
     
     
     
+    if(partnermail){
+        
+    MFMailComposeViewController * mc = [[MFMailComposeViewController alloc]init];
+    mc.mailComposeDelegate = self;
+        
+        if (!mc) {
+            // When the device is not add mail account mailViewController is empty, the following present view controller will cause the program to crash, here to judge
+            NSLog(@"Device is not add mail accounts");
+        }else{
+            
+            [mc  setToRecipients:[NSArray arrayWithObjects:partnermail,nil]];
+            [self presentViewController:mc animated:YES completion:NULL];
+            
+            
+        }
+    }
 }
 
 
