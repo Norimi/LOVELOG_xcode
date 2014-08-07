@@ -60,11 +60,7 @@
     planTable.dataSource = self;
     planTable.delegate = self;
     
-    self.categoryField.delegate = self;
-    self.titleField.delegate = self;
-    self.budgetField.delegate = nil;
-    self.dateField.delegate = self;
-    
+  
     [self setNavbarComponents];
     [self setTextFields];
     [self.navigationItem setHidesBackButton: YES animated:YES];
@@ -127,6 +123,12 @@
     dateField = [[UITextField alloc]initWithFrame:CGRectMake(110, 10, 185, 30)];
     dateField.adjustsFontSizeToFitWidth = YES;
     dateField.textColor = [UIColor darkGrayColor];
+    
+    self.categoryField.delegate = self;
+    self.titleField.delegate = self;
+    self.budgetField.delegate = self;
+    self.dateField.delegate = self;
+    
     
 }
 
@@ -554,47 +556,6 @@ numberOfRowsInSection:(NSInteger)section{
 
 
 
-- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
-    
-    
-    if([textField isEqual:self.categoryField]){
-        [categoryField becomeFirstResponder];
-        [self.titleField resignFirstResponder];
-        [self.dateField resignFirstResponder];
-        [self.budgetField resignFirstResponder];
-        
-        
-    } else if([textField isEqual:self.dateField]){
-        
-        [self.categoryField resignFirstResponder];
-        [self.titleField resignFirstResponder];
-        [self.budgetField resignFirstResponder];
-        [self.dateField resignFirstResponder];
-    }
-    
-    else if([textField isEqual:self.titleField]){
-        
-        
-        
-        [self.categoryField resignFirstResponder];
-        [self.dateField resignFirstResponder];
-        [self.budgetField resignFirstResponder];
-        
-    }
-    
-    
-    else if([textField isEqual:self.budgetField]){
-        
-        [self.categoryField resignFirstResponder];
-        [self.titleField resignFirstResponder];
-        [self.dateField resignFirstResponder];
-        
-    }
-    
-    return YES;
-    
-}
-
 
 
 -(void)resignResponder:(id)sender{
@@ -679,6 +640,16 @@ forRowAtIndexPath:(NSIndexPath*)indexPath
     
     [planTable reloadData];
     
+}
+
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    
+    NSLog(@"beginediting");
+    CGRect newFrame = self.view.frame;
+    newFrame.size = CGSizeMake(self.view.frame.size.width,self.view.frame.size.height+50);
+    self.view.frame = newFrame;
 }
 
 -(void)postTodoidToDelete:(int)toPost{

@@ -76,10 +76,18 @@ FLPartnerAcViewController * PAVC;
     }
     
     
+   
+    
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    
     NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
     planLabel.text = [defaults objectForKey:@"plantitle"];
     mychatLabel.text = [defaults objectForKey:@"mychatstring"];
     yourchatLabel.text = [defaults objectForKey:@"yourchatstring"];
+    
+    [self postandGet];
     
 }
 
@@ -179,14 +187,6 @@ didFinishPickingMediaWithInfo:(NSDictionary*)editingInfo{
     // Dispose of any resources that can be recreated.
 }
 
-
--(void)viewWillAppear:(BOOL)animated{
-    
-    
-    [self postandGet];
-    
-    
-}
 
 
 -(void)postandGet{
