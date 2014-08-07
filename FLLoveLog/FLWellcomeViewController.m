@@ -67,7 +67,7 @@ FLLoginViewController * LVC;
 - (IBAction)toFirst:(id)sender {
     
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
-    EVC = [[FLEnterViewController alloc]initWithNibName:@"EnterViewController" bundle:nil];
+    EVC = [[FLEnterViewController alloc]initWithNibName:@"FLEnterViewController" bundle:nil];
     [[self navigationController]pushViewController:EVC animated:YES];
     
 }

@@ -175,7 +175,7 @@ qualifiedName:(NSString*)qName
     if([connection connectionWithUrl:url withData:nil]){
         
         LVC = [[FLLovernameViewController alloc]
-               initWithNibName:@"LovernameViewController"
+               initWithNibName:@"FLLovernameViewController"
                bundle:nil];
         
         [[self navigationController]pushViewController:LVC

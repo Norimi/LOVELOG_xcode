@@ -25,7 +25,7 @@
 		</dict>
 	</dict>
 	<key>CFBundleIdentifier</key>
-	<string>net.norimingconception.lovelog</string>
+	<string>net.flatlevel56.lovelog</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>5.0</string>
 	<key>CFBundleName</key>

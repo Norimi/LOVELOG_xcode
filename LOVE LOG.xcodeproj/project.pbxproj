@@ -114,7 +114,6 @@
 		2FD89F3517C2090D00E599C8 /* plantab2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FD89F3417C2090D00E599C8 /* plantab2.png */; };
 		2FD89F3917C20A7C00E599C8 /* plantab0.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FD89F3817C20A7C00E599C8 /* plantab0.png */; };
 		2FD89F3B17C20B1400E599C8 /* plantab6.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FD89F3A17C20B1400E599C8 /* plantab6.png */; };
-		2FD89F3D17C20B6B00E599C8 /* plantab7.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FD89F3C17C20B6B00E599C8 /* plantab7.png */; };
 		2FD89F3F17C20BBE00E599C8 /* plantab8.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FD89F3E17C20BBE00E599C8 /* plantab8.png */; };
 		2FD89F4117C20C1C00E599C8 /* cardtab1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FD89F4017C20C1C00E599C8 /* cardtab1.png */; };
 		2FD89F4317C20CA300E599C8 /* cardtab2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FD89F4217C20CA200E599C8 /* cardtab2.png */; };
@@ -178,6 +177,7 @@
 		2FF9002D1755C53D00AE082C /* FLOldplansViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9002B1755C53C00AE082C /* FLOldplansViewController.m */; };
 		2FF9002E1755C53D00AE082C /* FLOldplansViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FF9002C1755C53D00AE082C /* FLOldplansViewController.xib */; };
 		312BF80B1AA24579A4EA35EA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 210784A1068743D3956FFD74 /* libPods.a */; };
+		976C8DED1991C19A00970699 /* plantab7.png in Resources */ = {isa = PBXBuildFile; fileRef = 976C8DEC1991C19A00970699 /* plantab7.png */; };
 		976FEBAB197E1201006C0936 /* phototab2.png in Resources */ = {isa = PBXBuildFile; fileRef = 976FEBAA197E1201006C0936 /* phototab2.png */; };
 		976FEBAD197E12A7006C0936 /* chattab2.png in Resources */ = {isa = PBXBuildFile; fileRef = 976FEBAC197E12A7006C0936 /* chattab2.png */; };
 		976FEBAF197E13AC006C0936 /* chattab1.png in Resources */ = {isa = PBXBuildFile; fileRef = 976FEBAE197E13AC006C0936 /* chattab1.png */; };
@@ -338,7 +338,6 @@
 		2FD89F3417C2090D00E599C8 /* plantab2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = plantab2.png; path = ../Resorces/plantab2.png; sourceTree = "<group>"; };
 		2FD89F3817C20A7C00E599C8 /* plantab0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = plantab0.png; path = ../Resorces/plantab0.png; sourceTree = "<group>"; };
 		2FD89F3A17C20B1400E599C8 /* plantab6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = plantab6.png; path = ../Resorces/plantab6.png; sourceTree = "<group>"; };
-		2FD89F3C17C20B6B00E599C8 /* plantab7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = plantab7.png; path = /Users/netnorimingconception/Desktop/LOVELOG2.2/LOVELOG/Resorces/plantab7.png; sourceTree = "<absolute>"; };
 		2FD89F3E17C20BBE00E599C8 /* plantab8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = plantab8.png; path = ../Resorces/plantab8.png; sourceTree = "<group>"; };
 		2FD89F4017C20C1C00E599C8 /* cardtab1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cardtab1.png; path = ../Resorces/cardtab1.png; sourceTree = "<group>"; };
 		2FD89F4217C20CA200E599C8 /* cardtab2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cardtab2.png; path = ../Resorces/cardtab2.png; sourceTree = "<group>"; };
@@ -417,6 +416,7 @@
 		2FF9002B1755C53C00AE082C /* FLOldplansViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLOldplansViewController.m; sourceTree = "<group>"; };
 		2FF9002C1755C53D00AE082C /* FLOldplansViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLOldplansViewController.xib; sourceTree = "<group>"; };
 		95D196115A0F44CD8F7BCFCE /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		976C8DEC1991C19A00970699 /* plantab7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plantab7.png; sourceTree = "<group>"; };
 		976FEBAA197E1201006C0936 /* phototab2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = phototab2.png; sourceTree = "<group>"; };
 		976FEBAC197E12A7006C0936 /* chattab2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chattab2.png; sourceTree = "<group>"; };
 		976FEBAE197E13AC006C0936 /* chattab1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chattab1.png; sourceTree = "<group>"; };
@@ -532,6 +532,7 @@
 		977A83C619741548002DAA20 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				976C8DEC1991C19A00970699 /* plantab7.png */,
 				976FEBAA197E1201006C0936 /* phototab2.png */,
 				2F9CCD5F17C9D04700ED16BF /* Default-568h@2x.png */,
 				2F0A75FF17E9DBB700458427 /* lovelogicon29.png */,
@@ -546,7 +547,6 @@
 				2FD89F4C17C2104900E599C8 /* box2.png */,
 				977A83B7196FE196002DAA20 /* accountphoto.png */,
 				2F18D5EE17C5BAD40061DB9A /* lovernameviewcontroller.png */,
-				2FD89F3C17C20B6B00E599C8 /* plantab7.png */,
 				2F18D5EA17C4F5DF0061DB9A /* enterviewcontroller1.png */,
 				976FEBAE197E13AC006C0936 /* chattab1.png */,
 				2FDA070117C5BFE800BCC269 /* warningviewcontroller.png */,
@@ -878,6 +878,7 @@
 				2FEAC32717549D290003B509 /* FLAddtodoViewController.xib in Resources */,
 				2FEAC32C17549DFA0003B509 /* FLPlanViewController.xib in Resources */,
 				2FF9002E1755C53D00AE082C /* FLOldplansViewController.xib in Resources */,
+				976C8DED1991C19A00970699 /* plantab7.png in Resources */,
 				2F9008D01759EF7A00767564 /* FLFromchatPlanViewController.xib in Resources */,
 				2F116F84176346D400BE34B7 /* whitecell5.png in Resources */,
 				2F116F8617634A6A00BE34B7 /* whitecell6.png in Resources */,
@@ -915,7 +916,6 @@
 				2FD89F3517C2090D00E599C8 /* plantab2.png in Resources */,
 				2FD89F3917C20A7C00E599C8 /* plantab0.png in Resources */,
 				2FD89F3B17C20B1400E599C8 /* plantab6.png in Resources */,
-				2FD89F3D17C20B6B00E599C8 /* plantab7.png in Resources */,
 				2FD89F3F17C20BBE00E599C8 /* plantab8.png in Resources */,
 				2FD89F4117C20C1C00E599C8 /* cardtab1.png in Resources */,
 				2FD89F4317C20CA300E599C8 /* cardtab2.png in Resources */,
@@ -1082,17 +1082,17 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Norimi Kawajiri (HUJYNX2AJQ)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Norimi Kawajiri (HUJYNX2AJQ)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Norimi Kawajiri (CVZHYYY5EC)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos7.0]" = "iPhone Developer: Norimi Kawajiri (CVZHYYY5EC)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "D819EE01-4DCF-4F9C-A7FB-BBDC29F30C7E";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D819EE01-4DCF-4F9C-A7FB-BBDC29F30C7E";
+				PROVISIONING_PROFILE = "EC6E32A8-2009-484F-8D6C-EE0ED3B00F5C";
+				"PROVISIONING_PROFILE[sdk=iphoneos7.0]" = "EC6E32A8-2009-484F-8D6C-EE0ED3B00F5C";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = NO;
 			};
@@ -1111,7 +1111,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "LOVE LOG";
 				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "ACB08C5B-9534-47EE-85FB-336874AA829F";
+				"PROVISIONING_PROFILE[sdk=iphoneos7.0]" = "EC6E32A8-2009-484F-8D6C-EE0ED3B00F5C";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Distribution;
@@ -1126,7 +1126,6 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Norimi Kawajiri (CVZHYYY5EC)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Norimi Kawajiri (CVZHYYY5EC)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1139,9 +1138,9 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				PROVISIONING_PROFILE = "DCADBF97-0CAD-46E8-AB62-2D1D58372DB5";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "DCADBF97-0CAD-46E8-AB62-2D1D58372DB5";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PROVISIONING_PROFILE = "EC6E32A8-2009-484F-8D6C-EE0ED3B00F5C";
+				"PROVISIONING_PROFILE[sdk=iphoneos7.0]" = "EC6E32A8-2009-484F-8D6C-EE0ED3B00F5C";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = NO;
 			};
@@ -1156,17 +1155,17 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Norimi Kawajiri (HUJYNX2AJQ)";
-				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Distribution: Norimi Kawajiri (HUJYNX2AJQ)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Norimi Kawajiri (CVZHYYY5EC)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos7.0]" = "iPhone Developer: Norimi Kawajiri (CVZHYYY5EC)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "D819EE01-4DCF-4F9C-A7FB-BBDC29F30C7E";
-				"PROVISIONING_PROFILE[sdk=*]" = "D819EE01-4DCF-4F9C-A7FB-BBDC29F30C7E";
+				PROVISIONING_PROFILE = "EC6E32A8-2009-484F-8D6C-EE0ED3B00F5C";
+				"PROVISIONING_PROFILE[sdk=iphoneos7.0]" = "EC6E32A8-2009-484F-8D6C-EE0ED3B00F5C";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = NO;
 			};
@@ -1186,7 +1185,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "LOVE LOG";
 				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=*]" = "66477587-A5D7-4875-B71B-2D37E44625B3";
+				"PROVISIONING_PROFILE[sdk=iphoneos7.0]" = "EC6E32A8-2009-484F-8D6C-EE0ED3B00F5C";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1204,7 +1203,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "LOVE LOG";
 				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos7.0]" = "EC6E32A8-2009-484F-8D6C-EE0ED3B00F5C";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

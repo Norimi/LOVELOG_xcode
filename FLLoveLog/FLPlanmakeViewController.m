@@ -149,6 +149,7 @@
 
 -(void)viewWillAppear:(BOOL)animated{
     
+    NSLog(@"flplanmakeview");
     [self.planTable setContentOffset:CGPointMake(0, self.planTable.contentSize.height - self.planTable.frame.size.height)];
     
     CGRect tableFrame = [planTable frame];
@@ -157,7 +158,9 @@
     
     FLAppDelegate * appDelegate;
     appDelegate = (FLAppDelegate*)[[UIApplication sharedApplication]delegate];
-    [categoryField setText:appDelegate.categoryString];
+    categoryField.text = appDelegate.categoryString;
+    NSLog(@"titleString%@",appDelegate.categoryString);
+    //[categoryField setText:appDelegate.categoryString];
     [titleField setText:appDelegate.titleString];
     [dateField setText:appDelegate.dateString];
     [budgetField setText:appDelegate.budgetString];
@@ -166,7 +169,7 @@
     todoArray = appDelegate.apptodoArray;
     
     
-    [planTable reloadData];
+    [self.planTable reloadData];
     
 }
 
@@ -211,6 +214,8 @@ numberOfRowsInSection:(NSInteger)section{
 
 
 - (UITableViewCell *)tableView:(UITableView*)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSLog(@"cellforrow");
     UITableViewCell *cell = [planTable dequeueReusableCellWithIdentifier:@"Cell"];
     
     cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"Cell"];

@@ -13,6 +13,7 @@
 #import "FLChatViewController.h"
 #import "WebViewController.h"
 #import "FLConnection.h"
+#import "FLPlanmakeViewController.h"
 
 
 typedef NS_ENUM(NSInteger, FLEditingStyle) {
@@ -88,7 +89,7 @@ static const int FONT_SIZE_FOR_SUBTITLE = 10;
 
 -(void)viewWillAppear:(BOOL)animated
 {
-    
+    NSLog(@"flplanviewcontroller");
     
     FLAppDelegate * appDelegate;
     appDelegate = (FLAppDelegate*)[[UIApplication sharedApplication]delegate];  planurlArray = appDelegate.appurlArray;
@@ -142,6 +143,9 @@ numberOfRowsInSection:(NSInteger)section{
     
     cell.textLabel.font = [UIFont fontWithName:@"HelveticaNeue-UltraLight" size:FONT_SIZE_FOR_TITLE];
     cell.detailTextLabel.font = [UIFont fontWithName:@"HelveticaNeue-UltraLight" size:FONT_SIZE_FOR_SUBTITLE];
+    
+    FLAppDelegate * appDelegate;
+    appDelegate = (FLAppDelegate*)[[UIApplication  sharedApplication]delegate];
     
     
     if(indexPath.section == 0) {
@@ -263,8 +267,6 @@ numberOfRowsInSection:(NSInteger)section{
     if(appDelegate.EDIT == FLEditingStyleYes){
         
         url = [NSString stringWithFormat:@"http://norimingconception.net/lovelog/planviewcontrolleredit.php"];
-        FLAppDelegate * appDelegate;
-        appDelegate = (FLAppDelegate*)[[UIApplication  sharedApplication]delegate];
         NSString * planidPost = appDelegate.planidtoSend;
         [body appendData:[[NSString stringWithFormat:@"userid=%d&category=%@&title=%@&date=%@&budget=%@&planid=%@", idnumber,categoryString, titleString, dateString,budgetString, planidPost]dataUsingEncoding:NSUTF8StringEncoding]];
         

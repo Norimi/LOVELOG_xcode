@@ -208,7 +208,7 @@ foundCharacters:(NSString *)string{
     } else {
         
         CVC = [[FLConfirmViewController alloc]
-               initWithNibName:@"ConfirmViewController"
+               initWithNibName:@"FLConfirmViewController"
                bundle:nil];
         [[self navigationController]pushViewController:CVC
                                               animated:YES];

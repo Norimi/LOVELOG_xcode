@@ -157,7 +157,7 @@ qualifiedName:(NSString*)qName
      [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
     
     WVC = [[FLWarningViewController alloc]
-            initWithNibName:@"WarningViewController"
+            initWithNibName:@"FLWarningViewController"
             bundle:nil];
     
     [[self navigationController]pushViewController:WVC

@@ -183,7 +183,7 @@ qualifiedName:(NSString*)qName
 - (IBAction)toWaiting:(id)sender {
     
      [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
-    FLWaitingViewController * WVC = [[FLWaitingViewController alloc]initWithNibName:@"WaitingViewController" bundle:nil];
+    FLWaitingViewController * WVC = [[FLWaitingViewController alloc]initWithNibName:@"FLWaitingViewController" bundle:nil];
     WVC.lovername = loverName;
     WVC.lovercode = loverNumber;
     
