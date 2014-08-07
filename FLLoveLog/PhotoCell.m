@@ -51,7 +51,7 @@
     
     
     NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
-   NSString *  mName = [defaults stringForKey:@"mname"];
+    NSString *  mName = [defaults stringForKey:@"mname"];
     NSString * pName = [defaults stringForKey:@"pname"];
     
 

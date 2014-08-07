@@ -113,16 +113,7 @@
     
     NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
     contentsArray = [defaults objectForKey:@"chatcontents"];
-    UIButton * toHistory = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-    [toHistory addTarget:self
-                  action:@selector(toHistory:)
-        forControlEvents:UIControlEventTouchUpInside];
-    
-    if(contentsArray.count > 29){
-        
-        chatTable.tableFooterView = toHistory;
-        
-    }
+   
     
     if(_refreshHeaderView == nil){
         
@@ -158,6 +149,19 @@
 
 
 -(void)viewWillAppear:(BOOL)animated{
+    
+    if(contentsArray.count > 29){
+        
+        UIButton * toHistory = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+        [toHistory addTarget:self
+                      action:@selector(toHistory:)
+            forControlEvents:UIControlEventTouchUpInside];
+        
+
+        
+        chatTable.tableFooterView = toHistory;
+        
+    }
     
     NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
     BOOL after = [defaults objectForKey:@"topview"];
@@ -506,6 +510,8 @@ foundCharacters:(NSString *)string{
         pIndivalue = [pIndi intValue];
         int  myphotoIndi = [myphotosum intValue];
         int pphotoIndi = [pphotosum intValue];
+        
+        NSLog(@"contentsArraycount%d", contentsArray.count);
         
         
         [defaults setInteger:myIndivalue forKey:@"msum"];

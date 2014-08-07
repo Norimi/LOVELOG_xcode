@@ -203,7 +203,7 @@
             
             
         }
-
+        
         
     }else{
         
@@ -486,15 +486,16 @@ numberOfRowsInSection:(NSInteger)section{
 
 
 
--(UITableViewCell * ) tableView:(UITableView*)tableView
+-(UITableViewCell *) tableView:(UITableView*)tableView
 cellForRowAtIndexPath:(NSIndexPath*)indexPath
 {
     
-    
-       
+   
     PhotoCell * cell  = [photoTable dequeueReusableCellWithIdentifier:@"PhotoCell" forIndexPath:indexPath];
     NSDictionary * itemAtIndex = (NSDictionary *)[contentsArray objectAtIndex:indexPath.row];
     //indicatorの値を取得してUIに反映させる
+    
+    
     NSString * intMindi = [itemAtIndex objectForKey:@"myindi"];
     NSString * intPindi = [itemAtIndex objectForKey:@"partnerindi"];
     NSString * photoidtoPass = [itemAtIndex objectForKey:@"photoid"];
@@ -515,10 +516,10 @@ cellForRowAtIndexPath:(NSIndexPath*)indexPath
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
     _reloading = NO;
     [_refreshHeaderView egoRefreshScrollViewDataSourceDidFinishedLoading:self.photoTable];
+        
+   
     return cell;
-    
 }
-
 
 -(void)tableView:(UITableView*)tableView didSelectRowAtIndexPath:(NSIndexPath*)indexPath{
   //TODO:写真の消去
