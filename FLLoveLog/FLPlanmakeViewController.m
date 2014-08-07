@@ -68,9 +68,7 @@
     [self setNavbarComponents];
     [self setTextFields];
     [self.navigationItem setHidesBackButton: YES animated:YES];
-
-    
-    
+      
 }
 
 
@@ -152,15 +150,22 @@
     NSLog(@"flplanmakeview");
     [self.planTable setContentOffset:CGPointMake(0, self.planTable.contentSize.height - self.planTable.frame.size.height)];
     
+    [self setTexts];
+    
     CGRect tableFrame = [planTable frame];
     tableFrame.size.height = 1000;
     [planTable setFrame:tableFrame];
     
+    
+}
+
+
+-(void)setTexts{
+    
+    
     FLAppDelegate * appDelegate;
     appDelegate = (FLAppDelegate*)[[UIApplication sharedApplication]delegate];
-    categoryField.text = appDelegate.categoryString;
-    NSLog(@"titleString%@",appDelegate.categoryString);
-    //[categoryField setText:appDelegate.categoryString];
+    [categoryField setText:appDelegate.categoryString];
     [titleField setText:appDelegate.titleString];
     [dateField setText:appDelegate.dateString];
     [budgetField setText:appDelegate.budgetString];
@@ -169,7 +174,6 @@
     todoArray = appDelegate.apptodoArray;
     
     
-    [self.planTable reloadData];
     
 }
 
@@ -364,6 +368,7 @@ numberOfRowsInSection:(NSInteger)section{
     [self.titleField endEditing:YES];
     
     
+    
     if(indexPath.section == 1){
         
         if(indexPath.row == 0){
@@ -456,7 +461,6 @@ numberOfRowsInSection:(NSInteger)section{
                     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
                     FLAppDelegate * appDelegate;
                     appDelegate = (FLAppDelegate*)[[UIApplication sharedApplication]delegate];
-                    
                     appDelegate.categoryString = categoryField.text;
                     appDelegate.titleString = titleField.text;
                     appDelegate.dateString = dateField.text;

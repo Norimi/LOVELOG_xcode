@@ -89,12 +89,12 @@ static const int FONT_SIZE_FOR_SUBTITLE = 10;
 
 -(void)viewWillAppear:(BOOL)animated
 {
-    NSLog(@"flplanviewcontroller");
+    
     
     FLAppDelegate * appDelegate;
-    appDelegate = (FLAppDelegate*)[[UIApplication sharedApplication]delegate];  planurlArray = appDelegate.appurlArray;
-    plantodoArray = appDelegate.apptodoArray;
-}
+    appDelegate = (FLAppDelegate*)[[UIApplication sharedApplication]delegate];
+    planurlArray = appDelegate.appurlArray;
+    plantodoArray = appDelegate.apptodoArray;}
 
 
 

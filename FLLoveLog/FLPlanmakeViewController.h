@@ -12,5 +12,4 @@
     __weak IBOutlet UITableView *planTable;
 }
 @property (weak, nonatomic) IBOutlet UITableView *planTable;
-
 @end
