@@ -50,15 +50,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)viewDidUnload {
-    dateField = nil;
-    [self setDateField:nil];
-    dp = nil;
-    [self setDp:nil];
-    doneButton = nil;
-    [self setDoneButton:nil];
-    [super viewDidUnload];
-}
+
 - (IBAction)dateChanged:(id)sender {
     
     // 日付の表示形式を設定

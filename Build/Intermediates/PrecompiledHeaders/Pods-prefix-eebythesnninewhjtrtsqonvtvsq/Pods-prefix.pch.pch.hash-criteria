@@ -1,0 +1,34 @@
+Contents of /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Pods-prefix.pch
+-x
+c
+-arch
+i386
+-std=gnu99
+-fpascal-strings
+-O0
+-DDEBUG=1
+-DCOCOAPODS=1
+-isysroot
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk
+-fexceptions
+-fasm-blocks
+-g
+-mios-simulator-version-min=5.0
+-iquote
+-iquote
+-I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/include
+-I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/BuildHeaders
+-I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/BuildHeaders/AFNetworking
+-I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/BuildHeaders/ASIHTTPRequest
+-I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/BuildHeaders/EGOTableViewPullRefresh
+-I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/BuildHeaders/NoticeView
+-I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/BuildHeaders/Reachability
+-I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/BuildHeaders/SDWebImage
+-I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/BuildHeaders/libwebp
+-I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/BuildHeaders/libwebp/webp
+-I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/include/libxml2
+-F/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator
+i386-apple-darwin13.3.0
+"4.2.1 Compatible Apple LLVM 5.0 (clang-500.2.79)"
+SDK_PRODUCT_BUILD_VERSION=11B508
+11B508

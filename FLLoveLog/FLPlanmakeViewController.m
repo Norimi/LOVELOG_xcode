@@ -156,8 +156,18 @@
     
     CGRect tableFrame = [planTable frame];
     tableFrame.size.height = 1000;
-    [planTable setFrame:tableFrame];
+    [self scrollTableView];
     
+    [planTable setFrame:tableFrame];
+    [self.planTable reloadData];
+    
+    
+}
+
+-(void)scrollTableView{
+    //scrollしないと、backbuttonで戻ってきたときにtableが消えてしまうので、暫定的に処理
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:-1 inSection:0];
+    [self.planTable scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionTop animated:YES];
     
 }
 

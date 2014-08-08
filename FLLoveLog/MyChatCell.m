@@ -152,6 +152,8 @@
 
 
 -(void)layoutSubviews{
+    
+    
     [super layoutSubviews];
     self.textLabel.backgroundColor = [UIColor clearColor];
     UIFont *font = [UIFont fontWithName:@"HelveticaNeue-UltraLight" size:11];

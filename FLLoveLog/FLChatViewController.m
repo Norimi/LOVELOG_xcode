@@ -662,6 +662,7 @@ numberOfRowsInSection:(NSInteger)section
         
     }
     
+    //変数identiferで二つのセルを場合によって読み込む。
     MyChatCell * cell = [chatTable dequeueReusableCellWithIdentifier:identifier  forIndexPath:indexPath];
     NSString * chatString = [[NSString alloc]init];
     chatString = [itemAtIndex objectForKey:@"messages"];
