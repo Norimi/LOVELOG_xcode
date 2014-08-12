@@ -12,6 +12,7 @@
 
 -(BOOL)connectionWithUrl:(NSString*)urlString withData:(NSString*)data {
     
+ 
     
     NSMutableURLRequest * request = [[NSMutableURLRequest alloc]init];
     [request setURL:[NSURL URLWithString:urlString]];
@@ -30,15 +31,40 @@
     if(0<[error_str length]){
         
         return NO;
+        //アラート表示メソッドをデリゲートメソッドとして呼び出す。
+        
         
     } else {
         
+        //成功判定が出た段階でdelegateメソッドを呼び出す
+        //レスポンスまで時間がかかっても非同期的に処理できるパターン
         return YES;
+        [self.delegate startParse];
+        
+        //セレクタがあるかどうか確認する場合
+       // [self test];
         
     }
 
 
 }
+
+
+-(void)connectionAndParseWithUrl:(NSString*)urlString withData:(NSString*)data
+{
+    
+    if([self connectionWithUrl:urlString withData:data]){
+        NSLog(@"insideconnectionandparse");
+        [self.delegate startParse];
+       // [self test];
+        
+    }else{
+        [self.delegate showAlert];
+    }
+    
+}
+    
+
 
 
 -(BOOL)connectionWithUrl:(NSString*)url withNSData:(NSData*)body{
@@ -68,6 +94,20 @@
     }
     
 }
+
+//デリゲートメソッドのテスト
+-(void)test
+{
+    
+    NSLog(@"testwithurl");
+    if([self.delegate respondsToSelector:@selector(startParse)]) {
+        NSLog(@"insideif");
+        [self.delegate startParse];
+        
+     }
+}
+
+
 
 
 

@@ -76,8 +76,6 @@ FLPartnerAcViewController * PAVC;
     }
     
     
-   
-    
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -191,6 +189,8 @@ didFinishPickingMediaWithInfo:(NSDictionary*)editingInfo{
 
 -(void)postandGet{
     
+    NSLog(@"postandget");
+    
     [[NSUserDefaults standardUserDefaults]removeObjectForKey:@"mychatstring"];
     planLabel.text = nil;
     mychatLabel.text = nil;
@@ -203,29 +203,55 @@ didFinishPickingMediaWithInfo:(NSDictionary*)editingInfo{
     NSString * data = [NSString
                        stringWithFormat:@"userid=%d&partnerid=%d",idnumber, pidnumber];
     FLConnection * connection = [[FLConnection alloc]init];
-    if([connection connectionWithUrl:url withData:data]){
-        //通信成功時
-        NSURL *newURL = [NSURL URLWithString:@"http://norimingconception.net/lovelog/topviewcontroller.php"];
-        NSURLRequest * req = [NSURLRequest requestWithURL:newURL];
-        NSURLConnection *connection = [[NSURLConnection alloc]initWithRequest:req delegate:self];
-        [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+    connection.delegate = self;
+    [connection connectionAndParseWithUrl:url withData:data];
+   
+//    if([connection connectionWithUrl:url withData:data]){
+//        //通信成功時
+//        NSLog(@"connectionsucceed");
+//        
+//        //デリゲートの設定をここで行う
+//        connection.delegate = self;
+//        [connection test];
+//        
+//    }else{
+//        
+//        notice = [WBErrorNoticeView errorNoticeInView:self.view title:@"接続エラー" message:@"ネットワーク接続を確認してください。"];
+//       [notice show];
+//        [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+////        
+//    }
+}
+
+
+-(void)showAlert{
+    
+    notice = [WBErrorNoticeView errorNoticeInView:self.view title:@"接続エラー" message:@"ネットワーク接続を確認してください。"];
+    [notice show];
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+    
+}
+
+
+-(void)startParse{
+    
+    //デリゲートメソッドの実行
+    NSLog(@"indelegatemethod");
+    
+    NSURL *newURL = [NSURL URLWithString:@"http://norimingconception.net/lovelog/topviewcontroller.php"];
+    NSURLRequest * req = [NSURLRequest requestWithURL:newURL];
+    NSURLConnection *connection = [[NSURLConnection alloc]initWithRequest:req delegate:self];
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+    
+    if(connection)
+    {
         
-        if(connection)
-        {
-            
-            receivedData = [NSMutableData data];
-            
-            
-        }
+        receivedData = [NSMutableData data];
         
-        
-    }else{
-        
-        notice = [WBErrorNoticeView errorNoticeInView:self.view title:@"接続エラー" message:@"ネットワーク接続を確認してください。"];
-        [notice show];
-        [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
         
     }
+    
+    
 }
 
 - (void)connection:(NSURLConnection *)connection

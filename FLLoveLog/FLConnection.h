@@ -8,8 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
-@interface FLConnection : NSObject
+@protocol FLConnectionDelegate <NSObject>
+-(void)startParse;
+-(void)showAlert;
+@end
 
+@interface FLConnection : NSObject
+@property (nonatomic,assign)id<FLConnectionDelegate>delegate;
+
+-(void)test;
+
+-(void)connectionAndParseWithUrl:(NSString *)urlString withData:(NSString*)data;
 -(BOOL)connectionWithUrl:(NSString*)urlString withData:(NSString*)data;
 -(BOOL)connectionWithUrl:(NSString*)url withNSData:(NSData*)body;
 

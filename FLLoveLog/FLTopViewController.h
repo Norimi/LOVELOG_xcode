@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FLConnection.h"
 
 
-@interface FLTopViewController : UIViewController<NSXMLParserDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>{
+@interface FLTopViewController : UIViewController<NSXMLParserDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate,FLConnectionDelegate>{
    
     __weak IBOutlet UIButton *youraccountButton;
     __weak IBOutlet UIButton *myaccountButton;
