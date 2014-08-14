@@ -218,8 +218,6 @@
 
 
 -(void)postandGet{
-    
-  
     NSString * url = [NSString stringWithFormat:@"http://norimingconception.net/lovelog/postid.php"];
     
     NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
@@ -229,24 +227,29 @@
                        stringWithFormat:@"userid=%d&partnerid=%d",idnumber, pidnumber];
     
     FLConnection * connection = [[FLConnection alloc]init];
-    if([connection connectionWithUrl:url withData:data]){
-        
-        NSURL *newURL = [NSURL URLWithString:@"http://norimingconception.net/lovelog/labchatviewcontroller.php"];
-        NSURLRequest * req = [NSURLRequest requestWithURL:newURL];
-        NSURLConnection *connection = [[NSURLConnection alloc]initWithRequest:req delegate:self];
-        if(connection)
-        {
-            receivedData = [NSMutableData data];
-        }
+    connection.delegate = self;
+    [connection connectionAndParseWithUrl:url withData:data];
+}
 
-        
-    }else{
-        
-        
+-(void)startParse{
+    
+    NSLog(@"startparse");
+    NSURL *newURL = [NSURL URLWithString:@"http://norimingconception.net/lovelog/labchatviewcontroller.php"];
+    NSURLRequest * req = [NSURLRequest requestWithURL:newURL];
+    NSURLConnection *connection = [[NSURLConnection alloc]initWithRequest:req delegate:self];
+    if(connection)
+    {
+        receivedData = [NSMutableData data];
+    }
+}
+
+-(void)showAlert{
+    
+
         notice = [WBErrorNoticeView errorNoticeInView:self.view title:@"接続エラー" message:@"ネットワーク接続を確認してください。"];
         [notice show];
         [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
-    }
+    
 }
 
 

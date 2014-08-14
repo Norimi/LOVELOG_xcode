@@ -16,6 +16,7 @@ dependencies: \
   /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/MyChatCell.h \
   /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/YourChatCell.h \
   /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/EGOTableViewPullRefresh/EGORefreshTableHeaderView.h \
+  /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/FLConnection.h \
   /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/FLPartnerAcViewController.h \
   /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/FLCardSelectViewController.h \
   /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/FLPhotoViewController.h \
@@ -31,5 +32,4 @@ dependencies: \
   /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/AFNetworking/AFNetworkActivityIndicatorManager.h \
   /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/AFNetworking/UIImageView+AFNetworking.h \
   /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/FLTopViewController.h \
-  /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/FLConnection.h \
   /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/FLPlantableViewController.h

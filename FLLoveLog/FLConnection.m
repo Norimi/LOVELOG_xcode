@@ -54,11 +54,13 @@
 {
     
     if([self connectionWithUrl:urlString withData:data]){
+        //通信成功時にパースを開始させる
         NSLog(@"insideconnectionandparse");
         [self.delegate startParse];
        // [self test];
         
     }else{
+        //通信失敗時にアラートを表示させる
         [self.delegate showAlert];
     }
     

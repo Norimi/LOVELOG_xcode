@@ -13,9 +13,10 @@
 #import "YourChatCell.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 #import<EGORefreshTableHeaderView.h>
+#import "FLConnection.h"
 
 
-@interface FLChatViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, NSXMLParserDelegate,EGORefreshTableHeaderDelegate>{
+@interface FLChatViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, NSXMLParserDelegate,EGORefreshTableHeaderDelegate,FLConnectionDelegate>{
     
     
     EGORefreshTableHeaderView * _refreshHeaderView;
