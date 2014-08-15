@@ -28,6 +28,26 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "979DA3A0199E1ECB0087FEC4"
+               BuildableName = "LOVE LOG Tests.xctest"
+               BlueprintName = "LOVE LOG Tests"
+               ReferencedContainer = "container:LOVE LOG.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "979DA3BF199E2AD40087FEC4"
+               BuildableName = "LOVE LOG Tests2.xctest"
+               BlueprintName = "LOVE LOG Tests2"
+               ReferencedContainer = "container:LOVE LOG.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

@@ -19,6 +19,9 @@
 - (void)setUp
 {
     [super setUp];
+    
+    //別のテスト：アカウントまわり。
+    //違ったidでログインすると、パートナーとアカウントが作成できずエラーになるとか
     // Put setup code here; it will be run once, before the first test case.
     //テスト内容：送信して成功するとcontentsarrayの三十個めが消える
     //送信成功、reloadすると、ひとつずれた30個が取得される
@@ -36,7 +39,7 @@
 
 - (void)testExample
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    //XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
 }
 
 -(void)testContentsArray{
@@ -44,12 +47,12 @@
     
     FLChatViewController * view = [[FLChatViewController alloc]init];
     NSMutableArray * contentsArray = [[NSMutableArray alloc]init];
-    contentsArray = [view getContentsArrayFromUserDefaults];
     [view postandGet];
-    XCTAssertEqual(contentsArray.count,30);
+    contentsArray = [view getContentsArrayFromUserDefaults];
+    XCTAssertEqual(contentsArray.count, (NSUInteger)0, @"warning ");
 //    
-//    FLChatlogViewController * send = [[FLChatlogViewController alloc]init];
-//    send.chatField.text = @"test";
+    FLChatlogViewController * send = [[FLChatlogViewController alloc]init];
+    send.chatField.text = @"test";
 //    [send sendChat];
 //    
 //    [view postandGet];

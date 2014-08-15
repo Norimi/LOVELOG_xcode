@@ -111,8 +111,7 @@
     chatTable.delegate = self;
     [chatTable setBackgroundView:nil];
     
-    NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
-    contentsArray = [defaults objectForKey:@"chatcontents"];
+    contentsArray = [self getContentsArrayFromUserDefaults];
    
     
     if(_refreshHeaderView == nil){
@@ -125,6 +124,16 @@
     }
     
     [chatTable reloadData];
+    
+}
+
+
+-(NSMutableArray *)getContentsArrayFromUserDefaults{
+    
+    
+    NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
+    return [defaults objectForKey:@"chatcontents"];
+
     
 }
 

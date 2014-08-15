@@ -197,7 +197,36 @@
 		977A83C2196FE43B002DAA20 /* FLPlan.m in Sources */ = {isa = PBXBuildFile; fileRef = 977A83C1196FE43B002DAA20 /* FLPlan.m */; };
 		977A83C5196FE7D5002DAA20 /* FLPlanDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 977A83C4196FE7D5002DAA20 /* FLPlanDataManager.m */; };
 		978C9033197765DA00EF6B4F /* FLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 978C9032197765DA00EF6B4F /* FLConnection.m */; };
+		979DA3A4199E1ECC0087FEC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA418FB166EE46E002E93E2 /* Foundation.framework */; };
+		979DA3A5199E1ECC0087FEC4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA418F9166EE46E002E93E2 /* UIKit.framework */; };
+		979DA3AB199E1ECC0087FEC4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 979DA3A9199E1ECC0087FEC4 /* InfoPlist.strings */; };
+		979DA3AD199E1ECC0087FEC4 /* LOVE_LOG_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 979DA3AC199E1ECC0087FEC4 /* LOVE_LOG_Tests.m */; };
+		979DA3B7199E1F790087FEC4 /* FLChatTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 979DA3B6199E1F790087FEC4 /* FLChatTest.m */; };
+		979DA3B9199E1FEA0087FEC4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 979DA3B8199E1FEA0087FEC4 /* XCTest.framework */; };
+		979DA3BB199E27970087FEC4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 979DA3BA199E27970087FEC4 /* XCTest.framework */; };
+		979DA3C1199E2AD40087FEC4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 979DA3B8199E1FEA0087FEC4 /* XCTest.framework */; };
+		979DA3C2199E2AD40087FEC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA418FB166EE46E002E93E2 /* Foundation.framework */; };
+		979DA3C3199E2AD40087FEC4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA418F9166EE46E002E93E2 /* UIKit.framework */; };
+		979DA3C9199E2AD40087FEC4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 979DA3C7199E2AD40087FEC4 /* InfoPlist.strings */; };
+		979DA3CB199E2AD40087FEC4 /* LOVE_LOG_Tests2.m in Sources */ = {isa = PBXBuildFile; fileRef = 979DA3CA199E2AD40087FEC4 /* LOVE_LOG_Tests2.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		979DA3AF199E1ECC0087FEC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FA418EC166EE46E002E93E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FA418F4166EE46E002E93E2;
+			remoteInfo = "LOVE LOG";
+		};
+		979DA3CD199E2AD50087FEC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FA418EC166EE46E002E93E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FA418F4166EE46E002E93E2;
+			remoteInfo = "LOVE LOG";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		210784A1068743D3956FFD74 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -441,6 +470,19 @@
 		977A83C4196FE7D5002DAA20 /* FLPlanDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLPlanDataManager.m; sourceTree = "<group>"; };
 		978C9031197765DA00EF6B4F /* FLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLConnection.h; sourceTree = "<group>"; };
 		978C9032197765DA00EF6B4F /* FLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLConnection.m; sourceTree = "<group>"; };
+		979DA3A1199E1ECB0087FEC4 /* LOVE LOG Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LOVE LOG Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		979DA3A8199E1ECC0087FEC4 /* LOVE LOG Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LOVE LOG Tests-Info.plist"; sourceTree = "<group>"; };
+		979DA3AA199E1ECC0087FEC4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		979DA3AC199E1ECC0087FEC4 /* LOVE_LOG_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LOVE_LOG_Tests.m; sourceTree = "<group>"; };
+		979DA3AE199E1ECC0087FEC4 /* LOVE LOG Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LOVE LOG Tests-Prefix.pch"; sourceTree = "<group>"; };
+		979DA3B6199E1F790087FEC4 /* FLChatTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLChatTest.m; sourceTree = "<group>"; };
+		979DA3B8199E1FEA0087FEC4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		979DA3BA199E27970087FEC4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = XCTest.framework; sourceTree = "<group>"; };
+		979DA3C0199E2AD40087FEC4 /* LOVE LOG Tests2.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LOVE LOG Tests2.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		979DA3C6199E2AD40087FEC4 /* LOVE LOG Tests2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LOVE LOG Tests2-Info.plist"; sourceTree = "<group>"; };
+		979DA3C8199E2AD40087FEC4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		979DA3CA199E2AD40087FEC4 /* LOVE_LOG_Tests2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LOVE_LOG_Tests2.m; sourceTree = "<group>"; };
+		979DA3CC199E2AD50087FEC4 /* LOVE LOG Tests2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LOVE LOG Tests2-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -463,13 +505,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		979DA39E199E1ECB0087FEC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				979DA3B9199E1FEA0087FEC4 /* XCTest.framework in Frameworks */,
+				979DA3A5199E1ECC0087FEC4 /* UIKit.framework in Frameworks */,
+				979DA3A4199E1ECC0087FEC4 /* Foundation.framework in Frameworks */,
+				979DA3BB199E27970087FEC4 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		979DA3BD199E2AD40087FEC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				979DA3C1199E2AD40087FEC4 /* XCTest.framework in Frameworks */,
+				979DA3C3199E2AD40087FEC4 /* UIKit.framework in Frameworks */,
+				979DA3C2199E2AD40087FEC4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		2FA418EA166EE46E002E93E2 = {
 			isa = PBXGroup;
 			children = (
+				979DA3B5199E1F4E0087FEC4 /* FLTests */,
 				2FA418FF166EE46E002E93E2 /* FLLovelog */,
+				979DA3A6199E1ECC0087FEC4 /* LOVE LOG Tests */,
+				979DA3C4199E2AD40087FEC4 /* LOVE LOG Tests2 */,
 				2FA418F8166EE46E002E93E2 /* Frameworks */,
 				2FA418F6166EE46E002E93E2 /* Products */,
 				95D196115A0F44CD8F7BCFCE /* Pods.xcconfig */,
@@ -481,6 +547,8 @@
 			isa = PBXGroup;
 			children = (
 				2FA418F5166EE46E002E93E2 /* LOVE LOG.app */,
+				979DA3A1199E1ECB0087FEC4 /* LOVE LOG Tests.xctest */,
+				979DA3C0199E2AD40087FEC4 /* LOVE LOG Tests2.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -488,6 +556,7 @@
 		2FA418F8166EE46E002E93E2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				979DA3B8199E1FEA0087FEC4 /* XCTest.framework */,
 				2FF14ECF178FEFD80082B21F /* AudioToolbox.framework */,
 				2F01D49D17A105690005B654 /* MapKit.framework */,
 				2F01D49B17A105570005B654 /* ImageIO.framework */,
@@ -499,6 +568,7 @@
 				2FA418FB166EE46E002E93E2 /* Foundation.framework */,
 				2FA418FD166EE46E002E93E2 /* CoreGraphics.framework */,
 				210784A1068743D3956FFD74 /* libPods.a */,
+				979DA3BA199E27970087FEC4 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -778,6 +848,52 @@
 			name = APIs;
 			sourceTree = "<group>";
 		};
+		979DA3A6199E1ECC0087FEC4 /* LOVE LOG Tests */ = {
+			isa = PBXGroup;
+			children = (
+				979DA3AC199E1ECC0087FEC4 /* LOVE_LOG_Tests.m */,
+				979DA3A7199E1ECC0087FEC4 /* Supporting Files */,
+			);
+			path = "LOVE LOG Tests";
+			sourceTree = "<group>";
+		};
+		979DA3A7199E1ECC0087FEC4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				979DA3A8199E1ECC0087FEC4 /* LOVE LOG Tests-Info.plist */,
+				979DA3A9199E1ECC0087FEC4 /* InfoPlist.strings */,
+				979DA3AE199E1ECC0087FEC4 /* LOVE LOG Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		979DA3B5199E1F4E0087FEC4 /* FLTests */ = {
+			isa = PBXGroup;
+			children = (
+				979DA3B6199E1F790087FEC4 /* FLChatTest.m */,
+			);
+			name = FLTests;
+			sourceTree = "<group>";
+		};
+		979DA3C4199E2AD40087FEC4 /* LOVE LOG Tests2 */ = {
+			isa = PBXGroup;
+			children = (
+				979DA3CA199E2AD40087FEC4 /* LOVE_LOG_Tests2.m */,
+				979DA3C5199E2AD40087FEC4 /* Supporting Files */,
+			);
+			path = "LOVE LOG Tests2";
+			sourceTree = "<group>";
+		};
+		979DA3C5199E2AD40087FEC4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				979DA3C6199E2AD40087FEC4 /* LOVE LOG Tests2-Info.plist */,
+				979DA3C7199E2AD40087FEC4 /* InfoPlist.strings */,
+				979DA3CC199E2AD50087FEC4 /* LOVE LOG Tests2-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -800,6 +916,42 @@
 			productReference = 2FA418F5166EE46E002E93E2 /* LOVE LOG.app */;
 			productType = "com.apple.product-type.application";
 		};
+		979DA3A0199E1ECB0087FEC4 /* LOVE LOG Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 979DA3B4199E1ECC0087FEC4 /* Build configuration list for PBXNativeTarget "LOVE LOG Tests" */;
+			buildPhases = (
+				979DA39D199E1ECB0087FEC4 /* Sources */,
+				979DA39E199E1ECB0087FEC4 /* Frameworks */,
+				979DA39F199E1ECB0087FEC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				979DA3B0199E1ECC0087FEC4 /* PBXTargetDependency */,
+			);
+			name = "LOVE LOG Tests";
+			productName = "LOVE LOG Tests";
+			productReference = 979DA3A1199E1ECB0087FEC4 /* LOVE LOG Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		979DA3BF199E2AD40087FEC4 /* LOVE LOG Tests2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 979DA3CF199E2AD50087FEC4 /* Build configuration list for PBXNativeTarget "LOVE LOG Tests2" */;
+			buildPhases = (
+				979DA3BC199E2AD40087FEC4 /* Sources */,
+				979DA3BD199E2AD40087FEC4 /* Frameworks */,
+				979DA3BE199E2AD40087FEC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				979DA3CE199E2AD50087FEC4 /* PBXTargetDependency */,
+			);
+			name = "LOVE LOG Tests2";
+			productName = "LOVE LOG Tests2";
+			productReference = 979DA3C0199E2AD40087FEC4 /* LOVE LOG Tests2.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -812,6 +964,12 @@
 				TargetAttributes = {
 					2FA418F4166EE46E002E93E2 = {
 						DevelopmentTeam = HUJYNX2AJQ;
+					};
+					979DA3A0199E1ECB0087FEC4 = {
+						TestTargetID = 2FA418F4166EE46E002E93E2;
+					};
+					979DA3BF199E2AD40087FEC4 = {
+						TestTargetID = 2FA418F4166EE46E002E93E2;
 					};
 				};
 			};
@@ -828,6 +986,8 @@
 			projectRoot = "";
 			targets = (
 				2FA418F4166EE46E002E93E2 /* LOVE LOG */,
+				979DA3A0199E1ECB0087FEC4 /* LOVE LOG Tests */,
+				979DA3BF199E2AD40087FEC4 /* LOVE LOG Tests2 */,
 			);
 		};
 /* End PBXProject section */
@@ -972,6 +1132,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		979DA39F199E1ECB0087FEC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				979DA3AB199E1ECC0087FEC4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		979DA3BE199E2AD40087FEC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				979DA3C9199E2AD40087FEC4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -1059,13 +1235,59 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		979DA39D199E1ECB0087FEC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				979DA3AD199E1ECC0087FEC4 /* LOVE_LOG_Tests.m in Sources */,
+				979DA3B7199E1F790087FEC4 /* FLChatTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		979DA3BC199E2AD40087FEC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				979DA3CB199E2AD40087FEC4 /* LOVE_LOG_Tests2.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		979DA3B0199E1ECC0087FEC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FA418F4166EE46E002E93E2 /* LOVE LOG */;
+			targetProxy = 979DA3AF199E1ECC0087FEC4 /* PBXContainerItemProxy */;
+		};
+		979DA3CE199E2AD50087FEC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FA418F4166EE46E002E93E2 /* LOVE LOG */;
+			targetProxy = 979DA3CD199E2AD50087FEC4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2FA41902166EE46E002E93E2 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				2FA41903166EE46E002E93E2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		979DA3A9199E1ECC0087FEC4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				979DA3AA199E1ECC0087FEC4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		979DA3C7199E2AD40087FEC4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				979DA3C8199E2AD40087FEC4 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1208,6 +1430,208 @@
 			};
 			name = Release;
 		};
+		979DA3B1199E1ECC0087FEC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95D196115A0F44CD8F7BCFCE /* Pods.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LOVE LOG.app/LOVE LOG";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LOVE LOG Tests/LOVE LOG Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "LOVE LOG Tests/LOVE LOG Tests-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		979DA3B2199E1ECC0087FEC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LOVE LOG.app/LOVE LOG";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LOVE LOG Tests/LOVE LOG Tests-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "LOVE LOG Tests/LOVE LOG Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		979DA3B3199E1ECC0087FEC4 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LOVE LOG.app/LOVE LOG";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LOVE LOG Tests/LOVE LOG Tests-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "LOVE LOG Tests/LOVE LOG Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Distribution;
+		};
+		979DA3D0199E2AD50087FEC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LOVE LOG.app/LOVE LOG";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LOVE LOG Tests2/LOVE LOG Tests2-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "LOVE LOG Tests2/LOVE LOG Tests2-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		979DA3D1199E2AD50087FEC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LOVE LOG.app/LOVE LOG";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LOVE LOG Tests2/LOVE LOG Tests2-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "LOVE LOG Tests2/LOVE LOG Tests2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		979DA3D2199E2AD50087FEC4 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LOVE LOG.app/LOVE LOG";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LOVE LOG Tests2/LOVE LOG Tests2-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "LOVE LOG Tests2/LOVE LOG Tests2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Distribution;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1230,6 +1654,24 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		979DA3B4199E1ECC0087FEC4 /* Build configuration list for PBXNativeTarget "LOVE LOG Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				979DA3B1199E1ECC0087FEC4 /* Debug */,
+				979DA3B2199E1ECC0087FEC4 /* Release */,
+				979DA3B3199E1ECC0087FEC4 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		979DA3CF199E2AD50087FEC4 /* Build configuration list for PBXNativeTarget "LOVE LOG Tests2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				979DA3D0199E2AD50087FEC4 /* Debug */,
+				979DA3D1199E2AD50087FEC4 /* Release */,
+				979DA3D2199E2AD50087FEC4 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

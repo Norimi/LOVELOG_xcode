@@ -31,4 +31,8 @@
 @property SystemSoundID  soundID;
 @property (weak, nonatomic) IBOutlet UITableView *chatTable;
 
+//単体テスト用にメソッドを公開
+-(NSMutableArray*)getContentsArrayFromUserDefaults;
+-(void)postandGet;
+
 @end
