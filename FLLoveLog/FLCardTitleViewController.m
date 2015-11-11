@@ -77,7 +77,7 @@
         NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
         NSInteger idnumber = [defaults integerForKey:@"mid"];
         NSString * data = [NSString stringWithFormat:@"message=%@&title=%@&userid=%d&cardname=%@", message, titleString, idnumber,cardtoSend];
-        NSString * url = [NSString stringWithFormat:@"http://norimingconception.net/lovelog/cardtitleviewcontroller.php"];
+        NSString * url = [NSString stringWithFormat:@"http://flatlevel56.org/lovelog/cardtitleviewcontroller.php"];
         FLConnection * connection = [[FLConnection alloc]init];
         if([connection connectionWithUrl:url withData:data]){
             

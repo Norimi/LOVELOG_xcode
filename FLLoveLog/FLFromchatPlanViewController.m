@@ -124,7 +124,7 @@
 -(void)postPlanid{
     
     contentsArray = nil;
-    NSString * url = [NSString stringWithFormat:@"http://norimingconception.net/lovelog/planid.php"];
+    NSString * url = [NSString stringWithFormat:@"http://flatlevel56.org/lovelog/planid.php"];
     int pid = [planid intValue];
     NSString * data = [NSString
                        stringWithFormat:@"planid=%d", pid];
@@ -132,7 +132,7 @@
     if([connection connectionWithUrl:url withData:data]){
         
         
-        NSURL * newURL = [NSURL URLWithString:@"http://norimingconception.net/lovelog/fromchatviewcontroller.php"];
+        NSURL * newURL = [NSURL URLWithString:@"http://flatlevel56.org/lovelog/fromchatviewcontroller.php"];
         NSURLRequest * req = [NSURLRequest requestWithURL:newURL];
         NSURLConnection *connection = [[NSURLConnection alloc]initWithRequest:req delegate:self];
         
@@ -637,7 +637,7 @@ didReceiveData:(NSData *)data
         {
             FLConnection * connection = [[FLConnection alloc]init];
             cell.accessoryType = UITableViewCellAccessoryNone;
-            NSString * url = [NSString stringWithFormat:@"http://norimingconception.net/lovelog/todocheck.php"];
+            NSString * url = [NSString stringWithFormat:@"http://flatlevel56.org/lovelog/todocheck.php"];
             
             int tmptodoid;
             
@@ -657,7 +657,7 @@ didReceiveData:(NSData *)data
         }else{
         
             cell.accessoryType = UITableViewCellAccessoryCheckmark;
-            NSString * url = [NSString stringWithFormat:@"http://norimingconception.net/lovelog/todocheck.php"];
+            NSString * url = [NSString stringWithFormat:@"http://flatlevel56.org/lovelog/todocheck.php"];
             int todoid;
             todoid =  [[todoidArray objectAtIndex:indexPath.row] intValue];
             NSString * data = [NSString stringWithFormat:@"checked=%d", todoid];

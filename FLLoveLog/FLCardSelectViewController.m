@@ -131,7 +131,7 @@
 -(void)postIdtoStartParse{
     
     contentsArray = nil;
-    NSString * url = [NSString stringWithFormat:@"http://norimingconception.net/postid.php"];
+    NSString * url = [NSString stringWithFormat:@"http://flatlevel56.org/postid.php"];
     NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
     NSInteger pidnumber = [defaults integerForKey:@"pid"];
     NSString * data = [NSString
@@ -140,7 +140,7 @@
     FLConnection * connection = [[FLConnection alloc]init];
     if([connection connectionWithUrl:url withData:data]){
         
-        NSURL * newURL = [NSURL URLWithString:@"http://norimingconception.net/lovelog/cardselectviewcontroller.php"];
+        NSURL * newURL = [NSURL URLWithString:@"http://flatlevel56.org/lovelog/cardselectviewcontroller.php"];
         NSURLRequest * req = [NSURLRequest requestWithURL:newURL];
         NSURLConnection *connection = [[NSURLConnection alloc]initWithRequest:req delegate:self];
         if(connection)

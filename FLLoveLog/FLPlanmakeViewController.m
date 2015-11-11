@@ -633,7 +633,7 @@ forRowAtIndexPath:(NSIndexPath*)indexPath
 
 -(void)postUrlIdtoDelete:(int)toPost{
     
-    NSString * url = [NSString stringWithFormat:@"http://norimingconception.net/lovelog/urldelete.php"];
+    NSString * url = [NSString stringWithFormat:@"http://flatlevel56.org/lovelog/urldelete.php"];
     NSString * data = [NSString stringWithFormat:@"urlid=%d", toPost];
     FLConnection * connection = [[FLConnection alloc]init];
     if([connection connectionWithUrl:url withData:data]){
@@ -666,7 +666,7 @@ forRowAtIndexPath:(NSIndexPath*)indexPath
     
     
     
-    NSString * url = [NSString stringWithFormat:@"http://norimingconception.net/lovelog/tododelete.php"];
+    NSString * url = [NSString stringWithFormat:@"http://flatlevel56.org/lovelog/tododelete.php"];
     NSString * data = [NSString stringWithFormat:@"todoid=%d", toPost];
     FLConnection * connection = [[FLConnection alloc]init];
     if([connection connectionWithUrl:url withData:data]){

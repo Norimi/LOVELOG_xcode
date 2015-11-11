@@ -61,7 +61,7 @@ FLLoverConfirmedViewController * LCVC;
         
         [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
         //invite側と同じにしても良いかも。名前のみ多いしくみ。
-        NSString * url = [NSString stringWithFormat:@"http://norimingconception.net/lovelog/invitedregiviewcontroller2.php"];
+        NSString * url = [NSString stringWithFormat:@"http://flatlevel56.org/lovelog/invitedregiviewcontroller2.php"];
         NSString * data = [NSString
                            stringWithFormat:@"email=%@&password=%@&name=%@",
                            _emailField.text,_passwordField.text,_nameField.text];

@@ -225,13 +225,24 @@
 }
 
 
+-(int)getIdFromUserDefaults{
+    NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
+    return [defaults integerForKey:@"mid"];
+}
+
+-(int)getPidFromUserDefaults{
+    NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
+    return [defaults integerForKey:@"pid"];
+}
+
 
 -(void)postandGet{
-    NSString * url = [NSString stringWithFormat:@"http://norimingconception.net/lovelog/postid.php"];
+    NSString * url = [NSString stringWithFormat:@"http://flatlevel56.org/lovelog/postid.php"];
     
     NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
     NSInteger idnumber = [defaults integerForKey:@"mid"];
     NSInteger pidnumber = [defaults integerForKey:@"pid"];
+    NSLog(@"pid%d", pidnumber);
     NSString * data = [NSString
                        stringWithFormat:@"userid=%d&partnerid=%d",idnumber, pidnumber];
     
@@ -243,7 +254,7 @@
 -(void)startParse{
     
     NSLog(@"startparse");
-    NSURL *newURL = [NSURL URLWithString:@"http://norimingconception.net/lovelog/labchatviewcontroller.php"];
+    NSURL *newURL = [NSURL URLWithString:@"http://flatlevel56.org/lovelog/labchatviewcontroller.php"];
     NSURLRequest * req = [NSURLRequest requestWithURL:newURL];
     NSURLConnection *connection = [[NSURLConnection alloc]initWithRequest:req delegate:self];
     if(connection)
@@ -812,7 +823,7 @@ numberOfRowsInSection:(NSInteger)section
 -(void)toHistory:(id)sender{
     
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
-    NSString * url = [NSString stringWithFormat:@"http://norimingconception.net/lovelog/postpage.php"];
+    NSString * url = [NSString stringWithFormat:@"http://flatlevel56.org/lovelog/postpage.php"];
     postCount = contentsArray.count + 30;
     NSString * data = [NSString
                        stringWithFormat:@"page=%d",postCount];
@@ -822,7 +833,7 @@ numberOfRowsInSection:(NSInteger)section
         
         contentsArray = nil;
         postCount = nil;
-        NSURL *newURL = [NSURL URLWithString:@"http://norimingconception.net/lovelog/labchatviewcontroller.php"];
+        NSURL *newURL = [NSURL URLWithString:@"http://flatlevel56.org/lovelog/labchatviewcontroller.php"];
         NSURLRequest * req = [NSURLRequest requestWithURL:newURL];
         NSURLConnection *connection = [[NSURLConnection alloc]initWithRequest:req delegate:self];
         

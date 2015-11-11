@@ -125,7 +125,7 @@ FLPartnerAcViewController * PVC;
     
     FLConnection * connection = [[FLConnection alloc]init];
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
-    NSString * url = [NSString stringWithFormat:@"http://norimingconception.net/logoutviewcontroller.php"];
+    NSString * url = [NSString stringWithFormat:@"http://flatlevel56.org/logoutviewcontroller.php"];
     if([connection connectionWithUrl:url withData:nil]){
         
         
@@ -197,7 +197,7 @@ didFinishPickingMediaWithInfo:(NSDictionary*)editingInfo{
     UIImage * img = resizedImage;
     NSData * imageData = UIImageJPEGRepresentation(img, 90);
     
-    AFHTTPClient * client = [AFHTTPClient clientWithBaseURL:[NSURL URLWithString:@"http://norimingconception.net"]];
+    AFHTTPClient * client = [AFHTTPClient clientWithBaseURL:[NSURL URLWithString:@"http://flatlevel56.org"]];
     NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:ext, @"extension", idtoPost, @"userid",nil];
     
     //パスの指定

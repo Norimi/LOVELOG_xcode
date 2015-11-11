@@ -91,7 +91,7 @@ FLAccountViewController * AVC;
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
     if([_emailField.text length]>0 & [_passwordField.text length]>0){
         
-        NSString * url = [NSString stringWithFormat:@"http://norimingconception.net/lovelog/loginviewcontroller.php"];
+        NSString * url = [NSString stringWithFormat:@"http://flatlevel56.org/lovelog/loginviewcontroller.php"];
         NSString * data = [NSString
                            stringWithFormat:@"email=%@&password=%@",
                            _emailField.text, _passwordField.text];
@@ -101,7 +101,7 @@ FLAccountViewController * AVC;
         if([connection connectionWithUrl:url withData:data]){
             //通信成功
             
-            NSURL * myURL = [NSURL URLWithString:@"http://norimingconception.net/lovelog/loginviewcontrollerxml.php"];
+            NSURL * myURL = [NSURL URLWithString:@"http://flatlevel56.org/lovelog/loginviewcontrollerxml.php"];
             NSURLRequest * req = [NSURLRequest requestWithURL:myURL];
             NSURLConnection *connection = [[NSURLConnection alloc]initWithRequest:req delegate:self];
             [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;

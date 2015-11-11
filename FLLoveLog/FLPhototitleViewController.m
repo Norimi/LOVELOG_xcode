@@ -92,7 +92,7 @@
     NSInteger idnumber = [defaults integerForKey:@"mid"];
     NSString * idtoPost = [NSString stringWithFormat:@"%d", idnumber];
     NSData * imageData = UIImageJPEGRepresentation(resizedImage2, 90);
-    AFHTTPClient * client = [AFHTTPClient clientWithBaseURL:[NSURL URLWithString:@"http://norimingconception.net"]];
+    AFHTTPClient * client = [AFHTTPClient clientWithBaseURL:[NSURL URLWithString:@"http://flatlevel56.org"]];
     NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:
                             title, @"title",
                             ext, @"extension", idtoPost, @"userid",

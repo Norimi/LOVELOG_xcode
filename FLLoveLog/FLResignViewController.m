@@ -56,7 +56,7 @@ FLAppDelegate * appDelegate;
     //midを送り、そこにひもづけられているすべての情報を消去する
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
     
-    NSString * url = [NSString stringWithFormat:@"http://norimingconception.net/lovelog/resignviewcontroller.php"];
+    NSString * url = [NSString stringWithFormat:@"http://flatlevel56.org/lovelog/resignviewcontroller.php"];
     NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
     NSInteger idnumber = [defaults integerForKey:@"mid"];
     NSString * data = [NSString stringWithFormat:@"userid=%d", idnumber];

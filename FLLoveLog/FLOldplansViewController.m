@@ -226,7 +226,7 @@ numberOfRowsInSection:(NSInteger)section{
             if (cell.accessoryType == UITableViewCellAccessoryCheckmark)
             {
                 cell.accessoryType = UITableViewCellAccessoryNone;
-                NSString * url = [NSString stringWithFormat:@"http://norimingconception.net/lovelog/todocheck.php"];
+                NSString * url = [NSString stringWithFormat:@"http://flatlevel56.org/lovelog/todocheck.php"];
                 int tmptodoid;
                 tmptodoid =  [[passedtodoidArray objectAtIndex:indexPath.row] intValue];
                 int todoid = tmptodoid;
@@ -246,7 +246,7 @@ numberOfRowsInSection:(NSInteger)section{
                 
                 
                 cell.accessoryType = UITableViewCellAccessoryCheckmark;
-                NSString * url = [NSString stringWithFormat:@"http://norimingconception.net/lovelog/todocheck.php"];
+                NSString * url = [NSString stringWithFormat:@"http://flatlevel56.org/lovelog/todocheck.php"];
                 int todoid;
                 todoid =  [[passedtodoidArray objectAtIndex:indexPath.row] intValue];
                 NSString * data = [NSString stringWithFormat:@"checked=%d", todoid];

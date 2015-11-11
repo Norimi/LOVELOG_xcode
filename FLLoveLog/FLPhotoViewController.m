@@ -184,7 +184,7 @@
 -(void)postandGet{
     
     contentsArray = nil;
-    NSString * url = [NSString stringWithFormat:@"http://norimingconception.net/lovelog/postid.php"];
+    NSString * url = [NSString stringWithFormat:@"http://flatlevel56.org/lovelog/postid.php"];
     NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
     NSInteger idnumber = [defaults integerForKey:@"mid"];
     NSInteger pidnumber = [defaults integerForKey:@"pid"];
@@ -193,7 +193,7 @@
     FLConnection * connection = [[FLConnection alloc]init];
     if([connection connectionWithUrl:url withData:data]){
         
-        NSURL *newURL = [NSURL URLWithString:@"http://norimingconception.net/lovelog/photoview.php"];
+        NSURL *newURL = [NSURL URLWithString:@"http://flatlevel56.org/lovelog/photoview.php"];
         NSURLRequest * req = [NSURLRequest requestWithURL:newURL];
         NSURLConnection *connection = [[NSURLConnection alloc]initWithRequest:req delegate:self];
         if(connection)
@@ -508,7 +508,7 @@ cellForRowAtIndexPath:(NSIndexPath*)indexPath
     cell.frompartnerInd = [intPindi intValue];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     NSString * urlString = [itemAtIndex objectForKey:@"url"];
-    NSString * http = @"http://norimingconception.net/lovelog/photo_uploaded/" ;
+    NSString * http = @"http://flatlevel56.org/lovelog/photo_uploaded/" ;
     NSString * postUrl =  [NSString stringWithFormat:@"%@%@", http,urlString];
     [cell.photoView setContentMode:UIViewContentModeScaleAspectFill];
     [cell.photoView setImageWithURL:[NSURL URLWithString:postUrl]placeholderImage:[UIImage imageNamed:@"backgroundview.png" ]options:SDWebImageRetryFailed];
@@ -533,7 +533,7 @@ clickedButtonAtIndex:(NSInteger)buttonIndex{
     if (buttonIndex == 1 && alertView.tag == 2){
         
         [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
-        NSString * url = [NSString stringWithFormat:@"http://norimingconception.net/lovelog/deletephoto.php"];
+        NSString * url = [NSString stringWithFormat:@"http://flatlevel56.org/lovelog/deletephoto.php"];
         NSString * data = [NSString
          stringWithFormat:@"photoid=%d",deleteid];
         FLConnection * connection = [[FLConnection alloc]init];
@@ -596,7 +596,7 @@ didFinishPickingMediaWithInfo:(NSDictionary*)editingInfo{
 -(void)toHistory:(id)sender{
     
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
-    NSString * url = [NSString stringWithFormat:@"http://norimingconception.net/lovelog/postpage.php"];
+    NSString * url = [NSString stringWithFormat:@"http://flatlevel56.org/lovelog/postpage.php"];
     postCount = contentsArray.count + 30;
     NSString * data = [NSString
                        stringWithFormat:@"page=%d",postCount];
@@ -604,7 +604,7 @@ didFinishPickingMediaWithInfo:(NSDictionary*)editingInfo{
     if([connection connectionWithUrl:url withData:data]){
         
         contentsArray = nil;
-        NSURL *newURL = [NSURL URLWithString:@"http://norimingconception.net/lovelog/photoview.php"];
+        NSURL *newURL = [NSURL URLWithString:@"http://flatlevel56.org/lovelog/photoview.php"];
         NSURLRequest * req = [NSURLRequest requestWithURL:newURL];
         
         NSURLConnection *connection = [[NSURLConnection alloc]initWithRequest:req delegate:self];

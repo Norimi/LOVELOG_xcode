@@ -45,7 +45,7 @@ FLLoginViewController * LVC;
     
     
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
-    NSURL * myURL = [NSURL URLWithString:@"http://norimingconception.net/lovelog/loverregisteredviewcontroller.php"];
+    NSURL * myURL = [NSURL URLWithString:@"http://flatlevel56.org/lovelog/loverregisteredviewcontroller.php"];
     NSXMLParser * myParser = [[NSXMLParser alloc]initWithContentsOfURL:myURL];
     myParser.delegate = self;
     [myParser parse];

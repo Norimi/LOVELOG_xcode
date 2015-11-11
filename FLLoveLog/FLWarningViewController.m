@@ -56,7 +56,7 @@ FLWaitingViewController *WVC;
 -(void)viewWillAppear:(BOOL)animated{
     
     
-    NSURL *myURL = [NSURL URLWithString:@"http://norimingconception.net/lovelog/lovernumberviewcontroller.php"];
+    NSURL *myURL = [NSURL URLWithString:@"http://flatlevel56.org/lovelog/lovernumberviewcontroller.php"];
     NSXMLParser *myParser = [[NSXMLParser alloc]initWithContentsOfURL:myURL];
     myParser.delegate = self;
     [myParser parse];

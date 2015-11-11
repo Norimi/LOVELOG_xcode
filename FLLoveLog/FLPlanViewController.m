@@ -266,7 +266,7 @@ numberOfRowsInSection:(NSInteger)section{
     //FLConnectionに渡す値の条件分岐
     if(appDelegate.EDIT == FLEditingStyleYes){
         
-        url = [NSString stringWithFormat:@"http://norimingconception.net/lovelog/planviewcontrolleredit.php"];
+        url = [NSString stringWithFormat:@"http://flatlevel56.org/lovelog/planviewcontrolleredit.php"];
         NSString * planidPost = appDelegate.planidtoSend;
         [body appendData:[[NSString stringWithFormat:@"userid=%d&category=%@&title=%@&date=%@&budget=%@&planid=%@", idnumber,categoryString, titleString, dateString,budgetString, planidPost]dataUsingEncoding:NSUTF8StringEncoding]];
         
@@ -274,7 +274,7 @@ numberOfRowsInSection:(NSInteger)section{
     } else {
         
         
-        url = [NSString stringWithFormat:@"http://norimingconception.net/lovelog/planviewcontroller.php"];
+        url = [NSString stringWithFormat:@"http://flatlevel56.org/lovelog/planviewcontroller.php"];
         [body appendData:[[NSString stringWithFormat:@"userid=%d&category=%@&title=%@&date=%@&budget=%@", idnumber,categoryString, titleString, dateString, budgetString]dataUsingEncoding:NSUTF8StringEncoding]];
 
     }

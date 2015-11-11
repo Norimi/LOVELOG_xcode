@@ -61,7 +61,7 @@ LoverNumberViewController * LNVC;
         [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
         
         FLConnection * connection = [[FLConnection alloc]init];
-        NSString * url = [NSString stringWithFormat:@"http://norimingconception.net/lovelog/lovernameviewcontroller.php"];
+        NSString * url = [NSString stringWithFormat:@"http://flatlevel56.org/lovelog/lovernameviewcontroller.php"];
         NSString * data = [NSString stringWithFormat:@"username=%@&lovername=%@", usernameField.text, lovernameField.text];
         if([connection connectionWithUrl:url withData:data]){
             

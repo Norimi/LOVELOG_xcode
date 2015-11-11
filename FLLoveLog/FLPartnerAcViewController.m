@@ -59,7 +59,7 @@ FLLoverinfoViewController * LIVC;
     NSString * value = [[NSString stringWithFormat:@"♡%d", sum]init];
     indiValue.text = value;
     
-    NSString * profile = @"http://norimingconception.net/lovelog/profile_photos/";
+    NSString * profile = @"http://flatlevel56.org/lovelog/profile_photos/";
     NSString * file = [defaults stringForKey:@"partnerphoto"];
     NSString * postUrl = [NSString stringWithFormat:@"%@%@",profile, file];
     [partnerImage setImageWithURL:[NSURL URLWithString:postUrl]placeholderImage:[UIImage imageNamed:@"backgroundview.png"]];

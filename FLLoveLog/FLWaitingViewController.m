@@ -72,7 +72,7 @@ FLSignedViewController * SVC;
 -(void)searchRegistration:(NSTimer*)timer{
     //調べてflagをたてる。parserでflagが1だったら次のviewへ
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
-    NSURL *myURL = [NSURL URLWithString:@"http://norimingconception.net/lovelog/waitingviewcontroller.php"];
+    NSURL *myURL = [NSURL URLWithString:@"http://flatlevel56.org/lovelog/waitingviewcontroller.php"];
     NSXMLParser *myParser = [[NSXMLParser alloc]initWithContentsOfURL:myURL];
     myParser.delegate = self;
     [myParser parse];

@@ -59,7 +59,7 @@
     
     [[self navigationItem]setRightBarButtonItem:bbi];
     
-    NSURL * myURL = [NSURL URLWithString:@"http://norimingconception.net/accountviewcontrollerxml.php"];
+    NSURL * myURL = [NSURL URLWithString:@"http://flatlevel56.org/accountviewcontrollerxml.php"];
     NSXMLParser * myParser = [[NSXMLParser alloc]initWithContentsOfURL:myURL];
     myParser.delegate = self;
     [myParser parse];
@@ -190,7 +190,7 @@ qualifiedName:(NSString*)qName
         [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
         NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
         int idnumber = [defaults integerForKey:@"mid"];
-        NSString * url = [NSString stringWithFormat:@"http://norimingconception.net/lovelog/editviewcontroller.php"];
+        NSString * url = [NSString stringWithFormat:@"http://flatlevel56.org/lovelog/editviewcontroller.php"];
         NSString * data = [NSString stringWithFormat:@"name=%@&email=%@&password=%@&id=%d", nameField.text, emailField.text, passwordField.text, idnumber];
         if([connection connectionWithUrl:url withData:data]){
             

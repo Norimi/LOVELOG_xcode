@@ -24,5 +24,6 @@
 }
 @property (weak, nonatomic) IBOutlet UITextView *chatField;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+-(IBAction)sendClicked:(id)sender;
 
 @end

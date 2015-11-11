@@ -3,10 +3,13 @@ v6
 r1
 cCheck dependencies
 cProcessInfoPlistFile /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE\ LOG\ Tests.xctest/Info.plist /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/LOVE\ LOG\ Tests/LOVE\ LOG\ Tests-Info.plist
-cProcessPCH /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/PrecompiledHeaders/LOVE\ LOG\ Tests-Prefix-biyjcqaqtwbqoefrwuxvwuibllji/LOVE\ LOG\ Tests-Prefix.pch.pch LOVE\ LOG\ Tests/LOVE\ LOG\ Tests-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/Objects-normal/x86_64/LOVE_LOG_Tests.o /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/LOVE\ LOG\ Tests/LOVE_LOG_Tests.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/Objects-normal/x86_64/FLChatTest.o /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLChatTest.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cLd /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE\ LOG\ Tests.xctest/LOVE\ LOG\ Tests normal x86_64
+cProcessPCH /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/PrecompiledHeaders/LOVE\ LOG\ Tests-Prefix-ftpedyaegkblixgrmlktggpacwxg/LOVE\ LOG\ Tests-Prefix.pch.pch LOVE\ LOG\ Tests/LOVE\ LOG\ Tests-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/Objects-normal/i386/LOVE_LOG_Tests.o /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/LOVE\ LOG\ Tests/LOVE_LOG_Tests.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/Objects-normal/i386/FLChatTest.o /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLChatTest.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE\ LOG\ Tests.xctest/LOVE\ LOG\ Tests normal i386
+cGenerateDSYMFile /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE\ LOG\ Tests.xctest.dSYM /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE\ LOG\ Tests.xctest/LOVE\ LOG\ Tests
+cCopyStringsFile /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE\ LOG\ Tests.xctest/en.lproj/InfoPlist.strings LOVE\ LOG\ Tests/en.lproj/InfoPlist.strings
+cTouch /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE\ LOG\ Tests.xctest
 
 N/Applications/Xcode.app/Contents/Developer/Library/Frameworks/XCTest.framework/XCTest
 c000000005278439200000000000256F0
@@ -18,6 +21,11 @@ c00000000525642F10000000000000176
 t1381384945
 s374
 
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/Developer/Library/Frameworks/XCTest.framework/XCTest
+c00000000527843C50000000000025590
+t1383613381
+s152976
+
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/SDKSettings.plist
 c00000000527843C500000000000003B5
 t1383613381
@@ -28,24 +36,257 @@ c00000000527843D100000000000001A0
 t1383613393
 s416
 
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c00000000527843D400000000009040F0
+t1383613396
+s9453808
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+c00000000527843D500000000005838D0
+t1383613397
+s5781712
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreAudio.framework/CoreAudio
+c00000000527843D500000000000FA140
+t1383613397
+s1024320
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+c00000000527843D500000000005B82A0
+t1383613397
+s5997216
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c00000000527843D50000000000445870
+t1383613397
+s4479088
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreImage.framework/CoreImage
+c00000000527843D50000000000355050
+t1383613397
+s3493968
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreMIDI.framework/CoreMIDI
+c00000000527843D500000000000CF030
+t1383613397
+s847920
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreText.framework/CoreText
+c00000000527843D600000000002F6810
+t1383613398
+s3106832
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreVideo.framework/CoreVideo
+c00000000527843D6000000000004B000
+t1383613398
+s307200
+
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
 c00000000527843D8000000000088C680
 t1383613400
 s8963712
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/ImageIO.framework/ImageIO
+c00000000527843D90000000000666670
+t1383613401
+s6710896
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/MapKit.framework/MapKit
+c00000000527843D900000000002C78D0
+t1383613401
+s2914512
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
+c00000000527843DA00000000001BA530
+t1383613402
+s1811760
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
+c00000000527843DA0000000000037620
+t1383613402
+s226848
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c00000000527843DB00000000004848F0
+t1383613403
+s4737264
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/Security.framework/Security
+c00000000527843DB00000000001290B0
+t1383613403
+s1216688
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
+c00000000527843DC00000000001081B0
+t1383613404
+s1081776
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
 c00000000527843DD0000000001DB9910
 t1383613405
 s31168784
 
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
+c00000000527843F200000000002B9F20
+t1383613426
+s2858784
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/bundle1.o
+c00000000527844000000000000002220
+t1383613440
+s8736
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/libSystem.dylib
+c0000000052784400000000000008D300
+t1383613440
+s578304
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/libobjc.dylib
+c0000000052784400000000000038ACB0
+t1383613440
+s3714224
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/libxml2.2.dylib
+c00000000527844010000000000265B40
+t1383613441
+s2513728
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/libz.1.dylib
+c0000000052784401000000000002B700
+t1383613441
+s177920
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/host/libdyld.dylib
+c000000005394284700000000000141F0
+t1402218567
+s82416
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcache_sim.dylib
+c00000000527844010000000000013500
+t1383613441
+s79104
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcommonCrypto_sim.dylib
+c00000000527844010000000000033BA0
+t1383613441
+s211872
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcompiler_rt_sim.dylib
+c0000000052784401000000000001CFB0
+t1383613441
+s118704
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcopyfile_sim.dylib
+c0000000052784401000000000001B2B0
+t1383613441
+s111280
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libdispatch.dylib
+c000000005278440100000000000632B0
+t1383613441
+s406192
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libdyld_sim.dylib
+c00000000527844010000000000008880
+t1383613441
+s34944
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libmacho_sim.dylib
+c00000000527844010000000000015080
+t1383613441
+s86144
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libnotify_sim.dylib
+c000000005278440100000000000230E0
+t1383613441
+s143584
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libremovefile_sim.dylib
+c0000000052784401000000000000E380
+t1383613441
+s58240
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_network.dylib
+c00000000527844010000000000087200
+t1383613441
+s553472
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_override.dylib
+c000000005278440100000000000171A0
+t1383613441
+s94624
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_asl.dylib
+c00000000527844010000000000039C10
+t1383613441
+s236560
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_blocks.dylib
+c0000000052784401000000000000B0B0
+t1383613441
+s45232
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_c.dylib
+c00000000527844010000000000167FE0
+t1383613441
+s1474528
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_configuration.dylib
+c000000005278440100000000000106A0
+t1383613441
+s67232
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_dnssd.dylib
+c0000000052784401000000000001CE40
+t1383613441
+s118336
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_info.dylib
+c00000000527844010000000000071040
+t1383613441
+s462912
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_m.dylib
+c00000000527844010000000000067A10
+t1383613441
+s424464
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libunwind_sim.dylib
+c0000000052784401000000000001BAD0
+t1383613441
+s113360
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libxpc.dylib
+c00000000527844010000000000088BA0
+t1383613441
+s560032
+
 N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.0/include/module.map
 c00000000525638CE0000000000000AC9
 t1381382350
 s2761
 
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.0/lib/darwin/libclang_rt.ios.a
+c00000000527843A60000000000005004
+t1383613350
+s20484
+
+N/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE LOG.build/Debug-iphonesimulator/LOVE LOG Tests.build/Objects-normal/i386/FLChatTest.o
+t1408110903
+s66308
+
+N/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE LOG.build/Debug-iphonesimulator/LOVE LOG Tests.build/Objects-normal/i386/LOVE LOG Tests.LinkFileList
+c0000000053EE11370000000000000166
+t1408110903
+s358
+
+N/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE LOG.build/Debug-iphonesimulator/LOVE LOG Tests.build/Objects-normal/i386/LOVE_LOG_Tests.o
+t1408110903
+s6244
+
 N/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE LOG.build/Debug-iphonesimulator/LOVE LOG Tests.build/Objects-normal/x86_64/FLChatTest.o
-t1408102023
-s54352
+t1408102437
+s54264
 
 N/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE LOG.build/Debug-iphonesimulator/LOVE LOG Tests.build/Objects-normal/x86_64/LOVE LOG Tests.LinkFileList
 c0000000053EDEE87000000000000016A
@@ -53,7 +294,7 @@ t1408102023
 s362
 
 N/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE LOG.build/Debug-iphonesimulator/LOVE LOG Tests.build/Objects-normal/x86_64/LOVE_LOG_Tests.o
-t1408102023
+t1408102437
 s9048
 
 N/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/PrecompiledHeaders/LOVE LOG Tests-Prefix-biyjcqaqtwbqoefrwuxvwuibllji/LOVE LOG Tests-Prefix.pch.pch
@@ -64,23 +305,48 @@ N/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Interme
 t1408100584
 s115860
 
-N/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE LOG Tests.xctest/Info.plist
+N/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/PrecompiledHeaders/LOVE LOG Tests-Prefix-ftpedyaegkblixgrmlktggpacwxg/LOVE LOG Tests-Prefix.pch.pch
+t1408110903
+s114996
+
+N/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/PrecompiledHeaders/LOVE LOG Tests-Prefix-gkqlvxoczcpevvgmojssjpxftucl/LOVE LOG Tests-Prefix.pch.pch
+t1408102437
+s115884
+
+N/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE LOG Tests.xctest
+t1408110904
+s170
+
+N/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE LOG Tests.xctest.dSYM
 t2
 s0
+
+N/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE LOG Tests.xctest/Info.plist
+t1408110903
+s509
 
 N/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE LOG Tests.xctest/LOVE LOG Tests
-t2
-s0
+t1408110903
+s22028
+
+N/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE LOG Tests.xctest/en.lproj/InfoPlist.strings
+t1408110904
+s42
+
+N/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE LOG.app/LOVE LOG
+c0000000053EE1134000000000020073C
+t1408110900
+s2099004
 
 N/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLChatTest.m
-c0000000053EDE21D00000000000005EE
-t1408098845
-s1518
+c0000000053EE10D200000000000007E7
+t1408110802
+s2023
 
 N/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/FLChatViewController.h
-c0000000053EDEE7E00000000000003E1
-t1408102014
-s993
+c0000000053EE10D200000000000003FE
+t1408110802
+s1022
 
 N/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/FLChatlogViewController.h
 c0000000053EDE4CE0000000000000293
@@ -103,19 +369,24 @@ t1405650415
 s229
 
 N/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/LOVE LOG Tests/LOVE LOG Tests-Info.plist
-c0000000053EDE74C00000000000002B3
-t1408100172
+c0000000053EE04F100000000000002B3
+t1408107761
 s691
 
 N/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/LOVE LOG Tests/LOVE LOG Tests-Prefix.pch
-c0000000053EDE74C00000000000000D2
-t1408100172
+c0000000053EE04F100000000000000D2
+t1408107761
 s210
 
 N/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/LOVE LOG Tests/LOVE_LOG_Tests.m
-c0000000053EDE74C000000000000029F
-t1408100172
-s671
+c0000000053EE04F100000000000002A1
+t1408107761
+s673
+
+N/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/LOVE LOG Tests/en.lproj/InfoPlist.strings
+c0000000053EE04F1000000000000002D
+t1408107761
+s45
 
 N/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/EGOTableViewPullRefresh/EGORefreshTableHeaderView.h
 c0000000053C4F821000000000000096F
@@ -162,6 +433,151 @@ c0000000053C4F821000000000000178D
 t1405417505
 s6029
 
+N/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/XCTest.framework/XCTest
+c0000000053EE04F100000000000256F0
+t1408107761
+s153328
+
+N/usr/lib/libSystem.B.dylib
+c0000000053942815000000000000E6D0
+t1402218517
+s59088
+
+N/usr/lib/system/libcache.dylib
+c00000000524038420000000000012A00
+t1379940418
+s76288
+
+N/usr/lib/system/libcommonCrypto.dylib
+c000000005240382A000000000002E320
+t1379940394
+s189216
+
+N/usr/lib/system/libcompiler_rt.dylib
+c00000000524038360000000000021860
+t1379940406
+s137312
+
+N/usr/lib/system/libcopyfile.dylib
+c0000000053BCCB1E000000000001B610
+t1404881694
+s112144
+
+N/usr/lib/system/libcorecrypto.dylib
+c000000005240384200000000000BD920
+t1379940418
+s776480
+
+N/usr/lib/system/libdyld.dylib
+c000000005394284700000000000141F0
+t1402218567
+s82416
+
+N/usr/lib/system/libkeymgr.dylib
+c0000000052403842000000000000A120
+t1379940418
+s41248
+
+N/usr/lib/system/liblaunch.dylib
+c0000000053BCCB1E000000000001D550
+t1404881694
+s120144
+
+N/usr/lib/system/libmacho.dylib
+c00000000524038410000000000014EE0
+t1379940417
+s85728
+
+N/usr/lib/system/libquarantine.dylib
+c00000000524038440000000000010380
+t1379940420
+s66432
+
+N/usr/lib/system/libremovefile.dylib
+c0000000052403844000000000000C4C0
+t1379940420
+s50368
+
+N/usr/lib/system/libsystem_asl.dylib
+c000000005240384200000000000357A0
+t1379940418
+s219040
+
+N/usr/lib/system/libsystem_blocks.dylib
+c0000000052403842000000000000C070
+t1379940418
+s49264
+
+N/usr/lib/system/libsystem_c.dylib
+c00000000539428150000000000168D00
+t1402218517
+s1477888
+
+N/usr/lib/system/libsystem_configuration.dylib
+c00000000539428400000000000010630
+t1402218560
+s67120
+
+N/usr/lib/system/libsystem_dnssd.dylib
+c0000000053BCCB1E000000000001DF10
+t1404881694
+s122640
+
+N/usr/lib/system/libsystem_info.dylib
+c00000000524038360000000000075B00
+t1379940406
+s482048
+
+N/usr/lib/system/libsystem_kernel.dylib
+c0000000053BCCB1E000000000007CD60
+t1404881694
+s511328
+
+N/usr/lib/system/libsystem_m.dylib
+c000000005240383600000000000766C0
+t1379940406
+s485056
+
+N/usr/lib/system/libsystem_malloc.dylib
+c00000000539428470000000000044DC0
+t1402218567
+s282048
+
+N/usr/lib/system/libsystem_notify.dylib
+c00000000524038360000000000021FA0
+t1379940406
+s139168
+
+N/usr/lib/system/libsystem_platform.dylib
+c0000000053942847000000000002D920
+t1402218567
+s186656
+
+N/usr/lib/system/libsystem_pthread.dylib
+c0000000052403843000000000001E570
+t1379940419
+s124272
+
+N/usr/lib/system/libsystem_sandbox.dylib
+c0000000053BCCB1E000000000000CC70
+t1404881694
+s52336
+
+N/usr/lib/system/libsystem_stats.dylib
+c00000000539428360000000000009A80
+t1402218550
+s39552
+
+N/usr/lib/system/libunc.dylib
+c000000005240383E000000000000C3F0
+t1379940414
+s50160
+
+N/usr/lib/system/libunwind.dylib
+c000000005240384300000000000199F0
+t1379940419
+s104944
+
 CAnalyzeShallow /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLChatTest.m
 r0
 
@@ -176,11 +592,55 @@ r0
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesb1f78607269eb941^f94b8707269eb941^---0#1#1#--18"Check dependencies36"F0284728-22C4-415A-8BC1-94CAA7A749C8-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies63b5d5b7489eb941^f208d6b7489eb941^---0#1#1#--18"Check dependencies36"3B254FA7-F796-4FE2-BCFF-0696058B0159-
+
+CCompileC Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/Objects-normal/i386/FLChatTest.o /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLChatTest.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s429803703.883356
+e429803703.964304
+r1
+xCompileC
+xBuild/Intermediates/LOVE LOG.build/Debug-iphonesimulator/LOVE LOG Tests.build/Objects-normal/i386/FLChatTest.o
+x/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLChatTest.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLChatTest.m
+d/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/FLChatViewController.h
+d/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/NoticeView/WBErrorNoticeView.h
+d/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/NoticeView/WBNoticeView.h
+d/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/MyChatCell.h
+d/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/YourChatCell.h
+d/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/SDWebImage/UIImageView+WebCache.h
+d/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/SDWebImage/SDWebImageCompat.h
+d/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/SDWebImage/SDWebImageManager.h
+d/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/SDWebImage/SDWebImageOperation.h
+d/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/SDWebImage/SDWebImageDownloader.h
+d/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/SDWebImage/SDImageCache.h
+d/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/EGOTableViewPullRefresh/EGORefreshTableHeaderView.h
+d/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/FLConnection.h
+d/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/FLChatlogViewController.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Compile /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLChatTest.m203"CompileC Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/Objects-normal/i386/FLChatTest.o FLChatTest.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerc136e2b7489eb941^adddf6b7489eb941^---0#0#1#-19%DVTDocumentLocation2@85"file:///Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLChatTest.m0000000000000000^4829"CompileC Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/Objects-normal/i386/FLChatTest.o FLChatTest.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/netnorimingconception/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/LOVE\ LOG\ Tests.hmap -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/include -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/AFNetworking -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/ASIHTTPRequest -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/EGOTableViewPullRefresh -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/NoticeView -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/Reachability -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/SDWebImage -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/libwebp -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/libwebp/webp -I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/include/libxml2 -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/DerivedSources/i386 -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/DerivedSources -F/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator -F/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/Developer/Library/Frameworks -F/Applications/Xcode.app/Contents/Developer/Library/Frameworks -F/Applications/Xcode.app/Contents/Developer/Library/Frameworks -F/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG -include /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/PrecompiledHeaders/LOVE\ LOG\ Tests-Prefix-ftpedyaegkblixgrmlktggpacwxg/LOVE\ LOG\ Tests-Prefix.pch -MMD -MT dependencies -MF /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/Objects-normal/i386/FLChatTest.d --serialize-diagnostics /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/Objects-normal/i386/FLChatTest.dia -c /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLChatTest.m -o /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/Objects-normal/i386/FLChatTest.o36"578FA621-7FCD-4455-A63A-0F584F4AA4AD-
+b1983ABDD-FB91-4BEF-98AB-FFB2F4C8D627
+
+CCompileC Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/Objects-normal/i386/LOVE_LOG_Tests.o /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/LOVE\ LOG\ Tests/LOVE_LOG_Tests.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s429803703.878317
+e429803703.910520
+r1
+xCompileC
+xBuild/Intermediates/LOVE LOG.build/Debug-iphonesimulator/LOVE LOG Tests.build/Objects-normal/i386/LOVE_LOG_Tests.o
+x/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/LOVE LOG Tests/LOVE_LOG_Tests.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/LOVE LOG Tests/LOVE_LOG_Tests.m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"Compile /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/LOVE LOG Tests/LOVE_LOG_Tests.m228"CompileC Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/Objects-normal/i386/LOVE_LOG_Tests.o LOVE\ LOG\ Tests/LOVE_LOG_Tests.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler13efe0b7489eb941^5919e9b7489eb941^---0#0#1#-19%DVTDocumentLocation2@108"file:///Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/LOVE%20LOG%20Tests/LOVE_LOG_Tests.m0000000000000000^4887"CompileC Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/Objects-normal/i386/LOVE_LOG_Tests.o LOVE\ LOG\ Tests/LOVE_LOG_Tests.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/netnorimingconception/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/LOVE\ LOG\ Tests.hmap -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/include -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/AFNetworking -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/ASIHTTPRequest -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/EGOTableViewPullRefresh -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/NoticeView -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/Reachability -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/SDWebImage -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/libwebp -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/libwebp/webp -I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/include/libxml2 -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/DerivedSources/i386 -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/DerivedSources -F/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator -F/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/Developer/Library/Frameworks -F/Applications/Xcode.app/Contents/Developer/Library/Frameworks -F/Applications/Xcode.app/Contents/Developer/Library/Frameworks -F/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG -include /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/PrecompiledHeaders/LOVE\ LOG\ Tests-Prefix-ftpedyaegkblixgrmlktggpacwxg/LOVE\ LOG\ Tests-Prefix.pch -MMD -MT dependencies -MF /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/Objects-normal/i386/LOVE_LOG_Tests.d --serialize-diagnostics /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/Objects-normal/i386/LOVE_LOG_Tests.dia -c /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/LOVE\ LOG\ Tests/LOVE_LOG_Tests.m -o /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/Objects-normal/i386/LOVE_LOG_Tests.o36"5B41E6B1-18FF-4AE7-B453-876C5ABC7D7F-
+b1983ABDD-FB91-4BEF-98AB-FFB2F4C8D627
 
 CCompileC Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/Objects-normal/x86_64/FLChatTest.o /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLChatTest.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s429794823.572117
-e429794823.663381
+s429795237.073492
+e429795237.132402
 r1
 xCompileC
 xBuild/Intermediates/LOVE LOG.build/Debug-iphonesimulator/LOVE LOG Tests.build/Objects-normal/x86_64/FLChatTest.o
@@ -204,12 +664,12 @@ d/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/
 d/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/EGOTableViewPullRefresh/EGORefreshTableHeaderView.h
 d/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/FLConnection.h
 d/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/FLChatlogViewController.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Compile /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLChatTest.m207"CompileC Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/Objects-normal/x86_64/FLChatTest.o FLChatTest.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compilerfb919207269eb941^30d4a907269eb941^---0#0#1#-19%DVTDocumentLocation2@85"file:///Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLChatTest.m0000000000000000^4775"CompileC Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/Objects-normal/x86_64/FLChatTest.o FLChatTest.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/netnorimingconception/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/LOVE\ LOG\ Tests.hmap -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/include -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/AFNetworking -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/ASIHTTPRequest -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/EGOTableViewPullRefresh -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/NoticeView -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/Reachability -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/SDWebImage -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/libwebp -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/libwebp/webp -I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/include/libxml2 -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/DerivedSources/x86_64 -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/DerivedSources -F/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator -F/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/Developer/Library/Frameworks -F/Applications/Xcode.app/Contents/Developer/Library/Frameworks -F/Applications/Xcode.app/Contents/Developer/Library/Frameworks -include /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/PrecompiledHeaders/LOVE\ LOG\ Tests-Prefix-biyjcqaqtwbqoefrwuxvwuibllji/LOVE\ LOG\ Tests-Prefix.pch -MMD -MT dependencies -MF /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/Objects-normal/x86_64/FLChatTest.d --serialize-diagnostics /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/Objects-normal/x86_64/FLChatTest.dia -c /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLChatTest.m -o /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/Objects-normal/x86_64/FLChatTest.o36"9CD4369D-2468-4458-9F74-1A5E1140B3E3-
-bEDEE65AE-C96F-4BC5-9D33-D0A3C79ED00F
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Compile /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLChatTest.m207"CompileC Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/Objects-normal/x86_64/FLChatTest.o FLChatTest.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler14ed12a5279eb941^36e621a5279eb941^---0#0#1#-19%DVTDocumentLocation2@85"file:///Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLChatTest.m0000000000000000^4843"CompileC Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/Objects-normal/x86_64/FLChatTest.o FLChatTest.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/netnorimingconception/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/LOVE\ LOG\ Tests.hmap -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/include -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/AFNetworking -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/ASIHTTPRequest -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/EGOTableViewPullRefresh -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/NoticeView -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/Reachability -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/SDWebImage -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/libwebp -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/libwebp/webp -I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/include/libxml2 -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/DerivedSources/x86_64 -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/DerivedSources -F/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator -F/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/Developer/Library/Frameworks -F/Applications/Xcode.app/Contents/Developer/Library/Frameworks -F/Applications/Xcode.app/Contents/Developer/Library/Frameworks -F/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG -include /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/PrecompiledHeaders/LOVE\ LOG\ Tests-Prefix-gkqlvxoczcpevvgmojssjpxftucl/LOVE\ LOG\ Tests-Prefix.pch -MMD -MT dependencies -MF /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/Objects-normal/x86_64/FLChatTest.d --serialize-diagnostics /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/Objects-normal/x86_64/FLChatTest.dia -c /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLChatTest.m -o /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/Objects-normal/x86_64/FLChatTest.o36"4FE5992D-7428-4C7F-B747-4DC227E07A69-
+bB3713DC0-F8A1-47A0-AC11-159877D4F097
 
 CCompileC Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/Objects-normal/x86_64/LOVE_LOG_Tests.o /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/LOVE\ LOG\ Tests/LOVE_LOG_Tests.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s429794823.571760
-e429794823.612305
+s429795237.073072
+e429795237.103947
 r1
 xCompileC
 xBuild/Intermediates/LOVE LOG.build/Debug-iphonesimulator/LOVE LOG Tests.build/Objects-normal/x86_64/LOVE_LOG_Tests.o
@@ -219,18 +679,120 @@ xx86_64
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
 d/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/LOVE LOG Tests/LOVE_LOG_Tests.m
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"Compile /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/LOVE LOG Tests/LOVE_LOG_Tests.m232"CompileC Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/Objects-normal/x86_64/LOVE_LOG_Tests.o LOVE\ LOG\ Tests/LOVE_LOG_Tests.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler917b9207269eb941^16c09c07269eb941^---0#0#1#-19%DVTDocumentLocation2@108"file:///Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/LOVE%20LOG%20Tests/LOVE_LOG_Tests.m0000000000000000^4833"CompileC Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/Objects-normal/x86_64/LOVE_LOG_Tests.o LOVE\ LOG\ Tests/LOVE_LOG_Tests.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/netnorimingconception/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/LOVE\ LOG\ Tests.hmap -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/include -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/AFNetworking -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/ASIHTTPRequest -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/EGOTableViewPullRefresh -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/NoticeView -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/Reachability -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/SDWebImage -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/libwebp -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/libwebp/webp -I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/include/libxml2 -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/DerivedSources/x86_64 -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/DerivedSources -F/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator -F/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/Developer/Library/Frameworks -F/Applications/Xcode.app/Contents/Developer/Library/Frameworks -F/Applications/Xcode.app/Contents/Developer/Library/Frameworks -include /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/PrecompiledHeaders/LOVE\ LOG\ Tests-Prefix-biyjcqaqtwbqoefrwuxvwuibllji/LOVE\ LOG\ Tests-Prefix.pch -MMD -MT dependencies -MF /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/Objects-normal/x86_64/LOVE_LOG_Tests.d --serialize-diagnostics /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/Objects-normal/x86_64/LOVE_LOG_Tests.dia -c /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/LOVE\ LOG\ Tests/LOVE_LOG_Tests.m -o /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/Objects-normal/x86_64/LOVE_LOG_Tests.o36"9E4C2695-A348-4EE2-BBEA-298A804CD255-
-bEDEE65AE-C96F-4BC5-9D33-D0A3C79ED00F
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"Compile /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/LOVE LOG Tests/LOVE_LOG_Tests.m232"CompileC Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/Objects-normal/x86_64/LOVE_LOG_Tests.o LOVE\ LOG\ Tests/LOVE_LOG_Tests.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler10cb12a5279eb941^e49e1aa5279eb941^---0#0#1#-19%DVTDocumentLocation2@108"file:///Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/LOVE%20LOG%20Tests/LOVE_LOG_Tests.m0000000000000000^4901"CompileC Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/Objects-normal/x86_64/LOVE_LOG_Tests.o LOVE\ LOG\ Tests/LOVE_LOG_Tests.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/netnorimingconception/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/LOVE\ LOG\ Tests.hmap -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/include -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/AFNetworking -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/ASIHTTPRequest -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/EGOTableViewPullRefresh -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/NoticeView -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/Reachability -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/SDWebImage -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/libwebp -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/libwebp/webp -I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/include/libxml2 -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/DerivedSources/x86_64 -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/DerivedSources -F/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator -F/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/Developer/Library/Frameworks -F/Applications/Xcode.app/Contents/Developer/Library/Frameworks -F/Applications/Xcode.app/Contents/Developer/Library/Frameworks -F/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG -include /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/PrecompiledHeaders/LOVE\ LOG\ Tests-Prefix-gkqlvxoczcpevvgmojssjpxftucl/LOVE\ LOG\ Tests-Prefix.pch -MMD -MT dependencies -MF /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/Objects-normal/x86_64/LOVE_LOG_Tests.d --serialize-diagnostics /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/Objects-normal/x86_64/LOVE_LOG_Tests.dia -c /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/LOVE\ LOG\ Tests/LOVE_LOG_Tests.m -o /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/Objects-normal/x86_64/LOVE_LOG_Tests.o36"4AA7D6DD-A9C7-4125-BDBE-FDD9407788B0-
+bB3713DC0-F8A1-47A0-AC11-159877D4F097
 
 CCopyStringsFile /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE\ LOG\ Tests.xctest/en.lproj/InfoPlist.strings LOVE\ LOG\ Tests/en.lproj/InfoPlist.strings
-r0
+s429803704.018048
+e429803704.019352
+r1
+xCopyStringsFile
+x/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE LOG Tests.xctest/en.lproj/InfoPlist.strings
+xLOVE LOG Tests/en.lproj/InfoPlist.strings
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection46"Copy LOVE LOG Tests/en.lproj/InfoPlist.strings147"CopyStringsFile Build/Products/Debug-iphonesimulator/LOVE\ LOG\ Tests.xctest/en.lproj/InfoPlist.strings LOVE\ LOG\ Tests/en.lproj/InfoPlist.stringsc4af04b8489eb941^a5f404b8489eb941^---0#0#1#-19%DVTDocumentLocation2@118"file:///Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/LOVE%20LOG%20Tests/en.lproj/InfoPlist.strings0000000000000000^689"CopyStringsFile Build/Products/Debug-iphonesimulator/LOVE\ LOG\ Tests.xctest/en.lproj/InfoPlist.strings LOVE\ LOG\ Tests/en.lproj/InfoPlist.strings    cd /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE\ LOG\ Tests.xctest/en.lproj -- LOVE\ LOG\ Tests/en.lproj/InfoPlist.strings36"58A925B3-E492-4B7E-B87D-27EDCA890076-
+b1983ABDD-FB91-4BEF-98AB-FFB2F4C8D627
 
 CGenerateDSYMFile /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE\ LOG\ Tests.xctest.dSYM /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE\ LOG\ Tests.xctest/LOVE\ LOG\ Tests
-r0
+s429803704.001064
+e429803704.017572
+r1
+xGenerateDSYMFile
+x/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE LOG Tests.xctest.dSYM
+x/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE LOG Tests.xctest/LOVE LOG Tests
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection138"Generate /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE LOG Tests.xctest.dSYM160"GenerateDSYMFile Build/Products/Debug-iphonesimulator/LOVE\ LOG\ Tests.xctest.dSYM Build/Products/Debug-iphonesimulator/LOVE\ LOG\ Tests.xctest/LOVE\ LOG\ Testsef5400b8489eb941^ffcc04b8489eb941^---0#0#1#-19%DVTDocumentLocation2@140"file:///Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE%20LOG%20Tests.xctest.dSYM0034c8d3deffdf42^808"GenerateDSYMFile Build/Products/Debug-iphonesimulator/LOVE\ LOG\ Tests.xctest.dSYM Build/Products/Debug-iphonesimulator/LOVE\ LOG\ Tests.xctest/LOVE\ LOG\ Tests    cd /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE\ LOG\ Tests.xctest/LOVE\ LOG\ Tests -o /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE\ LOG\ Tests.xctest.dSYM36"2AC0F1BC-CED2-468F-A965-30A53261A50B-
+b1983ABDD-FB91-4BEF-98AB-FFB2F4C8D627
+
+CLd /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE\ LOG\ Tests.xctest/LOVE\ LOG\ Tests normal i386
+s429803703.965604
+e429803704.000008
+r1
+xLd
+x/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE LOG Tests.xctest/LOVE LOG Tests
+xnormal
+xi386
+d/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE LOG.build/Debug-iphonesimulator/LOVE LOG Tests.build/Objects-normal/i386/LOVE LOG Tests.LinkFileList
+d/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE LOG.app/LOVE LOG
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/bundle1.o
+d/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE LOG.build/Debug-iphonesimulator/LOVE LOG Tests.build/Objects-normal/i386/LOVE_LOG_Tests.o
+d/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE LOG.build/Debug-iphonesimulator/LOVE LOG Tests.build/Objects-normal/i386/FLChatTest.o
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/libxml2.2.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/libz.1.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/ImageIO.framework/ImageIO
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/MapKit.framework/MapKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/Security.framework/Security
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/Developer/Library/Frameworks/XCTest.framework/XCTest
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/libobjc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/libSystem.dylib
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.0/lib/darwin/libclang_rt.ios.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreMIDI.framework/CoreMIDI
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreAudio.framework/CoreAudio
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreVideo.framework/CoreVideo
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreImage.framework/CoreImage
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreText.framework/CoreText
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_override.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcache_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcommonCrypto_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcompiler_rt_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcopyfile_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libdispatch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libdyld_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libmacho_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libnotify_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libremovefile_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_blocks.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_c.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_dnssd.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_info.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_m.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_network.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libunwind_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libxpc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_configuration.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_asl.dylib
+d/usr/lib/libSystem.B.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/host/libdyld.dylib
+d/usr/lib/system/libcache.dylib
+d/usr/lib/system/libcommonCrypto.dylib
+d/usr/lib/system/libcompiler_rt.dylib
+d/usr/lib/system/libcopyfile.dylib
+d/usr/lib/system/libcorecrypto.dylib
+d/usr/lib/system/libkeymgr.dylib
+d/usr/lib/system/liblaunch.dylib
+d/usr/lib/system/libmacho.dylib
+d/usr/lib/system/libquarantine.dylib
+d/usr/lib/system/libremovefile.dylib
+d/usr/lib/system/libsystem_asl.dylib
+d/usr/lib/system/libsystem_blocks.dylib
+d/usr/lib/system/libsystem_c.dylib
+d/usr/lib/system/libsystem_configuration.dylib
+d/usr/lib/system/libsystem_dnssd.dylib
+d/usr/lib/system/libsystem_info.dylib
+d/usr/lib/system/libsystem_kernel.dylib
+d/usr/lib/system/libsystem_m.dylib
+d/usr/lib/system/libsystem_malloc.dylib
+d/usr/lib/system/libsystem_notify.dylib
+d/usr/lib/system/libsystem_platform.dylib
+d/usr/lib/system/libsystem_pthread.dylib
+d/usr/lib/system/libsystem_sandbox.dylib
+d/usr/lib/system/libunc.dylib
+d/usr/lib/system/libunwind.dylib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection144"Link /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE LOG Tests.xctest/LOVE LOG Tests92"Ld Build/Products/Debug-iphonesimulator/LOVE\ LOG\ Tests.xctest/LOVE\ LOG\ Tests normal i3868d41f7b7489eb941^1d0100b8489eb941^---0#0#1#--2383"Ld Build/Products/Debug-iphonesimulator/LOVE\ LOG\ Tests.xctest/LOVE\ LOG\ Tests normal i386    cd /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG    setenv IPHONEOS_DEPLOYMENT_TARGET 7.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -L/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator -F/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator -F/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/Developer/Library/Frameworks -F/Applications/Xcode.app/Contents/Developer/Library/Frameworks -F/Applications/Xcode.app/Contents/Developer/Library/Frameworks -F/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG -filelist /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/Objects-normal/i386/LOVE\ LOG\ Tests.LinkFileList -bundle_loader /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE\ LOG.app/LOVE\ LOG -Xlinker -objc_abi_version -Xlinker 2 -ObjC -lxml2.2 -lz.1 -framework CFNetwork -framework CoreGraphics -framework Foundation -framework ImageIO -framework MapKit -framework MobileCoreServices -framework QuartzCore -framework Security -framework SystemConfiguration -framework UIKit -fobjc-arc -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=7.0 -framework XCTest -framework UIKit -framework Foundation -framework XCTest -Xlinker -dependency_info -Xlinker /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/Objects-normal/i386/LOVE\ LOG\ Tests_dependency_info.dat -o /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE\ LOG\ Tests.xctest/LOVE\ LOG\ Tests36"86EE9EB5-C670-43A7-8225-C8B4AADB7467-
+b1983ABDD-FB91-4BEF-98AB-FFB2F4C8D627
 
 CLd /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE\ LOG\ Tests.xctest/LOVE\ LOG\ Tests normal x86_64
-s429794823.664179
-e429794823.779515
+s429796426.765309
+e429796426.885145
 r0
 xLd
 x/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE LOG Tests.xctest/LOVE LOG Tests
@@ -264,7 +826,6 @@ d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/D
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreText.framework/CoreText
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_override.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcache_sim.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcommonCrypto_sim.dylib
@@ -286,6 +847,7 @@ d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/D
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_configuration.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_asl.dylib
 d/usr/lib/libSystem.B.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
 d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/host/libdyld.dylib
 d/usr/lib/system/libcache.dylib
 d/usr/lib/system/libcommonCrypto.dylib
@@ -319,18 +881,18 @@ o  "_OBJC_CLASS_$_FLChatViewController", referenced from:
 o      objc-class-ref in FLChatTest.o
 old: symbol(s) not found for architecture x86_64
 oclang: error: linker command failed with exit code 1 (use -v to see invocation)
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection144"Link /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE LOG Tests.xctest/LOVE LOG Tests94"Ld Build/Products/Debug-iphonesimulator/LOVE\ LOG\ Tests.xctest/LOVE\ LOG\ Tests normal x86_648a20aa07269eb941^3b8ec707269eb941^-620"ld: warning: ignoring file /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE LOG.app/LOVE LOG, file was built for i386 which is not the architecture being linked (x86_64): /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE LOG.app/LOVE LOGUndefined symbols for architecture x86_64:  "_OBJC_CLASS_$_FLChatViewController", referenced from:      objc-class-ref in FLChatTest.old: symbol(s) not found for architecture x86_64clang: error: linker command failed with exit code 1 (use -v to see invocation)5(21%IDEActivityLogMessage2@341"Ignoring file /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE LOG.app/LOVE LOG, file was built for i386 which is not the architecture being linked (x86_64): /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE LOG.app/LOVE LOG-429794823#0#355#-1#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#27"Apple Mach-O Linker Warning--2@54""_OBJC_CLASS_$_FLChatViewController", referenced from:-429794823#398#57#-2#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#25"Apple Mach-O Linker Error--2@30"Objc-class-ref in FLChatTest.o-429794823#455#37#-0#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#26"Apple Mach-O Linker Notice--2@43"Symbol(s) not found for architecture x86_64-429794823#492#48#-0#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#26"Apple Mach-O Linker Notice--2@65"Linker command failed with exit code 1 (use -v to see invocation)-429794823#540#80#-2#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#25"Apple Mach-O Linker Error--0#0#1#--2305"Ld Build/Products/Debug-iphonesimulator/LOVE\ LOG\ Tests.xctest/LOVE\ LOG\ Tests normal x86_64    cd /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG    setenv IPHONEOS_DEPLOYMENT_TARGET 7.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -L/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator -F/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator -F/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/Developer/Library/Frameworks -F/Applications/Xcode.app/Contents/Developer/Library/Frameworks -F/Applications/Xcode.app/Contents/Developer/Library/Frameworks -filelist /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/Objects-normal/x86_64/LOVE\ LOG\ Tests.LinkFileList -bundle_loader /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE\ LOG.app/LOVE\ LOG -Xlinker -objc_abi_version -Xlinker 2 -ObjC -lxml2.2 -lz.1 -framework CFNetwork -framework CoreGraphics -framework Foundation -framework ImageIO -framework MapKit -framework MobileCoreServices -framework QuartzCore -framework Security -framework SystemConfiguration -framework UIKit -fobjc-arc -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=7.0 -framework XCTest -framework UIKit -framework Foundation -Xlinker -dependency_info -Xlinker /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/Objects-normal/x86_64/LOVE\ LOG\ Tests_dependency_info.dat -o /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE\ LOG\ Tests.xctest/LOVE\ LOG\ Tests36"4D4708AD-254C-48F7-A0FE-938FB6B07F6F-
-bEDEE65AE-C96F-4BC5-9D33-D0A3C79ED00F
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection144"Link /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE LOG Tests.xctest/LOVE LOG Tests94"Ld Build/Products/Debug-iphonesimulator/LOVE\ LOG\ Tests.xctest/LOVE\ LOG\ Tests normal x86_64b1fac34a2c9eb941^ee98e24a2c9eb941^-620"ld: warning: ignoring file /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE LOG.app/LOVE LOG, file was built for i386 which is not the architecture being linked (x86_64): /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE LOG.app/LOVE LOGUndefined symbols for architecture x86_64:  "_OBJC_CLASS_$_FLChatViewController", referenced from:      objc-class-ref in FLChatTest.old: symbol(s) not found for architecture x86_64clang: error: linker command failed with exit code 1 (use -v to see invocation)5(21%IDEActivityLogMessage2@341"Ignoring file /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE LOG.app/LOVE LOG, file was built for i386 which is not the architecture being linked (x86_64): /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE LOG.app/LOVE LOG-429796426#0#355#-1#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#27"Apple Mach-O Linker Warning--2@54""_OBJC_CLASS_$_FLChatViewController", referenced from:-429796426#398#57#-2#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#25"Apple Mach-O Linker Error--2@30"Objc-class-ref in FLChatTest.o-429796426#455#37#-0#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#26"Apple Mach-O Linker Notice--2@43"Symbol(s) not found for architecture x86_64-429796426#492#48#-0#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#26"Apple Mach-O Linker Notice--2@65"Linker command failed with exit code 1 (use -v to see invocation)-429796426#540#80#-2#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#25"Apple Mach-O Linker Error--0#0#1#--2391"Ld Build/Products/Debug-iphonesimulator/LOVE\ LOG\ Tests.xctest/LOVE\ LOG\ Tests normal x86_64    cd /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG    setenv IPHONEOS_DEPLOYMENT_TARGET 7.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -L/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator -F/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator -F/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/Developer/Library/Frameworks -F/Applications/Xcode.app/Contents/Developer/Library/Frameworks -F/Applications/Xcode.app/Contents/Developer/Library/Frameworks -F/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG -filelist /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/Objects-normal/x86_64/LOVE\ LOG\ Tests.LinkFileList -bundle_loader /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE\ LOG.app/LOVE\ LOG -Xlinker -objc_abi_version -Xlinker 2 -ObjC -lxml2.2 -lz.1 -framework CFNetwork -framework CoreGraphics -framework Foundation -framework ImageIO -framework MapKit -framework MobileCoreServices -framework QuartzCore -framework Security -framework SystemConfiguration -framework UIKit -fobjc-arc -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=7.0 -framework XCTest -framework UIKit -framework Foundation -framework XCTest -Xlinker -dependency_info -Xlinker /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/Objects-normal/x86_64/LOVE\ LOG\ Tests_dependency_info.dat -o /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE\ LOG\ Tests.xctest/LOVE\ LOG\ Tests36"AFAD94FB-2BF3-44D1-B91B-82EE704DE2CC-
+b45252A34-082C-48F8-9AC3-6544FCEC97C1
 
 CProcessInfoPlistFile /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE\ LOG\ Tests.xctest/Info.plist /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/LOVE\ LOG\ Tests/LOVE\ LOG\ Tests-Info.plist
-s429794823.529240
-e429794823.530521
+s429803703.836851
+e429803703.838542
 r1
 xProcessInfoPlistFile
 x/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE LOG Tests.xctest/Info.plist
 x/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/LOVE LOG Tests/LOVE LOG Tests-Info.plist
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"Process /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/LOVE LOG Tests/LOVE LOG Tests-Info.plist137"ProcessInfoPlistFile Build/Products/Debug-iphonesimulator/LOVE\ LOG\ Tests.xctest/Info.plist LOVE\ LOG\ Tests/LOVE\ LOG\ Tests-Info.plist6c928707269eb941^f0dc8707269eb941^---0#0#1#-19%DVTDocumentLocation2@121"file:///Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/LOVE%20LOG%20Tests/LOVE%20LOG%20Tests-Info.plist0000000000000000^749"ProcessInfoPlistFile Build/Products/Debug-iphonesimulator/LOVE\ LOG\ Tests.xctest/Info.plist LOVE\ LOG\ Tests/LOVE\ LOG\ Tests-Info.plist    cd /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/LOVE\ LOG\ Tests/LOVE\ LOG\ Tests-Info.plist -expandbuildsettings -format binary -platform iphonesimulator -o /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE\ LOG\ Tests.xctest/Info.plist36"A286F448-0B75-4928-A876-BC7ACCE8E6BD-
-bEDEE65AE-C96F-4BC5-9D33-D0A3C79ED00F
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"Process /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/LOVE LOG Tests/LOVE LOG Tests-Info.plist137"ProcessInfoPlistFile Build/Products/Debug-iphonesimulator/LOVE\ LOG\ Tests.xctest/Info.plist LOVE\ LOG\ Tests/LOVE\ LOG\ Tests-Info.plist1153d6b7489eb941^b5a5d6b7489eb941^---0#0#1#-19%DVTDocumentLocation2@121"file:///Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/LOVE%20LOG%20Tests/LOVE%20LOG%20Tests-Info.plist0000000000000000^749"ProcessInfoPlistFile Build/Products/Debug-iphonesimulator/LOVE\ LOG\ Tests.xctest/Info.plist LOVE\ LOG\ Tests/LOVE\ LOG\ Tests-Info.plist    cd /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/LOVE\ LOG\ Tests/LOVE\ LOG\ Tests-Info.plist -expandbuildsettings -format binary -platform iphonesimulator -o /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE\ LOG\ Tests.xctest/Info.plist36"A8B4FEF3-6341-44A6-931F-4A7F1E835D33-
+b1983ABDD-FB91-4BEF-98AB-FFB2F4C8D627
 
 CProcessPCH /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/PrecompiledHeaders/LOVE\ LOG\ Tests-Prefix-bdrpfljgrsrkwdepqmvvaecdoxzq/LOVE\ LOG\ Tests-Prefix.pch.pch LOVE\ LOG\ Tests/LOVE\ LOG\ Tests-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.analyzer
 r0
@@ -350,6 +912,9 @@ d/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/LOVE LOG Test
 lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Precompile LOVE LOG Tests/LOVE LOG Tests-Prefix.pch249"ProcessPCH Build/Intermediates/PrecompiledHeaders/LOVE\ LOG\ Tests-Prefix-biyjcqaqtwbqoefrwuxvwuibllji/LOVE\ LOG\ Tests-Prefix.pch.pch LOVE\ LOG\ Tests/LOVE\ LOG\ Tests-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compileraa498807269eb941^e3369207269eb941^---0#0#1#-19%DVTDocumentLocation2@121"file:///Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/LOVE%20LOG%20Tests/LOVE%20LOG%20Tests-Prefix.pch0000000000000000^4681"ProcessPCH Build/Intermediates/PrecompiledHeaders/LOVE\ LOG\ Tests-Prefix-biyjcqaqtwbqoefrwuxvwuibllji/LOVE\ LOG\ Tests-Prefix.pch.pch LOVE\ LOG\ Tests/LOVE\ LOG\ Tests-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/netnorimingconception/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/LOVE\ LOG\ Tests.hmap -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/include -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/AFNetworking -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/ASIHTTPRequest -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/EGOTableViewPullRefresh -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/NoticeView -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/Reachability -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/SDWebImage -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/libwebp -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/libwebp/webp -I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/include/libxml2 -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/DerivedSources/x86_64 -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/DerivedSources -F/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator -F/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/Developer/Library/Frameworks -F/Applications/Xcode.app/Contents/Developer/Library/Frameworks -F/Applications/Xcode.app/Contents/Developer/Library/Frameworks --serialize-diagnostics /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/PrecompiledHeaders/LOVE\ LOG\ Tests-Prefix-biyjcqaqtwbqoefrwuxvwuibllji/LOVE\ LOG\ Tests-Prefix.pch.dia -MMD -MT dependencies -MF /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/PrecompiledHeaders/LOVE\ LOG\ Tests-Prefix-biyjcqaqtwbqoefrwuxvwuibllji/LOVE\ LOG\ Tests-Prefix.pch.d -c /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/LOVE\ LOG\ Tests/LOVE\ LOG\ Tests-Prefix.pch -o /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/PrecompiledHeaders/LOVE\ LOG\ Tests-Prefix-biyjcqaqtwbqoefrwuxvwuibllji/LOVE\ LOG\ Tests-Prefix.pch.pch36"4BE930D3-76B8-4735-A0F0-7567F815EF35-
 bEDEE65AE-C96F-4BC5-9D33-D0A3C79ED00F
 
+CProcessPCH /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/PrecompiledHeaders/LOVE\ LOG\ Tests-Prefix-camabyrttbylfffjufhoumujwvjb/LOVE\ LOG\ Tests-Prefix.pch.pch LOVE\ LOG\ Tests/LOVE\ LOG\ Tests-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.analyzer
+r0
+
 CProcessPCH /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/PrecompiledHeaders/LOVE\ LOG\ Tests-Prefix-cwsscwynqbucryglzkumzqhgqmvs/LOVE\ LOG\ Tests-Prefix.pch.pch LOVE\ LOG\ Tests/LOVE\ LOG\ Tests-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s429793384.734625
 e429793384.767584
@@ -368,10 +933,46 @@ bB5B93217-D548-4D04-95D0-30ED881E6BA7
 CProcessPCH /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/PrecompiledHeaders/LOVE\ LOG\ Tests-Prefix-dkcpcisqqcxwjxbperfplkbcjpva/LOVE\ LOG\ Tests-Prefix.pch.pch LOVE\ LOG\ Tests/LOVE\ LOG\ Tests-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.analyzer
 r0
 
+CProcessPCH /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/PrecompiledHeaders/LOVE\ LOG\ Tests-Prefix-ftpedyaegkblixgrmlktggpacwxg/LOVE\ LOG\ Tests-Prefix.pch.pch LOVE\ LOG\ Tests/LOVE\ LOG\ Tests-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s429803703.840178
+e429803703.877641
+r1
+xProcessPCH
+x/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/PrecompiledHeaders/LOVE LOG Tests-Prefix-ftpedyaegkblixgrmlktggpacwxg/LOVE LOG Tests-Prefix.pch.pch
+xLOVE LOG Tests/LOVE LOG Tests-Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/LOVE LOG Tests/LOVE LOG Tests-Prefix.pch
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Precompile LOVE LOG Tests/LOVE LOG Tests-Prefix.pch247"ProcessPCH Build/Intermediates/PrecompiledHeaders/LOVE\ LOG\ Tests-Prefix-ftpedyaegkblixgrmlktggpacwxg/LOVE\ LOG\ Tests-Prefix.pch.pch LOVE\ LOG\ Tests/LOVE\ LOG\ Tests-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerfd33d7b7489eb941^10aee0b7489eb941^---0#0#1#-19%DVTDocumentLocation2@121"file:///Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/LOVE%20LOG%20Tests/LOVE%20LOG%20Tests-Prefix.pch0000000000000000^4743"ProcessPCH Build/Intermediates/PrecompiledHeaders/LOVE\ LOG\ Tests-Prefix-ftpedyaegkblixgrmlktggpacwxg/LOVE\ LOG\ Tests-Prefix.pch.pch LOVE\ LOG\ Tests/LOVE\ LOG\ Tests-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/netnorimingconception/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/LOVE\ LOG\ Tests.hmap -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/include -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/AFNetworking -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/ASIHTTPRequest -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/EGOTableViewPullRefresh -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/NoticeView -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/Reachability -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/SDWebImage -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/libwebp -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/libwebp/webp -I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/include/libxml2 -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/DerivedSources/i386 -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/DerivedSources -F/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator -F/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/Developer/Library/Frameworks -F/Applications/Xcode.app/Contents/Developer/Library/Frameworks -F/Applications/Xcode.app/Contents/Developer/Library/Frameworks -F/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG --serialize-diagnostics /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/PrecompiledHeaders/LOVE\ LOG\ Tests-Prefix-ftpedyaegkblixgrmlktggpacwxg/LOVE\ LOG\ Tests-Prefix.pch.dia -MMD -MT dependencies -MF /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/PrecompiledHeaders/LOVE\ LOG\ Tests-Prefix-ftpedyaegkblixgrmlktggpacwxg/LOVE\ LOG\ Tests-Prefix.pch.d -c /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/LOVE\ LOG\ Tests/LOVE\ LOG\ Tests-Prefix.pch -o /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/PrecompiledHeaders/LOVE\ LOG\ Tests-Prefix-ftpedyaegkblixgrmlktggpacwxg/LOVE\ LOG\ Tests-Prefix.pch.pch36"502ED6F6-449F-4097-8F66-317C9705B089-
+b1983ABDD-FB91-4BEF-98AB-FFB2F4C8D627
+
+CProcessPCH /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/PrecompiledHeaders/LOVE\ LOG\ Tests-Prefix-gkqlvxoczcpevvgmojssjpxftucl/LOVE\ LOG\ Tests-Prefix.pch.pch LOVE\ LOG\ Tests/LOVE\ LOG\ Tests-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s429795237.044350
+e429795237.072501
+r1
+xProcessPCH
+x/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/PrecompiledHeaders/LOVE LOG Tests-Prefix-gkqlvxoczcpevvgmojssjpxftucl/LOVE LOG Tests-Prefix.pch.pch
+xLOVE LOG Tests/LOVE LOG Tests-Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/LOVE LOG Tests/LOVE LOG Tests-Prefix.pch
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Precompile LOVE LOG Tests/LOVE LOG Tests-Prefix.pch249"ProcessPCH Build/Intermediates/PrecompiledHeaders/LOVE\ LOG\ Tests-Prefix-gkqlvxoczcpevvgmojssjpxftucl/LOVE\ LOG\ Tests-Prefix.pch.pch LOVE\ LOG\ Tests/LOVE\ LOG\ Tests-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler0b7e0ba5279eb941^699012a5279eb941^---0#0#1#-19%DVTDocumentLocation2@121"file:///Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/LOVE%20LOG%20Tests/LOVE%20LOG%20Tests-Prefix.pch0000000000000000^4749"ProcessPCH Build/Intermediates/PrecompiledHeaders/LOVE\ LOG\ Tests-Prefix-gkqlvxoczcpevvgmojssjpxftucl/LOVE\ LOG\ Tests-Prefix.pch.pch LOVE\ LOG\ Tests/LOVE\ LOG\ Tests-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/netnorimingconception/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/LOVE\ LOG\ Tests.hmap -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/include -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/AFNetworking -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/ASIHTTPRequest -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/EGOTableViewPullRefresh -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/NoticeView -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/Reachability -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/SDWebImage -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/libwebp -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/libwebp/webp -I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/include/libxml2 -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/DerivedSources/x86_64 -I/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/LOVE\ LOG.build/Debug-iphonesimulator/LOVE\ LOG\ Tests.build/DerivedSources -F/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator -F/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/Developer/Library/Frameworks -F/Applications/Xcode.app/Contents/Developer/Library/Frameworks -F/Applications/Xcode.app/Contents/Developer/Library/Frameworks -F/Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG --serialize-diagnostics /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/PrecompiledHeaders/LOVE\ LOG\ Tests-Prefix-gkqlvxoczcpevvgmojssjpxftucl/LOVE\ LOG\ Tests-Prefix.pch.dia -MMD -MT dependencies -MF /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/PrecompiledHeaders/LOVE\ LOG\ Tests-Prefix-gkqlvxoczcpevvgmojssjpxftucl/LOVE\ LOG\ Tests-Prefix.pch.d -c /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/LOVE\ LOG\ Tests/LOVE\ LOG\ Tests-Prefix.pch -o /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Intermediates/PrecompiledHeaders/LOVE\ LOG\ Tests-Prefix-gkqlvxoczcpevvgmojssjpxftucl/LOVE\ LOG\ Tests-Prefix.pch.pch36"2963EE10-BAE0-4742-84E7-75F54A13C84B-
+bB3713DC0-F8A1-47A0-AC11-159877D4F097
+
 CProcessPCH /Users/netnorimingconception/Library/Developer/Xcode/DerivedData/LOVE_LOG-dhefcngkrkyvbwchsqwadqgfambj/Index/PrecompiledHeaders/LOVE\ LOG\ Tests-Prefix-aszjqefeialgjwfqohjqjfqrpygd_ast/LOVE\ LOG\ Tests-Prefix.pch.pch LOVE\ LOG\ Tests/LOVE\ LOG\ Tests-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
 r0
 
 CProcessPCH /Users/netnorimingconception/Library/Developer/Xcode/DerivedData/LOVE_LOG-dhefcngkrkyvbwchsqwadqgfambj/Index/PrecompiledHeaders/LOVE\ LOG\ Tests-Prefix-clkwjxkjdvjsqwevuhjumxevlxnu_ast/LOVE\ LOG\ Tests-Prefix.pch.pch LOVE\ LOG\ Tests/LOVE\ LOG\ Tests-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /Users/netnorimingconception/Library/Developer/Xcode/DerivedData/LOVE_LOG-dhefcngkrkyvbwchsqwadqgfambj/Index/PrecompiledHeaders/LOVE\ LOG\ Tests-Prefix-cxuxihfwgoisbvcgpswelbwutrwl_ast/LOVE\ LOG\ Tests-Prefix.pch.pch LOVE\ LOG\ Tests/LOVE\ LOG\ Tests-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /Users/netnorimingconception/Library/Developer/Xcode/DerivedData/LOVE_LOG-dhefcngkrkyvbwchsqwadqgfambj/Index/PrecompiledHeaders/LOVE\ LOG\ Tests-Prefix-dkwflqldmmjvusgsbbcptqexjroa_ast/LOVE\ LOG\ Tests-Prefix.pch.pch LOVE\ LOG\ Tests/LOVE\ LOG\ Tests-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
 r0
 
 CTouch /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Build/Products/Debug-iphonesimulator/LOVE\ LOG\ Tests.xctest

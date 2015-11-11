@@ -47,6 +47,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+
 -(IBAction)sendClicked:(id)sender{
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
     [chatField resignFirstResponder];
@@ -58,7 +60,7 @@
         
         NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
         NSInteger idnumber = [defaults integerForKey:@"mid"];
-        NSString * url = [NSString stringWithFormat:@"http://norimingconception.net/lovelog/chatlogviewcontroller.php"];
+        NSString * url = [NSString stringWithFormat:@"http://flatlevel56.org/lovelog/chatlogviewcontroller.php"];
         NSString * data = [NSString stringWithFormat:@"chat=%@&userid=%d&loveindi=%d", sendString, idnumber, loveIndicator];
         FLConnection * connection = [[FLConnection alloc]init];
         
@@ -79,4 +81,7 @@
     }
     
 }
+
+
+
 @end

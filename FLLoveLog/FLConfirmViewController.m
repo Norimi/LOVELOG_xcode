@@ -50,7 +50,7 @@ FLLovernameViewController * LVC;
     
     
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
-    NSURL *myURL = [NSURL URLWithString:@"http://norimingconception.net/lovelog/confirmviewcontroller.php"];
+    NSURL *myURL = [NSURL URLWithString:@"http://flatlevel56.org/lovelog/confirmviewcontroller.php"];
     NSXMLParser *myParser = [[NSXMLParser alloc]initWithContentsOfURL:myURL];
     myParser.delegate = self;
     [myParser parse];
@@ -169,7 +169,7 @@ qualifiedName:(NSString*)qName
     
     //このボタンによって登録される。phpによる連携.confirmeviewcontrollerをただリクエスト。
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
-    NSString * url = [NSString stringWithFormat:@"http://norimingconception.net/lovelog/confirmedviewcontroller.php"];
+    NSString * url = [NSString stringWithFormat:@"http://flatlevel56.org/lovelog/confirmedviewcontroller.php"];
     FLConnection * connection = [[FLConnection alloc]init];
     //todo:以下nilでよいかどうかを吟味する
     if([connection connectionWithUrl:url withData:nil]){

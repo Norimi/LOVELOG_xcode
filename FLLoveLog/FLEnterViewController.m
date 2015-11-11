@@ -78,7 +78,7 @@ FLConfirmViewController * CVC;
     if([emailField.text length]>0 & [passwordField.text length]>0){
         
         
-        NSString * url = [NSString stringWithFormat:@"http://norimingconception.net/lovelog/enterviewcontroller.php"];
+        NSString * url = [NSString stringWithFormat:@"http://flatlevel56.org/lovelog/enterviewcontroller.php"];
         NSString * data = [NSString
                            stringWithFormat:@"email=%@&password=%@",  emailField.text, passwordField.text];
         FLConnection * connection = [[FLConnection alloc]init];
@@ -101,7 +101,7 @@ FLConfirmViewController * CVC;
 
 -(void)startParse{
     
-    NSURL *newURL = [NSURL URLWithString:@"http://norimingconception.net/lovelog/enterviewcontrollerxml.php"];
+    NSURL *newURL = [NSURL URLWithString:@"http://flatlevel56.org/lovelog/enterviewcontrollerxml.php"];
     NSURLRequest * req = [NSURLRequest requestWithURL:newURL];
     NSURLConnection *connection = [[NSURLConnection alloc]initWithRequest:req delegate:self];
     

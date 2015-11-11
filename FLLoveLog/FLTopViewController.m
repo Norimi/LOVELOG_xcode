@@ -143,7 +143,7 @@ didFinishPickingMediaWithInfo:(NSDictionary*)editingInfo{
     NSString * idtoPost = [NSString stringWithFormat:@"%d", idnumber];
     UIImage * img = toUpload;
     NSData * imageData = UIImageJPEGRepresentation(img, 90);
-    AFHTTPClient * client = [AFHTTPClient clientWithBaseURL:[NSURL URLWithString:@"http://norimingconception.net"]];
+    AFHTTPClient * client = [AFHTTPClient clientWithBaseURL:[NSURL URLWithString:@"http://flatlevel56.org"]];
     NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:
                             ext, @"extension", idtoPost, @"userid",
                             nil];
@@ -196,7 +196,7 @@ didFinishPickingMediaWithInfo:(NSDictionary*)editingInfo{
     mychatLabel.text = nil;
     yourchatLabel.text = nil;
     
-    NSString * url = [NSString stringWithFormat:@"http://norimingconception.net/lovelog/postid.php"];
+    NSString * url = [NSString stringWithFormat:@"http://flatlevel56.org/lovelog/postid.php"];
     NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
     NSInteger idnumber = [defaults integerForKey:@"mid"];
     NSInteger pidnumber = [defaults integerForKey:@"pid"];
@@ -238,7 +238,7 @@ didFinishPickingMediaWithInfo:(NSDictionary*)editingInfo{
     //デリゲートメソッドの実行
     NSLog(@"indelegatemethod");
     
-    NSURL *newURL = [NSURL URLWithString:@"http://norimingconception.net/lovelog/topviewcontroller.php"];
+    NSURL *newURL = [NSURL URLWithString:@"http://flatlevel56.org/lovelog/topviewcontroller.php"];
     NSURLRequest * req = [NSURLRequest requestWithURL:newURL];
     NSURLConnection *connection = [[NSURLConnection alloc]initWithRequest:req delegate:self];
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
@@ -478,8 +478,8 @@ foundCharacters:(NSString*)string{
 {
     
     //画像を取得して表示する
-    NSString * http = @"http://norimingconception.net/lovelog/photo_uploaded/" ;
-    NSString * profile = @"http://norimingconception.net/lovelog/profile_photos/";
+    NSString * http = @"http://flatlevel56.org/lovelog/photo_uploaded/" ;
+    NSString * profile = @"http://flatlevel56.org/lovelog/profile_photos/";
     NSString * postUrl =  [NSString stringWithFormat:@"%@%@", http,fileString];
     NSString * userUrl = [NSString stringWithFormat:@"%@%@", profile, userphotoString];
     NSString * partnerUrl  = [NSString stringWithFormat:@"%@%@", profile, partnerphotoString];

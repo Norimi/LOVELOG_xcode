@@ -52,7 +52,7 @@ FLLoverRegistredViewController * LRVC;
     
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
     
-    NSURL * myURL = [NSURL URLWithString:@"http://norimingconception.net/lovelog/loverconfirmedviewcontroller2.php"];
+    NSURL * myURL = [NSURL URLWithString:@"http://flatlevel56.org/lovelog/loverconfirmedviewcontroller2.php"];
     NSXMLParser * myParser = [[NSXMLParser alloc]initWithContentsOfURL:myURL];
     myParser.delegate = self;
     [myParser parse];
@@ -191,7 +191,7 @@ qualifiedName:(NSString*)qName
     
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
     
-    NSString * url = [NSString stringWithFormat:@"http://norimingconception.net/lovelog/loverconfirmedviewcontroller.php"];
+    NSString * url = [NSString stringWithFormat:@"http://flatlevel56.org/lovelog/loverconfirmedviewcontroller.php"];
     FLConnection * connection = [[FLConnection alloc]init];
     
     //TODO:以下、nilで良いかどうか吟味する

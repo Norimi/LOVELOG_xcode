@@ -34,5 +34,6 @@
 //単体テスト用にメソッドを公開
 -(NSMutableArray*)getContentsArrayFromUserDefaults;
 -(void)postandGet;
+-(int)getIdFromUserDefaults;
 
 @end

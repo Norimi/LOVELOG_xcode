@@ -60,14 +60,14 @@ FLInvitedRegiViewController * IRVC;
         
         [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
         
-        NSString * url = [NSString stringWithFormat:@"http://norimingconception.net/lovelog/invitedviewcontroller.php"];
+        NSString * url = [NSString stringWithFormat:@"http://flatlevel56.org/lovelog/invitedviewcontroller.php"];
         NSString * data = [NSString
                            stringWithFormat:@"lovername=%@&lovernumber=%@", _nameField.text, _numberField.text ];
         FLConnection * connection = [[FLConnection alloc]init];
         
         if([connection connectionWithUrl:url withData:data]){
             
-            NSURL * myURL = [NSURL URLWithString:@"http://norimingconception.net/lovelog/invitedviewcontrollerxml.php"];
+            NSURL * myURL = [NSURL URLWithString:@"http://flatlevel56.org/lovelog/invitedviewcontrollerxml.php"];
             NSURLRequest * req = [NSURLRequest requestWithURL:myURL];
             NSURLConnection *connection = [[NSURLConnection alloc]initWithRequest:req delegate:self];
             [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;

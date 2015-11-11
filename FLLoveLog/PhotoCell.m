@@ -369,7 +369,7 @@
                     
                             
                             
-                            AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://norimingconception.net/"]];
+                            AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://flatlevel56.org/"]];
                             
                             
                             
@@ -437,7 +437,7 @@
                         
                         
                         
-                        AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://norimingconception.net/"]];
+                        AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://flatlevel56.org/"]];
                         
                         
                         
@@ -537,7 +537,7 @@
                         
                         
                         
-                        AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://norimingconception.net/"]];
+                        AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://flatlevel56.org/"]];
                         
                         
                         
@@ -610,7 +610,7 @@
                         
                         
                         
-                        AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://norimingconception.net/"]];
+                        AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://flatlevel56.org/"]];
                         
                         
                         
@@ -708,7 +708,7 @@
                         
                         
                         
-                        AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://norimingconception.net/"]];
+                        AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://flatlevel56.org/"]];
                         
                         
                         
@@ -773,7 +773,7 @@
                         
                         
                         
-                        AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://norimingconception.net/"]];
+                        AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://flatlevel56.org/"]];
                         
                         
                         
@@ -939,7 +939,7 @@
                         
                         
                         
-                        AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://norimingconception.net/"]];
+                        AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://flatlevel56.org/"]];
                         
                         
                         
@@ -1041,7 +1041,7 @@
                             
                             
                             
-                            AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://norimingconception.net/"]];
+                            AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://flatlevel56.org/"]];
                             
                             
                             

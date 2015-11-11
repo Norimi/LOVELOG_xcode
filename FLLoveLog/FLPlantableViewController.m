@@ -192,7 +192,7 @@ static const int FONT_SIZE = 15;
     
     contentsArray = nil;
     
-    NSString * url = [NSString stringWithFormat:@"http://norimingconception.net/lovelog/postid.php"];
+    NSString * url = [NSString stringWithFormat:@"http://flatlevel56.org/lovelog/postid.php"];
     NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
     NSInteger idnumber = [defaults integerForKey:@"mid"];
     NSInteger pidnumber = [defaults integerForKey:@"pid"];
@@ -203,7 +203,7 @@ static const int FONT_SIZE = 15;
     
     if([connection connectionWithUrl:url  withData:data]){
         
-        NSURL * newURL = [NSURL URLWithString:@"http://norimingconception.net/lovelog/plantableviewcontroller3.php"];
+        NSURL * newURL = [NSURL URLWithString:@"http://flatlevel56.org/lovelog/plantableviewcontroller3.php"];
         NSURLRequest * req = [NSURLRequest requestWithURL:newURL];
         NSURLConnection *connection = [[NSURLConnection alloc]initWithRequest:req delegate:self];
         
@@ -723,7 +723,7 @@ forRowAtIndexPath:(NSIndexPath*)indexPath
     if(editingStyle == UITableViewCellEditingStyleDelete)
     {
         
-        NSString * url = [NSString stringWithFormat:@"http://norimingconception.net/lovelog/plandelete.php"];
+        NSString * url = [NSString stringWithFormat:@"http://flatlevel56.org/lovelog/plandelete.php"];
         NSDictionary * itemAtIndex = (NSDictionary*)[contentsArray objectAtIndex:indexPath.row];
         [contentsArray removeObjectAtIndex:[indexPath row]];
         NSString * plantoDelete = [itemAtIndex objectForKey:@"planid"];

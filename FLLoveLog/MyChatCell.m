@@ -190,7 +190,7 @@
                         //他のボタンが全て選択状態でない場合に一つ目のボタンを押したことによって選択状態になった場合
                         //選択されたそのときにサウンドを出す
                         AudioServicesPlaySystemSound(soundID);
-                        AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://norimingconception.net/"]];
+                        AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://flatlevel56.org/"]];
                         params = [NSDictionary dictionaryWithObjectsAndKeys:
                                   chatid, @"chatid",
                                   @"1", @"indicator",
@@ -214,7 +214,7 @@
                         [operation start];
                         
                     } else {
-                        AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://norimingconception.net/"]];
+                        AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://flatlevel56.org/"]];
                         params = [NSDictionary dictionaryWithObjectsAndKeys:
                                   chatid, @"chatid",
                                   @"0", @"indicator",
@@ -246,7 +246,7 @@
             loveInd2.selected = !loveInd2.selected;
                     if(loveInd2.selected){
                         AudioServicesPlaySystemSound(soundID);
-                        AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://norimingconception.net/"]];
+                        AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://flatlevel56.org/"]];
                         params = [NSDictionary dictionaryWithObjectsAndKeys:
                                   chatid, @"chatid",
                                   @"2", @"indicator",
@@ -265,7 +265,7 @@
                         
                         [operation start];
                     } else {
-                        AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://norimingconception.net/"]];
+                        AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://flatlevel56.org/"]];
                         params = [NSDictionary dictionaryWithObjectsAndKeys:
                                   chatid, @"chatid",
                                   @"1", @"indicator",
@@ -302,7 +302,7 @@
                     if(loveInd3.selected){
                         
                         AudioServicesPlaySystemSound(soundID);
-                        AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://norimingconception.net/"]];
+                        AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://flatlevel56.org/"]];
                         params = [NSDictionary dictionaryWithObjectsAndKeys:
                                   chatid, @"chatid",
                                   @"3", @"indicator",
@@ -322,7 +322,7 @@
                         
                         [operation start];
                     } else {
-                        AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://norimingconception.net/"]];
+                        AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://flatlevel56.org/"]];
                         params = [NSDictionary dictionaryWithObjectsAndKeys:
                                   chatid, @"chatid",
                                   @"2", @"indicator",
