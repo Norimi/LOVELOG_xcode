@@ -1,34 +1,15 @@
 dependencies: \
   /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/FLLoginViewController.m \
   /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/FLLoginViewController.h \
-  /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/NoticeView/WBErrorNoticeView.h \
-  /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/NoticeView/WBNoticeView.h \
   /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/FLAppDelegate.h \
   /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/FLWellcomeViewController.h \
   /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/FLAccountViewController.h \
-  /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/SDWebImage/UIImageView+WebCache.h \
-  /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/SDWebImage/SDWebImageCompat.h \
-  /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/SDWebImage/SDWebImageManager.h \
-  /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/SDWebImage/SDWebImageOperation.h \
-  /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/SDWebImage/SDWebImageDownloader.h \
-  /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/SDWebImage/SDImageCache.h \
   /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/FLChatViewController.h \
   /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/MyChatCell.h \
   /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/YourChatCell.h \
-  /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/EGOTableViewPullRefresh/EGORefreshTableHeaderView.h \
   /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/FLConnection.h \
   /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/FLCardSelectViewController.h \
   /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/FLPhotoViewController.h \
   /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/PhotoCell.h \
-  /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/AFNetworking/AFNetworking.h \
-  /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/AFNetworking/AFURLConnectionOperation.h \
-  /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/AFNetworking/AFHTTPRequestOperation.h \
-  /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/AFNetworking/AFJSONRequestOperation.h \
-  /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/AFNetworking/AFXMLRequestOperation.h \
-  /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/AFNetworking/AFPropertyListRequestOperation.h \
-  /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/AFNetworking/AFHTTPClient.h \
-  /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/AFNetworking/AFImageRequestOperation.h \
-  /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/AFNetworking/AFNetworkActivityIndicatorManager.h \
-  /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/AFNetworking/UIImageView+AFNetworking.h \
   /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/FLTopViewController.h \
   /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/FLPlantableViewController.h

@@ -35,14 +35,13 @@
 {
     if ((self = [super init]))
     {
-    
- 
         _request = request;
         _options = options;
         _progressBlock = [progressBlock copy];
         _completedBlock = [completedBlock copy];
         _cancelBlock = [cancelBlock copy];
-     
+        _executing = NO;
+        _finished = NO;
         _expectedSize = 0;
         responseFromCached = YES; // Initially wrong until `connection:willCacheResponse:` is called or not called
     }
@@ -122,14 +121,14 @@
 - (void)setFinished:(BOOL)finished
 {
     [self willChangeValueForKey:@"isFinished"];
-    finished = finished;
+    _finished = finished;
     [self didChangeValueForKey:@"isFinished"];
 }
 
 - (void)setExecuting:(BOOL)executing
 {
     [self willChangeValueForKey:@"isExecuting"];
-    executing = executing;
+    _executing = executing;
     [self didChangeValueForKey:@"isExecuting"];
 }
 

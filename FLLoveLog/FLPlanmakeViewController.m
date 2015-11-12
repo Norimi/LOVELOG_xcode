@@ -156,7 +156,7 @@
     
     CGRect tableFrame = [planTable frame];
     tableFrame.size.height = 1000;
-    [self scrollTableView];
+    //[self scrollTableView];
     
     [planTable setFrame:tableFrame];
     [self.planTable reloadData];

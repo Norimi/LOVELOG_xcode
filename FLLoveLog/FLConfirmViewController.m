@@ -121,7 +121,7 @@ qualifiedName:(NSString*)qName
     if([elementName isEqualToString:@"content"]){
         
         emailLabel.text = [emailLabel.text stringByAppendingFormat:@"%@", email];
-        
+        NSLog(@"email in confirm %@",email);
         
         passwordLabel.text = @"表示されません";
         

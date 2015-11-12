@@ -6,6 +6,4 @@ dependencies: \
   /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/FLAddtodoViewController.h \
   /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/FLPlanViewController.h \
   /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/FLDateViewController.h \
-  /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/FLCOnnection.h \
-  /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/NoticeView/WBErrorNoticeView.h \
-  /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/Pods/Headers/NoticeView/WBNoticeView.h
+  /Users/netnorimingconception/Desktop/LOVELOG_local_backup/LOVELOG/FLLoveLog/FLCOnnection.h

@@ -3,7 +3,7 @@
 //  sendMsg7
 //
 //  Created by 立花 法美 on 2013/01/15.
-//  Copyright (c) 2013年 norimingconception.net. All rights reserved.
+//  Copyright (c) 2013年 f.net. All rights reserved.
 //
 
 #import "FLEnterViewController.h"

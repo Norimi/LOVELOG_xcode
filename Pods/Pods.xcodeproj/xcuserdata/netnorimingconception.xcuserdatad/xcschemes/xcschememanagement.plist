@@ -4,15 +4,85 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ASIHTTPRequest.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>EGOTableViewPullRefresh.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>NoticeView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Reachability.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>libwebp.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>32C0FB0B039748098C166412</key>
+		<key>06A8F52F5BAD23F1B388E390C7966799</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0C1D6679A7489BC8B705821265E27DDB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>62F4582F22052796A161FC4FC2E4BC60</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>633949402AEAB150802494135797D0DC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7600F8819BB3973A4C2DD93F9C013194</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7D1A3D87E08145D97C1AB29F526AF7A7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>907A8E4965C27B4017ED295C6642F88D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A99A07B29D5A7875C8F7587FB4350964</key>
 		<dict>
 			<key>primary</key>
 			<true/>
