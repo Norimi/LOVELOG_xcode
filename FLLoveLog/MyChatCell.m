@@ -9,14 +9,22 @@
 #import "MyChatCell.h"
 #import "AFNetworking.h"
 
-@implementation MyChatCell
 
+@interface MyChatCell()
+@property AFHTTPRequestOperationManager * manager;
+@end
+
+@implementation MyChatCell
 @synthesize mychatLabel, loveIndicator,chatid, indicator, textsize, labelHeight, labelWidth, tmpIndicator,dateLabel,profilePhoto;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
+        
+        //init時に通信用のインスタンスを一つ作成
+        _manager = [AFHTTPRequestOperationManager manager];
+
     }
     return self;
 }
@@ -190,47 +198,11 @@
                         //他のボタンが全て選択状態でない場合に一つ目のボタンを押したことによって選択状態になった場合
                         //選択されたそのときにサウンドを出す
                         AudioServicesPlaySystemSound(soundID);
-                        AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://flatlevel56.org/"]];
-                        params = [NSDictionary dictionaryWithObjectsAndKeys:
-                                  chatid, @"chatid",
-                                  @"1", @"indicator",
-                                  
-                                  nil];
-                        [client setParameterEncoding:AFFormURLParameterEncoding];
-                        NSMutableURLRequest *request = [client   requestWithMethod:@"POST" path:@"/lovelog/chatindicator.php" parameters:params];
-                        AFHTTPRequestOperation * operation = [[AFHTTPRequestOperation alloc]initWithRequest:request];
-                        [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
-                            //通信できた場合のみ1に設定する。エラーは無視する
-                            loveIndicator = 1;
-                        } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-                            
-                            //ここではエラーを表示しない。落ちても無視する
-                            if([operation.response statusCode] == 403){
-                                return;
-                            }
-                        }];
-                        //TODO:operationstartの場所はOK?
-                        
-                        [operation start];
-                        
+                        [self setIndicatorWithValue:@"1"];
                     } else {
-                        AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://flatlevel56.org/"]];
-                        params = [NSDictionary dictionaryWithObjectsAndKeys:
-                                  chatid, @"chatid",
-                                  @"0", @"indicator",
-                                  
-                                  nil];
-                        [client setParameterEncoding:AFFormURLParameterEncoding];
-                        NSMutableURLRequest *request = [client   requestWithMethod:@"POST" path:@"/lovelog/chatindicator.php" parameters:params];
-                        AFHTTPRequestOperation * operation = [[AFHTTPRequestOperation alloc]initWithRequest:request];
-                        [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
-                        } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-                            loveIndicator = 0;
-                            if([operation.response statusCode] == 403){
-                                return;
-                            }
-                        }];
                         
+                        
+                       [self setIndicatorWithValue:@"0"];
                         
                 
             }
@@ -246,45 +218,11 @@
             loveInd2.selected = !loveInd2.selected;
                     if(loveInd2.selected){
                         AudioServicesPlaySystemSound(soundID);
-                        AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://flatlevel56.org/"]];
-                        params = [NSDictionary dictionaryWithObjectsAndKeys:
-                                  chatid, @"chatid",
-                                  @"2", @"indicator",
-                                  
-                                  nil];
-                        [client setParameterEncoding:AFFormURLParameterEncoding];
-                        NSMutableURLRequest *request = [client   requestWithMethod:@"POST" path:@"/lovelog/chatindicator.php" parameters:params];
-                        AFHTTPRequestOperation * operation = [[AFHTTPRequestOperation alloc]initWithRequest:request];
-                        [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
-                            loveIndicator = 2;
-                        } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-                            if([operation.response statusCode] == 403){
-                                return;
-                            }
-                        }];
+                        [self setIndicatorWithValue:@"2"];
                         
-                        [operation start];
                     } else {
-                        AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://flatlevel56.org/"]];
-                        params = [NSDictionary dictionaryWithObjectsAndKeys:
-                                  chatid, @"chatid",
-                                  @"1", @"indicator",
-                                  
-                                  nil];
-                        [client setParameterEncoding:AFFormURLParameterEncoding];
-                        NSMutableURLRequest *request = [client   requestWithMethod:@"POST" path:@"/lovelog/chatindicator.php" parameters:params];
-                        AFHTTPRequestOperation * operation = [[AFHTTPRequestOperation alloc]initWithRequest:request];
-                        [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
-                            loveIndicator =1;
-                        } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-                            if([operation.response statusCode] == 403){
-                                return;
-                            }
-                            
-                        }];
                         
-                        [operation start];
-                    }
+                        [self setIndicatorWithValue:@"1"];                    }
                     
                 }
             }
@@ -302,45 +240,10 @@
                     if(loveInd3.selected){
                         
                         AudioServicesPlaySystemSound(soundID);
-                        AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://flatlevel56.org/"]];
-                        params = [NSDictionary dictionaryWithObjectsAndKeys:
-                                  chatid, @"chatid",
-                                  @"3", @"indicator",
-                                  
-                                  nil];
-                        [client setParameterEncoding:AFFormURLParameterEncoding];
-                        NSMutableURLRequest *request = [client   requestWithMethod:@"POST" path:@"/lovelog/chatindicator.php" parameters:params];
-                        AFHTTPRequestOperation * operation = [[AFHTTPRequestOperation alloc]initWithRequest:request];
-                        [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
-                            loveIndicator = 3;
-                        } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-                            if([operation.response statusCode] == 403){
-                                return;
-                            }
-                            
-                        }];
-                        
-                        [operation start];
+                        [self setIndicatorWithValue:@"3"];
+                  
                     } else {
-                        AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://flatlevel56.org/"]];
-                        params = [NSDictionary dictionaryWithObjectsAndKeys:
-                                  chatid, @"chatid",
-                                  @"2", @"indicator",
-                                  
-                                  nil];
-                        
-                        [client setParameterEncoding:AFFormURLParameterEncoding];
-                        NSMutableURLRequest *request = [client   requestWithMethod:@"POST" path:@"/lovelog/chatindicator.php" parameters:params];
-                        AFHTTPRequestOperation * operation = [[AFHTTPRequestOperation alloc]initWithRequest:request];
-                        [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
-                            loveIndicator =2;
-                        } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-                            if([operation.response statusCode] == 403){
-                                return;
-                            }
-                        }];
-                        
-                        [operation start];
+                        [self setIndicatorWithValue:@"2"];
                     }
                     
                 }
@@ -349,6 +252,24 @@
     }
 }
 
+
+-(void)setIndicatorWithValue:(NSString*)value{
+    
+    
+    //AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://flatlevel56.org/"]];
+    params = [NSDictionary dictionaryWithObjectsAndKeys:
+              chatid, @"chatid",
+              value, @"indicator",
+              nil];
+    
+    [_manager POST:@"http://flatlevel56.org/lovelog/chatindicator.php" parameters:params constructingBodyWithBlock:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"Resposne: %@", responseObject);
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        //<#code#>
+    }];
+    
+}
 
 
 

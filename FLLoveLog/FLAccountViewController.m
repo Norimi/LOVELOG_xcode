@@ -16,8 +16,6 @@
 #import "FLEditViewController.h"
 #import "FLConnection.h"
 
-
-
 @interface FLAccountViewController ()
 @property(strong, nonatomic)NSString * nowTagStr;
 @property(strong, nonatomic)NSString * partnerName;
@@ -25,6 +23,7 @@
 @property(strong, nonatomic)NSString * mName;
 @property(strong, nonatomic)NSString * mEmail;
 @property   WBErrorNoticeView* notice;
+@property AFHTTPRequestOperationManager * manager;
 @end
 
 @implementation FLAccountViewController
@@ -42,6 +41,10 @@ FLPartnerAcViewController * PVC;
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        //init時にインスタンスをひとつだけ保持
+        _manager = [AFHTTPRequestOperationManager manager];
+        
+
     }
     return self;
 }
@@ -51,7 +54,7 @@ FLPartnerAcViewController * PVC;
 {
     [super viewDidLoad];
     
-    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0f){
+        if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0f){
         
         self.edgesForExtendedLayout = UIRectEdgeNone;
     }
@@ -197,31 +200,16 @@ didFinishPickingMediaWithInfo:(NSDictionary*)editingInfo{
     UIImage * img = resizedImage;
     NSData * imageData = UIImageJPEGRepresentation(img, 90);
     
-    AFHTTPClient * client = [AFHTTPClient clientWithBaseURL:[NSURL URLWithString:@"http://flatlevel56.org"]];
+    
     NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:ext, @"extension", idtoPost, @"userid",nil];
+    NSString * urlString = @"http://flatlevel56.org/lovelog/labaccount.php";
+    [_manager POST:urlString parameters:params constructingBodyWithBlock:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"Resposne: %@", responseObject);
     
-    //パスの指定
-    NSMutableURLRequest * request = [client multipartFormRequestWithMethod:@"POST" path:@"/lovelog/labaccount.php" parameters:params constructingBodyWithBlock: ^(id <AFMultipartFormData>formData) {
-        [formData appendPartWithFileData: imageData name:@"upfile" fileName:@"title" mimeType:@"image/jpeg"];
-   }];
-    
-    
-    AFHTTPRequestOperation * operation = [[AFHTTPRequestOperation alloc]initWithRequest:request];
-    [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject)
-    {
-        
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        if([operation.response statusCode] == 403){
-            
-            notice = [WBErrorNoticeView errorNoticeInView:self.view title:@"接続エラー" message:@"エラーが検出されました。"];
-            [notice show];
-            [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
-            
-            return;
-        }
+        //<#code#>
     }];
     
-    [operation start];
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
     
 }
@@ -234,4 +222,7 @@ didFinishPickingMediaWithInfo:(NSDictionary*)editingInfo{
     [self.navigationController pushViewController:EVC animated:YES];
     
 }
+
+
+
 @end

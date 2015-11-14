@@ -9,6 +9,7 @@
 #import "FLPhototitleViewController.h"
 #import "AFNetworking.h"
 @interface FLPhototitleViewController ()
+@property AFHTTPRequestOperationManager * manager;
 @end
 
 @implementation FLPhototitleViewController
@@ -26,6 +27,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    _manager = [AFHTTPRequestOperationManager manager];
     
     if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0f){
         
@@ -92,35 +95,29 @@
     NSInteger idnumber = [defaults integerForKey:@"mid"];
     NSString * idtoPost = [NSString stringWithFormat:@"%d", idnumber];
     NSData * imageData = UIImageJPEGRepresentation(resizedImage2, 90);
-    AFHTTPClient * client = [AFHTTPClient clientWithBaseURL:[NSURL URLWithString:@"http://flatlevel56.org"]];
+    
+    
     NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:
                             title, @"title",
-                            ext, @"extension", idtoPost, @"userid",
-                           
-                            nil];
-    NSMutableURLRequest * request =  [client multipartFormRequestWithMethod:@"POST" path:@"/lovelog/photoviewcontroller.php" parameters:params constructingBodyWithBlock: ^(id <AFMultipartFormData>formData) {
-        [formData appendPartWithFileData:imageData name:@"upfile" fileName:@"title" mimeType:@"image/jpeg"];
-    }];
+                            ext, @"extension", idtoPost, @"userid", nil];
+    NSString * urlString = @"http://flatlevel56.org/lovelog/photoviewcontroller.php";
     
-    AFHTTPRequestOperation * operation = [[AFHTTPRequestOperation alloc]initWithRequest:request];
-    [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
-        
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        
-        notice = [WBErrorNoticeView errorNoticeInView:self.view title:@"接続エラー" message:@"エラーが検出されました。"];
-        [notice show];
-        [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
-        
-        if([operation.response statusCode] == 403){
-            notice = [WBErrorNoticeView errorNoticeInView:self.view title:@"接続エラー" message:@"エラーが検出されました。"];
-            [notice show];
-            [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
-            return;
-        }
-               
-    }];
+    [_manager POST:urlString
+       parameters:params constructingBodyWithBlock:^(id<AFMultipartFormData> formData)
+     {
+         [formData appendPartWithFileData:imageData name:@"upfile" fileName:@"title" mimeType:@"image/jpeg"];
+         
+     }
+          success:^(AFHTTPRequestOperation *operation, id responseObject)
+     {
+         NSLog(@"response is :  %@",responseObject);
+     }
+          failure:^(AFHTTPRequestOperation *operation, NSError *error)
+     {
+         NSLog(@"Error: %@ *****", [error description]);
+     }];
     
-    [operation start];
+  
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
     [self.navigationController popToRootViewControllerAnimated:YES];
     

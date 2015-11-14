@@ -20,12 +20,11 @@
 
 @interface FLTopViewController ()
 @property WBErrorNoticeView * notice;
+@property AFHTTPRequestOperationManager * manager;
 @end
 
 @implementation FLTopViewController
 @synthesize youraccountButton, myaccountButton, topImage, myImage, yourImage, receivedData, fileString, titleString, userphotoString, partnerphotoString, filenamedict, planLabel, mychatLabel, yourchatLabel,toPhoto,toChatview,toPlan,notice;
-
-
 FLAccountViewController * AVC;
 FLPartnerAcViewController * PAVC;
 
@@ -47,6 +46,7 @@ FLPartnerAcViewController * PAVC;
         nibNameOrNil = @"FLTopViewController";
     }
     
+    _manager = [AFHTTPRequestOperationManager manager];
     
     
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -143,26 +143,23 @@ didFinishPickingMediaWithInfo:(NSDictionary*)editingInfo{
     NSString * idtoPost = [NSString stringWithFormat:@"%d", idnumber];
     UIImage * img = toUpload;
     NSData * imageData = UIImageJPEGRepresentation(img, 90);
-    AFHTTPClient * client = [AFHTTPClient clientWithBaseURL:[NSURL URLWithString:@"http://flatlevel56.org"]];
+    
+    NSString * urlString = @"http://flatlevel56.org/lovelog/labaccount.php";
     NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:
                             ext, @"extension", idtoPost, @"userid",
                             nil];
-    NSMutableURLRequest * request =  [client multipartFormRequestWithMethod:@"POST" path:@"/lovelog/labaccount.php" parameters:params constructingBodyWithBlock: ^(id <AFMultipartFormData>formData) {
-        [formData appendPartWithFileData: imageData name:@"upfile" fileName:@"title" mimeType:@"image/jpeg"];
-    }];
-    [request setTimeoutInterval:80];
     
-    //TODO:成功処理とエラー処理
-    AFHTTPRequestOperation * operation = [[AFHTTPRequestOperation alloc]initWithRequest:request];
-    [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [_manager POST:urlString parameters:params constructingBodyWithBlock:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"Resposne: %@", responseObject);
         
         NSString * body = @"パートナーに最初のメッセージを送りますか？";
         UIAlertView * alertView = [[UIAlertView alloc]initWithTitle:nil message:body delegate:self cancelButtonTitle:@"あとで" otherButtonTitles:@"はい", nil];
         alertView.tag = 2;
         [alertView show];
+
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        
+        //<#code#>
         notice = [WBErrorNoticeView errorNoticeInView:self.view title:@"接続エラー" message:@"ネットワーク接続を確認してください。"];
         [notice show];
         [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
@@ -173,8 +170,6 @@ didFinishPickingMediaWithInfo:(NSDictionary*)editingInfo{
         }
         
     }];
-    
-    [operation start];
     
 }
 
