@@ -22,8 +22,7 @@
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        //通信用インスタンスを1個作成
-        _manager = [AFHTTPRequestOperationManager manager];
+        
         for(UIView *view in self.contentView.subviews){
             if ([view isKindOfClass:[UIView class]]) {
                 [view removeFromSuperview];
@@ -601,8 +600,10 @@
 
 -(void)setIndicatorWithParam:(NSDictionary*)parameter{
     
+    _manager = [AFHTTPRequestOperationManager manager];
     NSString * urlString = @"http://flatlevel56.org/lovelog/photoindicator.php";
     [_manager POST:urlString parameters:parameter constructingBodyWithBlock:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
         NSLog(@"Resposne: %@", responseObject);
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {

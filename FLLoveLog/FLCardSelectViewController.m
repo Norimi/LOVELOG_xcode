@@ -75,6 +75,12 @@
     }
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    
+    [super viewWillAppear:animated];
+    [self.dateTable reloadData];
+}
+
 
 -(void)createRefreshHeaderView{
     

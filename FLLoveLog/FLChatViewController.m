@@ -158,6 +158,10 @@
 
 
 -(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    //すでに保持している最新のデータを表示
+    [self.chatTable reloadData];
     
     if(contentsArray.count > 29){
         

@@ -29,8 +29,8 @@
                 <constraint firstItem="20" firstAttribute="bottom" secondItem="1" secondAttribute="bottom" id="37"/>
             </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
-            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackTranslucent" prompted="NO"/>
-            <simulatedToolbarMetrics key="simulatedBottomBarMetrics" barStyle="blackTranslucent"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+            <simulatedToolbarMetrics key="simulatedBottomBarMetrics" barStyle="black"/>
         </view>
     </objects>
 </document>

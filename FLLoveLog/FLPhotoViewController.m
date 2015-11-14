@@ -128,10 +128,14 @@
         
         
     }
+   
+}
+
+-(void)viewWillAppear:(BOOL)animated{
     
-    [self.photoTable reloadData];
-    
-    }
+    [super viewWillAppear:animated];
+    //[self.photoTable reloadData];
+}
 
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView {

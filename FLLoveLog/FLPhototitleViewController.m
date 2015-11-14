@@ -27,8 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    _manager = [AFHTTPRequestOperationManager manager];
+
     
     if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0f){
         
@@ -102,24 +101,35 @@
                             ext, @"extension", idtoPost, @"userid", nil];
     NSString * urlString = @"http://flatlevel56.org/lovelog/photoviewcontroller.php";
     
-    [_manager POST:urlString
-       parameters:params constructingBodyWithBlock:^(id<AFMultipartFormData> formData)
-     {
-         [formData appendPartWithFileData:imageData name:@"upfile" fileName:@"title" mimeType:@"image/jpeg"];
-         
-     }
-          success:^(AFHTTPRequestOperation *operation, id responseObject)
-     {
-         NSLog(@"response is :  %@",responseObject);
-     }
-          failure:^(AFHTTPRequestOperation *operation, NSError *error)
-     {
-         NSLog(@"Error: %@ *****", [error description]);
-     }];
     
-  
-    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
-    [self.navigationController popToRootViewControllerAnimated:YES];
+    _manager = [AFHTTPRequestOperationManager manager];
+    [_manager POST:urlString parameters:params constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
+        
+        [formData appendPartWithFileData:imageData name:@"upfile" fileName:@"title" mimeType:@"image/jpeg"];
+        NSLog(@"通信開始: %@");
+        
+    } success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"Success: %@", responseObject);
+        [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+        [self.navigationController popToRootViewControllerAnimated:YES];
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"Error: %@", error);
+        notice = [WBErrorNoticeView errorNoticeInView:self.view title:@"接続エラー" message:@"エラーが検出されました。"];
+        [notice show];
+        [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+        
+        if([operation.response statusCode] == 403){
+            notice = [WBErrorNoticeView errorNoticeInView:self.view title:@"接続エラー" message:@"エラーが検出されました。"];
+            [notice show];
+            [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+            return;
+        }
+        //[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+        //[self.navigationController popToRootViewControllerAnimated:YES];
+
+    }];
+    
+
     
     
     

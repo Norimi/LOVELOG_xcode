@@ -173,7 +173,8 @@ static const int FONT_SIZE = 15;
 
 
 -(void)viewWillAppear:(BOOL)animated{
-    
+    [super viewWillAppear:animated];
+    [self.planTable reloadData];
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
     nowDate = [NSDate date];
     

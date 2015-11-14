@@ -255,8 +255,7 @@
 
 -(void)setIndicatorWithValue:(NSString*)value{
     
-    
-    //AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://flatlevel56.org/"]];
+
     params = [NSDictionary dictionaryWithObjectsAndKeys:
               chatid, @"chatid",
               value, @"indicator",

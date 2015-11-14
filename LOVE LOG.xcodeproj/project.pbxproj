@@ -463,6 +463,7 @@
 		97731897197CB42600FC2D77 /* LOVEDRILL-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "LOVEDRILL-Info.plist"; sourceTree = "<group>"; };
 		97731899197CB42C00FC2D77 /* LOVEDRILL-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LOVEDRILL-Prefix.pch"; sourceTree = "<group>"; };
 		9773189A197CB4A700FC2D77 /* lovenumberviewcontroller.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lovenumberviewcontroller.png; path = ../Resorces/lovenumberviewcontroller.png; sourceTree = "<group>"; };
+		97747AB81BF7181E006402A4 /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "Pods/../build/Debug-iphoneos/libAFNetworking.a"; sourceTree = "<group>"; };
 		977A83B7196FE196002DAA20 /* accountphoto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = accountphoto.png; path = ../Resorces/accountphoto.png; sourceTree = "<group>"; };
 		977A83B9196FE21B002DAA20 /* penwhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = penwhite.png; path = ../Resorces/penwhite.png; sourceTree = "<group>"; };
 		977A83BB196FE231002DAA20 /* cellframe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cellframe.png; path = ../Resorces/cellframe.png; sourceTree = "<group>"; };
@@ -558,6 +559,7 @@
 		2FA418F8166EE46E002E93E2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				97747AB81BF7181E006402A4 /* libAFNetworking.a */,
 				979DA3B8199E1FEA0087FEC4 /* XCTest.framework */,
 				2FF14ECF178FEFD80082B21F /* AudioToolbox.framework */,
 				2F01D49D17A105690005B654 /* MapKit.framework */,
@@ -1358,6 +1360,10 @@
 				GCC_PREFIX_HEADER = "FLLoveLog/LOVEDRILL-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/FLLoveLog/LOVEDRILL-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = net.norimingconception.lovelog;
 				PRODUCT_NAME = "LOVE LOG";
@@ -1433,6 +1439,10 @@
 				GCC_PREFIX_HEADER = "FLLoveLog/LOVEDRILL-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/FLLoveLog/LOVEDRILL-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = net.norimingconception.lovelog;
 				PRODUCT_NAME = "LOVE LOG";
@@ -1452,6 +1462,10 @@
 				GCC_PREFIX_HEADER = "FLLoveLog/LOVEDRILL-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/FLLoveLog/LOVEDRILL-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = net.norimingconception.lovelog;
 				PRODUCT_NAME = "LOVE LOG";
