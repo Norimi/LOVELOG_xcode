@@ -12,7 +12,6 @@
 
 -(BOOL)connectionWithUrl:(NSString*)urlString withData:(NSString*)data {
     
- 
     
     NSMutableURLRequest * request = [[NSMutableURLRequest alloc]init];
     [request setURL:[NSURL URLWithString:urlString]];

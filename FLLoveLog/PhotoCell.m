@@ -8,6 +8,7 @@
 
 #import "PhotoCell.h"
 #import "AFNetworking.h"
+#import "FLConnection.h"
 
 @interface PhotoCell()
 @property AFHTTPRequestOperationManager * manager;
@@ -188,9 +189,6 @@
         [loveInd setSelected:YES];
         [loveInd2 setSelected:YES];
         [loveInd3 setSelected:YES];
-        
-        
-        
     }
     
     
@@ -275,18 +273,12 @@
                         //myphotoがYESのとき1をpostする。
                         
                         if(myPhoto == YES){
-                            params = [NSDictionary dictionaryWithObjectsAndKeys:
-                                      photoid, @"photoid",
-                                      @"1", @"indicator",@"1", @"myphoto",
-                                      
-                                      nil];
+                           
+                            params = [NSString stringWithFormat:@"photoid=%@&indicator=%d&myphoto=%d", photoid, @"1", @"1"];
+                            
                         }else {
                             
-                            params = [NSDictionary dictionaryWithObjectsAndKeys:
-                                      photoid, @"photoid",
-                                      @"1", @"indicator",@"0", @"myphoto",
-                                      nil];
-                            
+                            params = [NSString stringWithFormat:@"photoid=%@&indicator=%d&myphoto=%d", photoid, @"1", @"0"];
                         }
                         [self setIndicatorWithParam:params];
                         loveIndicator = 1;
@@ -297,22 +289,14 @@
                         //ここにも入れる。
                         
                         if(myPhoto == YES){
-                            
-                            
-                            params = [NSDictionary dictionaryWithObjectsAndKeys:
-                                      photoid, @"photoid",
-                                      @"0", @"indicator",@"1", @"myphoto",
-                                      
-                                      nil];
+                           
+                            params = [NSString stringWithFormat:@"photoid=%@&indicator=%d&myphoto=%d", photoid, @"0", @"1"];
                             
                             
                         }else {
                             
-                            params = [NSDictionary dictionaryWithObjectsAndKeys:
-                                      photoid, @"photoid",
-                                      @"0", @"indicator",@"0", @"myphoto",
-                                      
-                                      nil];
+                            params = [NSString stringWithFormat:@"photoid=%@&indicator=%d&myphoto=%d", photoid, @"0", @"0"];
+                            
                         }
                         
                         [self setIndicatorWithParam:params];
@@ -335,19 +319,12 @@
                     if(loveInd2.selected){
                         
                         if(myPhoto == YES){
-                            params = [NSDictionary dictionaryWithObjectsAndKeys:
-                                      photoid, @"photoid",
-                                      @"2", @"indicator",@"1", @"myphoto",
-                                      
-                                      nil];
+                           
+                            params = [NSString stringWithFormat:@"photoid=%@&indicator=%d&myphoto=%d", photoid, @"2", @"1"];
                             
                         }else {
                             
-                            params = [NSDictionary dictionaryWithObjectsAndKeys:
-                                      photoid, @"photoid",
-                                      @"2", @"indicator",@"0", @"myphoto",
-                                      
-                                      nil];
+                            params = [NSString stringWithFormat:@"photoid=%@&indicator=%d&myphoto=%d", photoid, @"2", @"0"];
                             
                         }
                         
@@ -363,24 +340,19 @@
                         
                         if(myPhoto == YES){
                             
-                            
-                            params = [NSDictionary dictionaryWithObjectsAndKeys:
-                                      photoid, @"photoid",
-                                      @"1", @"indicator",@"1", @"myphoto",
-                                      nil];
+                            params = [NSString stringWithFormat:@"photoid=%@&indicator=%d&myphoto=%d", photoid, @"1", @"1"];
                             
                         }else {
                             
-                            params = [NSDictionary dictionaryWithObjectsAndKeys:
-                                      photoid, @"photoid",
-                                      @"1", @"indicator",@"0", @"myphoto",
-                                      
-                                      nil];
-                        }
+                            params = [NSString stringWithFormat:@"photoid=%@&indicator=%d&myphoto=%d", photoid, @"1", @"0"];                        }
                         
-                        [self setIndicatorWithParam:params];
-                        loveIndicator =1;
+                       
+                    
                     }
+                    
+                    [self setIndicatorWithParam:params];
+                    loveIndicator =1;
+                    
                 }
             }
         }
@@ -401,18 +373,10 @@
                         loveIndicator = 3;
                         AudioServicesPlaySystemSound(soundID);
                         if(myPhoto == YES){
-                            
-                            
-                            params = [NSDictionary dictionaryWithObjectsAndKeys:
-                                      photoid, @"photoid",
-                                      @"3", @"indicator",@"1", @"myphoto",
-                                      nil];
+                            params = [NSString stringWithFormat:@"photoid=%@&indicator=%d&myphoto=%d", photoid, @"3", @"1"];
                         }else {
                             
-                            params = [NSDictionary dictionaryWithObjectsAndKeys:
-                                      photoid, @"photoid",
-                                      @"3", @"indicator",@"0", @"myphoto",
-                                      nil];
+                            params = [NSString stringWithFormat:@"photoid=%@&indicator=%d&myphoto=%d", photoid, @"3", @"0"];
                         }
                         
                         [self setIndicatorWithParam:params];
@@ -424,19 +388,11 @@
                         
                         if(myPhoto == YES){
                             
-                            
-                            params = [NSDictionary dictionaryWithObjectsAndKeys:
-                                      photoid, @"photoid",
-                                      @"2", @"indicator",@"1", @"myphoto",
-                                      
-                                      nil];
+                            params = [NSString stringWithFormat:@"photoid=%@&indicator=%d&myphoto=%d", photoid, @"2", @"1"];
                         }else {
                             
-                            params = [NSDictionary dictionaryWithObjectsAndKeys:
-                                      photoid, @"photoid",
-                                      @"2", @"indicator",@"0", @"myphoto",
-                                      
-                                      nil];
+                           
+                            params = [NSString stringWithFormat:@"photoid=%@&indicator=%d&myphoto=%d", photoid, @"2", @"0"];
                         }
                         
                         [self setIndicatorWithParam:params];
@@ -475,19 +431,12 @@
                         AudioServicesPlaySystemSound(soundID);
                         
                         if(myPhoto == YES){
-                            params = [NSDictionary dictionaryWithObjectsAndKeys:
-                                      photoid, @"photoid",
-                                      @"4", @"indicator",@"1", @"myphoto",
-                                      
-                                      nil];
+                            
+                            params = [NSString stringWithFormat:@"photoid=%@&indicator=%d&myphoto=%d", photoid, @"4", @"1"];
                             
                         }else {
                             
-                            params = [NSDictionary dictionaryWithObjectsAndKeys:
-                                      photoid, @"photoid",
-                                      @"4", @"indicator",@"0", @"myphoto",
-                                      
-                                      nil];
+                            params = [NSString stringWithFormat:@"photoid=%@&indicator=%d&myphoto=%d", photoid, @"4", @"0"];
                         }
                         
                         [self setIndicatorWithParam:params];
@@ -499,22 +448,13 @@
                         if(myPhoto == YES){
                             
                             
-                            params = [NSDictionary dictionaryWithObjectsAndKeys:
-                                      photoid, @"photoid",
-                                      @"3", @"indicator",@"1", @"myphoto",
-                                      
-                                      nil];
+                            params = [NSString stringWithFormat:@"photoid=%@&indicator=%d&myphoto=%d", photoid, @"3", @"1"];
                             
                             
                             
                         }else {
                             
-                            params = [NSDictionary dictionaryWithObjectsAndKeys:
-                                      photoid, @"photoid",
-                                      @"3", @"indicator",@"0", @"myphoto",
-                                      
-                                      nil];
-                            
+                            params = [NSString stringWithFormat:@"photoid=%@&indicator=%d&myphoto=%d", photoid, @"3", @"0"];
                             
                         }
                         
@@ -550,18 +490,12 @@
                             if(myPhoto == YES){
                                 
                                 
-                                params = [NSDictionary dictionaryWithObjectsAndKeys:
-                                          photoid, @"photoid",
-                                          @"5", @"indicator",@"1", @"myphoto",
-                                          nil];
-                                
+                                params = [NSString stringWithFormat:@"photoid=%@&indicator=%d&myphoto=%d", photoid, @"5", @"1"];
                                 
                             }else {
                                 
-                                params = [NSDictionary dictionaryWithObjectsAndKeys:
-                                          photoid, @"photoid",
-                                          @"5", @"indicator",@"0", @"myphoto",
-                                          nil];
+                               
+                                params = [NSString stringWithFormat:@"photoid=%@&indicator=%d&myphoto=%d", photoid, @"5", @"0"];
                             }
                             
                             [self setIndicatorWithParam:params];
@@ -572,16 +506,10 @@
                             if(myPhoto == YES){
                                 
                                 
-                                params = [NSDictionary dictionaryWithObjectsAndKeys:
-                                          photoid, @"photoid",
-                                          @"4", @"indicator",@"1", @"myphoto",
-                                          nil];
+                                params = [NSString stringWithFormat:@"photoid=%@&indicator=%d&myphoto=%d", photoid, @"4", @"1"];
                             }else {
                                 
-                                params = [NSDictionary dictionaryWithObjectsAndKeys:
-                                          photoid, @"photoid",
-                                          @"4", @"indicator",@"0", @"myphoto",
-                                          nil];
+                                params = [NSString stringWithFormat:@"photoid=%@&indicator=%d&myphoto=%d", photoid, @"4", @"0"];
                                 
                             }
                             [self setIndicatorWithParam:params];
@@ -598,17 +526,48 @@
     
 }
 
--(void)setIndicatorWithParam:(NSDictionary*)parameter{
+-(void)setIndicatorWithParam:(NSString*)parameter{
     
-    _manager = [AFHTTPRequestOperationManager manager];
+
+
+    /*
+    NSString * url = [NSString stringWithFormat:@"http://flatlevel56.org/lovelog/chatlogviewcontroller.php"];
+
+    FLConnection * connection = [[FLConnection alloc]init];
+    if([connection connectionWithUrl:url withData:parameter]){
+        
+    }else{
+        
+        //WBErrorNoticeView * notice = [WBErrorNoticeView errorNoticeInView:self.view title:@"接続エラー" message:@"ネットワーク接続を確認してください。"];
+        //[notice show];
+        [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+        
+    }
+     */
+    
+    /*
     NSString * urlString = @"http://flatlevel56.org/lovelog/photoindicator.php";
-    [_manager POST:urlString parameters:parameter constructingBodyWithBlock:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    [manager POST:urlString parameters:params success:^(NSURLSessionDataTask *task, id responseObject) {
+        NSLog(@"responseObject = %@", responseObject);
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        NSLog(@"error = %@", error);
+    }];
+     */
+
+    /*
+    AFHTTPRequestOperationManager * manager = [AFHTTPRequestOperationManager manager];
+    //JSONではないので通常用のシリアライズ
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    NSString * urlString = @"http://flatlevel56.org/lovelog/photoindicator.php";
+    [manager POST:urlString parameters:parameter constructingBodyWithBlock:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         
         NSLog(@"Resposne: %@", responseObject);
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         //<#code#>
     }];
+     */
     
 }
 

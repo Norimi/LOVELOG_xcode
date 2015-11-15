@@ -32,7 +32,7 @@
     NSString * photoid;
     NSString *  userid;
     NSString * tString;
-    NSDictionary * params;
+    NSString * params;
   
     
     __weak IBOutlet UILabel *partnerLabel;
