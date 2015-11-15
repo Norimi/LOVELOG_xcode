@@ -9,9 +9,12 @@
 #import "PhotoCell.h"
 #import "AFNetworking.h"
 #import "FLConnection.h"
+#import "WBErrorNoticeView.h"
 
 @interface PhotoCell()
 @property AFHTTPRequestOperationManager * manager;
+@property   WBErrorNoticeView* notice;
+@property FLConnection * connection;
 @end
 
 
@@ -23,6 +26,9 @@
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
+        
+        _connection = [[FLConnection alloc]init];
+        
         
         for(UIView *view in self.contentView.subviews){
             if ([view isKindOfClass:[UIView class]]) {
@@ -49,6 +55,7 @@
 -(void)layoutSubviews{
     [super layoutSubviews];
     
+    _connection = [[FLConnection alloc]init];
     
     NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
     NSString *  mName = [defaults stringForKey:@"mname"];
@@ -111,11 +118,11 @@
     //selectedのtagの取得。変数へ。そこの色を変える
     
     
-    loveInd = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    loveInd2 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    loveInd3 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    loveInd4 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    loveInd5 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    loveInd = [UIButton buttonWithType:UIButtonTypeCustom];
+    loveInd2 = [UIButton buttonWithType:UIButtonTypeCustom];
+    loveInd3 = [UIButton buttonWithType:UIButtonTypeCustom];
+    loveInd4 = [UIButton buttonWithType:UIButtonTypeCustom];
+    loveInd5 = [UIButton buttonWithType:UIButtonTypeCustom];
     
     
     loveInd.adjustsImageWhenHighlighted = NO;
@@ -166,33 +173,31 @@
                  action:@selector(toTouched5:)
        forControlEvents:UIControlEventTouchUpInside];
     
-    
-    
     //viewが登場したときに値をボタンに反映させるのように書く
     if(loveIndicator == 1){
         
         //selectedにsetする
         [loveInd setSelected:YES];
-    }
-    
-    
-    if(loveIndicator == 2){
+        //1を活性（非選択にするため)
+        [loveInd setEnabled:YES];
+        [loveInd2 setEnabled:YES];
+        
+    }else if(loveIndicator == 2){
         
         [loveInd setSelected:YES];
         [loveInd2 setSelected:YES];
         
+        //1を活性
+        [loveInd setEnabled:YES];
+        [loveInd2 setEnabled:YES];
         
-    }
-    
-    if(loveIndicator == 3){
+        
+    }else if(loveIndicator == 3){
         
         [loveInd setSelected:YES];
         [loveInd2 setSelected:YES];
         [loveInd3 setSelected:YES];
-    }
-    
-    
-    if(loveIndicator == 4){
+    }else if(loveIndicator == 4){
         
         
         [loveInd setSelected:YES];
@@ -200,9 +205,7 @@
         [loveInd3 setSelected:YES];
         [loveInd4 setSelected:YES];
         
-    }
-    
-    if(loveIndicator == 5){
+    }else if(loveIndicator == 5){
         
         
         [loveInd setSelected:YES];
@@ -211,6 +214,12 @@
         [loveInd4 setSelected:YES];
         
         [loveInd5 setSelected:YES];
+        
+    }else{
+        //love indicatorが0/初期状態のとき
+        //1を活性
+        [loveInd setEnabled:YES];
+    
         
     }
     
@@ -224,12 +233,7 @@
     [self.contentView addSubview:loveInd4];
     [self.contentView addSubview:loveInd5];
     
-    
-    
-    
     //photoが自分のものであるかどうか確認。この場所でよいか検討
-    
-    
     NSInteger idnumber = [defaults integerForKey:@"mid"];
     int photoCreator = [userid intValue];
     
@@ -250,12 +254,118 @@
     
 }
 
+-(void)setLoveind1Enabled{
+    [loveInd setEnabled:YES];
+    
+    [loveInd2 setEnabled:NO];
+    [loveInd3 setEnabled:NO];
+    [loveInd4 setEnabled:NO];
+    [loveInd5 setEnabled:NO];
+}
+
+-(void)setLoveind12Enabled{
+    [loveInd setEnabled:YES];
+    [loveInd2 setEnabled:YES];
+    
+    [loveInd3 setEnabled:NO];
+    [loveInd4 setEnabled:NO];
+    [loveInd5 setEnabled:NO];
+}
+
+-(void)setLoveind23Enabled{
+    [loveInd2 setEnabled:YES];
+    [loveInd3 setEnabled:YES];
+    
+    [loveInd setEnabled:NO];
+    [loveInd4 setEnabled:NO];
+    [loveInd5 setEnabled:NO];
+}
+
+-(void)setLoveind34Enabled{
+    
+    [loveInd3 setEnabled:YES];
+    [loveInd4 setEnabled:YES];
+    
+    [loveInd setEnabled:NO];
+    [loveInd2 setEnabled:NO];
+    [loveInd5 setEnabled:NO];
+}
+
+-(void)setLoveind45Enabled{
+    [loveInd4 setEnabled:YES];
+    [loveInd5 setEnabled:YES];
+    
+    [loveInd setEnabled:NO];
+    [loveInd2 setEnabled:NO];
+    [loveInd3 setEnabled:NO];
+    
+}
+
+-(void)setLoveind5Enabled{
+    
+    [loveInd5 setEnabled:YES];
+    
+    [loveInd setEnabled:NO];
+    [loveInd2 setEnabled:NO];
+    [loveInd3 setEnabled:NO];
+    [loveInd4 setEnabled:NO];
+}
+
+
+
+-(void)setIndicatorWithParam:(NSString*)parameter{
+    
+    NSLog(@"%s",__func__);
+    
+    /*
+     NSString * url = [NSString stringWithFormat:@"http://flatlevel56.org/lovelog/photoindicator.php"];
+     if([_connection connectionWithUrl:url withData:parameter]){
+     
+     NSLog(@"connection");
+     
+     }else{
+     
+     
+     //エラーは出力しない
+     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+     
+     }
+     */
+    
+    NSLog(@"params description %@",params.description);
+    
+    NSString * urlString = @"http://flatlevel56.org/lovelog/photoindicator.php";
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    manager.responseSerializer = [AFXMLParserResponseSerializer serializer];
+    //phpで指定したcontents typeの指定
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
+    [manager POST:urlString parameters:params success:^(NSURLSessionDataTask *task, id responseObject) {
+        NSLog(@"responseObject = %@", responseObject);
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        NSLog(@"error = %@", error);
+    }];
+    
+    
+    /*
+     AFHTTPRequestOperationManager * manager = [AFHTTPRequestOperationManager manager];
+     //JSONではないので通常用のシリアライズ
+     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+     NSString * urlString = @"http://flatlevel56.org/lovelog/photoindicator.php";
+     [manager POST:urlString parameters:parameter constructingBodyWithBlock:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+     
+     NSLog(@"Resposne: %@", responseObject);
+     
+     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+     //<#code#>
+     }];
+     */
+    
+}
 
 
 
 -(void)toTouched:(id)sender{
-    
-    //contentsarrayの数を取得し、indexpathと同じか確かめる？
+       //contentsarrayの数を取得し、indexpathと同じか確かめる？
     if(!loveInd2.selected){
         if(!loveInd3.selected){
             if(!loveInd4.selected){
@@ -273,15 +383,23 @@
                         //myphotoがYESのとき1をpostする。
                         
                         if(myPhoto == YES){
-                           
-                            params = [NSString stringWithFormat:@"photoid=%@&indicator=%d&myphoto=%d", photoid, @"1", @"1"];
+                            
+                            params = [NSDictionary dictionaryWithObjectsAndKeys:
+                                      photoid, @"photoid",
+                                      @"1", @"indicator",@"1", @"myphoto",
+                                      
+                                      nil];
                             
                         }else {
                             
-                            params = [NSString stringWithFormat:@"photoid=%@&indicator=%d&myphoto=%d", photoid, @"1", @"0"];
+                            params = [NSDictionary dictionaryWithObjectsAndKeys:
+                                      photoid, @"photoid",
+                                      @"1", @"indicator",@"0", @"myphoto",
+                                      nil];
                         }
+                        
                         [self setIndicatorWithParam:params];
-                        loveIndicator = 1;
+                        //loveIndicator = 1;
                         
                         
                     } else {
@@ -289,18 +407,26 @@
                         //ここにも入れる。
                         
                         if(myPhoto == YES){
-                           
-                            params = [NSString stringWithFormat:@"photoid=%@&indicator=%d&myphoto=%d", photoid, @"0", @"1"];
+                            
+                            params = [NSDictionary dictionaryWithObjectsAndKeys:
+                                      photoid, @"photoid",
+                                      @"0", @"indicator",@"1", @"myphoto",
+                                      
+                                      nil];
                             
                             
                         }else {
                             
-                            params = [NSString stringWithFormat:@"photoid=%@&indicator=%d&myphoto=%d", photoid, @"0", @"0"];
+                            params = [NSDictionary dictionaryWithObjectsAndKeys:
+                                      photoid, @"photoid",
+                                      @"0", @"indicator",@"0", @"myphoto",
+                                      
+                                      nil];
                             
                         }
                         
                         [self setIndicatorWithParam:params];
-                        loveIndicator =0;
+                        //loveIndicator =0;
                     }
                 }
             }
@@ -315,47 +441,75 @@
         if(!loveInd3.selected){
             if(!loveInd4.selected){
                 if(!loveInd5.selected){
+                    //トグル
                     loveInd2.selected = !loveInd2.selected;
+                    
+                    
+                    
                     if(loveInd2.selected){
+                        //結果選択状態
+                        //[self setLoveind23Enabled];
                         
                         if(myPhoto == YES){
                            
-                            params = [NSString stringWithFormat:@"photoid=%@&indicator=%d&myphoto=%d", photoid, @"2", @"1"];
+                            params = [NSDictionary dictionaryWithObjectsAndKeys:
+                                      photoid, @"photoid",
+                                      @"2", @"indicator",@"1", @"myphoto",
+                                      
+                                      nil];
                             
                         }else {
                             
-                            params = [NSString stringWithFormat:@"photoid=%@&indicator=%d&myphoto=%d", photoid, @"2", @"0"];
+                            params = [NSDictionary dictionaryWithObjectsAndKeys:
+                                      photoid, @"photoid",
+                                      @"2", @"indicator",@"0", @"myphoto",
+                                      
+                                      nil];
                             
                         }
                         
                         [self setIndicatorWithParam:params];
                         
-                        loveIndicator = 2;
+                        //loveIndicator = 2;
                         AudioServicesPlaySystemSound(soundID);
                         
                         
                         
                     } else {
                         
+                        //結果非選択状態
+                        //[self setLoveind12Enabled];
                         
                         if(myPhoto == YES){
                             
-                            params = [NSString stringWithFormat:@"photoid=%@&indicator=%d&myphoto=%d", photoid, @"1", @"1"];
+                            params = [NSDictionary dictionaryWithObjectsAndKeys:
+                                      photoid, @"photoid",
+                                      @"1", @"indicator",@"1", @"myphoto",
+                                      nil];
+
                             
                         }else {
                             
-                            params = [NSString stringWithFormat:@"photoid=%@&indicator=%d&myphoto=%d", photoid, @"1", @"0"];                        }
+                            params = [NSDictionary dictionaryWithObjectsAndKeys:
+                                      photoid, @"photoid",
+                                      @"1", @"indicator",@"0", @"myphoto",
+                                      
+                                      nil];
+                        }
                         
-                       
+                        [self setIndicatorWithParam:params];
+                        //loveIndicator =1;
                     
+                
                     }
-                    
-                    [self setIndicatorWithParam:params];
-                    loveIndicator =1;
-                    
+                
                 }
+                
             }
         }
+        
+        
+       
     }
     
 }
@@ -369,34 +523,50 @@
                 if(!loveInd5.selected){
                     loveInd3.selected = !loveInd3.selected;
                     if(loveInd3.selected){
-                        
-                        loveIndicator = 3;
+                      
+                        //loveIndicator = 3;
                         AudioServicesPlaySystemSound(soundID);
                         if(myPhoto == YES){
-                            params = [NSString stringWithFormat:@"photoid=%@&indicator=%d&myphoto=%d", photoid, @"3", @"1"];
+                            
+                            params = [NSDictionary dictionaryWithObjectsAndKeys:
+                                      photoid, @"photoid",
+                                      @"3", @"indicator",@"1", @"myphoto",
+                                      nil];
                         }else {
                             
-                            params = [NSString stringWithFormat:@"photoid=%@&indicator=%d&myphoto=%d", photoid, @"3", @"0"];
+                            params = [NSDictionary dictionaryWithObjectsAndKeys:
+                                      photoid, @"photoid",
+                                      @"3", @"indicator",@"0", @"myphoto",
+                                      nil];
                         }
                         
                         [self setIndicatorWithParam:params];
                         
                         
                     } else {
-                        
-                        
+                        //結果非選択
                         
                         if(myPhoto == YES){
                             
-                            params = [NSString stringWithFormat:@"photoid=%@&indicator=%d&myphoto=%d", photoid, @"2", @"1"];
+                            params = [NSDictionary dictionaryWithObjectsAndKeys:
+                                      photoid, @"photoid",
+                                      @"2", @"indicator",@"1", @"myphoto",
+                                      
+                                      nil];
+                            
                         }else {
                             
                            
-                            params = [NSString stringWithFormat:@"photoid=%@&indicator=%d&myphoto=%d", photoid, @"2", @"0"];
+                            params = [NSDictionary dictionaryWithObjectsAndKeys:
+                                      photoid, @"photoid",
+                                      @"2", @"indicator",@"0", @"myphoto",
+                                      
+                                      nil];
+
                         }
                         
                         [self setIndicatorWithParam:params];
-                        loveIndicator =2;
+                        //loveIndicator =2;
                     }
                     
                     
@@ -413,30 +583,31 @@
 -(IBAction)toTouched4:(id)sender{
     
     if(loveInd.selected){
-        
         if(loveInd2.selected){
-            
             if(loveInd3.selected){
                 if(!loveInd5.selected){
-                    
-                    
-                    
                     loveInd4.selected = !loveInd4.selected;
-                    
-                    
-                    
                     if(loveInd4.selected){
                         
-                        loveIndicator = 4;
+                        //loveIndicator = 4;
                         AudioServicesPlaySystemSound(soundID);
                         
                         if(myPhoto == YES){
                             
-                            params = [NSString stringWithFormat:@"photoid=%@&indicator=%d&myphoto=%d", photoid, @"4", @"1"];
+                           
+                            params = [NSDictionary dictionaryWithObjectsAndKeys:
+                                      photoid, @"photoid",
+                                      @"4", @"indicator",@"1", @"myphoto",
+                                      
+                                      nil];
                             
                         }else {
                             
-                            params = [NSString stringWithFormat:@"photoid=%@&indicator=%d&myphoto=%d", photoid, @"4", @"0"];
+                            params = [NSDictionary dictionaryWithObjectsAndKeys:
+                                      photoid, @"photoid",
+                                      @"4", @"indicator",@"0", @"myphoto",
+                                      
+                                      nil];
                         }
                         
                         [self setIndicatorWithParam:params];
@@ -444,22 +615,24 @@
                     } else {
                         
                         
-                        
                         if(myPhoto == YES){
-                            
-                            
-                            params = [NSString stringWithFormat:@"photoid=%@&indicator=%d&myphoto=%d", photoid, @"3", @"1"];
-                            
-                            
-                            
+                            params = [NSDictionary dictionaryWithObjectsAndKeys:
+                                      photoid, @"photoid",
+                                      @"3", @"indicator",@"1", @"myphoto",
+                                      
+                                      nil];
                         }else {
                             
-                            params = [NSString stringWithFormat:@"photoid=%@&indicator=%d&myphoto=%d", photoid, @"3", @"0"];
+                            params = [NSDictionary dictionaryWithObjectsAndKeys:
+                                      photoid, @"photoid",
+                                      @"3", @"indicator",@"0", @"myphoto",
+                                      
+                                      nil];
                             
                         }
                         
                         [self setIndicatorWithParam:params];
-                        loveIndicator =3;
+                        //loveIndicator =3;
                     }
                     
                 }
@@ -478,10 +651,7 @@
             if(loveInd3.selected){
                 if(loveInd4.selected){
                     if(loveInd4.selected){
-                        
-                        
                         loveInd5.selected = !loveInd5.selected;
-                        
                         
                         if(loveInd5.selected){
                             
@@ -490,84 +660,49 @@
                             if(myPhoto == YES){
                                 
                                 
-                                params = [NSString stringWithFormat:@"photoid=%@&indicator=%d&myphoto=%d", photoid, @"5", @"1"];
+                                params = [NSDictionary dictionaryWithObjectsAndKeys:
+                                          photoid, @"photoid",
+                                          @"5", @"indicator",@"1", @"myphoto",
+                                          nil];
                                 
                             }else {
                                 
-                               
-                                params = [NSString stringWithFormat:@"photoid=%@&indicator=%d&myphoto=%d", photoid, @"5", @"0"];
+                                params = [NSDictionary dictionaryWithObjectsAndKeys:
+                                          photoid, @"photoid",
+                                          @"5", @"indicator",@"0", @"myphoto",
+                                          nil];
                             }
                             
                             [self setIndicatorWithParam:params];
                             
                         } else {
-                            
+                            //結果非選択
                             
                             if(myPhoto == YES){
                                 
                                 
-                                params = [NSString stringWithFormat:@"photoid=%@&indicator=%d&myphoto=%d", photoid, @"4", @"1"];
+                                params = [NSDictionary dictionaryWithObjectsAndKeys:
+                                          photoid, @"photoid",
+                                          @"4", @"indicator",@"1", @"myphoto",
+                                          nil];
                             }else {
                                 
-                                params = [NSString stringWithFormat:@"photoid=%@&indicator=%d&myphoto=%d", photoid, @"4", @"0"];
-                                
+                                params = [NSDictionary dictionaryWithObjectsAndKeys:
+                                          photoid, @"photoid",
+                                          @"4", @"indicator",@"0", @"myphoto",
+                                          nil];
                             }
                             [self setIndicatorWithParam:params];
                             
                             
                             
-                            loveIndicator =4;
+                            //loveIndicator =4;
                         }
                     }
                 }
             }
         }
     }
-    
-}
-
--(void)setIndicatorWithParam:(NSString*)parameter{
-    
-
-
-    /*
-    NSString * url = [NSString stringWithFormat:@"http://flatlevel56.org/lovelog/chatlogviewcontroller.php"];
-
-    FLConnection * connection = [[FLConnection alloc]init];
-    if([connection connectionWithUrl:url withData:parameter]){
-        
-    }else{
-        
-        //WBErrorNoticeView * notice = [WBErrorNoticeView errorNoticeInView:self.view title:@"接続エラー" message:@"ネットワーク接続を確認してください。"];
-        //[notice show];
-        [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
-        
-    }
-     */
-    
-    /*
-    NSString * urlString = @"http://flatlevel56.org/lovelog/photoindicator.php";
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    [manager POST:urlString parameters:params success:^(NSURLSessionDataTask *task, id responseObject) {
-        NSLog(@"responseObject = %@", responseObject);
-    } failure:^(NSURLSessionDataTask *task, NSError *error) {
-        NSLog(@"error = %@", error);
-    }];
-     */
-
-    /*
-    AFHTTPRequestOperationManager * manager = [AFHTTPRequestOperationManager manager];
-    //JSONではないので通常用のシリアライズ
-    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
-    NSString * urlString = @"http://flatlevel56.org/lovelog/photoindicator.php";
-    [manager POST:urlString parameters:parameter constructingBodyWithBlock:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        
-        NSLog(@"Resposne: %@", responseObject);
-        
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        //<#code#>
-    }];
-     */
     
 }
 

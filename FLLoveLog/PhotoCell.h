@@ -25,7 +25,6 @@
     __weak IBOutlet UILabel *titleLabel;
     
     //それぞれviewcontrollerから渡される。
-    
     int loveIndicator;
     int frompartnerInd;
 

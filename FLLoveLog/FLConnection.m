@@ -12,6 +12,8 @@
 
 -(BOOL)connectionWithUrl:(NSString*)urlString withData:(NSString*)data {
     
+ 
+    NSLog(@"connectionwithurl withdata");
     
     NSMutableURLRequest * request = [[NSMutableURLRequest alloc]init];
     [request setURL:[NSURL URLWithString:urlString]];
@@ -31,9 +33,13 @@
         
         return NO;
         //アラート表示メソッドをデリゲートメソッドとして呼び出す。
-        
+        NSLog(@"connection failed");
+       
         
     } else {
+        
+        NSLog(@"connection succeeded %@",error_str);
+    
         
         //成功判定が出た段階でdelegateメソッドを呼び出す
         //レスポンスまで時間がかかっても非同期的に処理できるパターン
@@ -70,6 +76,8 @@
 
 -(BOOL)connectionWithUrl:(NSString*)url withNSData:(NSData*)body{
     
+    NSLog(@"connectionwithurl withdata");
+    
     //data型が必要なため、通信クラスを使用するのではなく、独自メソッドを使用
     NSMutableURLRequest * request = [[NSMutableURLRequest alloc]init];
     [request setURL:[NSURL URLWithString:url]];
@@ -87,10 +95,12 @@
     
     if (0<[error_str length]) {
         return NO;
+         NSLog(@"connection failed");
         
     }else{
         
         return YES;
+         NSLog(@"connection succeeded");
         
     }
     

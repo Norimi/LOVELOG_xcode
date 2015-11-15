@@ -158,6 +158,8 @@ FLPartnerAcViewController * PVC;
     
 }
 
+
+
 - (IBAction)toAddphoto:(id)sender {
     
     //プロフィール写真のアップロード。以下デリゲートメソッドに移行
@@ -187,7 +189,7 @@ FLPartnerAcViewController * PVC;
 -(void)imagePickerController:(UIImagePickerController*)picker
 didFinishPickingMediaWithInfo:(NSDictionary*)editingInfo{
     
-    
+    NSLog(@"imagepickercontroller");
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
     UIImage * toUpload = [editingInfo objectForKey:UIImagePickerControllerEditedImage];
     //サイズを半分にして送信する
@@ -203,14 +205,43 @@ didFinishPickingMediaWithInfo:(NSDictionary*)editingInfo{
     
     NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:ext, @"extension", idtoPost, @"userid",nil];
     NSString * urlString = @"http://flatlevel56.org/lovelog/labaccount.php";
-    [_manager POST:urlString parameters:params constructingBodyWithBlock:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"Resposne: %@", responseObject);
     
+    
+    _manager = [AFHTTPRequestOperationManager manager];
+    _manager.responseSerializer = [AFXMLParserResponseSerializer serializer];
+    _manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
+    [_manager POST:urlString parameters:params constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
+        
+        [formData appendPartWithFileData:imageData name:@"upfile" fileName:@"title" mimeType:@"image/jpeg"];
+        NSLog(@"通信開始: %@");
+        
+    } success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"Success: %@", responseObject);
+        [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+        [self.navigationController popToRootViewControllerAnimated:YES];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        //<#code#>
+        NSLog(@"Error: %@", error);
+        notice = [WBErrorNoticeView errorNoticeInView:self.view title:@"接続エラー" message:@"エラーが検出されました。"];
+        [notice show];
+        [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+        
+        if([operation.response statusCode] == 403){
+            notice = [WBErrorNoticeView errorNoticeInView:self.view title:@"接続エラー" message:@"エラーが検出されました。"];
+            [notice show];
+            [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+            return;
+        }
+        //[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+        //[self.navigationController popToRootViewControllerAnimated:YES];
+        
     }];
     
+    
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+    
+}
+
+-(void)uploadPhoto{
     
 }
 
