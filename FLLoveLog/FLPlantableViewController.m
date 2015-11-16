@@ -589,7 +589,6 @@ numberOfRowsInSection:(NSInteger)section{
     NSDictionary * itemAtIndex = (NSDictionary*)[contentsArray objectAtIndex:indexPath.row];
     
     
-    
     //useridを取得して比べ、自分のものと同じだったらセルをグリーンにする。
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"Cell"];
@@ -647,24 +646,25 @@ numberOfRowsInSection:(NSInteger)section{
     
     NSComparisonResult result = [nowDate compare:dateFromString];
     int gotId = [tmpId intValue];
-    
+   
     if(result == NSOrderedAscending){
         
         int index =  indexPath.row;
         //最新になるはず？
-        
         NSDictionary * itemAtIndex = (NSDictionary*)[contentsArray objectAtIndex:index];
-        
-        
         NSString * plantoTop = [[NSString alloc]init];
         plantoTop = [itemAtIndex objectForKey:@"title"];
         [defaults setObject:plantoTop forKey:@"plantotop"];
+
+        
         
         if(idnumber == gotId){
+            //自分が提案したプラン
+            
             [cell setBackgroundColor:[UIColor colorWithRed:0.90 green:0.98 blue:0.76 alpha:0.76]];
-        }
-        
-        else {[cell setBackgroundColor:[UIColor colorWithRed:0.89 green:0.89 blue:0.98 alpha:0.76]];
+        }　else {
+            //パートナーが提案したプラン
+            [cell setBackgroundColor:[UIColor colorWithRed:0.89 green:0.89 blue:0.98 alpha:0.76]];
             
         }
         
@@ -675,9 +675,16 @@ numberOfRowsInSection:(NSInteger)section{
         [cell setBackgroundColor:[UIColor colorWithRed:0.99 green:0.75 blue:0.76 alpha:1.0]];
         
     }  else {
-        
-        //それ以外
-        [cell setBackgroundColor:[UIColor whiteColor]];
+        //それ以外:今がそのときの場合
+        if(idnumber == gotId){
+            //自分が提案したプラン
+            [cell setBackgroundColor:[UIColor colorWithRed:0.90 green:0.98 blue:0.76 alpha:0.76]];
+        }else{
+            //パートナーが提案したプラン
+            [cell setBackgroundColor:[UIColor colorWithRed:0.89 green:0.89 blue:0.98 alpha:0.76]];
+            
+        }
+
     }
     
 }
