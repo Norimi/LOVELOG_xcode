@@ -64,16 +64,19 @@
     
     FLPlanmakeViewController *VC = [[FLPlanmakeViewController alloc]init];
     FLAppDelegate * appDelegate;
-    appDelegate = (FLAppDelegate*)[[UIApplication sharedApplication]delegate];    todoString = todoField.text;
-    [appDelegate.apptodoArray addObject:todoString];
+    appDelegate = (FLAppDelegate*)[[UIApplication sharedApplication]delegate];
+    NSMutableArray * tmpArray = [appDelegate.apptodoArray mutableCopy];
+    todoString = todoField.text;
+    [tmpArray addObject:todoString];
+    appDelegate.apptodoArray = tmpArray;
     [self.navigationController pushViewController:VC animated:YES];
+    
 }
 
 
 
 - (IBAction)enteredTodo:(id)sender {
-    
-       [todoField resignFirstResponder];
+    [todoField resignFirstResponder];
     
     
 }

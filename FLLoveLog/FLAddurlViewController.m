@@ -70,11 +70,10 @@
     FLAppDelegate * appDelegate;
     appDelegate = (FLAppDelegate*)[[UIApplication sharedApplication]delegate];
     urlString = urlField.text;
-    [appDelegate.appurlArray addObject:urlString];
+    NSMutableArray * tmpArray = [appDelegate.appurlArray mutableCopy];
+    [tmpArray addObject:urlString];
+    appDelegate.appurlArray = tmpArray;
     [self.navigationController pushViewController:PVC  animated:NO];
-    
-    
-    
 }
 
 - (IBAction)endEnter:(id)sender {

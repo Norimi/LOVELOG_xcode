@@ -660,7 +660,6 @@ numberOfRowsInSection:(NSInteger)section{
         
         if(idnumber == gotId){
             //自分が提案したプラン
-            
             [cell setBackgroundColor:[UIColor colorWithRed:0.90 green:0.98 blue:0.76 alpha:0.76]];
         }　else {
             //パートナーが提案したプラン
