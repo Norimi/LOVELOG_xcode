@@ -608,8 +608,6 @@ numberOfRowsInSection:(NSInteger)section{
     
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
     _reloading = NO;
-    [refreshHedaerView egoRefreshScrollViewDataSourceDidFinishedLoading:self.planTable];
-    
     
     return cell;
 }
@@ -621,6 +619,10 @@ numberOfRowsInSection:(NSInteger)section{
 {
     NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
     tmpcontentsArray = [defaults objectForKey:@"plancontentsarray"];
+    [refreshHedaerView egoRefreshScrollViewDataSourceDidFinishedLoading:self.planTable];
+    
+    
+
     if(contentsArray.count > tmpcontentsArray.count){
         [planTable reloadData];
         

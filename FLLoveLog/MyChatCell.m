@@ -49,9 +49,9 @@
     if([self.reuseIdentifier isEqual: @"YourChatCell"]){
         
         //パートナー用のセルの設定：インジケーターはボタン
-        loveInd = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-        loveInd2 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-        loveInd3 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+        loveInd = [UIButton buttonWithType:UIButtonTypeCustom];
+        loveInd2 = [UIButton buttonWithType:UIButtonTypeCustom];
+        loveInd3 = [UIButton buttonWithType:UIButtonTypeCustom];
         
         loveInd.adjustsImageWhenHighlighted = NO;
         loveInd.highlighted = NO;
@@ -261,12 +261,27 @@
               value, @"indicator",
               nil];
     
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    //phpで指定したcontents typeの指定
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
+    [manager POST:@"http://flatlevel56.org/lovelog/chatindicator.php" parameters:params constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
+        
+    } success:^(NSURLSessionDataTask *operation, id responseObject) {
+        NSLog(@"Success: %@", responseObject);
+    } failure:^(NSURLSessionDataTask *operation, NSError *error) {
+        NSLog(@"Error: %@", error);
+    }];
+    
+
+    /*
     [_manager POST:@"http://flatlevel56.org/lovelog/chatindicator.php" parameters:params constructingBodyWithBlock:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSLog(@"Resposne: %@", responseObject);
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         //<#code#>
     }];
+     */
     
 }
 

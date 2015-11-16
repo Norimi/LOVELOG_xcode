@@ -245,9 +245,6 @@
     
 }
 
-
-
-
 -(void)parser:(NSXMLParser*)parser
 didStartElement:(NSString*)elementName
  namespaceURI:(NSString*)namespaceURI
@@ -451,6 +448,9 @@ foundCharacters:(NSString*)string{
         [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
     }
     
+    //リフレッシュを停止
+    [_refreshHeaderView egoRefreshScrollViewDataSourceDidFinishedLoading:self.photoTable];
+    
     [photoTable reloadData];
     
 }
@@ -493,13 +493,12 @@ numberOfRowsInSection:(NSInteger)section{
 -(UITableViewCell *) tableView:(UITableView*)tableView
 cellForRowAtIndexPath:(NSIndexPath*)indexPath
 {
-    
-   
+    NSString * cellName = @"PhotoCell";
+    NSString * cellNum = [NSString stringWithFormat:@"%ld",(long)indexPath.row];
+    NSString * identifier = [cellName stringByAppendingString:cellNum];
     PhotoCell * cell  = [photoTable dequeueReusableCellWithIdentifier:@"PhotoCell" forIndexPath:indexPath];
     NSDictionary * itemAtIndex = (NSDictionary *)[contentsArray objectAtIndex:indexPath.row];
     //indicatorの値を取得してUIに反映させる
-    
-    
     NSString * intMindi = [itemAtIndex objectForKey:@"myindi"];
     NSString * intPindi = [itemAtIndex objectForKey:@"partnerindi"];
     NSString * photoidtoPass = [itemAtIndex objectForKey:@"photoid"];
@@ -509,6 +508,20 @@ cellForRowAtIndexPath:(NSIndexPath*)indexPath
     cell.userid = useridtoPass;
     cell.tString = titletoPass;
     cell.loveIndicator = [intMindi intValue];
+    NSLog(@"lovindicator %d",cell.loveIndicator);
+    if(cell.loveIndicator == 1){
+        [cell setLoveind1];
+    }else if(cell.loveIndicator == 2){
+        [cell setLoveind2];
+    }else if(cell.loveIndicator == 3){
+        [cell setLoveind3];
+    }else if(cell.loveIndicator == 4){
+        [cell setLoveind4];
+    }else if(cell.loveIndicator == 5){
+        [cell setLoveind5];
+    }
+    
+    
     cell.frompartnerInd = [intPindi intValue];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     NSString * urlString = [itemAtIndex objectForKey:@"url"];
@@ -519,10 +532,19 @@ cellForRowAtIndexPath:(NSIndexPath*)indexPath
     
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
     _reloading = NO;
-    [_refreshHeaderView egoRefreshScrollViewDataSourceDidFinishedLoading:self.photoTable];
+    
         
    
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    //NSDictionary * itemAtIndex = (NSDictionary *)[contentsArray objectAtIndex:indexPath.row];
+    //cell  = [photoTable dequeueReusableCellWithIdentifier:@"PhotoCell" forIndexPath:indexPath];
+    //cell.loveIndicator = [intMindi intValue];
+
+  
 }
 
 -(void)tableView:(UITableView*)tableView didSelectRowAtIndexPath:(NSIndexPath*)indexPath{

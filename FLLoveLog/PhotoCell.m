@@ -254,98 +254,78 @@
     
 }
 
--(void)setLoveind1Enabled{
-    [loveInd setEnabled:YES];
+-(void)setLoveind1{
+    [loveInd setSelected:YES];
     
-    [loveInd2 setEnabled:NO];
-    [loveInd3 setEnabled:NO];
-    [loveInd4 setEnabled:NO];
+    [loveInd2 setSelected:NO];
+    [loveInd3 setSelected:NO];
+    [loveInd4 setSelected:NO];
+    [loveInd5 setSelected:NO];
+}
+
+-(void)setLoveind2{
+    [loveInd setSelected:YES];
+    [loveInd2 setSelected:YES];
+    
+    [loveInd3 setSelected:NO];
+    [loveInd4 setSelected:NO];
+    [loveInd5 setSelected:NO];
+}
+
+-(void)setLoveind3{
+    [loveInd setSelected:YES];
+    [loveInd2 setSelected:YES];
+    [loveInd3 setSelected:YES];
+    
+    [loveInd4 setSelected:NO];
+    [loveInd5 setSelected:NO];
+}
+
+-(void)setLoveind4{
+    [loveInd setSelected:YES];
+    [loveInd2 setEnabled:YES];
+    [loveInd3 setSelected:YES];
+    [loveInd4 setSelected:YES];
+    
+
     [loveInd5 setEnabled:NO];
 }
 
--(void)setLoveind12Enabled{
+-(void)setLoveind5{
+    
     [loveInd setEnabled:YES];
     [loveInd2 setEnabled:YES];
-    
-    [loveInd3 setEnabled:NO];
-    [loveInd4 setEnabled:NO];
-    [loveInd5 setEnabled:NO];
-}
-
--(void)setLoveind23Enabled{
-    [loveInd2 setEnabled:YES];
-    [loveInd3 setEnabled:YES];
-    
-    [loveInd setEnabled:NO];
-    [loveInd4 setEnabled:NO];
-    [loveInd5 setEnabled:NO];
-}
-
--(void)setLoveind34Enabled{
-    
     [loveInd3 setEnabled:YES];
     [loveInd4 setEnabled:YES];
-    
-    [loveInd setEnabled:NO];
-    [loveInd2 setEnabled:NO];
-    [loveInd5 setEnabled:NO];
-}
-
--(void)setLoveind45Enabled{
-    [loveInd4 setEnabled:YES];
     [loveInd5 setEnabled:YES];
-    
-    [loveInd setEnabled:NO];
-    [loveInd2 setEnabled:NO];
-    [loveInd3 setEnabled:NO];
+
     
 }
-
--(void)setLoveind5Enabled{
-    
-    [loveInd5 setEnabled:YES];
-    
-    [loveInd setEnabled:NO];
-    [loveInd2 setEnabled:NO];
-    [loveInd3 setEnabled:NO];
-    [loveInd4 setEnabled:NO];
-}
-
 
 
 -(void)setIndicatorWithParam:(NSString*)parameter{
     
     NSLog(@"%s",__func__);
     
-    /*
-     NSString * url = [NSString stringWithFormat:@"http://flatlevel56.org/lovelog/photoindicator.php"];
-     if([_connection connectionWithUrl:url withData:parameter]){
-     
-     NSLog(@"connection");
-     
-     }else{
-     
-     
-     //エラーは出力しない
-     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
-     
-     }
-     */
+  
     
     NSLog(@"params description %@",params.description);
     
     NSString * urlString = @"http://flatlevel56.org/lovelog/photoindicator.php";
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    manager.responseSerializer = [AFXMLParserResponseSerializer serializer];
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     //phpで指定したcontents typeの指定
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
-    [manager POST:urlString parameters:params success:^(NSURLSessionDataTask *task, id responseObject) {
-        NSLog(@"responseObject = %@", responseObject);
-    } failure:^(NSURLSessionDataTask *task, NSError *error) {
-        NSLog(@"error = %@", error);
+    [manager POST:urlString parameters:params constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
+       
+    } success:^(NSURLSessionDataTask *operation, id responseObject) {
+        NSLog(@"Success: %@", responseObject);
+    } failure:^(NSURLSessionDataTask *operation, NSError *error) {
+        NSLog(@"Error: %@", error);
     }];
     
     
+     
     /*
      AFHTTPRequestOperationManager * manager = [AFHTTPRequestOperationManager manager];
      //JSONではないので通常用のシリアライズ
@@ -399,7 +379,7 @@
                         }
                         
                         [self setIndicatorWithParam:params];
-                        //loveIndicator = 1;
+                        loveIndicator = 1;
                         
                         
                     } else {
@@ -426,7 +406,7 @@
                         }
                         
                         [self setIndicatorWithParam:params];
-                        //loveIndicator =0;
+                        loveIndicator =0;
                     }
                 }
             }
@@ -470,7 +450,7 @@
                         
                         [self setIndicatorWithParam:params];
                         
-                        //loveIndicator = 2;
+                        loveIndicator = 2;
                         AudioServicesPlaySystemSound(soundID);
                         
                         
@@ -498,7 +478,7 @@
                         }
                         
                         [self setIndicatorWithParam:params];
-                        //loveIndicator =1;
+                        loveIndicator =1;
                     
                 
                     }
@@ -524,7 +504,6 @@
                     loveInd3.selected = !loveInd3.selected;
                     if(loveInd3.selected){
                       
-                        //loveIndicator = 3;
                         AudioServicesPlaySystemSound(soundID);
                         if(myPhoto == YES){
                             
@@ -541,6 +520,7 @@
                         }
                         
                         [self setIndicatorWithParam:params];
+                        loveIndicator =3;
                         
                         
                     } else {
@@ -566,7 +546,7 @@
                         }
                         
                         [self setIndicatorWithParam:params];
-                        //loveIndicator =2;
+                        loveIndicator =2;
                     }
                     
                     
@@ -589,7 +569,7 @@
                     loveInd4.selected = !loveInd4.selected;
                     if(loveInd4.selected){
                         
-                        //loveIndicator = 4;
+                        
                         AudioServicesPlaySystemSound(soundID);
                         
                         if(myPhoto == YES){
@@ -611,6 +591,7 @@
                         }
                         
                         [self setIndicatorWithParam:params];
+                        loveIndicator = 4;
                         
                     } else {
                         
@@ -632,7 +613,7 @@
                         }
                         
                         [self setIndicatorWithParam:params];
-                        //loveIndicator =3;
+                        loveIndicator =3;
                     }
                     
                 }
@@ -655,7 +636,7 @@
                         
                         if(loveInd5.selected){
                             
-                            loveIndicator = 5;
+                            
                             AudioServicesPlaySystemSound(soundID);
                             if(myPhoto == YES){
                                 
@@ -674,6 +655,7 @@
                             }
                             
                             [self setIndicatorWithParam:params];
+                            loveIndicator = 5;
                             
                         } else {
                             //結果非選択
@@ -693,10 +675,7 @@
                                           nil];
                             }
                             [self setIndicatorWithParam:params];
-                            
-                            
-                            
-                            //loveIndicator =4;
+                            loveIndicator =4;
                         }
                     }
                 }

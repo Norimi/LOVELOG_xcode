@@ -65,4 +65,10 @@
 @property(strong, nonatomic)NSString * userid;
 @property(strong, nonatomic)NSString * tString;
 
+-(void)setLoveind1;
+-(void)setLoveind2;
+-(void)setLoveind3;
+-(void)setLoveind4;
+-(void)setLoveind5;
+
 @end

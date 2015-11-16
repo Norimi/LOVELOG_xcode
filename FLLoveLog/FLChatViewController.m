@@ -616,8 +616,10 @@ foundCharacters:(NSString *)string{
 {
     
     if(contentsArray.count == 0){
-        [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;    }
-    
+        [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+    }
+    [_refreshHeaderView egoRefreshScrollViewDataSourceDidFinishedLoading:self.chatTable];
+
     
     [chatTable reloadData];
     
@@ -748,7 +750,6 @@ numberOfRowsInSection:(NSInteger)section
     
     
     _reloading = NO;
-    [_refreshHeaderView egoRefreshScrollViewDataSourceDidFinishedLoading:self.chatTable];
     
     
     return  cell;

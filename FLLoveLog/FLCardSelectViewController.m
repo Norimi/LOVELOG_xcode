@@ -314,7 +314,7 @@ foundCharacters:(NSString*)string{
     if(contentsArray.count == 0){
         [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
     }
-    
+    [_refreshHeaderView egoRefreshScrollViewDataSourceDidFinishedLoading:self.dateTable];
     
     [dateTable reloadData];
 }
@@ -379,7 +379,7 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     [cell setBackgroundColor:[UIColor colorWithRed:0.90 green:0.98 blue:0.76 alpha:0.76]];
     
     _reloading = NO;
-    [_refreshHeaderView egoRefreshScrollViewDataSourceDidFinishedLoading:self.dateTable];
+    
     
     return  cell;
     
