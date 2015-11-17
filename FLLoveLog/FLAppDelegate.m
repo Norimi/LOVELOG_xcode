@@ -64,8 +64,8 @@ FLPlantableViewController* PVC;
     int idnumber = [defaults integerForKey:@"mid"];
     loggedIn = [defaults boolForKey :@"logged_in"];
     
-    
-    if(idnumber > 0)
+    //デバッグモード
+    if(idnumber < 0)
     {
         
         
@@ -75,7 +75,6 @@ FLPlantableViewController* PVC;
         FLTopViewController * CVC = [[FLTopViewController alloc]init];
         FLPlantableViewController * PVC = [[FLPlantableViewController alloc]init];
         FLChatViewController * CHVC = [[FLChatViewController alloc]init];
-        
         
         
         UINavigationController * nav0Controller = [[UINavigationController alloc]initWithRootViewController:CVC];
@@ -120,25 +119,14 @@ FLPlantableViewController* PVC;
         
     }else{
         
-        if(loggedIn == NO){
-            
-            self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-            LVC = [[FLLoginViewController alloc]init];
-            [[self window]setRootViewController:LVC];
-            [self.window makeKeyAndVisible];
-            return YES;
-            
-        } else {
-            
-            
-            //ログインしたことがないとき
-            FLWellcomeViewController * WVC = [[FLWellcomeViewController alloc]init];
-            UINavigationController * navController = [[UINavigationController alloc]initWithRootViewController:WVC];
-            navController.navigationBar.tintColor = [UIColor colorWithRed:0.99 green:0.75 blue:0.76 alpha:1.0];
-            [[self window]setRootViewController:navController];
-            [self.window makeKeyAndVisible];
-            return YES;
-        }
+        
+        FLWellcomeViewController * WVC = [[FLWellcomeViewController alloc]init];
+        UINavigationController * navController = [[UINavigationController alloc]initWithRootViewController:WVC];
+        navController.navigationBar.tintColor = [UIColor colorWithRed:0.99 green:0.75 blue:0.76 alpha:1.0];
+        [[self window]setRootViewController:navController];
+        [self.window makeKeyAndVisible];
+        return YES;
+        
     }
     
 }

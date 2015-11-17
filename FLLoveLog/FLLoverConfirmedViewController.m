@@ -52,7 +52,7 @@ FLLoverRegistredViewController * LRVC;
     
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
     
-    NSURL * myURL = [NSURL URLWithString:@"http://flatlevel56.org/lovelog/loverconfirmedviewcontroller2.php"];
+    NSURL * myURL = [NSURL URLWithString:@"http://flatlevel56.org/lovelog/loverconfirmviewcontroller2.php"];
     NSXMLParser * myParser = [[NSXMLParser alloc]initWithContentsOfURL:myURL];
     myParser.delegate = self;
     [myParser parse];
