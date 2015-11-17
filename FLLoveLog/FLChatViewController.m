@@ -747,7 +747,7 @@ numberOfRowsInSection:(NSInteger)section
     cell.tmpIndicator = [itemAtIndex objectForKey:@"heartindi"];
     cell.chatid = [itemAtIndex objectForKey:@"chatid"];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    NSString * profile = @"http://norimingconception.net/lovelog/profile_photos/";
+    NSString * profile = @"http://flatlevel56.org/lovelog/profile_photos/";
     NSString * photoString = [itemAtIndex objectForKey:@"photo"];
     NSString * photoUrl = [NSString stringWithFormat:@"%@%@", profile, photoString];
     [cell.profilePhoto setImageWithURL:[NSURL URLWithString:photoUrl]placeholderImage:[UIImage imageNamed:@"backgroundview.png"]];
