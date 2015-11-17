@@ -123,6 +123,7 @@
             [notice show];
             [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
             return;
+        
         }
         //[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
         //[self.navigationController popToRootViewControllerAnimated:YES];

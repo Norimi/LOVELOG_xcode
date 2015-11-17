@@ -69,6 +69,7 @@
 
 
 
+
 @end
 
 @implementation FLChatViewController
@@ -679,26 +680,23 @@ numberOfRowsInSection:(NSInteger)section
     int userId = [useridString intValue];
     NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
     NSInteger idnumber = [defaults integerForKey:@"mid"];
-    NSString * identifier = userId == idnumber ? @"MyChatCell": @"YourChatCell";
+    static NSString * identifier;
+    
+    NSString * chatString = [[NSString alloc]init];
+    chatString = [itemAtIndex objectForKey:@"messages"];
+    MyChatCell * cell;
+
     
     if(userId == idnumber){
         
-        myphotoName =  [itemAtIndex objectForKey:@"photo"];
+        //if(!cell){
+            
+            identifier = @"MyChatCell";
+            myphotoName =  [itemAtIndex objectForKey:@"photo"];
+            cell =  [chatTable dequeueReusableCellWithIdentifier:identifier];
+            cell.backgroundView = [[UIImageView alloc]initWithImage:[[UIImage imageNamed:@"greencell2.png"]stretchableImageWithLeftCapWidth:0.0 topCapHeight:5.0]];
+        //}
         
-    } else {
-        
-        yourphotoName = [itemAtIndex objectForKey:@"photo"];
-        
-    }
-    
-    //変数identiferで二つのセルを場合によって読み込む。
-    MyChatCell * cell = [chatTable dequeueReusableCellWithIdentifier:identifier  forIndexPath:indexPath];
-    NSString * chatString = [[NSString alloc]init];
-    chatString = [itemAtIndex objectForKey:@"messages"];
-    
-    if([cell.reuseIdentifier isEqual: @"MyChatCell"]){
-        
-        cell.backgroundView = [[UIImageView alloc]initWithImage:[[UIImage imageNamed:@"greencell2.png"]stretchableImageWithLeftCapWidth:0.0 topCapHeight:5.0]];
         chatLabel = nil;
         CGSize bounds = CGSizeMake(210, 480);
         CGSize size = [chatString sizeWithFont:[UIFont systemFontOfSize:11.0] constrainedToSize:bounds lineBreakMode:NSLineBreakByWordWrapping];
@@ -713,9 +711,19 @@ numberOfRowsInSection:(NSInteger)section
         cell.textLabel.text = chatString;
         cell.textLabel.numberOfLines = 0;
         [cell sizeToFit];
+
+    }else{
         
-    } else {
-        
+        //if(!cell){
+            
+            identifier = @"YourChatCell";
+            yourphotoName = [itemAtIndex objectForKey:@"photo"];
+            cell =  [chatTable dequeueReusableCellWithIdentifier:identifier];
+
+        //}
+    
+        //変数identiferで二つのセルを場合によって読み込む。
+        //MyChatCell * cell = [chatTable dequeueReusableCellWithIdentifier:identifier  forIndexPath:indexPath];
         cell.backgroundView = [[UIImageView alloc]initWithImage:[[UIImage imageNamed:@"cellblue.png"]stretchableImageWithLeftCapWidth:0.0 topCapHeight:5.0]];
         chatLabel = nil;
         CGSize bounds = CGSizeMake(210, 480);
@@ -731,12 +739,10 @@ numberOfRowsInSection:(NSInteger)section
         cell.textLabel.text = chatString;
         cell.textLabel.numberOfLines = 0;
         [cell sizeToFit];
-        
-        
-        
+
     }
     
-    
+     
     cell.dateLabel.text = [itemAtIndex objectForKey:@"date"];
     cell.tmpIndicator = [itemAtIndex objectForKey:@"heartindi"];
     cell.chatid = [itemAtIndex objectForKey:@"chatid"];

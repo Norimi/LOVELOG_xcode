@@ -36,7 +36,7 @@ FLPartnerAcViewController * PAVC;
     CGRect screenSize = [UIScreen mainScreen].bounds;
     
     //topの画面をiPhoneの縦のサイズで条件分岐
-    if(screenSize.size.height <= 480){
+    if(screenSize.size.height <= 400){
         
         nibNameOrNil=@"TopView3.5";
         
@@ -44,6 +44,7 @@ FLPartnerAcViewController * PAVC;
     } else {
         
         nibNameOrNil = @"FLTopViewController";
+        
     }
     
     _manager = [AFHTTPRequestOperationManager manager];

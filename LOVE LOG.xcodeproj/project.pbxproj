@@ -209,6 +209,7 @@
 		979DA3C3199E2AD40087FEC4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA418F9166EE46E002E93E2 /* UIKit.framework */; };
 		979DA3C9199E2AD40087FEC4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 979DA3C7199E2AD40087FEC4 /* InfoPlist.strings */; };
 		979DA3CB199E2AD40087FEC4 /* LOVE_LOG_Tests2.m in Sources */ = {isa = PBXBuildFile; fileRef = 979DA3CA199E2AD40087FEC4 /* LOVE_LOG_Tests2.m */; };
+		97A2A9DC1BF9B6B100FF502E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97A2A9DB1BF9B6B100FF502E /* Images.xcassets */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -486,6 +487,7 @@
 		979DA3C8199E2AD40087FEC4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		979DA3CA199E2AD40087FEC4 /* LOVE_LOG_Tests2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LOVE_LOG_Tests2.m; sourceTree = "<group>"; };
 		979DA3CC199E2AD50087FEC4 /* LOVE LOG Tests2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LOVE LOG Tests2-Prefix.pch"; sourceTree = "<group>"; };
+		97A2A9DB1BF9B6B100FF502E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "LOVE LOG/Images.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -535,6 +537,7 @@
 		2FA418EA166EE46E002E93E2 = {
 			isa = PBXGroup;
 			children = (
+				97A2A9DB1BF9B6B100FF502E /* Images.xcassets */,
 				979DA3B5199E1F4E0087FEC4 /* FLTests */,
 				2FA418FF166EE46E002E93E2 /* FLLovelog */,
 				979DA3A6199E1ECC0087FEC4 /* LOVE LOG Tests */,
@@ -1084,6 +1087,7 @@
 				2FD7F30617C1E2BF009A1291 /* 0heart.png in Resources */,
 				2FD7F30817C1E3EC009A1291 /* 1heart.png in Resources */,
 				2FD7F30A17C1E3FE009A1291 /* 2hearts.png in Resources */,
+				97A2A9DC1BF9B6B100FF502E /* Images.xcassets in Resources */,
 				2FD7F30C17C1E40F009A1291 /* 3hearts.png in Resources */,
 				2FD7F31417C1FF24009A1291 /* plantab2.png in Resources */,
 				2FF14F4A17EC3BEC00248615 /* lovelogicon120.png in Resources */,
@@ -1354,6 +1358,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0691F3280C93901CDA7EF318 /* Pods.distribution.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1432,6 +1438,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 683C6DA4AA577FFCE79BF6D0 /* Pods.debug.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer: Norimi Kawajiri (CVZHYYY5EC)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1456,6 +1464,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 200614B750622F50D8C95C9C /* Pods.release.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

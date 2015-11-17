@@ -311,13 +311,6 @@ numberOfRowsInSection:(NSInteger)section{
         //送信成功
         //appdelegateの値をリセット
         appDelegate = (FLAppDelegate*)[[UIApplication  sharedApplication]delegate];
-        appDelegate.categoryString = nil;
-        appDelegate.titleString = nil;
-        appDelegate.budgetString = nil;
-        appDelegate.dateString = nil;
-        appDelegate.appurlArray = nil;
-        appDelegate.apptodoArray = nil;
-        appDelegate.planidtoSend = nil;
         
         //arrayを初期化して次回使えるようにする。
         appDelegate.appurlArray = [[NSMutableArray alloc]init];
