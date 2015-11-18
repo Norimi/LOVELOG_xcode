@@ -1360,8 +1360,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Norimi Kawajiri (HUJYNX2AJQ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Norimi Kawajiri (HUJYNX2AJQ)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FLLoveLog/LOVEDRILL-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/FLLoveLog/LOVEDRILL-Info.plist";
@@ -1371,10 +1371,10 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = net.norimingconception.lovelog;
+				PRODUCT_BUNDLE_IDENTIFIER = org.flatLevel56.LOVELOG;
 				PRODUCT_NAME = "LOVE LOG";
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos7.0]" = "EC6E32A8-2009-484F-8D6C-EE0ED3B00F5C";
+				PROVISIONING_PROFILE = "6580a530-9e53-4f80-9348-258beac658fe";
+				"PROVISIONING_PROFILE[sdk=iphoneos7.0]" = "6580a530-9e53-4f80-9348-258beac658fe";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Distribution;
@@ -1440,9 +1440,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Norimi Kawajiri (CVZHYYY5EC)";
 				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer: Norimi Kawajiri (CVZHYYY5EC)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Norimi Kawajiri (CVZHYYY5EC)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FLLoveLog/LOVEDRILL-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/FLLoveLog/LOVEDRILL-Info.plist";
@@ -1452,10 +1452,10 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = net.norimingconception.lovelog;
+				PRODUCT_BUNDLE_IDENTIFIER = org.flatLevel56.LOVELOG;
 				PRODUCT_NAME = "LOVE LOG";
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos7.0]" = "EC6E32A8-2009-484F-8D6C-EE0ED3B00F5C";
+				PROVISIONING_PROFILE = "4aafacee-e033-48f7-84c7-8c68da1136f7";
+				"PROVISIONING_PROFILE[sdk=iphoneos7.0]" = "4aafacee-e033-48f7-84c7-8c68da1136f7";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1466,8 +1466,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Norimi Kawajiri (HUJYNX2AJQ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Norimi Kawajiri (HUJYNX2AJQ)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FLLoveLog/LOVEDRILL-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/FLLoveLog/LOVEDRILL-Info.plist";
@@ -1477,10 +1477,10 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = net.norimingconception.lovelog;
+				PRODUCT_BUNDLE_IDENTIFIER = org.flatLevel56.LOVELOG;
 				PRODUCT_NAME = "LOVE LOG";
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos7.0]" = "EC6E32A8-2009-484F-8D6C-EE0ED3B00F5C";
+				PROVISIONING_PROFILE = "6580a530-9e53-4f80-9348-258beac658fe";
+				"PROVISIONING_PROFILE[sdk=iphoneos7.0]" = "6580a530-9e53-4f80-9348-258beac658fe";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

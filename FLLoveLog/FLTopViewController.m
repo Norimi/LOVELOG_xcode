@@ -134,45 +134,74 @@ clickedButtonAtIndex:(NSInteger)buttonIndex{
 -(void)imagePickerController:(UIImagePickerController*)picker
 didFinishPickingMediaWithInfo:(NSDictionary*)editingInfo{
     
-    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+    NSLog(@"imagepickercontroller");
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
     UIImage * toUpload = [editingInfo objectForKey:UIImagePickerControllerEditedImage];
-    //TODO:completionblockにして、終了後次の処理へ
-    [self dismissViewControllerAnimated:YES completion:nil];
+    //サイズを半分にして送信する
+    UIImage * resizedImage = [self resizeImage:toUpload scale:0.5 ];
+    //[self dismissViewControllerAnimated:YES completion:nil];
     NSString * ext = @".jpg";
     NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
     NSInteger idnumber = [defaults integerForKey:@"mid"];
     NSString * idtoPost = [NSString stringWithFormat:@"%d", idnumber];
-    UIImage * img = toUpload;
+    UIImage * img = resizedImage;
     NSData * imageData = UIImageJPEGRepresentation(img, 90);
     
-    NSString * urlString = @"http://flatlevel56.org/lovelog/labaccount.php";
-    NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:
-                            ext, @"extension", idtoPost, @"userid",
-                            nil];
     
-    [_manager POST:urlString parameters:params constructingBodyWithBlock:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"Resposne: %@", responseObject);
+    NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:ext, @"extension", idtoPost, @"userid",nil];
+    NSString * urlString = @"http://flatlevel56.org/lovelog/labaccount.php";
+    
+    
+    _manager = [AFHTTPRequestOperationManager manager];
+    _manager.responseSerializer = [AFXMLParserResponseSerializer serializer];
+    _manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
+    [_manager POST:urlString parameters:params constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
         
-        NSString * body = @"パートナーに最初のメッセージを送りますか？";
-        UIAlertView * alertView = [[UIAlertView alloc]initWithTitle:nil message:body delegate:self cancelButtonTitle:@"あとで" otherButtonTitles:@"はい", nil];
-        alertView.tag = 2;
-        [alertView show];
-
+        [formData appendPartWithFileData:imageData name:@"upfile" fileName:@"title" mimeType:@"image/jpeg"];
+       // NSLog(@"pramms %@",params);
+       
         
+    } success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"Success: %@", responseObject);
+        [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+        //[self.navigationController popToRootViewControllerAnimated:YES];
+        [picker dismissViewControllerAnimated:YES completion:nil];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        //<#code#>
-        notice = [WBErrorNoticeView errorNoticeInView:self.view title:@"接続エラー" message:@"ネットワーク接続を確認してください。"];
+        
+        [picker dismissViewControllerAnimated:YES completion:nil];
+        NSLog(@"Error: %@", error);
+        notice = [WBErrorNoticeView errorNoticeInView:self.view title:@"接続エラー" message:@"エラーが検出されました。"];
         [notice show];
         [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
         
         if([operation.response statusCode] == 403){
-            
+            notice = [WBErrorNoticeView errorNoticeInView:self.view title:@"接続エラー" message:@"エラーが検出されました。"];
+            [notice show];
+            [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
             return;
         }
+        //[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+        //[self.navigationController popToRootViewControllerAnimated:YES];
         
     }];
     
+    //[picker dismissViewControllerAnimated:YES completion:nil];
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+    
 }
+
+-(UIImage*)resizeImage:(UIImage*)img scale:(float)scale{
+    
+    CGSize resizedSize = CGSizeMake(img.size.width*scale, img.size.height*scale);
+    UIGraphicsBeginImageContext(resizedSize);
+    [img drawInRect:CGRectMake(0,0,resizedSize.width, resizedSize.height)];
+    UIImage * resizedImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return resizedImage;
+    
+    
+}
+
 
 
 - (void)didReceiveMemoryWarning
