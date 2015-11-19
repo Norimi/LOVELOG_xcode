@@ -21,6 +21,7 @@
   }
 
 @property (weak, nonatomic) IBOutlet UITableView *planTable;
+-(int)getNextPlan;
 
 
 

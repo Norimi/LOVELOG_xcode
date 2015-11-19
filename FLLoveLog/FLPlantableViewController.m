@@ -620,12 +620,51 @@ numberOfRowsInSection:(NSInteger)section{
     tmpcontentsArray = [defaults objectForKey:@"plancontentsarray"];
     [refreshHedaerView egoRefreshScrollViewDataSourceDidFinishedLoading:self.planTable];
     
-    
-
     if(contentsArray.count > tmpcontentsArray.count){
         [planTable reloadData];
         
     }
+    
+    //直近のプランを取得
+    NSDictionary * tmpDict = [contentsArray objectAtIndex:[self getNextPlan]];
+    NSString * nextPlan = [tmpDict objectForKey:@"title"];
+    [defaults setObject:nextPlan forKey:@"plantotop"];
+    NSLog(@"直近のプラン%@", nextPlan);
+    
+    
+}
+
+-(int)getNextPlan{
+    
+    int decIndex = 0;
+    
+    for  (int i=0; i < [contentsArray count]; i++){
+        
+        NSDictionary * itemAtIndex = (NSDictionary*)[contentsArray objectAtIndex:i];
+        NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
+        NSInteger idnumber = [defaults integerForKey:@"mid"];
+        NSString * tmpId = [itemAtIndex objectForKey:@"userid"];
+        NSString * plandate = [itemAtIndex objectForKey:@"date"];
+        NSDateFormatter * dateFormatter = [[NSDateFormatter alloc]init];
+        [dateFormatter setDateFormat:@"yyyy/MM/dd HH:mm"];
+        NSDate * dateFromString = [[NSDate alloc]init];
+        dateFromString = [dateFormatter dateFromString:plandate];
+        
+        NSComparisonResult result = [nowDate compare:dateFromString];
+        int gotId = [tmpId intValue];
+        
+        
+        if(result == NSOrderedAscending){
+            
+        }else{
+            //初めて現在の日付より以前のものが取得されたときにここへ入り、一つ目でreturnされる
+            decIndex = i;
+            int newPlanIndex = i-1;
+            return newPlanIndex;
+        }
+        
+    }
+   
     
 }
 
@@ -633,7 +672,7 @@ numberOfRowsInSection:(NSInteger)section{
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    
+   
     NSDictionary * itemAtIndex = (NSDictionary*)[contentsArray objectAtIndex:indexPath.row];
     NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
     NSInteger idnumber = [defaults integerForKey:@"mid"];
@@ -646,18 +685,12 @@ numberOfRowsInSection:(NSInteger)section{
     
     NSComparisonResult result = [nowDate compare:dateFromString];
     int gotId = [tmpId intValue];
+    
    
     if(result == NSOrderedAscending){
+        //未来の予定
         
-        int index =  indexPath.row;
-        //最新になるはず？
-        NSDictionary * itemAtIndex = (NSDictionary*)[contentsArray objectAtIndex:index];
-        NSString * plantoTop = [[NSString alloc]init];
-        plantoTop = [itemAtIndex objectForKey:@"title"];
-        [defaults setObject:plantoTop forKey:@"plantotop"];
-
-        
-        
+             
         if(idnumber == gotId){
             //自分が提案したプラン
             [cell setBackgroundColor:[UIColor colorWithRed:0.90 green:0.98 blue:0.76 alpha:0.76]];

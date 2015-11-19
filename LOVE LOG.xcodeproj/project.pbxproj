@@ -209,7 +209,7 @@
 		979DA3C3199E2AD40087FEC4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA418F9166EE46E002E93E2 /* UIKit.framework */; };
 		979DA3C9199E2AD40087FEC4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 979DA3C7199E2AD40087FEC4 /* InfoPlist.strings */; };
 		979DA3CB199E2AD40087FEC4 /* LOVE_LOG_Tests2.m in Sources */ = {isa = PBXBuildFile; fileRef = 979DA3CA199E2AD40087FEC4 /* LOVE_LOG_Tests2.m */; };
-		97A2A9DC1BF9B6B100FF502E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97A2A9DB1BF9B6B100FF502E /* Images.xcassets */; settings = {ASSET_TAGS = (); }; };
+		97A2A9DC1BF9B6B100FF502E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97A2A9DB1BF9B6B100FF502E /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1338,8 +1338,8 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos7.0]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Norimi Kawajiri (HUJYNX2AJQ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos7.0]" = "iPhone Distribution: Norimi Kawajiri (HUJYNX2AJQ)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -1347,8 +1347,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos7.0]" = "";
+				PROVISIONING_PROFILE = "9ff36c84-d17d-4544-8d09-e487f5c2b58d";
+				"PROVISIONING_PROFILE[sdk=iphoneos7.0]" = "9ff36c84-d17d-4544-8d09-e487f5c2b58d";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = NO;
 			};
@@ -1371,10 +1371,10 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = org.flatLevel56.LOVELOG;
+				PRODUCT_BUNDLE_IDENTIFIER = net.norimingconception.lovelog;
 				PRODUCT_NAME = "LOVE LOG";
-				PROVISIONING_PROFILE = "6580a530-9e53-4f80-9348-258beac658fe";
-				"PROVISIONING_PROFILE[sdk=iphoneos7.0]" = "6580a530-9e53-4f80-9348-258beac658fe";
+				PROVISIONING_PROFILE = "9ff36c84-d17d-4544-8d09-e487f5c2b58d";
+				"PROVISIONING_PROFILE[sdk=iphoneos7.0]" = "9ff36c84-d17d-4544-8d09-e487f5c2b58d";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Distribution;
@@ -1418,8 +1418,8 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos7.0]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Norimi Kawajiri (HUJYNX2AJQ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos7.0]" = "iPhone Distribution: Norimi Kawajiri (HUJYNX2AJQ)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -1427,8 +1427,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos7.0]" = "";
+				PROVISIONING_PROFILE = "9ff36c84-d17d-4544-8d09-e487f5c2b58d";
+				"PROVISIONING_PROFILE[sdk=iphoneos7.0]" = "9ff36c84-d17d-4544-8d09-e487f5c2b58d";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = NO;
 			};
@@ -1452,7 +1452,7 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = org.flatLevel56.LOVELOG;
+				PRODUCT_BUNDLE_IDENTIFIER = net.norimingconception.lovelog;
 				PRODUCT_NAME = "LOVE LOG";
 				PROVISIONING_PROFILE = "4aafacee-e033-48f7-84c7-8c68da1136f7";
 				"PROVISIONING_PROFILE[sdk=iphoneos7.0]" = "4aafacee-e033-48f7-84c7-8c68da1136f7";
@@ -1477,10 +1477,10 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = org.flatLevel56.LOVELOG;
+				PRODUCT_BUNDLE_IDENTIFIER = net.norimingconception.lovelog;
 				PRODUCT_NAME = "LOVE LOG";
-				PROVISIONING_PROFILE = "6580a530-9e53-4f80-9348-258beac658fe";
-				"PROVISIONING_PROFILE[sdk=iphoneos7.0]" = "6580a530-9e53-4f80-9348-258beac658fe";
+				PROVISIONING_PROFILE = "9ff36c84-d17d-4544-8d09-e487f5c2b58d";
+				"PROVISIONING_PROFILE[sdk=iphoneos7.0]" = "9ff36c84-d17d-4544-8d09-e487f5c2b58d";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
