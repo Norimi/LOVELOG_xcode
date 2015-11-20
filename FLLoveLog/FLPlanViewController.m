@@ -27,6 +27,7 @@ typedef NS_ENUM(NSInteger, FLEditingStyle) {
 @property(assign, readwrite)BOOL  EDIT;
 @property(strong, nonatomic)NSString * url;
 @property(strong, nonatomic)NSString * plantoSend;
+@property(strong,nonatomic)UIBarButtonItem * bbi;
 @end
 
 @implementation FLPlanViewController
@@ -39,7 +40,7 @@ static const int FONT_SIZE_FOR_SUBTITLE = 10;
 
 
 
-@synthesize planTable, planurlArray, plantodoArray, categoryString, titleString, dateString, budgetString,scrollView, EDIT, plantoSend,url;
+@synthesize planTable, planurlArray, plantodoArray, categoryString, titleString, dateString, budgetString,scrollView, EDIT, plantoSend,url,bbi;
 
 
 
@@ -70,10 +71,10 @@ static const int FONT_SIZE_FOR_SUBTITLE = 10;
 
 -(void)addNavbarComponents{
     
-    UIBarButtonItem * bbi = [[UIBarButtonItem alloc]initWithTitle:@"送信"
+    bbi = [[UIBarButtonItem alloc]initWithTitle:@"送信"
                                                             style:UIBarButtonItemStyleBordered
                                                            target:self
-                                                           action:@selector(sendClicked:)];
+                                                           action:@selector(sendPlanClicked:)];
     [[self navigationItem]setRightBarButtonItem:bbi];
     self.title=@"確認して送信";
 
@@ -249,8 +250,10 @@ numberOfRowsInSection:(NSInteger)section{
 
 
 //TODO:ここのメソッド切り分ける
--(IBAction)sendClicked:(id)sender{
-    
+-(IBAction)sendPlanClicked:(id)sender{
+    //連打を防ぐ
+    [bbi setEnabled:false];
+
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
     
     //bool edit yesornoでphpfileを分ける
@@ -320,10 +323,11 @@ numberOfRowsInSection:(NSInteger)section{
         appDelegate.dateString = [[NSString alloc]init];
         appDelegate.titleString = [[NSString alloc]init];
         
-        
         [self.navigationController popToRootViewControllerAnimated:YES];
         //edit終了
         appDelegate.EDIT = NO;
+        
+        [bbi setEnabled:true];
         
     }else{
         
@@ -331,6 +335,7 @@ numberOfRowsInSection:(NSInteger)section{
         WBErrorNoticeView * notice = [WBErrorNoticeView errorNoticeInView:self.view title:@"接続エラー" message:@"ネットワーク接続を確認してください。"];
         [notice show];
         [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+        [bbi setEnabled:true];
     }
 }
 

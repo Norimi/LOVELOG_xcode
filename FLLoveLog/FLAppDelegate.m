@@ -63,9 +63,9 @@ FLPlantableViewController* PVC;
     NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
     int idnumber = [defaults integerForKey:@"mid"];
     loggedIn = [defaults boolForKey :@"logged_in"];
+   
     
-    //デバッグモード
-    if(idnumber < 0)
+    if(idnumber > 0)
     {
         
         
@@ -119,7 +119,7 @@ FLPlantableViewController* PVC;
         
     }else{
         
-        
+        //2.2まであったログイン済みかどうかの分岐は省く（userDefaultに値がないような場合ならログインからしてほしいので）
         FLWellcomeViewController * WVC = [[FLWellcomeViewController alloc]init];
         UINavigationController * navController = [[UINavigationController alloc]initWithRootViewController:WVC];
         navController.navigationBar.tintColor = [UIColor colorWithRed:0.99 green:0.75 blue:0.76 alpha:1.0];

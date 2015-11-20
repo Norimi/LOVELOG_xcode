@@ -1371,7 +1371,7 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = net.norimingconception.lovelog;
+				PRODUCT_BUNDLE_IDENTIFIER = org.flatLevel56.LOVELOG;
 				PRODUCT_NAME = "LOVE LOG";
 				PROVISIONING_PROFILE = "9ff36c84-d17d-4544-8d09-e487f5c2b58d";
 				"PROVISIONING_PROFILE[sdk=iphoneos7.0]" = "9ff36c84-d17d-4544-8d09-e487f5c2b58d";
@@ -1452,7 +1452,7 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = net.norimingconception.lovelog;
+				PRODUCT_BUNDLE_IDENTIFIER = org.flatLevel56.LOVELOG;
 				PRODUCT_NAME = "LOVE LOG";
 				PROVISIONING_PROFILE = "4aafacee-e033-48f7-84c7-8c68da1136f7";
 				"PROVISIONING_PROFILE[sdk=iphoneos7.0]" = "4aafacee-e033-48f7-84c7-8c68da1136f7";
@@ -1477,7 +1477,7 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = net.norimingconception.lovelog;
+				PRODUCT_BUNDLE_IDENTIFIER = org.flatLevel56.LOVELOG;
 				PRODUCT_NAME = "LOVE LOG";
 				PROVISIONING_PROFILE = "9ff36c84-d17d-4544-8d09-e487f5c2b58d";
 				"PROVISIONING_PROFILE[sdk=iphoneos7.0]" = "9ff36c84-d17d-4544-8d09-e487f5c2b58d";

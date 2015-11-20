@@ -10,10 +10,11 @@
 #import "AFNetworking.h"
 @interface FLPhototitleViewController ()
 @property AFHTTPRequestOperationManager * manager;
+@property UIBarButtonItem * bbi;
 @end
 
 @implementation FLPhototitleViewController
-@synthesize toShow, titleField,choosedImage,resizedImage2;
+@synthesize toShow, titleField,choosedImage,resizedImage2,bbi;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -37,7 +38,7 @@
     choosedImage.image = resizedImage;
     resizedImage2 = resizedImage;
   
-    UIBarButtonItem * bbi = [[UIBarButtonItem alloc]initWithTitle:@"送信"
+    bbi = [[UIBarButtonItem alloc]initWithTitle:@"送信"
                                                             style:UIBarButtonItemStyleBordered
                                                            target:self
                                                            action:@selector(upClicked:)];
@@ -87,6 +88,9 @@
 
 -(void)upClicked:(id)sender{
     
+    //ボタンを非活性にする
+    [bbi setEnabled:false];
+    
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
     NSString * ext = @".jpg";
     NSString * title = titleField.text;
@@ -112,6 +116,7 @@
         NSLog(@"Success: %@", responseObject);
         [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
         [self.navigationController popToRootViewControllerAnimated:YES];
+        
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Error: %@", error);
         notice = [WBErrorNoticeView errorNoticeInView:self.view title:@"接続エラー" message:@"エラーが検出されました。"];
@@ -127,6 +132,8 @@
         }
         //[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
         //[self.navigationController popToRootViewControllerAnimated:YES];
+        //最終的にボタンを活性にする
+        [bbi setEnabled:true];
 
     }];
     

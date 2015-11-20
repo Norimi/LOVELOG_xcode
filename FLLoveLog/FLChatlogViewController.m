@@ -13,10 +13,11 @@
 
 
 @interface FLChatlogViewController ()
+@property UIBarButtonItem * bbi;
 @end
 
 @implementation FLChatlogViewController
-@synthesize chatField, scrollView;
+@synthesize chatField, scrollView,bbi;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -32,7 +33,7 @@
     
      [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
     self.title = @"メッセージの作成";
-    UIBarButtonItem * bbi = [[UIBarButtonItem alloc]initWithTitle:@"送信"
+    bbi = [[UIBarButtonItem alloc]initWithTitle:@"送信"
                                                             style:UIBarButtonItemStyleBordered
                                                            target:self
                                                            action:@selector(sendClicked:)];
@@ -50,6 +51,8 @@
 
 
 -(IBAction)sendClicked:(id)sender{
+   
+    
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
     [chatField resignFirstResponder];
     
@@ -57,6 +60,8 @@
     sendString = chatField.text;
     
     if([sendString length]>0){
+        
+        [bbi setEnabled:false];
         
         NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
         NSInteger idnumber = [defaults integerForKey:@"mid"];
@@ -77,7 +82,7 @@
         //成功しても失敗しても遷移する
         FLChatViewController * CVC = [[FLChatViewController alloc]init];
         [[self navigationController]pushViewController:CVC animated:YES];
-        
+        [bbi setEnabled:true];
     }
     
 }

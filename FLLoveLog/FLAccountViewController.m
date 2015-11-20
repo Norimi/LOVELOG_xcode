@@ -78,7 +78,7 @@ FLPartnerAcViewController * PVC;
     mynameLabel.text = mName;
     emailLabel.text = mEmail;
     
-    NSString * profile = @"http://norimingconception.net/lovelog/profile_photos/";
+    NSString * profile = @"http://flatlevel56.org/lovelog/profile_photos/";
     NSString * file = [defaults stringForKey:@"myphoto"];
     NSString * postUrl = [NSString stringWithFormat:@"%@%@",profile, file];
     [myImage setImageWithURL:[NSURL URLWithString:postUrl]placeholderImage:[UIImage imageNamed:@"backgroundview.png"]];
