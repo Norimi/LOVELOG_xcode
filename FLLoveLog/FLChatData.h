@@ -18,6 +18,7 @@
 -(void)createItemWithItem:(FLChatItem*)item;
 -(void)clearAllItems;
 -(void)refreshAllChats:(NSMutableArray*)tmpArray;
+-(void)addDefaultItems:(NSArray*)chatArray;
 
 
 

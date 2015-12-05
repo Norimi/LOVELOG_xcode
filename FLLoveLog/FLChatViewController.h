@@ -16,7 +16,7 @@
 #import "FLConnection.h"
 
 
-@interface FLChatViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, NSXMLParserDelegate,EGORefreshTableHeaderDelegate,FLConnectionDelegate,NSCoding>{
+@interface FLChatViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, NSXMLParserDelegate,EGORefreshTableHeaderDelegate,FLConnectionDelegate>{
     
     
     EGORefreshTableHeaderView * _refreshHeaderView;

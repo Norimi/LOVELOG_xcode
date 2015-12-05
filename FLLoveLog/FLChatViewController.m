@@ -20,15 +20,15 @@
 
 
 @interface FLChatViewController ()
-@property(nonatomic, strong)NSString * nowTagStr;
-@property(nonatomic, strong)NSString * loggedName;
-@property(nonatomic, strong)NSString * loggedMessage;
-@property(nonatomic, strong)NSString * logDate;
-@property(nonatomic, strong)NSString * planid;
-@property(nonatomic, strong)NSString * heart;
-@property(nonatomic,strong)NSString * yourphotoName;
-@property(nonatomic, strong)NSString * userid;
-@property(strong,nonatomic)NSString * chatid;
+@property(nonatomic, copy)NSString * nowTagStr;
+@property(nonatomic, copy)NSString * loggedName;
+@property(nonatomic, copy)NSString * loggedMessage;
+@property(nonatomic, copy)NSString * logDate;
+@property(nonatomic, copy)NSString * planid;
+@property(nonatomic, copy)NSString * heart;
+@property(nonatomic,copy)NSString * yourphotoName;
+@property(nonatomic, copy)NSString * userid;
+@property(copy,nonatomic)NSString * chatid;
 @property int heartValue;
 @property int myIndivalue;
 @property int pIndivalue;
@@ -46,17 +46,17 @@
 @property Boolean inPphotosum;
 @property int loveIndicator;
 @property int postCount;
-@property(nonatomic, strong)NSString * mysum;
-@property(nonatomic,strong)NSString * psum;
-@property(nonatomic, strong)NSString * myphotosum;
-@property(nonatomic,strong)NSString * pphotosum;
-@property(nonatomic, strong)NSString * myphotoName;
-@property(nonatomic,strong)NSString * pphotoName;
-@property(nonatomic, strong)NSString * myIndi;
-@property(nonatomic, strong)NSString * pIndi;
+@property(nonatomic, copy)NSString * mysum;
+@property(nonatomic,copy)NSString * psum;
+@property(nonatomic, copy)NSString * myphotosum;
+@property(nonatomic,copy)NSString * pphotosum;
+@property(nonatomic, copy)NSString * myphotoName;
+@property(nonatomic,copy)NSString * pphotoName;
+@property(nonatomic, copy)NSString * myIndi;
+@property(nonatomic, copy)NSString * pIndi;
 //@property(nonatomic, strong)NSMutableArray * contentsArray;
 @property(nonatomic,strong)NSMutableArray * tmpcontentsArray;
-@property(nonatomic,strong)NSString * photoFile;
+@property(nonatomic,copy)NSString * photoFile;
 @property(nonatomic,strong)NSMutableData * receivedData;
 @property(nonatomic, strong) UIButton * loveInd;
 @property(nonatomic, strong) UIButton * loveInd2;
@@ -117,11 +117,7 @@
     [chatTable setBackgroundView:nil];
     
     //チャットデータをuserdefaultから取得する
-    NSArray * tmpArray = [self getContentsArrayFromUserDefaults];
-    
-    NSLog(@"flchatdatadescription1 %@",[[FLChatData sharedManager]description]);
-    NSLog(@"allChats description2 %@",[[FLChatData sharedManager]allChats].description);
-   
+    [[FLChatData sharedManager]addDefaultItems:[self getContentsArrayFromUserDefaults]];
     
     if(_refreshHeaderView == nil){
         
@@ -142,6 +138,7 @@
    
     NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
     NSArray * chatArray = [NSKeyedUnarchiver unarchiveObjectWithData:[defaults objectForKey:@"chatcontents"]];
+
     return chatArray;
 }
 
@@ -265,7 +262,7 @@
 
 -(void)startParse{
     
-    NSLog(@"startparse");
+    
     NSURL *newURL = [NSURL URLWithString:@"http://flatlevel56.org/lovelog/labchatviewcontroller.php"];
     NSURLRequest * req = [NSURLRequest requestWithURL:newURL];
     NSURLConnection *connection = [[NSURLConnection alloc]initWithRequest:req delegate:self];
@@ -541,20 +538,15 @@ foundCharacters:(NSString *)string{
         FLChatItem * item = [[FLChatItem alloc]initWithChatid:chatid loggedName:loggedName loggedMessage:loggedMessage userid:userid photoFile:photoFile logData:logDate planid:planid heart:heart myIndicator:myIndi partnerIndicator:pIndi myPhotoSum:myphotosum pphotosum:pphotosum];
         
     
-        NSLog(@"item message %@",item.loggedMessage);
-        NSLog(@"item description%@",item.description);
-        NSLog(@"allChats description %@",[[FLChatData sharedManager]allChats].description);
-              //シングルトンクラスFLChatDataの配列がFLChatItemを保持
+       
+        //シングルトンクラスFLChatDataの配列がFLChatItemを保持
         [[FLChatData sharedManager]createItemWithItem:item];
-        NSLog(@"allChats count %d",(int)[[FLChatData sharedManager]allChats].count);
         
         
         myIndivalue = [myIndi intValue];
         pIndivalue = [pIndi intValue];
         int  myphotoIndi = [myphotosum intValue];
         int pphotoIndi = [pphotosum intValue];
-        
-        //NSLog(@"contentsArraycount%d", contentsArray.count);
         
         
         [defaults setInteger:myIndivalue forKey:@"msum"];
@@ -632,10 +624,6 @@ foundCharacters:(NSString *)string{
 
 -(void)parserDidEndDocument:(NSXMLParser*)parser
 {
-    NSLog(@"chatcount %d",(int)[[FLChatData sharedManager]allChats].count);
-    
-    NSLog(@"FLChatData.description %@",[[FLChatData sharedManager]allChats].description);
-    NSLog(@"allChats description3 %@",[[FLChatData sharedManager]allChats].description);
     
     if([[FLChatData sharedManager]allChats].count == 0){
         [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
@@ -686,8 +674,6 @@ numberOfRowsInSection:(NSInteger)section
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    
-    NSLog(@"all chat count %d",(int)[[FLChatData sharedManager]allChats].count);
     FLChatItem * itemAtIndex = [[[FLChatData sharedManager]allChats] objectAtIndex:indexPath.row];
     
     NSString * chatString = itemAtIndex.loggedMessage;
@@ -699,11 +685,9 @@ numberOfRowsInSection:(NSInteger)section
 
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath*)indexPath{
     
-    NSLog(@"flchatdatadescription cellforrow %@",[[FLChatData sharedManager]description]);
-    NSLog(@"all chat count in cell for row%d",(int)[[FLChatData sharedManager]allChats].count);
     FLChatItem * eachChat = [[[FLChatData sharedManager]allChats] objectAtIndex:indexPath.row];
     
-    NSLog(@"eachchat message %@",eachChat.loggedMessage);
+ 
     
     NSString * useridString = eachChat.userid;
     int userId = [useridString intValue];

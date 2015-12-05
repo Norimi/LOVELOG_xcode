@@ -12,6 +12,7 @@
 @implementation FLChatData
 +(FLChatData*)sharedManager{
     //シングルトン実装
+    //static変数はstack内に置かれずメモリ内に永久に保持される
     static FLChatData * sharedManager = nil;
     if(!sharedManager){
         sharedManager = [[super allocWithZone:nil]init];
@@ -19,6 +20,8 @@
     
     return sharedManager;
 }
+
+//allocメソッドはallocWithZoneを呼び出す
 + (id)allocWithZone:(NSZone *)zone
 {
     return [self sharedManager];
@@ -56,6 +59,11 @@
     allChats = tmpArray;
 }
 
+-(void)addDefaultItems:(NSArray*)chatArray{
+    [self clearAllItems];
+    allChats = [chatArray mutableCopy];
+    
+}
 
 
 

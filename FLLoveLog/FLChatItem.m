@@ -10,8 +10,10 @@
 
 @implementation FLChatItem
 
--(id)init{
+@synthesize chatid,loggedName, loggedMessage, userid,photoFile,logData,planid,heart,myIndi,pIndi,myphotosum,pphotosum;
 
+-(id)init{
+    
     
 }
 
@@ -25,7 +27,7 @@
               heart:(NSString*)indicator
         myIndicator:(NSString*)myIndi
    partnerIndicator:(NSString *)pIndi
-           myPhotoSum:(NSString*)sumIndi
+         myPhotoSum:(NSString*)sumIndi
           pphotosum:(NSString*)sum{
     
     
@@ -52,21 +54,44 @@
 #pragma mark NSCoding delegate method
 //FLChatViewControllerからFLChatDataをNSData化する際に必要
 - (void)encodeWithCoder:(NSCoder *)aCoder
- {
- [aCoder encodeObject:self forKey:@"keyedChats"];
- 
- }
- 
- - (id)initWithCoder:(NSCoder *)aDecoder
- {
- NSData * data = [[NSData alloc]init];
- self = [super init];
- if (self) {
- 
- data = [aDecoder decodeObjectForKey:@"keyedChats"];
- 
- }
- return self;
- }
+{
+    [aCoder encodeObject:chatid forKey:@"chatid"];
+    [aCoder encodeObject:loggedName forKey:@"loggedName"];
+    [aCoder encodeObject:loggedMessage forKey:@"loggedMessage"];
+    [aCoder encodeObject:userid forKey:@"userid"];
+    [aCoder encodeObject:photoFile forKey:@"photoFile"];
+    [aCoder encodeObject:logData forKey:@"logData"];
+    [aCoder encodeObject:planid forKey:@"planid"];
+    [aCoder encodeObject:heart forKey:@"heart"];
+    [aCoder encodeObject:myIndi forKey:@"myIndi"];
+    [aCoder encodeObject:pIndi forKey:@"pIndi"];
+    [aCoder encodeObject:myphotosum forKey:@"myphotosum"];
+    [aCoder encodeObject:pphotosum forKey:@"pphotosum"];
+    
+}
+
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    
+    self = [super init];
+    if (self) {
+        
+        chatid = [aDecoder decodeObjectForKey:@"chatid"];
+        loggedName = [aDecoder decodeObjectForKey:@"loggedName"];
+        loggedMessage = [aDecoder decodeObjectForKey:@"loggedMessage"];
+        userid = [aDecoder decodeObjectForKey:@"userid"];
+        photoFile = [aDecoder decodeObjectForKey:@"photoFile"];
+        logData = [aDecoder decodeObjectForKey:@"logData"];
+        planid = [aDecoder decodeObjectForKey:@"planid"];
+        heart = [aDecoder decodeObjectForKey:@"heart"];
+        myIndi = [aDecoder decodeObjectForKey:@"myIndi"];
+        pIndi = [aDecoder decodeObjectForKey:@"pIndi"];
+        myphotosum = [aDecoder decodeObjectForKey:@"myphotosum"];
+        pphotosum = [aDecoder decodeObjectForKey:@"pphotosum"];
+        
+        
+    }
+    return self;
+}
 
 @end
