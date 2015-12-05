@@ -22,19 +22,19 @@
 @property(strong, nonatomic)NSMutableArray * todoidArray;
 @property(strong, nonatomic)NSMutableArray * boolArray;
 @property(strong, nonatomic)NSMutableArray * urlidArray;
-@property(strong, nonatomic)NSString * nowTagStr;
-@property(strong, nonatomic)NSString * categoryString;
-@property(strong, nonatomic)NSString * titleString;
-@property(strong, nonatomic)NSString * dateString;
-@property(strong, nonatomic)NSString * budgetString;
-@property(strong, nonatomic)NSString * nameString;
-@property(strong, nonatomic)NSString * createdString;
-@property(strong, nonatomic)NSString * planid;
-@property(strong, nonatomic)NSString * urlString;
-@property(strong, nonatomic)NSString * todoString;
-@property(strong, nonatomic)NSString * nowdateString;
-@property(strong, nonatomic)NSString * userid;
-@property(strong, nonatomic)NSString * checked;
+@property(copy, nonatomic)NSString * nowTagStr;
+@property(copy, nonatomic)NSString * categoryString;
+@property(copy, nonatomic)NSString * titleString;
+@property(copy, nonatomic)NSString * dateString;
+@property(copy, nonatomic)NSString * budgetString;
+@property(copy, nonatomic)NSString * nameString;
+@property(copy, nonatomic)NSString * createdString;
+@property(copy, nonatomic)NSString * planid;
+@property(copy, nonatomic)NSString * urlString;
+@property(copy, nonatomic)NSString * todoString;
+@property(copy, nonatomic)NSString * nowdateString;
+@property(copy, nonatomic)NSString * userid;
+@property(copy, nonatomic)NSString * checked;
 @property(strong, nonatomic,readonly)NSDate * nowDate;
 
 @property BOOL inName;
@@ -626,17 +626,39 @@ numberOfRowsInSection:(NSInteger)section{
     }
     
     //直近のプランを取得
-    NSDictionary * tmpDict = [contentsArray objectAtIndex:[self getNextPlan]];
-    NSString * nextPlan = [tmpDict objectForKey:@"title"];
-    [defaults setObject:nextPlan forKey:@"plantotop"];
-    NSLog(@"直近のプラン%@", nextPlan);
-    
+    int nextPlanIndex = [self getNextPlan];
+    NSLog(@"nextPlanIndex %d",nextPlanIndex);
+    NSLog(@"contentsArraycount %d",contentsArray.count);
+    if(nextPlanIndex > 0){
+        
+        if(contentsArray.count > 0){
+            
+            NSDictionary * tmpDict = [contentsArray objectAtIndex:nextPlanIndex-1];
+            NSString * nextPlan = [tmpDict objectForKey:@"title"];
+            [defaults setObject:nextPlan forKey:@"plantotop"];
+            NSLog(@"直近のプラン%@", nextPlan);
+            
+        }
+
+        
+    }else{
+        
+        
+        NSDictionary * tmpDict = [contentsArray objectAtIndex:contentsArray.count-1];
+        NSString * nextPlan = [tmpDict objectForKey:@"title"];
+        [defaults setObject:nextPlan forKey:@"plantotop"];
+        NSLog(@"直近のプラン%@", nextPlan);
+
+        
+        
+    }
     
 }
 
 -(int)getNextPlan{
     
     int decIndex = 0;
+    int newPlanIndex = 0;
     
     for  (int i=0; i < [contentsArray count]; i++){
         
@@ -655,17 +677,20 @@ numberOfRowsInSection:(NSInteger)section{
         
         
         if(result == NSOrderedAscending){
+          
+            NSLog(@"NSOrderedAscending");
             
         }else{
             //初めて現在の日付より以前のものが取得されたときにここへ入り、一つ目でreturnされる
+            NSLog(@"NSOrderedDec");
             decIndex = i;
-            int newPlanIndex = i-1;
-            return newPlanIndex;
+            newPlanIndex = i;
+            
         }
-        
+        //ループの終了
     }
-   
     
+    return newPlanIndex;
 }
 
 

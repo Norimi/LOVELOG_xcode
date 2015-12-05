@@ -196,6 +196,8 @@
 		977A83BC196FE231002DAA20 /* cellframe.png in Resources */ = {isa = PBXBuildFile; fileRef = 977A83BB196FE231002DAA20 /* cellframe.png */; };
 		977A83C2196FE43B002DAA20 /* FLPlan.m in Sources */ = {isa = PBXBuildFile; fileRef = 977A83C1196FE43B002DAA20 /* FLPlan.m */; };
 		977A83C5196FE7D5002DAA20 /* FLPlanDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 977A83C4196FE7D5002DAA20 /* FLPlanDataManager.m */; };
+		978B4FD61C0EEEE900210371 /* FLChatData.m in Sources */ = {isa = PBXBuildFile; fileRef = 978B4FD51C0EEEE900210371 /* FLChatData.m */; };
+		978B4FD91C0EF33300210371 /* FLChatItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 978B4FD81C0EF33300210371 /* FLChatItem.m */; };
 		978C9033197765DA00EF6B4F /* FLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 978C9032197765DA00EF6B4F /* FLConnection.m */; };
 		979DA3A4199E1ECC0087FEC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA418FB166EE46E002E93E2 /* Foundation.framework */; };
 		979DA3A5199E1ECC0087FEC4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA418F9166EE46E002E93E2 /* UIKit.framework */; };
@@ -472,6 +474,10 @@
 		977A83C1196FE43B002DAA20 /* FLPlan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLPlan.m; sourceTree = "<group>"; };
 		977A83C3196FE7D5002DAA20 /* FLPlanDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLPlanDataManager.h; sourceTree = "<group>"; };
 		977A83C4196FE7D5002DAA20 /* FLPlanDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLPlanDataManager.m; sourceTree = "<group>"; };
+		978B4FD41C0EEEE900210371 /* FLChatData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLChatData.h; sourceTree = "<group>"; };
+		978B4FD51C0EEEE900210371 /* FLChatData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLChatData.m; sourceTree = "<group>"; };
+		978B4FD71C0EF33300210371 /* FLChatItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLChatItem.h; sourceTree = "<group>"; };
+		978B4FD81C0EF33300210371 /* FLChatItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLChatItem.m; sourceTree = "<group>"; };
 		978C9031197765DA00EF6B4F /* FLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLConnection.h; sourceTree = "<group>"; };
 		978C9032197765DA00EF6B4F /* FLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLConnection.m; sourceTree = "<group>"; };
 		979DA3A1199E1ECB0087FEC4 /* LOVE LOG Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LOVE LOG Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -842,6 +848,10 @@
 				977A83C1196FE43B002DAA20 /* FLPlan.m */,
 				977A83C3196FE7D5002DAA20 /* FLPlanDataManager.h */,
 				977A83C4196FE7D5002DAA20 /* FLPlanDataManager.m */,
+				978B4FD41C0EEEE900210371 /* FLChatData.h */,
+				978B4FD51C0EEEE900210371 /* FLChatData.m */,
+				978B4FD71C0EF33300210371 /* FLChatItem.h */,
+				978B4FD81C0EF33300210371 /* FLChatItem.m */,
 			);
 			name = Product;
 			sourceTree = "<group>";
@@ -1228,6 +1238,7 @@
 				2F3F573B16AAA9BD00E1D011 /* LoverNumberViewController.m in Sources */,
 				2F3F574616ACBF4E00E1D011 /* FLWarningViewController.m in Sources */,
 				2F3F574D16ACCB1600E1D011 /* FLWaitingViewController.m in Sources */,
+				978B4FD91C0EF33300210371 /* FLChatItem.m in Sources */,
 				2FC1FA8716AECD3D00D406B0 /* FLWellcomeViewController.m in Sources */,
 				2FC1FAA816AFC7E000D406B0 /* FLLoverConfirmedViewController.m in Sources */,
 				2FC1FAAF16AFC9E400D406B0 /* FLLoverRegistredViewController.m in Sources */,
@@ -1236,6 +1247,7 @@
 				2F9FF93216CC9364002825C1 /* FLAccountViewController.m in Sources */,
 				2F9FF93916CCC87E002825C1 /* FLEditViewController.m in Sources */,
 				2F9F137B16DDFC7E0024A696 /* FLResignViewController.m in Sources */,
+				978B4FD61C0EEEE900210371 /* FLChatData.m in Sources */,
 				977A83C5196FE7D5002DAA20 /* FLPlanDataManager.m in Sources */,
 				2FF363D016E5927A00E1CC14 /* FLEnterViewController.m in Sources */,
 				2FF363D516E5A33300E1CC14 /* FLConfirmViewController.m in Sources */,
@@ -1371,7 +1383,7 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = org.flatLevel56.LOVELOG;
+				PRODUCT_BUNDLE_IDENTIFIER = net.norimingconception.lovelog;
 				PRODUCT_NAME = "LOVE LOG";
 				PROVISIONING_PROFILE = "9ff36c84-d17d-4544-8d09-e487f5c2b58d";
 				"PROVISIONING_PROFILE[sdk=iphoneos7.0]" = "9ff36c84-d17d-4544-8d09-e487f5c2b58d";
@@ -1452,7 +1464,7 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = org.flatLevel56.LOVELOG;
+				PRODUCT_BUNDLE_IDENTIFIER = net.norimingconception.lovelog;
 				PRODUCT_NAME = "LOVE LOG";
 				PROVISIONING_PROFILE = "4aafacee-e033-48f7-84c7-8c68da1136f7";
 				"PROVISIONING_PROFILE[sdk=iphoneos7.0]" = "4aafacee-e033-48f7-84c7-8c68da1136f7";
@@ -1477,7 +1489,7 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = org.flatLevel56.LOVELOG;
+				PRODUCT_BUNDLE_IDENTIFIER = net.norimingconception.lovelog;
 				PRODUCT_NAME = "LOVE LOG";
 				PROVISIONING_PROFILE = "9ff36c84-d17d-4544-8d09-e487f5c2b58d";
 				"PROVISIONING_PROFILE[sdk=iphoneos7.0]" = "9ff36c84-d17d-4544-8d09-e487f5c2b58d";

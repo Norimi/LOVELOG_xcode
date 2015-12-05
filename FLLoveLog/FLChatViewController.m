@@ -15,6 +15,8 @@
 #import "YourChatCell.h"
 #import "FLConnection.h"
 #import <QuartzCore/QuartzCore.h>
+#import "FLChatData.h"
+#import "FLChatItem.h"
 
 
 @interface FLChatViewController ()
@@ -52,7 +54,7 @@
 @property(nonatomic,strong)NSString * pphotoName;
 @property(nonatomic, strong)NSString * myIndi;
 @property(nonatomic, strong)NSString * pIndi;
-@property(nonatomic, strong)NSMutableArray * contentsArray;
+//@property(nonatomic, strong)NSMutableArray * contentsArray;
 @property(nonatomic,strong)NSMutableArray * tmpcontentsArray;
 @property(nonatomic,strong)NSString * photoFile;
 @property(nonatomic,strong)NSMutableData * receivedData;
@@ -63,6 +65,7 @@
 @property(nonatomic, strong) UIButton * loveInd5;
 @property(nonatomic, strong)UILabel * chatLabel;
 @property(nonatomic, strong)WBErrorNoticeView * notice;
+
 -(void)postandGet;
 -(void)toHistory:(id)sender;
 
@@ -74,13 +77,14 @@
 
 @implementation FLChatViewController
 
-@synthesize chatTable, loggedName, loggedMessage, nowTagStr, contentsArray, logDate, planid, heart, myIndi, pIndi, tmpcontentsArray, photoFile, loveInd, loveInd2, loveInd3, loveInd4, loveInd5, mysum, psum, userid,myphotosum,pphotosum,chatid,receivedData,chatLabel,notice,myphotoName,pphotoName,myIndivalue,pIndivalue,loveIndicator,postCount, inName, inMessage, inDate, inPlanid, inHeartindi, inMyindicator, inPindicator,inUserid, inChatid, inPhoto, inMyphotosum,inPphotosum,soundID,yourphotoName;
+@synthesize chatTable, loggedName, loggedMessage, nowTagStr, logDate, planid, heart, myIndi, pIndi, tmpcontentsArray, photoFile, loveInd, loveInd2, loveInd3, loveInd4, loveInd5, mysum, psum, userid,myphotosum,pphotosum,chatid,receivedData,chatLabel,notice,myphotoName,pphotoName,myIndivalue,pIndivalue,loveIndicator,postCount, inName, inMessage, inDate, inPlanid, inHeartindi, inMyindicator, inPindicator,inUserid, inChatid, inPhoto, inMyphotosum,inPphotosum,soundID,yourphotoName;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        [FLChatData sharedManager];
     }
     return self;
 }
@@ -112,7 +116,11 @@
     chatTable.delegate = self;
     [chatTable setBackgroundView:nil];
     
-    contentsArray = [self getContentsArrayFromUserDefaults];
+    //チャットデータをuserdefaultから取得する
+    NSArray * tmpArray = [self getContentsArrayFromUserDefaults];
+    
+    NSLog(@"flchatdatadescription1 %@",[[FLChatData sharedManager]description]);
+    NSLog(@"allChats description2 %@",[[FLChatData sharedManager]allChats].description);
    
     
     if(_refreshHeaderView == nil){
@@ -129,13 +137,12 @@
 }
 
 
--(NSMutableArray *)getContentsArrayFromUserDefaults{
+-(NSArray *)getContentsArrayFromUserDefaults{
     
-    
+   
     NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
-    return [defaults objectForKey:@"chatcontents"];
-
-    
+    NSArray * chatArray = [NSKeyedUnarchiver unarchiveObjectWithData:[defaults objectForKey:@"chatcontents"]];
+    return chatArray;
 }
 
 -(void)setNavigationComponents{
@@ -164,7 +171,7 @@
     //すでに保持している最新のデータを表示
     [self.chatTable reloadData];
     
-    if(contentsArray.count > 29){
+    if([[FLChatData sharedManager]allChats].count > 29){
         
         UIButton * toHistory = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
         [toHistory addTarget:self
@@ -205,7 +212,7 @@
 -(void)egoRefreshTableHeaderDidTriggerRefresh:(EGORefreshTableHeaderView*)view{
     
     _reloading = YES;
-    contentsArray = nil;
+    [[FLChatData sharedManager]clearAllItems];
     postCount = nil;
     
     [self postandGet];
@@ -288,18 +295,11 @@
 -(void)connectionDidFinishLoading:(NSURLConnection*)connection
 {
     
-    
-    if(contentsArray == nil){
-        contentsArray = [[NSMutableArray alloc]init];
-        
-    }
-    
     NSXMLParser * newParser = [[NSXMLParser alloc]initWithData:receivedData];
     [newParser setDelegate:self];
     [newParser parse];
     receivedData = nil;
     connection = nil;
-    
     
 }
 
@@ -532,14 +532,29 @@ foundCharacters:(NSString *)string{
     if ( [elementName isEqualToString:@"content"] ) {
         
         NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
+        
+        /*
         [contentsArray addObject:[NSDictionary dictionaryWithObjectsAndKeys:chatid, @"chatid", loggedName, @"names", userid, @"userid", loggedMessage, @"messages", photoFile, @"photo",logDate, @"date",planid, @"planid",heart, @"heartindi",myIndi, @"msum", pIndi, @"psum",myphotosum,@"myphotosum", pphotosum,@"pphotosum", nil]];
+         */
+        
+        //指定イニシャライザで1つのチャットデータにつき1つのインスタンスを作成
+        FLChatItem * item = [[FLChatItem alloc]initWithChatid:chatid loggedName:loggedName loggedMessage:loggedMessage userid:userid photoFile:photoFile logData:logDate planid:planid heart:heart myIndicator:myIndi partnerIndicator:pIndi myPhotoSum:myphotosum pphotosum:pphotosum];
+        
+    
+        NSLog(@"item message %@",item.loggedMessage);
+        NSLog(@"item description%@",item.description);
+        NSLog(@"allChats description %@",[[FLChatData sharedManager]allChats].description);
+              //シングルトンクラスFLChatDataの配列がFLChatItemを保持
+        [[FLChatData sharedManager]createItemWithItem:item];
+        NSLog(@"allChats count %d",(int)[[FLChatData sharedManager]allChats].count);
+        
         
         myIndivalue = [myIndi intValue];
         pIndivalue = [pIndi intValue];
         int  myphotoIndi = [myphotosum intValue];
         int pphotoIndi = [pphotosum intValue];
         
-        NSLog(@"contentsArraycount%d", contentsArray.count);
+        //NSLog(@"contentsArraycount%d", contentsArray.count);
         
         
         [defaults setInteger:myIndivalue forKey:@"msum"];
@@ -547,9 +562,11 @@ foundCharacters:(NSString *)string{
         [defaults setInteger:myphotoIndi forKey:@"myphotosum"];
         [defaults setInteger:pphotoIndi forKey:@"pphotosum"];
         
-        if(contentsArray.count <31){
-            
-            [defaults setObject:contentsArray forKey:@"chatcontents"];
+        if([[FLChatData sharedManager]allChats].count <31){
+           
+            NSArray * tmpArray = [[FLChatData sharedManager]allChats];
+            NSData * data = [NSKeyedArchiver archivedDataWithRootObject:tmpArray];
+            [defaults setObject:data forKey:@"chatcontents"];
             
         }
         
@@ -615,8 +632,12 @@ foundCharacters:(NSString *)string{
 
 -(void)parserDidEndDocument:(NSXMLParser*)parser
 {
+    NSLog(@"chatcount %d",(int)[[FLChatData sharedManager]allChats].count);
     
-    if(contentsArray.count == 0){
+    NSLog(@"FLChatData.description %@",[[FLChatData sharedManager]allChats].description);
+    NSLog(@"allChats description3 %@",[[FLChatData sharedManager]allChats].description);
+    
+    if([[FLChatData sharedManager]allChats].count == 0){
         [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
     }
     [_refreshHeaderView egoRefreshScrollViewDataSourceDidFinishedLoading:self.chatTable];
@@ -655,7 +676,7 @@ numberOfRowsInSection:(NSInteger)section
         
     } else {
         
-        return contentsArray.count;
+        return [[FLChatData sharedManager]allChats].count;
         
     }
     
@@ -665,8 +686,11 @@ numberOfRowsInSection:(NSInteger)section
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    NSDictionary * itemAtIndex = (NSDictionary*)[contentsArray objectAtIndex:indexPath.row];
-    NSString * chatString = [itemAtIndex objectForKey:@"messages"];
+    
+    NSLog(@"all chat count %d",(int)[[FLChatData sharedManager]allChats].count);
+    FLChatItem * itemAtIndex = [[[FLChatData sharedManager]allChats] objectAtIndex:indexPath.row];
+    
+    NSString * chatString = itemAtIndex.loggedMessage;
 	CGSize size = [chatString sizeWithFont:[UIFont systemFontOfSize:11.0] constrainedToSize:CGSizeMake(210.0, 480.0) lineBreakMode:NSLineBreakByWordWrapping];
 	return size.height + 80;
 }
@@ -675,15 +699,20 @@ numberOfRowsInSection:(NSInteger)section
 
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath*)indexPath{
     
-    NSDictionary * itemAtIndex = (NSDictionary*)[contentsArray objectAtIndex:indexPath.row];
-    NSString * useridString = [itemAtIndex objectForKey:@"userid"];
+    NSLog(@"flchatdatadescription cellforrow %@",[[FLChatData sharedManager]description]);
+    NSLog(@"all chat count in cell for row%d",(int)[[FLChatData sharedManager]allChats].count);
+    FLChatItem * eachChat = [[[FLChatData sharedManager]allChats] objectAtIndex:indexPath.row];
+    
+    NSLog(@"eachchat message %@",eachChat.loggedMessage);
+    
+    NSString * useridString = eachChat.userid;
     int userId = [useridString intValue];
     NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
     NSInteger idnumber = [defaults integerForKey:@"mid"];
     static NSString * identifier;
     
     NSString * chatString = [[NSString alloc]init];
-    chatString = [itemAtIndex objectForKey:@"messages"];
+    chatString = eachChat.loggedMessage;
     MyChatCell * cell;
 
     
@@ -692,7 +721,7 @@ numberOfRowsInSection:(NSInteger)section
         //if(!cell){
             
             identifier = @"MyChatCell";
-            myphotoName =  [itemAtIndex objectForKey:@"photo"];
+        myphotoName = eachChat.photoFile;
             cell =  [chatTable dequeueReusableCellWithIdentifier:identifier];
             cell.backgroundView = [[UIImageView alloc]initWithImage:[[UIImage imageNamed:@"greencell2.png"]stretchableImageWithLeftCapWidth:0.0 topCapHeight:5.0]];
         //}
@@ -717,7 +746,7 @@ numberOfRowsInSection:(NSInteger)section
         //if(!cell){
             
             identifier = @"YourChatCell";
-            yourphotoName = [itemAtIndex objectForKey:@"photo"];
+        yourphotoName = eachChat.photoFile;
             cell =  [chatTable dequeueReusableCellWithIdentifier:identifier];
 
         //}
@@ -743,12 +772,12 @@ numberOfRowsInSection:(NSInteger)section
     }
     
      
-    cell.dateLabel.text = [itemAtIndex objectForKey:@"date"];
-    cell.tmpIndicator = [itemAtIndex objectForKey:@"heartindi"];
-    cell.chatid = [itemAtIndex objectForKey:@"chatid"];
+    cell.dateLabel.text = eachChat.logData;
+    cell.tmpIndicator = eachChat.heart;
+    cell.chatid = eachChat.chatid;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     NSString * profile = @"http://flatlevel56.org/lovelog/profile_photos/";
-    NSString * photoString = [itemAtIndex objectForKey:@"photo"];
+    NSString * photoString = eachChat.photoFile;
     NSString * photoUrl = [NSString stringWithFormat:@"%@%@", profile, photoString];
     [cell.profilePhoto setImageWithURL:[NSURL URLWithString:photoUrl]placeholderImage:[UIImage imageNamed:@"backgroundview.png"]];
     [cell.profilePhoto setContentMode:UIViewContentModeScaleAspectFill];
@@ -764,8 +793,8 @@ numberOfRowsInSection:(NSInteger)section
 
 
 -(void)tableView:(UITableView*)tableView didSelectRowAtIndexPath:(NSIndexPath*)indexPath{
-    NSDictionary * itemAtIndex = (NSDictionary*)[contentsArray objectAtIndex:indexPath.row];
-    NSString * checkString = [itemAtIndex objectForKey:@"messages"];
+    FLChatItem * itemAtIndex = [[[FLChatData sharedManager]allChats  ]objectAtIndex:indexPath.row];
+    NSString * checkString = itemAtIndex.loggedMessage;
     NSDataDetector *linkDetector = [NSDataDetector dataDetectorWithTypes:NSTextCheckingTypeLink error:nil];
     NSArray *matches = [linkDetector matchesInString:checkString options:0 range:NSMakeRange(0, [checkString length])];
     for (NSTextCheckingResult *match in matches) {
@@ -779,7 +808,7 @@ numberOfRowsInSection:(NSInteger)section
         }
     }
     
-    NSString * plantoPass = [itemAtIndex objectForKey:@"planid"];
+    NSString * plantoPass = itemAtIndex.planid;
     int value = [plantoPass intValue];
     if(value > 0){
         
@@ -805,7 +834,7 @@ numberOfRowsInSection:(NSInteger)section
 
 
 -(void)refresh:(id)sender{
-    contentsArray = nil;
+    [[FLChatData sharedManager]clearAllItems];
     postCount = nil;
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
     [self postandGet];
@@ -835,14 +864,14 @@ numberOfRowsInSection:(NSInteger)section
     
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
     NSString * url = [NSString stringWithFormat:@"http://flatlevel56.org/lovelog/postpage.php"];
-    postCount = contentsArray.count + 30;
+    postCount = [[FLChatData sharedManager]allChats].count + 30;
     NSString * data = [NSString
                        stringWithFormat:@"page=%d",postCount];
     FLConnection * connection = [[FLConnection alloc]init];
     if([connection connectionWithUrl:url withData:data]){
         
         
-        contentsArray = nil;
+        [[FLChatData sharedManager]clearAllItems];
         postCount = nil;
         NSURL *newURL = [NSURL URLWithString:@"http://flatlevel56.org/lovelog/labchatviewcontroller.php"];
         NSURLRequest * req = [NSURLRequest requestWithURL:newURL];
@@ -861,8 +890,6 @@ numberOfRowsInSection:(NSInteger)section
     }
       
 }
-
-
 
 
 @end
